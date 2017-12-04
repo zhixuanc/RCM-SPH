@@ -2,60 +2,67 @@ This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: JCP-Manuscript.aux
 The style file: model1-num-names.bst
-Database file #1: ../Reference.bib
-Repeated entry---line 1048 of file ../Reference.bib
+Database file #1: Reference.bib
+Repeated entry---line 1048 of file Reference.bib
  : @article{sigalotti2006shock
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1422 of file ../Reference.bib
+Repeated entry---line 1422 of file Reference.bib
  : @inproceedings{borgani2012hydrodynamic
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2125 of file ../Reference.bib
+Repeated entry---line 2125 of file Reference.bib
  : @article{glimm1965solutions
  :                            ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
+Repeated entry---line 2202 of file Reference.bib
+ : @book{hammersley2013monte
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2209 of file Reference.bib
+ : @article{colella1982glimm
+ :                          ,
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 33 entries,
+You've used 37 entries,
             2910 wiz_defined-function locations,
-            825 strings with 9975 characters,
-and the built_in function-call counts, 19189 in all, are:
-= -- 1531
-> -- 621
-< -- 28
-+ -- 246
-- -- 201
-* -- 2242
-:= -- 2830
-add.period$ -- 33
-call.type$ -- 33
-change.case$ -- 230
-chr.to.int$ -- 33
-cite$ -- 33
-duplicate$ -- 1314
-empty$ -- 1367
-format.name$ -- 294
-if$ -- 3505
+            849 strings with 10631 characters,
+and the built_in function-call counts, 21517 in all, are:
+= -- 1718
+> -- 703
+< -- 31
++ -- 279
+- -- 228
+* -- 2522
+:= -- 3179
+add.period$ -- 37
+call.type$ -- 37
+change.case$ -- 259
+chr.to.int$ -- 37
+cite$ -- 37
+duplicate$ -- 1468
+empty$ -- 1524
+format.name$ -- 331
+if$ -- 3924
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 298
-newline$ -- 176
-num.names$ -- 132
-pop$ -- 295
+missing$ -- 335
+newline$ -- 196
+num.names$ -- 148
+pop$ -- 324
 preamble$ -- 1
-purify$ -- 232
+purify$ -- 261
 quote$ -- 0
-skip$ -- 385
+skip$ -- 428
 stack$ -- 0
-substring$ -- 1147
-swap$ -- 1083
+substring$ -- 1285
+swap$ -- 1218
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 291
+type$ -- 327
 warning$ -- 0
-while$ -- 160
+while$ -- 180
 width$ -- 0
-write$ -- 443
-(There were 3 error messages)
+write$ -- 495
+(There were 5 error messages)

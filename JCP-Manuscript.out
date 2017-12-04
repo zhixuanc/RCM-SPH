@@ -3,15 +3,14 @@
 \BOOKMARK [2][-]{subsection.2.1}{Standard SPH method}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{GSPH method}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{RSPH method}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Constructing of 1D Riemann problem}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Defining of local 1D Riemann problem}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.2}{Approximate Riemann solvers}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{Binary Van Der Corput pseudo-random numbers}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.4}{Convergence}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Picking up a single state}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Binary Van Der Corput pseudo-random numbers}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.5}{RSPH algorithm \(the PESB algorithm\)}{section.3}% 10
 \BOOKMARK [1][-]{section.4}{Numerical tests}{}% 11
-\BOOKMARK [2][-]{subsection.4.1}{1D shock tube tests input parameters}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.2}{Comparison of RSPH with standard SPH and GSPH}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.3}{Accuracy tests}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.4}{Comprehensive tests}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.5}{Simulation of 3D inject flow}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Comparison of RSPH with standard SPH and GSPH}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Accuracy tests}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Comprehensive 1D tests}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.4}{3D free jet}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 16

@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{37}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -218,6 +218,13 @@
   formulation},
 \newblock \bibinfo{journal}{Journal of Computational Physics}
   \bibinfo{volume}{194} (\bibinfo{year}{2004}) \bibinfo{pages}{304--328}.
+%Type = Article
+\bibitem[{Roe(1981)}]{roe1981approximate}
+\bibinfo{author}{P.~L. Roe},
+\newblock \bibinfo{title}{Approximate riemann solvers, parameter vectors, and
+  difference schemes},
+\newblock \bibinfo{journal}{Journal of computational physics}
+  \bibinfo{volume}{43} (\bibinfo{year}{1981}) \bibinfo{pages}{357--372}.
 %Type = Book
 \bibitem[{Hammersley(2013)}]{hammersley2013monte}
 \bibinfo{author}{J.~Hammersley}, \bibinfo{title}{Monte carlo methods},
@@ -246,5 +253,28 @@
   instabilities in sph},
 \newblock \bibinfo{journal}{Journal of Computational Physics}
   \bibinfo{volume}{227} (\bibinfo{year}{2008}) \bibinfo{pages}{10040--10057}.
+%Type = Article
+\bibitem[{Puri and Ramachandran(2014)}]{puri2014comparison}
+\bibinfo{author}{K.~Puri}, \bibinfo{author}{P.~Ramachandran},
+\newblock \bibinfo{title}{A comparison of sph schemes for the compressible
+  euler equations},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{256} (\bibinfo{year}{2014}) \bibinfo{pages}{308--333}.
+%Type = Article
+\bibitem[{Noh(1987)}]{noh1987errors}
+\bibinfo{author}{W.~F. Noh},
+\newblock \bibinfo{title}{Errors for calculations of strong shocks using an
+  artificial viscosity and an artificial heat flux},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{72} (\bibinfo{year}{1987}) \bibinfo{pages}{78--120}.
+%Type = Article
+\bibitem[{Cao et~al.(2017)Cao, Patra, Bursik, Pitman, and Jones}]{gmd-2017-119}
+\bibinfo{author}{Z.~Cao}, \bibinfo{author}{A.~Patra},
+  \bibinfo{author}{M.~Bursik}, \bibinfo{author}{E.~B. Pitman},
+  \bibinfo{author}{M.~Jones},
+\newblock \bibinfo{title}{Plume-sph 1.0: A three-dimensional, dusty-gas
+  volcanic plume model based on smoothed particle hydrodynamics},
+\newblock \bibinfo{journal}{Geoscientific Model Development Discussions}
+  \bibinfo{volume}{2017} (\bibinfo{year}{2017}) \bibinfo{pages}{1--37}.
 
 \end{thebibliography}
