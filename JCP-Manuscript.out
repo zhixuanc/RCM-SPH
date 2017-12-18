@@ -4,8 +4,8 @@
 \BOOKMARK [2][-]{subsection.2.2}{GSPH method}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{RSPH method}{}% 5
 \BOOKMARK [2][-]{subsection.3.1}{Defining of local 1D Riemann problem}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Approximate Riemann solvers}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{Picking up a single state}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Picking up a single state}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Non-iterative Riemann solvers}{section.3}% 8
 \BOOKMARK [2][-]{subsection.3.4}{Binary Van Der Corput pseudo-random numbers}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.5}{RSPH algorithm \(the PESB algorithm\)}{section.3}% 10
 \BOOKMARK [1][-]{section.4}{Numerical tests}{}% 11

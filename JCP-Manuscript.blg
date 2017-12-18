@@ -3,66 +3,66 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: JCP-Manuscript.aux
 The style file: model1-num-names.bst
 Database file #1: Reference.bib
-Repeated entry---line 1048 of file Reference.bib
+Repeated entry---line 1080 of file Reference.bib
  : @article{sigalotti2006shock
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1422 of file Reference.bib
+Repeated entry---line 1454 of file Reference.bib
  : @inproceedings{borgani2012hydrodynamic
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2125 of file Reference.bib
+Repeated entry---line 2157 of file Reference.bib
  : @article{glimm1965solutions
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2202 of file Reference.bib
+Repeated entry---line 2234 of file Reference.bib
  : @book{hammersley2013monte
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2209 of file Reference.bib
+Repeated entry---line 2241 of file Reference.bib
  : @article{colella1982glimm
  :                          ,
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 37 entries,
+You've used 38 entries,
             2910 wiz_defined-function locations,
-            849 strings with 10631 characters,
-and the built_in function-call counts, 21517 in all, are:
-= -- 1718
-> -- 703
-< -- 31
-+ -- 279
-- -- 228
-* -- 2522
-:= -- 3179
-add.period$ -- 37
-call.type$ -- 37
-change.case$ -- 259
-chr.to.int$ -- 37
-cite$ -- 37
-duplicate$ -- 1468
-empty$ -- 1524
-format.name$ -- 331
-if$ -- 3924
+            854 strings with 10776 characters,
+and the built_in function-call counts, 22131 in all, are:
+= -- 1770
+> -- 722
+< -- 32
++ -- 288
+- -- 234
+* -- 2596
+:= -- 3267
+add.period$ -- 38
+call.type$ -- 38
+change.case$ -- 266
+chr.to.int$ -- 38
+cite$ -- 38
+duplicate$ -- 1507
+empty$ -- 1566
+format.name$ -- 342
+if$ -- 4036
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 335
-newline$ -- 196
-num.names$ -- 148
-pop$ -- 324
+missing$ -- 344
+newline$ -- 201
+num.names$ -- 152
+pop$ -- 332
 preamble$ -- 1
-purify$ -- 261
+purify$ -- 268
 quote$ -- 0
-skip$ -- 428
+skip$ -- 439
 stack$ -- 0
-substring$ -- 1285
-swap$ -- 1218
+substring$ -- 1330
+swap$ -- 1252
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 327
+type$ -- 336
 warning$ -- 0
-while$ -- 180
+while$ -- 185
 width$ -- 0
-write$ -- 495
+write$ -- 508
 (There were 5 error messages)
