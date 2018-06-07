@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{SPH Formulations}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Standard SPH}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{GSPH}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{The Random Choice SPH method\(RSPH\)}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{The local 1D Riemann problem}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Selecting the star state}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Non-iterative Riemann solvers}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Numerical tests}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Comparison of RSPH with standard SPH and GSPH}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Accuracy tests}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Comprehensive 1D tests}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{3D free jet}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 14

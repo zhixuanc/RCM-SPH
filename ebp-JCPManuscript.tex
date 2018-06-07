@@ -36,7 +36,7 @@
 %% Group authors per affiliation:
 \author{Zhixuan Cao}
 \author{Abani Patra \fnref{mycorrespondingauthor}}
-\address{Department of Mechanical and Aerospace Engineering,The State University of New York at Buffalo, Amherst, NY, 14260-4200, USA}
+\address{Department of Mechanical and Aerospace Engineering, The State University of New York at Buffalo, Amherst, NY, 14260-4200, USA}
 \author{E. Bruce Pitman}
 \address{Department of Materials Design and Innovation, The State University of New York at Buffalo, Amherst, NY, 14260-4200, USA}
 %\fntext[myfootnote]{Since 1880.}
@@ -51,25 +51,13 @@
 %\address[mysecondaryaddress]{360 Park Avenue South, New York}
 
 \begin{abstract}
-The classical smoothed particle hydrodynamics (SPH) method
-employs artificial viscosity to properly capture shock waves in hydrodynamics. This artificial viscosity typically
-produces more dissipation than is needed to smooth shocks, incorrectly  smears 
-contact discontinuities, and can overwhelm fluid turbulence. 
-Several studies have proposed highly tuned versions of artificial viscosity,
-turning on and off near shocks or other troublesome wave features. 
+The classical smoothed particle hydrodynamics (SPH) method employs artificial viscosity to properly capture shock waves in hydrodynamics. This artificial viscosity typically produces more dissipation than is needed to smooth shocks, incorrectly smears contact discontinuities, and can overwhelm fluid turbulence. 
+Several studies have proposed highly tuned versions of artificial viscosity, turning on and off near shocks or other troublesome wave features. 
 Unfortunately these schemes usually produce more dissipation than is appropriate.
-A different kind of solver adapts Godunov\rq{}s idea of solving local Riemann problems 
-as building blocks for a numerical SPH solver. Of course a first order Godunov solver still introduces an effective numerical diffusion that can infect the entire numerical solution.
-We propose a novel SPH scheme that combines an approximate
- version of Glimm\rq{}s Random Choice method (RCM)
-with SPH. RCM properly resolves and then samples all hydrodynamic waves, and
-introduces no numerical diffusion into a simulation. Our version approximately resolves
-hydrodynamic waves, and samples the approximate solution.
+A different kind of solver adapts Godunov\rq{}s idea of solving local Riemann problems as building blocks for a numerical SPH solver. Of course a first order Godunov solver still introduces an effective numerical diffusion that can infect the entire numerical solution.
+We propose a novel SPH scheme that combines an approximate version of Glimm\rq{}s Random Choice method (RCM) with SPH. RCM properly resolves and then samples all hydrodynamic waves, and introduces no numerical diffusion into a simulation. Our version approximately resolves hydrodynamic waves, and samples the approximate solution.
 We test this method on standard one dimensional shock tube problems.
-Our ultimate goal is to apply this method to jet flow. Because of the high shear rate
-in this application, we introduce a highly tuned eddy viscosity that is applied only near 
-the shear surface.  The combination of the SPH and RCM together with a shear viscosity
-produces nicely resolved jet profiles.
+Our ultimate goal is to apply this method to jet flow. Because of the high shear rate in this application, we introduce a highly tuned eddy viscosity that is applied only near the shear surface. The combination of the SPH and RCM together with a shear viscosity produces nicely resolved jet profiles.
 
 \end{abstract}
 \begin{keyword}
@@ -80,77 +68,26 @@ Smoothed Particle Hydrodynamics (SPH), Random Choice Method (RCM), Riemann Solve
 \linenumbers
 \section{Introduction}
 Smoothed particle hydrodynamics (SPH) \citep{gingold1977smoothed,lucy1977numerical} is a mesh-free particle method based on a Lagrangian formulation of the governing equations of  motion.
-SPH has been widely applied to different areas in engineering and science. As
-should be expected, SPH possesses certain advantages and certain disadvantages relative to finite difference and finite element solvers. Principally, as a Lagrangian solver SPH conserves mass 
-exactly. 
-In addition, because of its formulation SPH automatically concentrates numerical effort in regions of
-high density and adapts to  arbitrary geometries. On the other hand, 
-SPH has difficulty capturing shock waves and contact discontinuities. To overcome numerical
-oscillations at discontinuities, classical SPH introduces
-an artificial viscosity term. At it is most often used, when two SPH particles
-are approaching, a von Neumann type viscosity is introduced
+SPH has been widely applied to different areas in engineering and science. As should be expected, SPH possesses certain advantages and certain disadvantages relative to finite difference and finite element solvers. Principally, as a Lagrangian solver, SPH conserves mass exactly. 
+In addition, because of its formulation SPH automatically concentrates numerical effort in regions of high density and adapts to arbitrary geometries. On the other hand, 
+SPH has difficulty capturing shock waves and contact discontinuities. To overcome numerical oscillations at discontinuities, classical SPH introduces an artificial viscosity term. As it is most often used, when two SPH particles are approaching, a von Neumann type viscosity is introduced
 \citep{monaghan1983shock, monaghan1997sph,klapp2012strong}. 
-This kind of viscosity, however, 
- usually provides more dissipation  than is truly needed at a discontinuity, and the excess
- dissipation ultimately
- corrupts the entire computation. Various methods have been introduced to tune 
- the artificial viscosity, turning it on and off for particular wave features. However, 
- tuning switches cannot properly accommodate every kind of wave that might arise, 
- and 
- spurious effects and unphysical damping persist (see, for example, \citet{borgani2012hydrodynamic,flebbe1994smoothed,morris1997switch, dolag2005turbulent,cullen2010inviscid,sigalotti2008adaptive,puri2014comparison}).
+This kind of viscosity, however, usually provides more dissipation than is truly needed at a discontinuity, and the excess dissipation ultimately corrupts the entire computation. Various methods have been introduced to tune the artificial viscosity, turning it on and off for particular wave features. However, tuning switches cannot properly accommodate every kind of wave that might arise, and spurious effects and unphysical damping persist (see, for example, \cite{borgani2012hydrodynamic,flebbe1994smoothed,morris1997switch, dolag2005turbulent,cullen2010inviscid,sigalotti2008adaptive,puri2014comparison}).
  
-To overcome troublesome oscillations, \cite{inutsuka2002reformulation} and later \cite{cha2003implementations} formulated an SPH scheme that uses Riemann problems to 
-resolve the interactions of particles. This Godunov-SPH (GSPH) method can resolve shocks and pressure 
-oscillations without additional
-artificial viscosity 
- \citep{inutsuka2002reformulation, cha2003implementations,iwasaki2011smoothed, puri2014approximate,borgani2012hydrodynamic}. It has also been shown to introduce less damping in turbulent mixing \citep{cha2010kelvin, borgani2012hydrodynamic} than standard SPH. 
+To overcome troublesome oscillations, \citet{inutsuka2002reformulation} and later \citet{cha2003implementations} formulated an SPH scheme that uses Riemann problems to resolve the interactions of particles. This Godunov-SPH (GSPH) method can resolve shocks and pressure oscillations without additional artificial viscosity \citep{inutsuka2002reformulation, cha2003implementations,iwasaki2011smoothed, puri2014approximate,borgani2012hydrodynamic}. It has also been shown to introduce less damping in turbulent mixing \citep{cha2010kelvin, borgani2012hydrodynamic} than standard SPH. 
 However, the dissipation introduced by GSPH is still larger than physically relevant, to the point
-of inhibiting the development of the Kelvin-Helmholtz instability under certain conditions
- \citep{borgani2012hydrodynamic}.
+of inhibiting the development of the Kelvin-Helmholtz instability under certain conditions \citep{borgani2012hydrodynamic}.
 
-The Godunov approach to solving Riemann problems in the context of numerical methods for conservation laws is to 
-integrate the Riemann problem solution over a spatial interval of interest. A different approach is given by
-the 
-random choice method (RCM) was introduced by \citet{glimm1965solutions} for the construction of solutions of systems of nonlinear hyperbolic conservation laws. The RCM probabilistically samples the
-Riemann problem solution in each interval, and thus introduces no viscosity whatsoever. Because this
-sampling interrogates the exact Riemann problem solution, no over- or under-shoots are introduced,
-so, irrespective of the absence of viscosity, no non-physical oscillations are introduced either.
+The Godunov approach to solving Riemann problems in the context of numerical methods for conservation laws is to integrate the Riemann problem solution over a spatial interval of interest. A different approach is given by the random choice method (RCM) was introduced by \citet{glimm1965solutions} for the construction of solutions of systems of nonlinear hyperbolic conservation laws. The RCM probabilistically samples the Riemann problem solution in each interval, and thus introduces no viscosity whatsoever. Because this sampling interrogates the exact Riemann problem solution, no over- or under-shoots are introduced, so, irrespective of the absence of viscosity, no nonphysical oscillations are introduced either.
 
 
-\citet{chorin1976random} developed the RCM into a practical computational method for solutions of the Euler equations in one space dimension.
-This approach was later extended to two dimensions \cite{chorinporousmedium}. Others
-further refined the random choice method \citep{sod1977numerical,concus1979numerical,colella1982glimm, freistuhler1992numerical,toro2013riemann}. 
-%This need to be proven ---> But at least, if the good property of preserving true discontinuity is still valid in 1D shock tube problem, it should be preserved in multiple-dimensional implementations. Because in current framework of RSPH, no matter what is the dimension of the problem, the techniques is only implemented in a one-dimensional scenario.
-%
-Later, Harten and Lax \cite{hartenlax} proposed approximately solving a Riemann problem based 
-on a finite difference scheme, and sampling this approximate solution. Our approach here 
-is based on the Harten-Lax proposal. 
-We introduce a new method which we dub RSPH, by randomly sampling the interaction
-of pairs of SPH particles. 
-This scheme produces dissipation-free solutions, as does classical RCM, but for a Lagrangian 
-system.
- Because the 
-interaction of SPH particles are inherently one-dimensional, the RCM framework
-is straightforward to implement.
-We test this RSPH idea first on classical shock tube problems, where we can compute very accurate
-solutions.
-We then implement RSPH for a three-dimensional free jet flow simulation, a prototype for
-our ultimate goal of simulating a
-Plinian volcanic eruption.
+\citet{chorin1976random} developed the RCM into a practical computational method for solutions of the Euler equations in one space dimension. This approach was later extended to two dimensions \cite{chorinporousmedium}. Others further refined the random choice method \citep{sod1977numerical,concus1979numerical,colella1982glimm, freistuhler1992numerical,toro2013riemann}. 
 
-%To summarize, RSPH has the following advantages over standard SPH:
-%\begin{itemize}
-%\item RSPH is able to capture discontinuities with less smearing.
-%\item The RSPH is able to adaptively adjust equivalent artificial viscosity coefficients, assigning larger artificial viscosity coefficients around the shock and small artificial viscosity coefficients otherwhere.
-%\item RSPH is able to alleviate pressure ``wiggle" at the contact discontinuity, a common issue in classical SPH.
-%\end{itemize}
+Later, Harten and Lax \cite{hartenlax} proposed approximately solving a Riemann problem based on a finite difference scheme, and sampling this approximate solution. Our approach here is based on the Harten-Lax proposal. We introduce a new method which we dub RSPH, by randomly sampling the interaction of pairs of SPH particles. This scheme produces dissipation-free solutions, as does classical RCM, but for a Lagrangian system. Because the interaction of SPH particles is inherently one-dimensional, the RCM framework is straightforward to implement. We test this RSPH idea first on classical shock tube problems, where we can compute very accurate solutions.
+We then implement RSPH for a three-dimensional free jet flow simulation, a prototype for our ultimate goal of simulating a Plinian volcanic eruption.
 
-Section \ref{sph} provides a brief review of standard SPH, and shows how the
-GSPH method is defined in section \ref{sec:GSPH-method}. The RSPH method is defined in Section \ref{rsph}.
-One dimensional tests are shown in Section \ref{tests}, followed by the jet flow
-example in Sec. \ref{jet}. 
-Other applications and limitations  of RSPH are discussed in Section \ref{discussion}
-
+Section \ref{standard-sph} provides a brief review of standard SPH. Section \ref{sec:GSPH-method} shows how the GSPH method is defined. The RSPH method is defined in Section \ref{sec:RSPH-method}.
+One dimensional tests are shown in Section \ref{numericaltests}, followed by the jet flow example in Section \ref{jet}. Other applications and limitations of RSPH are discussed in Section \ref{discussion}
 
 \section{SPH Formulations} \label{sph}
 Throughout this paper we will be concerned with solving the Euler equations, written as
@@ -160,60 +97,48 @@ Throughout this paper we will be concerned with solving the Euler equations, wri
 \dfrac{\partial \rho E}{\partial t} + \nabla \cdot \left[\left(\rho E + p \right)\textbf{v}\right] = 0 \label{eq:gov-cs-e}
 \end{align}
 Here $\rho$ is the density, $\textbf{v}$ is the velocity, $\textbf{I}$ is a unit tensor.
-$E = e + K $ is the total energy which is a sum of a 
-kinetic energy $K$ and an internal energy $e$.
-The system of equations is closed by the equation of state  for an idea gas
+$E = e + K $ is the total energy which is a sum of a kinetic energy $K$ and an internal energy $e$.
+The system of equations is closed by the equation of state for an idea gas
 \begin{equation}
 p = \left(\gamma - 1\right)\rho e \label{eq:EOS}
 \end{equation}
 with $\gamma=1.4$.
 
-SPH is a Lagrangian scheme, so we rewrite the governing equations  as
+SPH is a Lagrangian scheme, so we rewrite the governing equations as
 \begin{align}   %\label{eq:lagrangian}
 \dfrac{D \rho}{D t} + \rho \nabla \cdot \textbf{v} = 0 \label{eq:gov-nc-rho}\\
 \dfrac{D \textbf{v}}{D t} + \dfrac{\nabla P}{\rho} =0 \label{eq:gov-nc-v}\\
 \dfrac{D e}{D t} + \dfrac{P \nabla \cdot \textbf{v}}{\rho} = 0 \label{eq:gov-nc-e}
 \end{align}
-In this formulation we have written the material derivative  as 
-$\frac{D A}{Dt} = \frac{\partial A}{\partial t} + \textbf{v} \cdot \nabla A$) for a conserved variable $A$.
+In this formulation we have written the material derivative as 
+$\frac{D A}{Dt} = \frac{\partial A}{\partial t} + \textbf{v} \cdot \nabla A$ for a conserved variable $A$.
 
-%\cutet{puri2014comparison} propose an addition of an artificial heating term to the GSPH scheme to eliminate unphysical spikes in the thermal energy at the contact discontinuity.  --> It is worthwhile to check whether RSPH is able to avoid this phenomena without using his techniques.
-%Another issue of RCM: the very desirable properties of RCM: no diffusive errors from spatial averaging do not seem to persist for flows in two space dimensions. For two dimensional steady supersonic flow, one of the space variables can be treated as a time-like one and RCM can be applied in a way similar to that for one-dimensional unsteady flow.
-%--Then what about RSPH?
-
-\subsection{Standard SPH}
-In the classical SPH formulation a fluid is divided into   a number of particles whose 
-location is updated at every time step. An approximation to the field variables (velocity, density and pressure) is obtained by interpolation of particle quantities using  a kernel.
-We will only consider kernel functions with  compact support. Derivatives of variables are 
-converted into derivatives of the kernel function, and different formulations of the
-derivatives can be shown to possess various properties; see 
- \citep{monaghan1992smoothed,monaghan2005smoothed,liu2010smoothed, price2012smoothed} for details.
- Thus the density due to particle $a$ can be written as a sum
- $<\rho_a> = \sum_b m_b w_{ab} \left(h\right) \label{eq:ns-sph-d}$, where 
- where $m_b$ is the  mass of the $b^{th}$ SPH particle and $w_{ab}$ is 
- the kernel interpolating between 
- particles $a$ and $b$, with a kernel smoothing length $h$. 
- Particle position is updated at every time step according to  a simple advection
+\subsection{Standard SPH} \label{standard-sph}
+In the classical SPH formulation a fluid is divided into a number of particles whose location is updated at every time step. An approximation to the field variables (velocity, density and pressure) is obtained by interpolation of particle quantities using a kernel.
+We will only consider kernel functions with compact support. Derivatives of variables are converted into derivatives of the kernel function, and different formulations of the derivatives can be shown to possess various properties; see \citep{monaghan1992smoothed,monaghan2005smoothed,liu2010smoothed, price2012smoothed} for details. Thus the density due to particle $a$ can be written as a sum
+\begin{equation}
+<\rho_a> = \sum_b m_b w_{ab} \left(h\right) \label{eq:ns-sph-d}
+\end{equation}
+where $m_b$ is the  mass of the $b^{th}$ SPH particle and $w_{ab}$ is the kernel interpolating between particles $a$ and $b$, with a kernel smoothing length $h$. Particle position is updated at every time step according to  a simple advection
 \begin{equation}
 \left\langle\dfrac{d \textbf{x}_a}{dt}\right\rangle = \textbf{v}_a \label{eq:SPH-update-pos}
 \end{equation}
 
- Using this framework, derivative terms in (\ref{eq:gov-nc-rho})--(\ref{eq:gov-nc-e}) are written 
+Using this framework, derivative terms in (\ref{eq:gov-nc-rho})--(\ref{eq:gov-nc-e}) are written 
 \begin{align}
 \left\langle\dfrac{d \textbf{v}_a}{d t}\right\rangle = -\sum_b m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \nabla_a w_{a b}\left(h\right) \label{eq:ns-sph-v} \\
 \left\langle\dfrac{d e_a}{d t}\right\rangle=
  0.5\sum_b m_b \textbf{v}_{a b}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \cdot \nabla_a w_{a b}\left(h\right) \label{eq:ns-sph-e}
 \end{align}
-Here $\textbf{v}_{a b} = \textbf{v}_a - \textbf{v}_b$, the smoothing length $h$ 
-is taken as $h=\frac{h_a + h_b}{2}$, and $\Pi$ is an artificial viscosity term.
+Here $\textbf{v}_{a b} = \textbf{v}_a - \textbf{v}_b$, the smoothing length $h$ is taken as $h=\frac{h_a + h_b}{2}$, and $\Pi$ is an artificial viscosity term.
 One of commonly used models of artificial viscosity \citep{monaghan1983shock} is:
 \begin{equation}
-\Pi_{ab}=- \frac{\nu}{\bar{\rho}_{ab}} \dfrac{ \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2}
+\Pi_{ab}=- \frac{\nu_{ab}}{\bar{\rho}_{ab}} \dfrac{ \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2}
 \label{eq:art-vis-original}
 \end{equation}
-where the coefficient $\nu$ is defined as
+where the coefficient $\nu_{ab}$ is defined as
 \begin{equation}
-\nu = \alpha \bar{h}_{ab} \bar{c}_{ab}
+\nu_{ab} = \alpha h \bar{c}_{ab}
 \end{equation}
 with
 \begin{align}
@@ -221,9 +146,8 @@ with
 \bar{\rho}_{ab} = \dfrac{\rho_a + \rho_b}{2} \\
 \textbf{x}_{ab}=\textbf{x}_a-\textbf{x}_b
 \end{align}
-This form of the artificial viscosity  is a Galilean invariant and vanishes for rigid rotation. It produces a repulsive force between two particles when they are approaching each other and an attractive force when they are receding from each other.
-Later,  Monaghan\citep{monaghan1992smoothed} added terms to the viscosity,
-obtaining the form we will use in computations below:
+This form of the artificial viscosity is a Galilean invariant and vanishes for rigid rotation. It produces a repulsive force between two particles when they are approaching each other and an attractive force when they are receding from each other.
+Later, Monaghan\citep{monaghan1992smoothed} added terms to the viscosity, obtaining the form we will use in computations below:
 \begin{equation}
 \Pi_{ab}^{\beta} = 
 \begin{cases} 
@@ -236,17 +160,11 @@ where
 \begin{equation}
 \mu_{ab} = \dfrac{h \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2} 
 \end{equation}
-%$\alpha$ and $\beta$ are two parameters that are free to be adjusted for each case. 
-Here $\alpha$ and $\beta$ are free parameters that are adjusted as needed. 
-\citep{monaghan2005smoothed}  recommends $\alpha = 1$ and $\beta = 2$ as
-good fits for many computations.
- $\eta$ is usually taken as 0.1.
+Here $\alpha$ and $\beta$ are free parameters that are adjusted as needed. \citet{monaghan2005smoothed} recommends $\alpha = 1$ and $\beta = 2$ as good fits for many computations. $\eta$ is usually taken as 0.1.
 
-In Eq. (\ref{eq:ns-sph-d}) - Eq. (\ref{eq:ns-sph-e}), $w_{a b}\left(h\right)$ is the kernel
-weighting function, expressed more completely as
- $w\left(\textbf{x}_a - \textbf{x}_b, h\right)$. 
-Many  weighting functions have been proposed, but, for simplicity,  we 
-employ a truncated Gaussian in $d$ dimensions
+In Eq. (\ref{eq:ns-sph-v}) - Eq. (\ref{eq:ns-sph-e}), $w_{a b}\left(h\right)$ is the kernel weighting function, expressed more completely as
+$w\left(\textbf{x}_a - \textbf{x}_b, h\right)$. 
+Many weighting functions have been proposed, but, for simplicity, we employ a truncated Gaussian in $d$ dimensions
 \begin{equation}
 w\left(\textbf{x} - \textbf{x} \prime, h \right) = 
 \begin{cases} 
@@ -265,21 +183,13 @@ Derivatives of $w$ above can be written as
 \label{eq:SPH-kernel-gradient}
 \end{equation}
 
-To complete our specification of the classical SPH scheme we must decide on the time 
-integration method. A forward Euler step with sufficiently small timestep suffices for purposes of the exposition
-here.
+To complete our specification of the classical SPH scheme we must decide on the time integration method. A forward Euler step with sufficiently small time step suffices for purposes of the exposition here.
 
 \subsection{GSPH} \label{sec:GSPH-method}
-Inutsuka \cite{inutsuka2002reformulation} recognized that the Godunov approach of 
-solving local Riemann problems might obviate the need for artificial viscosity.  This sub-section 
-describes this GSPH method. Our discussion  anticipates that of
-Section \ref{sec:RSPH-method}, and sub-section \ref{sec:Picking-up-single-state}
- in particular, which contain details that are only briefly
+Inutsuka \cite{inutsuka2002reformulation} recognized that the Godunov approach of solving local Riemann problems might obviate the need for artificial viscosity. This sub-section describes this GSPH method. Our discussion  anticipates that of Section \ref{sec:RSPH-method}, and sub-section \ref{sec:Picking-up-single-state} in particular, which contain details that are only briefly
 introduced here.
 
-The density continues to be updated based on particle location from Eq. (\ref{eq:ns-sph-d}).
-However the update for the momentum and energy equations differs fundamentally from the
-classical SPH approach. We begin by making two observations, the first regarding the density
+The density continues to be updated based on particle location from Eq. (\ref{eq:ns-sph-d}). However the update for the momentum and energy equations differs fundamentally from the classical SPH approach. We begin by making two observations, the first regarding the density
 \begin{equation}
 1=\sum_{b} \frac{m_{b}}{\rho(\textbf{x})}w(\textbf{x} - \textbf{x}_{b}, h)
 \label{eq:GSPH-basic1}
@@ -289,8 +199,7 @@ and the second regarding the derivative
 0=\sum_{b} m_{b} \nabla \frac{w(\textbf{x} - \textbf{x}_{b}, h)}{\rho(\textbf{x})}
 \label{eq:GSPH-basic2}
 \end{equation}
-We re-formulate the equations of motion to exploit a certain symmetry. A
-lengthy algebraic manipulation \citep{inutsuka2002reformulation,iwasaki2011smoothed} leads to:
+We re-formulate the equations of motion to exploit certain symmetry. A lengthy algebraic manipulation \citep{inutsuka2002reformulation,iwasaki2011smoothed} leads to:
 \begin{equation}
 \ddot{\textbf{x}}_{a} = <\dfrac{d \textbf{v}_{a}}{dt}>= -\sum_{b} m_{b} p_{a b}^{\ast} \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-v-simple-form}
@@ -299,13 +208,7 @@ lengthy algebraic manipulation \citep{inutsuka2002reformulation,iwasaki2011smoot
 <\dfrac{d e_{a}}{dt}>= - \sum_{b} m_{b} p_{a b}^{\ast} [\textbf{v}_{a b}^{\ast} - \dot{\textbf{x}}_{a}^{\ast}] \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-e-simple-form}
 \end{equation}
-where, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$ are intermediate states derived from
-the interaction of particles $a$ and $b$. Inutsuka proposed this intermediate $\ast$ state 
-be defined as the stationary state of the solution to a local 1-dimensional Riemann for particles
-$a$ and $b$.  That is, one rotates coordinates, reducing the particle interaction to  
-one space dimension along the line connecting particle $a$ and particle $b$. Using the
-momentum and energy of the two particles as 
-left and right states, one solves the Riemann problem for the starred quantities.
+where, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$ are intermediate states derived from the interaction of particles $a$ and $b$. Inutsuka proposed this intermediate $\ast$ state be defined as the stationary state of the solution to a local 1-dimensional Riemann for particles $a$ and $b$.  That is, one rotates coordinates, reducing the particle interaction to one space dimension along the line connecting particle $a$ and particle $b$. Using the momentum and energy of the two particles as left and right states, one solves the Riemann problem for the starred quantities.
 
 Having solved the local Riemann problem, 
 $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
@@ -314,44 +217,26 @@ $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
 \end{equation}
 which then updates particle location.
 
-Of course solving the local Riemann problem for every pair of interacting particles is a 
-computationally intensive process. Further, from this complex Riemann solution
-only the stationary state is used. \cite{hll} provided a framework for calculating approximate
-solutions to local Riemann problems, and influences how
-we propose
-to approximate the  Riemann solution, using ideas from the RCM and \cite{hartenlax}.
-
+Of course solving the local Riemann problem for every pair of interacting particles is a computationally intensive process. Further, from this complex Riemann solution only the stationary state is used. \citet{hll} provided a framework for calculating approximate solutions to local Riemann problems, and influences how we propose to approximate the  Riemann solution, using ideas from the RCM and \citet{hartenlax}.
 
 \section{The Random Choice SPH method(RSPH)} \label{sec:RSPH-method}
-In GSPH,  the starred state is the solution to a local Riemann problem at a location
-determined by a weighted average of the specific volumes associated with
- the two participating particles. 
-Instead of calculating a full solution to the Riemann problem, approximate solvers such as
-the Roe method or HLLC,
-might be used. 
-We propose sampling the (approximate) Riemann solution as in the Random choice method, 
-where the approximate solution is given by the HLLC construction (see \cite{toro1994restoration}).
-
-
+In GSPH, the starred state is the solution to a local Riemann problem at a location determined by a weighted average of the specific volumes associated with the two participating particles. 
+Instead of calculating a full solution to the Riemann problem, approximate solvers such as the Roe method or HLLC, might be used. 
+We propose sampling the (approximate) Riemann solution as in the Random choice method, where the approximate solution is given by the HLLC construction (see \cite{toro1994restoration}).
 
 \subsection{The local 1D Riemann problem} \label{sec:RP-construction}
-The starred state is the solution to a local 1-dimensional Riemann problem.
-Given particles $a$ and $b$, rotate coordinates to establish a single spatial dimension
-along the line connecting the two particles, with direction 
+The starred state is the solution to a local 1-dimensional Riemann problem. Given particles $a$ and $b$, rotate coordinates to establish a single spatial dimension along the line connecting the two particles, with direction 
 \begin{equation}
 \hat{r}_{a b}= \frac{\textbf{x}_{a} - \textbf{x}_{ b}}{|\textbf{x}_{a} - \textbf{x}_{ b}|}
 \end{equation}. 
-Let the midpoint of this line segment
-be the origin of the coordinate system. 
-Project variables into this local coordinate system:
+Let the midpoint of this line segment be the origin of the coordinate system. Project variables into this local coordinate system:
 \begin{equation}
 u_{a}= \textbf{v}_{a} \cdot \hat{r}_{a b}
 ~~~~~~~~~~
 u_{b}= \textbf{v}_{b} \cdot \hat{r}_{a b}
 \label{eq:RP-project-2-local}
 \end{equation}
-Piecewise constant left and right states are then given by the projected 
-variables on either side of the origin
+Piecewise constant left and right states are then given by the projected variables on either side of the origin
 \begin{eqnarray}
 \rho_L = \rho_b 
 \label{eq:Riemann-Prob-define-L-rho} \\
@@ -368,23 +253,13 @@ u_R = u_a
 p_R = p_a 
 \label{eq:Riemann-Prob-define-R-p}
 \end{eqnarray}
-[Aside: Cha \cite{cha2003implementations} proposed a second order accurate 
-GSPH method by using
-a piecewise linear interpolation of the states. We do not pursue higher accuracy here,
-although the idea is straightforward to consider.]
+[Aside: Cha \cite{cha2003implementations} proposed a second order accurate GSPH method by using
+a piecewise linear interpolation of the states. We do not pursue higher accuracy here, although the idea is straightforward to consider.]
 
 \subsection{Selecting the star state} \label{sec:Picking-up-single-state}
-Consider then the spatial interval between $\textbf{x}_{a}$ and $\textbf{x}_{ b}$ and a short time interval
-of size $\Delta t$. Recall also that, by convention, we assign the (spatial) origin to
-be at the midpoint between particles $a$ and $b$, 
-$\frac{(\textbf{x}_{a}| + \textbf{x}_{ b})}{2}$.
-Given the piecewise constant
- data (Eq. (\ref{eq:Riemann-Prob-define-L-rho}) - Eq. (\ref{eq:Riemann-Prob-define-R-p})), solve the local Riemann problem. 
- At time $\Delta t$ the solution defines a state composed of constants,
-rarefaction waves, contact discontinuities, and shock discontinuities. 
-Now choose a random number $\epsilon \in [-1,1]$, and set 
-$p_{a b}^{\ast}$ and $\textbf{u}^{\ast}$ to be the Riemann problem solution
-at the location 
+Consider then the spatial interval between $\textbf{x}_{a}$ and $\textbf{x}_{ b}$ and a short time interval of size $\Delta t$. Recall also that, by convention, we assign the (spatial) origin to be at the midpoint between particles $a$ and $b$ $\frac{(\textbf{x}_{a}| + \textbf{x}_{ b})}{2}$.
+Given the piecewise constant data (Eq. (\ref{eq:Riemann-Prob-define-L-rho}) - Eq. (\ref{eq:Riemann-Prob-define-R-p})), solve the local Riemann problem. At time $\Delta t$ the solution defines a state composed of constants, rarefaction waves, contact discontinuities, and shock discontinuities. 
+Now choose a random number $\epsilon \in [-1,1]$, and set $p_{a b}^{\ast}$ and $\textbf{u}^{\ast}$ to be the Riemann problem solution at the location 
 $$
 \epsilon |\textbf{x}_{a}| - \textbf{x}_{ b}|
 $$
@@ -397,134 +272,42 @@ Figure \ref{fig:pick-up-state-GSPH-RSPH} shows the starred state for GSPH and RS
     \center
 	\includegraphics[width=0.5 \textwidth]{./Figures/RSPH-GSPH}
     \caption{Evaluating of the starred state for  RSPH and GSPH implementations.
-Particles are located at $\textbf{x}_{a} $ and $ \textbf{x}_{ b}$, and the local Riemann problem is defined by the constant states $(u, p)_a$ and $(u,p)_b$.
-  The horizontal bold solid line at time $\Delta t$ indicates the interval on which to
-  evaluate the solution of the Riemann problem.
-  The dark ellipse is an example sample point of RSPH with the random number. The white ellipse indicates the stationary state, which is the starred state in GSPH.  }
+Particles are located at $\textbf{x}_{a} $ and $ \textbf{x}_{ b}$, and the local Riemann problem is defined by the constant states $(u, p)_a$ and $(u,p)_b$. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The white ellipse indicates the stationary state, which is the starred state in GSPH.}
     \label{fig:pick-up-state-GSPH-RSPH}
 \end{figure}
 
-The starred state $(\textbf{u}^{\ast},  p^{\ast})$ must now be projected back into the global coordinate system,
-to define  $(\textbf{v}^{\ast},  p^{\ast})$.
+The starred state $(u^{\ast},  p^{\ast})$ must now be projected back into the global coordinate system, to define  $(\textbf{v}^{\ast},  p^{\ast})$.
 
-%\subsubsection{Binary Van Der Corput pseudo-random numbers} \label{sec:Van-Der-Corput-random-num}
- We mention that, instead of selecting a uniformly distributed random number $\epsilon$, 
- we follow \citet{colella1982glimm} and
- adopt the van der Corput pseudo-random number sequence \citep{hammersley2013monte}.
-
-%A general Van Der Corupt pseudo-random number sequence depends on two parameters $x_1$ and $x_2$ with $x_1 > x_2 > 0$, both are integer and relatively prime. The sequence is formally defined as \citep{hammersley2013monte}:
-%\begin{equation}
-%\epsilon ^n = \sum_{i=0}^{s} H_i x_1^{-(i+1)}
-%\label{eq:Van-Der-Corput-pseudo-random-num}
-%\end{equation}
-%where
-%\begin{equation}
-%H_i = x_2 a_i(mod \ x_1)
-%\label{eq:Van-Der-Corput-pseudo-random-num-Hi}
-%\end{equation} 
-%\begin{equation}
-%n = \sum_{i=0}^{s} a_i x_1^i
-%\label{eq:Van-Der-Corput-pseudo-random-num-n}
-%\end{equation} 
-%Equation (\ref{eq:Van-Der-Corput-pseudo-random-num-n}) gives the binary expansion of n when we take $x_1$ as $2$. For example,
-%\begin{equation}
-%5=1 \times 2^0 + 0 \times 2^1 + 1 \times 2^2
-%\end{equation}
-%with $m=2$. 
-
-%The next stage is to find the coefficient $H_i$ according to Eq. (\ref{eq:Van-Der-Corput-pseudo-random-num-Hi}). If we take $x_2 = 1$, for which case, $H_i = a_i, \ \forall i$. Having $H_i$, $x_1$ and $s$ ready, the random number $\epsilon ^n $ can be easily obtained according to Eq. (\ref{eq:Van-Der-Corput-pseudo-random-num}).
-%We take $x_1=2$  and $x_2 =1$ in this paper. Other combinations of $x_1$ and $x_2$ were also discussed by \citet{toro2013riemann}. A desirable statistical property of the sequence $\{\epsilon ^n\}$ is that $\{\epsilon ^n\}$ be uniformly distributed over $[0,1]$.
- 
-%The arithmetic mean and the standard deviation of 200 binary Van Der Corput pseudo-random numbers are $0.49459$ and $0.28885$. The chi-square statistic (see \citet{toro2013riemann} for its calculation) $\chi_{sq}$ is $1.0000$. 
-%The binary Van Der Corput pseudo-random numbers are generated offline to save computational time.
-
+We mention that, instead of selecting a uniformly distributed random number $\epsilon$, we follow \citet{colella1982glimm} and adopt the Van Der Corput pseudo-random number sequence \citep{hammersley2013monte}.
 
 \subsection{Non-iterative Riemann solvers} \label{sec:RP-solver}
-Solving local Riemann problems exactly usually involves separating 
-several cases of wave patterns and iteratively solving a small system of ordinary differential
-equations (for rarefaction waves) and a small set of nonlinear equations (the Rankine-Hugoniot equations). Instead of running this lengthly process one can employ approximate Riemann solvers, that provide an approximate solution quickly. 
-There are many approximate Riemann solvers available 
-\citep{rider1994review, luo2004computation, puri2014approximate}. For purposes here
-we adopt the HLLC solver, which decomposes the Riemann solution into 3 waves, including a (possible) contact discontinuity
- \citet{toro1994restoration}. More specifically, we adopt the HLLC formulation proposed in \citet{luo2004computation}.
+Solving local Riemann problems exactly usually involves separating several cases of wave patterns and iteratively solving a small system of ordinary differential equations (for rarefaction waves) and a small set of nonlinear equations (the Rankine-Hugoniot equations). Instead of running this lengthy process one can employ approximate Riemann solvers, which provide an approximate solution quickly. There are many approximate Riemann solvers available \citep{rider1994review, luo2004computation, puri2014approximate}. For purposes here we adopt the HLLC solver, which decomposes the Riemann solution into 3 waves, including a (possible) contact discontinuity \cite{toro1994restoration}. More specifically, we adopt the HLLC formulation proposed by \citet{luo2004computation}.
  
- We mention that, in the numerical tests in Section \ref{numericaltests}, 
- the Roe solver is used for GSPH calculations.
-
-%Equation (\ref{eq:RP_solver_HLLC_u}) and (\ref{eq:RP_solver_HLLC_pu}) are the approximate solution to the local Riemann problem, written in term of $p$ and $pu$ as functions of local coordinate $q$.
-%\begin{equation}
-%    p_L & if \  S_L \Delta t> q \\
-%      \frac{S_M}{S_L - S_M}\left [ (S_L - \hat{u}_L) M_L + (\hat{p}- p_L) \right] + \hat{p} & if \  S_L \Delta t \leq q \leq S_M \Delta t \\
- %     \frac{S_M}{S_R - S_M}\left [ (S_R - \hat{u}_R) M_R + (\hat{p}- p_R) \right] + \hat{p} & if \  S_M \Delta t \leq q \leq S_R \Delta t \\
-%      p_R & if \  S_R \Delta t < q
-%\end{cases}
-%\label{eq:RP_solver_HLLC_u}
-%\end{equation}
-%\begin{equation}
-%(pu) \left( q \right)  =  \begin{cases} 
- %     p_L u_L& if \  S_L \Delta t > q \\
- %     \frac{S_M}{S_L - S_M}\left [ (S_L - \hat{u}_L) E_L + (\hat{p} S_M - p_L \hat{u}_L) \right] + (S_M - \hat{u}_{LR}) \hat{p} & if \  S_L \Delta t \leq q \leq S_M \Delta t \\
- %     \frac{S_M}{S_R - S_M}\left [ (S_R - \hat{u}_R) E_R + (\hat{p} S_M- p_R \hat{u}_R) \right] + (S_M + \hat{u}_{LR}) \hat{p} & if \ S_M \Delta t \leq q \leq S_R \Delta t\\
- %     p_R u_R & if \  S_R \Delta t < q
-%\end{cases}
-%\label{eq:RP_solver_HLLC_pu}
-%\end{equation}
-%where $\hat{u}_{LR}$ is the interface velocity and is taken as the Roe-averaged velocity on either side of the interface \citep{cheng2007high}. The quantities of $\hat{u}_R$ and $\hat{u}_L$ are velocities relative to the interface velocity.
-%\begin{equation}
-%\hat{p}= \rho_L (\hat{u}_L - S_L) (\hat{u}_L - S_M) + p_L
-%\end{equation}
-%Formulation to approximate the signal speeds $S_M$, $S_L$ and $S_R$ is given by Eq. (\ref{eq:RP-solver-HLLC-SM}) to (\ref{eq:RP-solver-HLLC-SR}).
-%\begin{eqnarray}
-%S_M= \frac{\rho_R \hat{u}_R (S_R - \hat{u}_R) - \rho_L \hat{u}_L (S_L - \hat{u}_L) + p_L - p_R}{\rho_R (S_R - \hat{u}_R) - \rho_L (S_L - \hat{u}_L)} \label{eq:RP-solver-HLLC-SM} \\
-%S_L = min (\hat{u}_L - c_L, -c_{LR}) \label{eq:RP-solver-HLLC-SL} \\
-%S_R = max (\hat{u}_R - c_R, c_{LR}) \label{eq:RP-solver-HLLC-SR}
-%\end{eqnarray}
-%where $c_{LR}$ is the relevant Roe averaged sound speed \citep{cheng2007high}. 
-
-%Besides HLLC, another 2-wave approximate Riemann solver, the Roe Riemann solver \citep{roe1981approximate}, is also adopted in GSPH.
-%Roe Riemann solver is proposed by \citet{roe1981approximate} to linearize the Euler equations and approxiamte the solution of non-linear system by a system of linear equations. The characteristic decomposition of the linearized Lagrangian flux and Jacobia matrices are used to write the flux. \citet{rider1994review} proposed an algebraic averaging of the Lagrangian variables, which is adopted in this work. Since Roe solver is only used in GSPH. We directly provide here the resulting starred values of the pressure and velocity \citep{puri2014approximate}: 
-%\begin{eqnarray}
-%u^{\ast} = \frac{1}{2} \left[ u_L + u_R - \frac{1}{C_{LR}} (p_R - p_L) \right] \label{eq:RP-solver-ROE-u} \\
-%p^{\ast} = \frac{1}{2}\left[ p_L + p_R - C_{LR} (u_R - u_L) \right] \label{eq:RP-solver-ROE-p}
-%\end{eqnarray}
-%Where $C_{LR}$ is the averaged Lagarangian sound speed at the interface.
-%\begin{equation}
-%C_{LR} = \sqrt{\gamma p_{LR} \rho_{LR}}
-%\end{equation}
-
-
-%\subsection{RSPH algorithm (the PESB algorithm)}
-%The Godunov's method is summarized as a REA (reconstruct, evolve, average) algorithm. Here we summarize the RSPH algorithm as a PESB (project, evolve, sample, back-project) algorithm.
+We mention that, in the numerical tests in Section \ref{numericaltests}, Both the HLLC solver and Roe solver are used for GSPH calculations.
 To summarize, our RSPH algorithm proceeds as follows:
 \begin{itemize}
-\item For each pair of particles, establish a local coordinate system whose axis joins the
-particles,
-and project the primitive variables onto this local coordinate system to define
-left and right states;
+\item For each pair of particles, establish a local coordinate system whose axis joins the particles,
+and project the primitive variables onto this local coordinate system to define left and right states;
 \item Solve this local Riemann problem approximately using a HLLC solver;
-\item Sample the solution using the van der Corput sequence,
-defining a state  $p^{\ast}, u^{\ast}$;
-\item Project $p^{\ast}, u^{\ast}$  back to the global coordinate system,
-to obtain $p^{\ast}$ and $\textbf{v}^{\ast}$;
+\item Sample the solution using the Van Der Corput sequence, defining a state  $p^{\ast}, u^{\ast}$;
+\item Project $p^{\ast}, u^{\ast}$  back to the global coordinate system, to obtain $p^{\ast}$ and $\textbf{v}^{\ast}$;
 \item Update the particle positions.
 \end{itemize}
 
 \section{Numerical tests} \label{numericaltests}
 We describe results from several numerical tests using SPH, RSPH and GSPH in this section.
-1D shock tube tests are used to compare standard SPH, GSPH and RSPH. Comprehensive shock tube simulations are also conducted to check the capacity of RSPH for different situations. In addition, order of accuracy is investigated for the 1D shock tube problem. 
-In the last subsection we describe a 3D free jet flow simulation with SPH, GSPH and RSPH to check equivalent overall dissipation introduced by each method.
+1D shock tube tests are used to compare standard SPH, GSPH and RSPH. Comprehensive shock tube simulations are also conducted to check the capacity of RSPH for different situations. In addition, order of accuracy is investigated for the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation with SPH, GSPH and RSPH to check equivalent overall dissipation introduced by each method.
 
-Six 1D simulations described here  are carried out:
+Six 1D simulations described here are carried out:
 \begin{itemize}% [1D Tests]
 \item Test 1 consists of a left rarefaction, a right traveling contact and a right shock. Density increases at down wind of contact wave. 
 \item Test 2 also consists of a left rarefaction, a right traveling contact and a right shock. Density decreases at down wind of contact wave. 
-\item Test 3 includes double expansion waves. The initial density are different at right and left hand side. 
+\item Test 3 includes double expansion waves. The initial density is different at right and left hand side. 
 \item Test 4 is a double shock tests with different initial density on the right side and left side.
 \item Test 5 and Test 6 are two extreme cases. Test 5 is a cavity flow while test 6 is a strong blast flow.
 \end{itemize}
 
-
-\begin{table}[htp]
+\begin{table}[H]
 \centering
       \caption{Overview of 1D shock tube tests}		
 	  \begin{tabular}{lrrrrrrrrrr}
@@ -543,7 +326,7 @@ Six 1D simulations described here  are carried out:
 \end{table}
 Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_parameters}, where, subscript $L$ refers left side and $R$ for right side. $m$ is particle mass, initial interval between adjacent particles are adjusted to guarantee equal particle mass. $t_f$ is the time to terminate simulation and plotting the results. Equal particle mass is assigned to all particles. The $x$ axis in all plots is normalized by time, that is $x/t_f$, in plots for shock tube tests results.
 \subsection{Comparison of RSPH with standard SPH and GSPH}
-\begin{figure}[htp]
+\begin{figure}[H]
     \centering
     \begin{minipage}{.495\textwidth}
         \centering a)
@@ -580,25 +363,14 @@ Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_para
 %        \centering h)
 %        \includegraphics[width=0.99 \textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-p-zoom}
 %    \end{minipage}%    
-    \caption{a),b) Simulation results of density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) show zoomed views.  For $\alpha=1$ and $\alpha=2$,numerical oscillations are completely suppressed though the shock is now smeared. $\alpha=0.25$ provided insufficient viscosity to suppress oscillations. Comparing  RSPH and SPH shows that RSPH is adaptive and more dissipative at the shock 
-    (comparable to $\alpha=1.0$ and $\alpha=2.0$) and less dissipative away from the shock (comparable to $\alpha=0.25$). %    
-%    
-%    For density distribution obtained by RSPH, the fluctuations are more obvious in the area away from shock than those calculated by SPH with $\alpha=0.2$, implying that RSPH introduces smaller artificial viscosity than SPH with $\alpha=0.2$ in the area far away from shock. However, fluctuations around shock is much more obvious for SPH with $\alpha=0.2$ than RSPH, implying that RSPH introduces larger artificial viscosity than ``$\alpha=0.2$" around shock. To summarize, the equivalent artificial viscosity in RSPH is adaptive. Similar conclusion can be drew from zoomed view of velocity. The third zoomed view shows different degrees of smearing at the shock. The larger the artificial viscosity, the less sharp the solution at the shock. Since ``$\alpha=0.2$" is sharper than ``RSPH" at the shock, ``$\alpha=0.2$" introduces less dissipation at the shock, which is consistent with information implied by zoomed view of density and velocity. SPH with $\alpha=1.0$ and $\alpha=2.0$ introduces more dissipation than ``RSPH" in the area around the shock. The last zoomed view shows pressure around the contact discontinuity. It shows that RSPH get rid of pressure ``wiggle" around the contact discontinuity.
+    \caption{a),b) Simulation results of density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) show zoomed views.  For $\alpha=1$ and $\alpha=2$, numerical oscillations are completely suppressed though the shock is now smeared. $\alpha=0.2$ provided insufficient viscosity to suppress oscillations. Comparing RSPH and SPH shows that RSPH is adaptive and more dissipative at the shock 
+    (comparable to $\alpha=1.0$ and $\alpha=2.0$) and less dissipative away from the shock (comparable to $\alpha=0.2$). % 
     }
     \label{fig:RCM-Sod-SPH-alf}
 \end{figure}
 
-\begin{figure}[htp]
+\begin{figure}[H]
     \centering
-%    \begin{minipage}{.495\textwidth}
-%        \centering a)
-%        \includegraphics[width=0.99 \textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-rho}
-%    \end{minipage}%
-%    \begin{minipage}{.495 \textwidth}
-%        \centering b)
-%        \includegraphics[width=0.99 \textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-v}
-%    \end{minipage}%
-%    \\
     \begin{minipage}{.495\textwidth}
         \centering a)
         \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-e}
@@ -608,15 +380,6 @@ Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_para
         \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-p}
     \end{minipage}% 
     \\
-%    \begin{minipage}{.495\textwidth}
-%        \centering a)
-%        \includegraphics[width=0.99 \textwidth, height=0.6\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom}
-%    \end{minipage}%
-%    \begin{minipage}{.495 \textwidth}
-%        \centering b)
-%        \includegraphics[width=0.99 \textwidth, height=0.6\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-v-zoom}
-%    \end{minipage}% 
-%    \\
     \begin{minipage}{.495 \textwidth}
         \centering c)
         \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-e-zoom}
@@ -626,25 +389,19 @@ Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_para
         \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-p-zoom}
     \end{minipage}%    
     \caption{
-    a),b) Simulation results of internal energy and pressure in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) show zoomed views.  For $\alpha=1$ and $\alpha=2$,numerical oscillations are completely suppressed though the shock is now smeared. $\alpha=0.25$ provided insufficient viscosity to suppress oscillations. Comparing  RSPH and SPH shows that RSPH is adaptive and more dissipative at the shock 
-    (comparable or better than $\alpha=1.0$ and $\alpha=2.0$) and less dissipative away from the shock (comparable to $\alpha=0.25$). d) shows pressure around the contact discontinuity. It shows that RSPH gets rid of the pressure ``wiggle" around the contact discontinuity.
-%
-%    Simulation results by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$. The last four figures are zoomed views. Almost no fluctuation is observed when $\alpha=1$ and $\alpha=2$, illustrating that numerical fluctuation is completely suppressed if artificial viscosity is large enough. For density distribution obtained by RSPH, the fluctuations are more obvious in the area away from shock than those calculated by SPH with $\alpha=0.2$, implying that RSPH introduces smaller artificial viscosity than SPH with $\alpha=0.2$ in the area far away from shock. However, fluctuations around shock is much more obvious for SPH with $\alpha=0.2$ than RSPH, implying that RSPH introduces larger artificial viscosity than ``$\alpha=0.2$" around shock. To summarize, the equivalent artificial viscosity in RSPH is adaptive. Similar conclusion can be drew from zoomed view of velocity. The third zoomed view shows different degrees of smearing at the shock. The larger the artificial viscosity, the less sharp the solution at the shock. Since ``$\alpha=0.2$" is sharper than ``RSPH" at the shock, ``$\alpha=0.2$" introduces less dissipation at the shock, which is consistent with information implied by zoomed view of density and velocity. SPH with $\alpha=1.0$ and $\alpha=2.0$ introduces more dissipation than ``RSPH" in the area around the shock. The last zoomed view shows pressure around the contact discontinuity. It shows that RSPH get rid of pressure ``wiggle" around the contact discontinuity.
-}
+    a),b) Simulation results of internal energy and pressure in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) show zoomed views.  For $\alpha=1$ and $\alpha=2$, numerical oscillations are completely suppressed though the shock is now smeared. $\alpha=0.2$ provided insufficient viscosity to suppress oscillations. Comparing RSPH and SPH shows that RSPH is adaptive and more dissipative at the shock 
+    (comparable or better than $\alpha=1.0$ and $\alpha=2.0$) and less dissipative away from the shock (comparable to $\alpha=0.2$). d) shows pressure around the contact discontinuity. It shows that RSPH gets rid of the pressure ``wiggle" around the contact discontinuity.}
     \label{fig:RCM-Sod-SPH-alf-zoom}
 \end{figure}
 
-
 Test 1 is simulated using standard SPH with different artificial viscosity coefficients, GSPH and RSPH. The comparison between RSPH and SPH using different artificial viscosity coefficients is shown in Fig. \ref{fig:RCM-Sod-SPH-alf} and \ref{fig:RCM-Sod-SPH-alf-zoom}. In all simulations, the artificial viscosity $\beta$ is set to be twice of $\alpha$. For example, for the test ``$SPH-\alpha=2$", $\beta=4$. Several interesting observation are made based on the comparison between SPH and RSPH. The effect of artificial viscosity is illustrated through comparison.
 First of all, dissipation (introduced by artificial viscosity in these tests) decays the numerical fluctuations. Numerical fluctuations are suppressed completely when large enough dissipation is introduced, for example, by using sufficiently large artificial viscosity coefficients ($\alpha=1,2$).
-%The mechanism for SPH to reduce (or completely get rid of) fluctuations should be completely different from that of new adaptive method of smoothing length. 
-%The new adaptive method, reduces the sources of such fluctuations.
-Secondly, the equivalent artificial viscosity  introduced by RSPH varies adaptively.
-As shown in Fig. \ref{fig:RCM-Sod-SPH-alf} and \ref{fig:RCM-Sod-SPH-alf-zoom}, RSPH assigns smaller artificial viscosity  (equivalent $\alpha$ much less then 0.2) at the area far away from shock and sufficiently large artificial viscosity coefficients (equivalent $\alpha$ is about 1.0) around the shock. So RSPH is actually more adaptive than SPH. This feature is very desirable not only because it could eliminate parameterization and hence user intervention associated with artificial viscosity coefficients but also because it avoids introducing excessive artificial viscosity when unnecessary.
+Secondly, the equivalent artificial viscosity introduced by RSPH varies adaptively.
+As shown in Fig. \ref{fig:RCM-Sod-SPH-alf} and \ref{fig:RCM-Sod-SPH-alf-zoom}, RSPH assigns smaller artificial viscosity  (equivalent $\alpha$ much less then 0.2) at the area far away from shock and sufficiently large artificial viscosity coefficients (equivalent $\alpha$ is about 1.0) around the shock. So RSPH is actually more adaptive than SPH. This feature is very desirable not only because it could eliminate parameterization and hence user intervention associated with artificial viscosity coefficients but also because it avoids introducing excess artificial viscosity.
 Thirdly, RSPH introduces less smearing of the shock discontinuity compared with SPH using most commonly adopted artificial viscosity coefficients ($\alpha=1.0$, $\beta=2.0$). Recall that RCM is able to resolve discontinuities as true discontinuity. RSPH, even though it still smears the discontinuity in some degree, introduces much less smearing.
 The last but not the least, the pressure ``wiggle" around contact discontinuity is completely eliminated by RSPH as seen in Fig. \ref{fig:RCM-Sod-SPH-alf-zoom}. It has been shown that thermal conduction is essential to mitigate the spurious pressure ``wiggle" at contact discontinuity in SPH \citep{monaghan1997sph, sigalotti2006shock, price2008modelling, price2012smoothed}. As for GSPH, it is reported that an implicit thermal conduction is introduced by Godunov's scheme and help suppress the anomaly \citep{puri2014approximate}. Even though, the ``wiggle" still visible in pressure distribution and velocity distribution of GSPH simulation results (for example, see figures in \citep{puri2014comparison}) and RSPH simulation results of other tests (see section \ref{sec:comprehensive-1d-tests}). ``Wiggle" in test 1, however, is completely eliminated by both GSPH and RSPH.
 
-\begin{figure}[htp]
+\begin{figure}[H]
     \centering
     \begin{minipage}{.495\textwidth}
         \centering
@@ -685,20 +442,17 @@ The last but not the least, the pressure ``wiggle" around contact discontinuity 
     \label{fig:RCM-Sod-GSPH}
 \end{figure}
 
-Zoomed views in Gig. \ref{fig:RCM-Sod-GSPH} compare GSPH andRSPH and demonstrate that RSPH introduces less but sufficient dissipation compared with GSPH. The attractive feature of RCM method in preserving true discontinuity is inherited by RSPH in this 1D shock tube test. With more dissipation, GSPH can also completely suppress numerical dissipation.However, the discontinuity at the shock is then more seriously smeared. The excessive amount of dissipation might have other, more undesirable, effects in real implementation. For example, over damping of shearing flow. Compared with SPH, both GSPH and RSPH avoid pressure ``wiggle" around contact discontinuity. Since RSPH shares many commonalities   with Godunov's method, it is not a surprise that RSPH can also suppress the pressure ``wiggle" at contact discontinuity.
+Zoomed views in Fig. \ref{fig:RCM-Sod-GSPH} compare GSPH and RSPH and demonstrate that RSPH introduces less but sufficient dissipation compared with GSPH. The attractive feature of RCM method in preserving true discontinuity is inherited by RSPH in this 1D shock tube test. With more numerical dissipation, GSPH can completely suppress numerical oscillations. However, the discontinuity at the shock is then more seriously smeared. The excessive amount of dissipation might have other, more undesirable, effects in real implementation. For example, over damping of shearing flow. Compared with SPH, both GSPH and RSPH avoid pressure ``wiggle" around contact discontinuity. Since RSPH shares many commonalities   with Godunov's method, it is not a surprise that RSPH can also suppress the pressure ``wiggle" at contact discontinuity.
 
 \subsection{Accuracy tests}
 We use shock tube test to gauge the accuracy of the RSPH scheme.
-% for both situations when the solution remains smooth and when there are shocks in the solution. We use test 1 to conduct order of accuracy test for the case with shocks in the solution. 
 We examine the errors between simulation results and the analytical solution (the reference solution) as the number of particles is increased. The $L_1$ norm error, defined for a property $f$, is normalized by the number of particles as:
 \begin{equation}
 L_1= \frac{1}{N_p} \sum_a^{N_p} \vert f_a^{SPH} - f^{REF} (x_a) \vert 
 \end{equation}
 where the superscript $REF$ represent the reference solution, $SPH$ represents simulation results calculated by different SPH schemes. Fig. \ref{fig:Accuracy-test1} displays the $L_1$ norm errors for the density, velocity and pressure profiles for different SPH schemes.
 We observe a rate of convergence of approximately 1 for GSPH and 1.5 for standard SPH and RSPH.
-GSPH with an exact Riemann solver has been shown to be approximately second order of accuracy \citep{puri2014comparison} and comparable in accuracy to the standard SPH schemes when using piece wise linear construction. As for GSPH using approximate Riemann solver, \citet{puri2014approximate} reported second order accuracy for HLLC and Roe Riemann solvers adopting piece wise linear Riemann problem construction. In addition, they adopted a test problem without discontinuity in the solution. Presence  of discontinuities, such as shock, in the test problem might lower the rate of convergence. Both RSPH and GSPH tests in this paper adopt a piece wise constant construction of Riemann problem. So we conclude that RSPH shows higher order of accuracy than GSPH when using the same Riemann problem construction. Compared with SPH, RSPH shows almost the same order of accuracy and level of error.
-%It is worthwhile to check the order of accuracy of GSPH using piecewise linear constructor
-%It is also worthwile to check what of order of accuracy using another test problem.  
+GSPH with an exact Riemann solver has been shown to be approximately second order of accuracy \citep{puri2014comparison} and comparable in accuracy to the standard SPH schemes when using piece wise linear construction. As for GSPH using approximate Riemann solver, \citet{puri2014approximate} reported second order accuracy for HLLC and Roe Riemann solvers adopting piece wise linear Riemann problem construction. In addition, they adopted a test problem without discontinuity in the solution. Presence of discontinuities, such as shock, in the test problem might lower the rate of convergence. Since both RSPH and GSPH tests in this paper adopt piece wise constant construction of Riemann problem. We conclude that RSPH shows higher order of accuracy than GSPH when using the same Riemann problem construction. Compared with SPH, RSPH shows almost the same order of accuracy and level of error.  
 \begin{figure}[H]
     \centering
     \begin{minipage}{.332\textwidth}
@@ -719,28 +473,27 @@ GSPH with an exact Riemann solver has been shown to be approximately second orde
  
 \subsection{Comprehensive 1D tests} \label{sec:comprehensive-1d-tests}
 Comprehensive tests are presented in this section to check how well does RSPH work for different situations. Input parameters for each tests is given in Table \ref{tab:1D-shock-input_parameters}.
-% Wave speed is estimated based on formulation Eq. (\ref{eq:RP-solver-HLLC-SM}) $\sim$ Eq. (\ref{eq:RP-solver-HLLC-SR}).
 The results are shown in Fig. \ref{fig:RCM-GSPH-Sod} $\sim$ Fig. \ref{fig:RCM-strong-blast}. $x$ axis in these plots are normalized by the terminal time $t_f$. We observe that RSPH is able to correctly predict the position and magnitude of all waves for all tests. A jump of specific internal energy at the origin is observed in Sjogreen test. However, such jump is a common issue of SPH schemes and has been reported in many other tests (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})
 In addition, a noticeable spike can be observed near the contact discontinuity. Similar spike is observed in GSPH simulation \citep{puri2014comparison}. %Such spike is evident in the FVM solution as well and is perhaps an artifice of the Lagrangian nature of the two schemes. 
-\citep{noh1987errors} proposed to adding a small amount of thermal conduction to ameliorate the spike and has been applied in blast-wave test using GSPH \citep{puri2014comparison}. We did not adopt such strategy in our simulation.
+\citet{noh1987errors} proposed to adding a small amount of thermal conduction to ameliorate the spike and has been applied in blast-wave test using GSPH \citep{puri2014comparison}. We did not adopt such strategy in our simulation.
 Due to less amount of dissipation, numerical fluctuations persist in all simulation results. For the strong blast test and double shock test, such fluctuations become more obvious than other tests, even though, the magnitude of fluctuations is within an acceptable range.
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-rho}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-v}
     \end{minipage}% 
     \\
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-e}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-p}
     \end{minipage}% 
@@ -750,20 +503,20 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-rho}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-v}
     \end{minipage}%
     \\
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-e}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-p}
     \end{minipage}% 
@@ -773,20 +526,20 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
 
 \begin{figure}[H]
     %\centering
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-rho-Rp6}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-v-Rp6}
     \end{minipage}%
     \\
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-e-Rp6}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-p-Rp6}
     \end{minipage}% 
@@ -795,44 +548,43 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
 \end{figure}
 
 \begin{figure}[H]
-    %\centering
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1}
     \end{minipage}%
     \\
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1}
     \end{minipage}% 
-    \caption{Results for test 5, a variation of the Sjogreen test. The density, velocity and pressure are well re-produced while the thermal energy at the origin is poorly predict. A jump of internal energy at the origin is a common issue in many SPH schemes (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})}
+    \caption{Results for test 5, a variation of the Sjogreen test. The density, velocity and pressure are well re-produced while the thermal energy at the origin is poorly predicted. A jump of internal energy at the origin is a common issue in many SPH schemes (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})}
     \label{fig:RCM-Sjogreen}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-rho-Rp3}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-v-Rp3}
     \end{minipage}%
     \\
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-e-Rp3}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-p-Rp3}
     \end{minipage}% 
@@ -840,18 +592,18 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
     \label{fig:RCM-strong-blast}
 \end{figure}
 
-\subsection{3D free jet}
+\subsection{3D free jet} \label{jet}
 Free jet flow have been studied analytically, experimentally and numerically for many decades, not only because of its wide application but also because of its fundamental significance as a basic flow to the scientific research community. To test the capacity of RSPH for multiple dimensional applications, a free jet flow is simulated in this section by solving 3D compressible Euler Equations using standard SPH, GSPH and RSPH. 
 All simulations are using the same set-up and compared at the same physical time. In this test, RSPH simulation is carried out based on piece wise constant construction of Riemann problem and a HLLC approximate Riemann solver. To do a well-controlled comparison, GSPH adopts the same way for Riemann problem construction and the same Riemann solver as RSPH. 
 
 The computational domain in this test is a box. The boundaries can be categorized into the velocity inlet (a circular area at the center of the bottom of the box), non-slip wall boundary (box bottom) and pressure outlet (other faces of the box). The boundaries are set away from vent to avoid boundary effects on simulation.
-At the vent, exit velocity $\textbf{v}$ is set to $500 m / s$ and radius of the nozzle $r$ is set to $8m $. The pressure of ejected fluid are assumed to be the same as ambient ($101 kpa$). The temperature of and ambient fluids are set to $273 K$. 
-Velocity is zero for non-slip wall boundary. The heat flux across wall boundary is zero assuming adiabatic wall. The flux of mass should also be zero on the wall. As a result, internal energy flux, which consists of heat flux and energy flux carried by mass flux, vanishes on the wall boundary. 
-The pressure of the surrounding ambient is given. As we ignore the viscosity, the shear stress is ignored and normal stress (whose magnitude equals to pressure) balances the ambient pressure.
+At the vent, exit velocity $\textbf{v}$ is set to $500 m / s$ and radius of the nozzle $r$ is set to $8m $. The pressure of ejected fluid is assumed to be the same as ambient ($101 kpa$). The temperature of and ambient fluids are set to $273 K$. 
+Velocity is zero for non-slip wall boundary. The heat flux across wall boundary is zero assuming an adiabatic wall. The flux of mass should also be zero on the wall. As a result, internal energy flux, which consists of heat flux and energy flux carried by mass flux, vanishes on the wall boundary. 
+The pressure of the surrounding ambient is given. As we ignore the physical viscosity, the shear stress is ignored and normal stress (whose magnitude equals to pressure) balances the ambient pressure.
 \begin{equation}
 p = p_a\left(z\right)  \label{eq:pressure_bc_p} 
 \end{equation} 
-Except for the pressure, boundary values for density, velocity, and energy on the outlet are determined by solution. Fluids properties of ideal gas are used in this simulation.
+Except for the pressure, boundary values for density, velocity, and energy on the outlet are dependent on solution. Fluids properties of ideal gas are used in this simulation.
 
 \begin{figure}[H]
     \centering
@@ -907,17 +659,9 @@ Figure \ref{fig:free-jet-SPH-comparison} shows simulation results of the free je
 
 We compare RSPH with GSPH in terms of equivalent overall artificial damping effects. Different from SPH, both GSPH and RSPH introduce artificial viscosity in an implicit way by solving local Riemann problems. As has been shown in 1D tests, RSPH can introduce less artificial viscosity than GSPH. Fig. \ref{fig:free-jet-comparison} implies that RSPH introduces less overall damping effect than GSPH in 3D application as well, which is consistent with 1D tests. That is to say, RSPH's desirable property of introducing less artificial dissipation in 1D unsteady flow is inherited in 3D applications of RSPH. Recall that RCM shows ability of resolving discontinuities as true discontinuities in 1D unsteady flows but such very desirable property does not persist in genuine two (or higher) space dimensions \citep{colella1982glimm}. Integrating of RCM within the framework of SPH avoids solving higher dimensional Riemann problems overcoming the fundamental shortcoming of RCM.
 
-\section{Conclusion}
-In this paper we have proposed RSPH, a novel SPH scheme for solving hyperbolic non-linear PDEs that combines the Random Choice Method with
-an approximate Riemann solver.  No explicit artificial viscosity is needed. Instead, any viscosity that is used in a hydrodynamics simulation 
-is just what the user explicitly adds. This control is important in applications with very strong shocks
-RSPH also shows good convergence behavior.
-On the other hand, RSPH does not address other methodological questions that must be decided in order to use SPH, 
-questions such as the smoothing length of the SPH kernel. We have investigated the HLLC approximate Riemann solver in this paper;
-it is of interest to test other approximate solvers,  to better understand the behavior of solutions.
-This may be particularly important when applying RSPH to other systems, where the explicit construction on which the HLLC solver
-rests is not readily available.
-
+\section{Conclusion} \label{discussion}
+In this paper we have proposed RSPH, a novel SPH scheme for solving hyperbolic non-linear PDEs that combines the Random Choice Method with an approximate Riemann solver. No explicit artificial viscosity is needed. Instead, any viscosity that is used in a hydrodynamics simulation is just what the user implicitly adds. This control is important in applications with very strong shocks. RSPH also shows good convergence behavior.
+On the other hand, RSPH does not address other methodological questions that must be decided in order to use SPH, questions such as the smoothing length of the SPH kernel. We have investigated the HLLC approximate Riemann solver in this paper; it is of interest to test other approximate solvers, to better understand the behavior of solutions. This may be particularly important when applying RSPH to other systems, where the explicit construction on which the HLLC solver rests is not readily available.
 
 \section*{Acknowledgements}
 3D simulations reported here were performed at the Center for Computational Research (CCR) at the University at Buffalo. This project is supported by Grants No. NSF ACI/1131074 from the National Science Foundation.

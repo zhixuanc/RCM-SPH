@@ -1,0 +1,294 @@
+\begin{thebibliography}{39}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Gingold and Monaghan(1977)}]{gingold1977smoothed}
+\bibinfo{author}{R.~A. Gingold}, \bibinfo{author}{J.~J. Monaghan},
+\newblock \bibinfo{title}{Smoothed particle hydrodynamics: theory and
+  application to non-spherical stars},
+\newblock \bibinfo{journal}{Monthly notices of the royal astronomical society}
+  \bibinfo{volume}{181} (\bibinfo{year}{1977}) \bibinfo{pages}{375--389}.
+%Type = Article
+\bibitem[{Lucy(1977)}]{lucy1977numerical}
+\bibinfo{author}{L.~B. Lucy},
+\newblock \bibinfo{title}{A numerical approach to the testing of the fission
+  hypothesis},
+\newblock \bibinfo{journal}{The astronomical journal} \bibinfo{volume}{82}
+  (\bibinfo{year}{1977}) \bibinfo{pages}{1013--1024}.
+%Type = Article
+\bibitem[{Monaghan and Gingold(1983)}]{monaghan1983shock}
+\bibinfo{author}{J.~Monaghan}, \bibinfo{author}{R.~Gingold},
+\newblock \bibinfo{title}{Shock simulation by the particle method sph},
+\newblock \bibinfo{journal}{Journal of computational physics}
+  \bibinfo{volume}{52} (\bibinfo{year}{1983}) \bibinfo{pages}{374--389}.
+%Type = Article
+\bibitem[{Monaghan(1997)}]{monaghan1997sph}
+\bibinfo{author}{J.~Monaghan},
+\newblock \bibinfo{title}{Sph and riemann solvers},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{136} (\bibinfo{year}{1997}) \bibinfo{pages}{298--307}.
+%Type = Incollection
+\bibitem[{Klapp et~al.(2012)Klapp, Sigalotti, Pe{\~n}a-Polo, and
+  Trujillo}]{klapp2012strong}
+\bibinfo{author}{J.~Klapp}, \bibinfo{author}{L.~D.~G. Sigalotti},
+  \bibinfo{author}{F.~Pe{\~n}a-Polo}, \bibinfo{author}{L.~Trujillo},
+\newblock \bibinfo{title}{Strong shocks with smoothed particle hydrodynamics},
+\newblock in: \bibinfo{booktitle}{Experimental and Theoretical Advances in
+  Fluid Dynamics}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2012}, pp.
+  \bibinfo{pages}{69--79}.
+%Type = Inproceedings
+\bibitem[{Borgani et~al.(2012)Borgani, Murante, Brunino, and
+  Cha}]{borgani2012hydrodynamic}
+\bibinfo{author}{S.~Borgani}, \bibinfo{author}{G.~Murante},
+  \bibinfo{author}{R.~Brunino}, \bibinfo{author}{S.-H. Cha},
+\newblock \bibinfo{title}{Hydrodynamic simulations with the godunov sph},
+\newblock in: \bibinfo{booktitle}{Advances in Computational Astrophysics:
+  Methods, Tools, and Outcome}, volume \bibinfo{volume}{453},
+  \bibinfo{year}{2012}, p. \bibinfo{pages}{259}.
+%Type = Article
+\bibitem[{Flebbe et~al.(1994)Flebbe, Muenzel, Herold, Riffert, and
+  Ruder}]{flebbe1994smoothed}
+\bibinfo{author}{O.~Flebbe}, \bibinfo{author}{S.~Muenzel},
+  \bibinfo{author}{H.~Herold}, \bibinfo{author}{H.~Riffert},
+  \bibinfo{author}{H.~Ruder},
+\newblock \bibinfo{title}{Smoothed particle hydrodynamics: physical viscosity
+  and the simulation of accretion disks},
+\newblock \bibinfo{journal}{The Astrophysical Journal} \bibinfo{volume}{431}
+  (\bibinfo{year}{1994}) \bibinfo{pages}{754--760}.
+%Type = Article
+\bibitem[{Morris and Monaghan(1997)}]{morris1997switch}
+\bibinfo{author}{J.~Morris}, \bibinfo{author}{J.~Monaghan},
+\newblock \bibinfo{title}{A switch to reduce sph viscosity},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{136} (\bibinfo{year}{1997}) \bibinfo{pages}{41--50}.
+%Type = Article
+\bibitem[{Dolag et~al.(2005)Dolag, Vazza, Brunetti, and
+  Tormen}]{dolag2005turbulent}
+\bibinfo{author}{K.~Dolag}, \bibinfo{author}{F.~Vazza},
+  \bibinfo{author}{G.~Brunetti}, \bibinfo{author}{G.~Tormen},
+\newblock \bibinfo{title}{Turbulent gas motions in galaxy cluster simulations:
+  the role of smoothed particle hydrodynamics viscosity},
+\newblock \bibinfo{journal}{Monthly Notices of the Royal Astronomical Society}
+  \bibinfo{volume}{364} (\bibinfo{year}{2005}) \bibinfo{pages}{753--772}.
+%Type = Article
+\bibitem[{Cullen and Dehnen(2010)}]{cullen2010inviscid}
+\bibinfo{author}{L.~Cullen}, \bibinfo{author}{W.~Dehnen},
+\newblock \bibinfo{title}{Inviscid smoothed particle hydrodynamics},
+\newblock \bibinfo{journal}{Monthly Notices of the Royal Astronomical Society}
+  \bibinfo{volume}{408} (\bibinfo{year}{2010}) \bibinfo{pages}{669--683}.
+%Type = Article
+\bibitem[{Sigalotti and L{\'o}pez(2008)}]{sigalotti2008adaptive}
+\bibinfo{author}{L.~D.~G. Sigalotti}, \bibinfo{author}{H.~L{\'o}pez},
+\newblock \bibinfo{title}{Adaptive kernel estimation and sph tensile
+  instability},
+\newblock \bibinfo{journal}{Computers \& Mathematics with Applications}
+  \bibinfo{volume}{55} (\bibinfo{year}{2008}) \bibinfo{pages}{23--50}.
+%Type = Article
+\bibitem[{Puri and Ramachandran(2014)}]{puri2014comparison}
+\bibinfo{author}{K.~Puri}, \bibinfo{author}{P.~Ramachandran},
+\newblock \bibinfo{title}{A comparison of sph schemes for the compressible
+  euler equations},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{256} (\bibinfo{year}{2014}) \bibinfo{pages}{308--333}.
+%Type = Article
+\bibitem[{Inutsuka(2002)}]{inutsuka2002reformulation}
+\bibinfo{author}{S.-i. Inutsuka},
+\newblock \bibinfo{title}{Reformulation of smoothed particle hydrodynamics with
+  riemann solver},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{179} (\bibinfo{year}{2002}) \bibinfo{pages}{238--267}.
+%Type = Article
+\bibitem[{Cha and Whitworth(2003)}]{cha2003implementations}
+\bibinfo{author}{S.-H. Cha}, \bibinfo{author}{A.~P. Whitworth},
+\newblock \bibinfo{title}{Implementations and tests of godunov-type particle
+  hydrodynamics},
+\newblock \bibinfo{journal}{Monthly Notices of the Royal Astronomical Society}
+  \bibinfo{volume}{340} (\bibinfo{year}{2003}) \bibinfo{pages}{73--90}.
+%Type = Article
+\bibitem[{Iwasaki and Inutsuka(2011)}]{iwasaki2011smoothed}
+\bibinfo{author}{K.~Iwasaki}, \bibinfo{author}{S.-i. Inutsuka},
+\newblock \bibinfo{title}{Smoothed particle magnetohydrodynamics with a riemann
+  solver and the method of characteristics},
+\newblock \bibinfo{journal}{Monthly Notices of the Royal Astronomical Society}
+  \bibinfo{volume}{418} (\bibinfo{year}{2011}) \bibinfo{pages}{1668--1688}.
+%Type = Article
+\bibitem[{Puri and Ramachandran(2014)}]{puri2014approximate}
+\bibinfo{author}{K.~Puri}, \bibinfo{author}{P.~Ramachandran},
+\newblock \bibinfo{title}{Approximate riemann solvers for the godunov sph
+  (gsph)},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{270} (\bibinfo{year}{2014}) \bibinfo{pages}{432--458}.
+%Type = Article
+\bibitem[{Cha et~al.(2010)Cha, Inutsuka, and Nayakshin}]{cha2010kelvin}
+\bibinfo{author}{S.-H. Cha}, \bibinfo{author}{S.-I. Inutsuka},
+  \bibinfo{author}{S.~Nayakshin},
+\newblock \bibinfo{title}{Kelvin--helmholtz instabilities with godunov smoothed
+  particle hydrodynamics},
+\newblock \bibinfo{journal}{Monthly Notices of the Royal Astronomical Society}
+  \bibinfo{volume}{403} (\bibinfo{year}{2010}) \bibinfo{pages}{1165--1174}.
+%Type = Article
+\bibitem[{Glimm(1965)}]{glimm1965solutions}
+\bibinfo{author}{J.~Glimm},
+\newblock \bibinfo{title}{Solutions in the large for nonlinear hyperbolic
+  systems of equations},
+\newblock \bibinfo{journal}{Communications on pure and applied mathematics}
+  \bibinfo{volume}{18} (\bibinfo{year}{1965}) \bibinfo{pages}{697--715}.
+%Type = Article
+\bibitem[{Chorin(1976)}]{chorin1976random}
+\bibinfo{author}{A.~J. Chorin},
+\newblock \bibinfo{title}{Random choice solution of hyperbolic systems},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{22} (\bibinfo{year}{1976}) \bibinfo{pages}{517--533}.
+%Type = Article
+\bibitem[{Chorin(1983)}]{chorinporousmedium}
+\bibinfo{author}{A.~Chorin},
+\newblock \bibinfo{title}{The instability of fronts in a porous medium},
+\newblock \bibinfo{journal}{Comm. Math. Phys} \bibinfo{volume}{91}
+  (\bibinfo{year}{1983}) \bibinfo{pages}{103--116}.
+%Type = Article
+\bibitem[{Sod(1977)}]{sod1977numerical}
+\bibinfo{author}{G.~A. Sod},
+\newblock \bibinfo{title}{A numerical study of a converging cylindrical shock},
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{83}
+  (\bibinfo{year}{1977}) \bibinfo{pages}{785--794}.
+%Type = Article
+\bibitem[{Concus and Proskurowski(1979)}]{concus1979numerical}
+\bibinfo{author}{P.~Concus}, \bibinfo{author}{W.~Proskurowski},
+\newblock \bibinfo{title}{Numerical solution of a nonlinear hyperbolic equation
+  by the random choice method},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{30} (\bibinfo{year}{1979}) \bibinfo{pages}{153--166}.
+%Type = Article
+\bibitem[{Colella(1982)}]{colella1982glimm}
+\bibinfo{author}{P.~Colella},
+\newblock \bibinfo{title}{Glimm's method for gas dynamics},
+\newblock \bibinfo{journal}{SIAM Journal on Scientific and Statistical
+  Computing} \bibinfo{volume}{3} (\bibinfo{year}{1982})
+  \bibinfo{pages}{76--110}.
+%Type = Article
+\bibitem[{Freist{\"u}hler and Pitman(1992)}]{freistuhler1992numerical}
+\bibinfo{author}{H.~Freist{\"u}hler}, \bibinfo{author}{E.~B. Pitman},
+\newblock \bibinfo{title}{A numerical study of a rotationally degenerate
+  hyperbolic system. part i. the riemann problem},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{100} (\bibinfo{year}{1992}) \bibinfo{pages}{306--321}.
+%Type = Book
+\bibitem[{Toro(2013)}]{toro2013riemann}
+\bibinfo{author}{E.~F. Toro}, \bibinfo{title}{Riemann solvers and numerical
+  methods for fluid dynamics: a practical introduction},
+  \bibinfo{publisher}{Springer Science \& Business Media},
+  \bibinfo{year}{2013}.
+%Type = Article
+\bibitem[{Harten and Lax(1981)}]{hartenlax}
+\bibinfo{author}{A.~Harten}, \bibinfo{author}{P.~Lax},
+\newblock \bibinfo{title}{A random choice finite difference scheme for
+  hyperbolic conservation laws},
+\newblock \bibinfo{journal}{SIAM J. Numer. Analy.} \bibinfo{volume}{18}
+  (\bibinfo{year}{1981}) \bibinfo{pages}{289--315}.
+%Type = Article
+\bibitem[{Monaghan(1992)}]{monaghan1992smoothed}
+\bibinfo{author}{J.~J. Monaghan},
+\newblock \bibinfo{title}{Smoothed particle hydrodynamics},
+\newblock \bibinfo{journal}{Annual review of astronomy and astrophysics}
+  \bibinfo{volume}{30} (\bibinfo{year}{1992}) \bibinfo{pages}{543--574}.
+%Type = Article
+\bibitem[{Monaghan(2005)}]{monaghan2005smoothed}
+\bibinfo{author}{J.~Monaghan},
+\newblock \bibinfo{title}{Smoothed particle hydrodynamics},
+\newblock \bibinfo{journal}{Reports on progress in physics}
+  \bibinfo{volume}{68} (\bibinfo{year}{2005}) \bibinfo{pages}{1703}.
+%Type = Article
+\bibitem[{Liu and Liu(2010)}]{liu2010smoothed}
+\bibinfo{author}{M.~Liu}, \bibinfo{author}{G.~Liu},
+\newblock \bibinfo{title}{Smoothed particle hydrodynamics (sph): an overview
+  and recent developments},
+\newblock \bibinfo{journal}{Archives of computational methods in engineering}
+  \bibinfo{volume}{17} (\bibinfo{year}{2010}) \bibinfo{pages}{25--76}.
+%Type = Article
+\bibitem[{Price(2012)}]{price2012smoothed}
+\bibinfo{author}{D.~J. Price},
+\newblock \bibinfo{title}{Smoothed particle hydrodynamics and
+  magnetohydrodynamics},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{231} (\bibinfo{year}{2012}) \bibinfo{pages}{759--794}.
+%Type = Article
+\bibitem[{Harten et~al.(1983)Harten, Lax, and van Leer}]{hll}
+\bibinfo{author}{A.~Harten}, \bibinfo{author}{P.~Lax}, \bibinfo{author}{B.~van
+  Leer},
+\newblock \bibinfo{title}{On upstream differencing and godunov-type schemes for
+  hyperbolic conservation laws},
+\newblock \bibinfo{journal}{SIAM Review} \bibinfo{volume}{25}
+  (\bibinfo{year}{1983}) \bibinfo{pages}{35--61}.
+%Type = Article
+\bibitem[{Toro et~al.(1994)Toro, Spruce, and Speares}]{toro1994restoration}
+\bibinfo{author}{E.~F. Toro}, \bibinfo{author}{M.~Spruce},
+  \bibinfo{author}{W.~Speares},
+\newblock \bibinfo{title}{Restoration of the contact surface in the hll-riemann
+  solver},
+\newblock \bibinfo{journal}{Shock waves} \bibinfo{volume}{4}
+  (\bibinfo{year}{1994}) \bibinfo{pages}{25--34}.
+%Type = Book
+\bibitem[{Hammersley(2013)}]{hammersley2013monte}
+\bibinfo{author}{J.~Hammersley}, \bibinfo{title}{Monte carlo methods},
+  \bibinfo{publisher}{Springer Science \& Business Media},
+  \bibinfo{year}{2013}.
+%Type = Article
+\bibitem[{Rider(1994)}]{rider1994review}
+\bibinfo{author}{W.~J. Rider},
+\newblock \bibinfo{title}{A review of approximate riemann solvers with
+  godunov's method in lagrangian coordinates},
+\newblock \bibinfo{journal}{Computers \& fluids} \bibinfo{volume}{23}
+  (\bibinfo{year}{1994}) \bibinfo{pages}{397--413}.
+%Type = Article
+\bibitem[{Luo et~al.(2004)Luo, Baum, and L{\"o}hner}]{luo2004computation}
+\bibinfo{author}{H.~Luo}, \bibinfo{author}{J.~D. Baum},
+  \bibinfo{author}{R.~L{\"o}hner},
+\newblock \bibinfo{title}{On the computation of multi-material flows using ale
+  formulation},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{194} (\bibinfo{year}{2004}) \bibinfo{pages}{304--328}.
+%Type = Article
+\bibitem[{Sigalotti et~al.(2006)Sigalotti, L{\'o}pez, Donoso, Sira, and
+  Klapp}]{sigalotti2006shock}
+\bibinfo{author}{L.~D.~G. Sigalotti}, \bibinfo{author}{H.~L{\'o}pez},
+  \bibinfo{author}{A.~Donoso}, \bibinfo{author}{E.~Sira},
+  \bibinfo{author}{J.~Klapp},
+\newblock \bibinfo{title}{A shock-capturing sph scheme based on adaptive kernel
+  estimation},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{212} (\bibinfo{year}{2006}) \bibinfo{pages}{124--149}.
+%Type = Article
+\bibitem[{Price(2008)}]{price2008modelling}
+\bibinfo{author}{D.~J. Price},
+\newblock \bibinfo{title}{Modelling discontinuities and kelvin--helmholtz
+  instabilities in sph},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{227} (\bibinfo{year}{2008}) \bibinfo{pages}{10040--10057}.
+%Type = Article
+\bibitem[{Noh(1987)}]{noh1987errors}
+\bibinfo{author}{W.~F. Noh},
+\newblock \bibinfo{title}{Errors for calculations of strong shocks using an
+  artificial viscosity and an artificial heat flux},
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{72} (\bibinfo{year}{1987}) \bibinfo{pages}{78--120}.
+%Type = Article
+\bibitem[{Cao et~al.(2017)Cao, Patra, Bursik, Pitman, and Jones}]{gmd-2017-119}
+\bibinfo{author}{Z.~Cao}, \bibinfo{author}{A.~Patra},
+  \bibinfo{author}{M.~Bursik}, \bibinfo{author}{E.~B. Pitman},
+  \bibinfo{author}{M.~Jones},
+\newblock \bibinfo{title}{Plume-sph 1.0: A three-dimensional, dusty-gas
+  volcanic plume model based on smoothed particle hydrodynamics},
+\newblock \bibinfo{journal}{Geoscientific Model Development Discussions}
+  \bibinfo{volume}{2017} (\bibinfo{year}{2017}) \bibinfo{pages}{1--37}.
+
+\end{thebibliography}
