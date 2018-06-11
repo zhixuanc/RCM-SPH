@@ -257,11 +257,11 @@ p_R = p_a
 a piecewise linear interpolation of the states. We do not pursue higher accuracy here, although the idea is straightforward to consider.]
 
 \subsection{Selecting the star state} \label{sec:Picking-up-single-state}
-Consider then the spatial interval between $\textbf{x}_{a}$ and $\textbf{x}_{ b}$ and a short time interval of size $\Delta t$. Recall also that, by convention, we assign the (spatial) origin to be at the midpoint between particles $a$ and $b$ $\frac{(\textbf{x}_{a}| + \textbf{x}_{ b})}{2}$.
+Consider then the spatial interval between $\textbf{x}_{a}$ and $\textbf{x}_{ b}$ and a short time interval of size $\Delta t$. Recall also that, by convention, we assign the (spatial) origin to be at the midpoint between particles $a$ and $b$.
 Given the piecewise constant data (Eq. (\ref{eq:Riemann-Prob-define-L-rho}) - Eq. (\ref{eq:Riemann-Prob-define-R-p})), solve the local Riemann problem. At time $\Delta t$ the solution defines a state composed of constants, rarefaction waves, contact discontinuities, and shock discontinuities. 
 Now choose a random number $\epsilon \in [-1,1]$, and set $p_{a b}^{\ast}$ and $\textbf{u}^{\ast}$ to be the Riemann problem solution at the location 
 $$
-\epsilon |\textbf{x}_{a}| - \textbf{x}_{ b}|
+\epsilon \frac{|\textbf{x}_{a} - \textbf{x}_{ b}|}{2}
 $$
 (relative to the the origin).
 

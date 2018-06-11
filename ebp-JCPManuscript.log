@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 JUN 2018 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 JUN 2018 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -408,7 +408,7 @@ alf-rho-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-rho.eps>
 (epstopdf)             \includegraphics on input line 333.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf, id=277, 1114.1625pt x 
+<./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf, id=276, 1114.1625pt x 
 714.67pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -428,7 +428,7 @@ alf-v-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-v.eps>
 (epstopdf)             \includegraphics on input line 337.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf, id=278, 1109.14375pt x 7
+<./Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf, id=277, 1109.14375pt x 7
 18.685pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf Graphic file (type p
 df)
@@ -449,7 +449,7 @@ alf-rho-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom.eps>
 (epstopdf)             \includegraphics on input line 351.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf, id=279, 1110.1475
+<./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf, id=278, 1110.1475
 pt x 716.6775pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -470,7 +470,7 @@ alf-v-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-v-zoom.eps>
 (epstopdf)             \includegraphics on input line 355.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf, id=280, 1109.14375p
+<./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf, id=279, 1109.14375p
 t x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -498,7 +498,7 @@ alf-e-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-e.eps>
 (epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf, id=286, 1104.125pt x 718
+<./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf, id=285, 1104.125pt x 718
 .685pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf Graphic file (type p
 df)
@@ -518,7 +518,7 @@ alf-p-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-p.eps>
 (epstopdf)             \includegraphics on input line 380.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf, id=287, 1109.14375pt x 7
+<./Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf, id=286, 1109.14375pt x 7
 16.6775pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf Graphic file (type p
 df)
@@ -538,7 +538,7 @@ alf-e-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-e-zoom.eps>
 (epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf, id=288, 1104.125pt 
+<./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf, id=287, 1104.125pt 
 x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -558,7 +558,7 @@ alf-p-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-p-zoom.eps>
 (epstopdf)             \includegraphics on input line 389.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf, id=289, 1109.14375p
+<./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf, id=288, 1109.14375p
 t x 716.6775pt>
 File: ./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -598,7 +598,7 @@ Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-rho.eps
 (epstopdf)             \includegraphics on input line 408.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf, id=360, 1441.385p
+<./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf, id=359, 1441.385p
 t x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -619,7 +619,7 @@ onverted-to.pdf>
 (epstopdf)             \includegraphics on input line 412.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf, id=361, 1441.385pt 
+<./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf, id=360, 1441.385pt 
 x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -639,7 +639,7 @@ onverted-to.pdf>
 (epstopdf)             \includegraphics on input line 417.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf, id=362, 1441.385pt 
+<./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf, id=361, 1441.385pt 
 x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -659,7 +659,7 @@ onverted-to.pdf>
 (epstopdf)             \includegraphics on input line 421.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf, id=363, 1445.4pt x 
+<./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf, id=362, 1445.4pt x 
 721.69624pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -681,7 +681,7 @@ oom.eps>
 (epstopdf)             \includegraphics on input line 426.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf, id=364, 1441
+<./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf, id=363, 1441
 .385pt x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -704,7 +704,7 @@ eps>
 (epstopdf)             \includegraphics on input line 430.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf, id=365, 1439.3
+<./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf, id=364, 1439.3
 775pt x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -727,7 +727,7 @@ eps>
 (epstopdf)             \includegraphics on input line 435.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf, id=366, 1441.3
+<./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf, id=365, 1441.3
 85pt x 718.685pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -750,7 +750,7 @@ eps>
 (epstopdf)             \includegraphics on input line 439.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf, id=367, 1445.4
+<./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf, id=366, 1445.4
 pt x 721.69624pt>
 File: ./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -785,7 +785,7 @@ f>
 (epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Accuracy-des-eps-converted-to.pdf, id=423, 852.18375pt x 718.685pt>
+<./Figures/Accuracy-des-eps-converted-to.pdf, id=422, 852.18375pt x 718.685pt>
 File: ./Figures/Accuracy-des-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Figures/Accuracy-des-eps-converted-to.pdf>
@@ -804,7 +804,7 @@ f>
 (epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Accuracy-vel-eps-converted-to.pdf, id=424, 854.19125pt x 718.685pt>
+<./Figures/Accuracy-vel-eps-converted-to.pdf, id=423, 854.19125pt x 718.685pt>
 File: ./Figures/Accuracy-vel-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Figures/Accuracy-vel-eps-converted-to.pdf>
@@ -823,7 +823,7 @@ f>
 (epstopdf)             \includegraphics on input line 468.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Accuracy-pre-eps-converted-to.pdf, id=425, 853.1875pt x 718.685pt>
+<./Figures/Accuracy-pre-eps-converted-to.pdf, id=424, 853.1875pt x 718.685pt>
 File: ./Figures/Accuracy-pre-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Figures/Accuracy-pre-eps-converted-to.pdf>
@@ -843,7 +843,7 @@ M-rho-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-rho.eps>
 (epstopdf)             \includegraphics on input line 485.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf, id=441, 965.6075pt x 718
+<./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf, id=440, 965.6075pt x 718
 .685pt>
 File: ./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf Graphic file (type p
 df)
@@ -863,7 +863,7 @@ M-v-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-v.eps>
 (epstopdf)             \includegraphics on input line 489.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf, id=442, 963.6pt x 716.6775
+<./Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf, id=441, 963.6pt x 716.6775
 pt>
 File: ./Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -883,7 +883,7 @@ M-e-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-e.eps>
 (epstopdf)             \includegraphics on input line 494.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf, id=443, 963.6pt x 716.6775
+<./Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf, id=442, 963.6pt x 716.6775
 pt>
 File: ./Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -903,7 +903,7 @@ M-p-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-p.eps>
 (epstopdf)             \includegraphics on input line 498.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf, id=444, 965.6075pt x 718.6
+<./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf, id=443, 965.6075pt x 718.6
 85pt>
 File: ./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -931,7 +931,7 @@ RCM-rho-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-rho.eps>
 (epstopdf)             \includegraphics on input line 508.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf, id=477, 966.61125pt x 
+<./Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf, id=476, 966.61125pt x 
 718.685pt>
 File: ./Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -951,7 +951,7 @@ RCM-v-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-v.eps>
 (epstopdf)             \includegraphics on input line 512.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf, id=478, 965.6075pt x 718
+<./Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf, id=477, 965.6075pt x 718
 .685pt>
 File: ./Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf Graphic file (type p
 df)
@@ -971,7 +971,7 @@ RCM-e-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-e.eps>
 (epstopdf)             \includegraphics on input line 517.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf, id=479, 966.61125pt x 71
+<./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf, id=478, 966.61125pt x 71
 6.6775pt>
 File: ./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf Graphic file (type p
 df)
@@ -991,7 +991,7 @@ RCM-p-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-p.eps>
 (epstopdf)             \includegraphics on input line 521.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf, id=480, 966.61125pt x 71
+<./Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf, id=479, 966.61125pt x 71
 8.685pt>
 File: ./Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1013,7 +1013,7 @@ eps>
 (epstopdf)             \includegraphics on input line 531.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf, id=481, 966.61
+<./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf, id=480, 966.61
 125pt x 718.685pt>
 File: ./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -1036,7 +1036,7 @@ ock-RCM-v-Rp6-eps-converted-to.pdf ./Figures/double_shock/Dshock-RCM-v-Rp6.eps>
 (epstopdf)             \includegraphics on input line 535.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf, id=482, 965.6075
+<./Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf, id=481, 965.6075
 pt x 718.685pt>
 File: ./Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1059,7 +1059,7 @@ ock-RCM-e-Rp6-eps-converted-to.pdf ./Figures/double_shock/Dshock-RCM-e-Rp6.eps>
 (epstopdf)             \includegraphics on input line 540.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf, id=483, 965.6075
+<./Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf, id=482, 965.6075
 pt x 718.685pt>
 File: ./Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1082,7 +1082,7 @@ ock-RCM-p-Rp6-eps-converted-to.pdf ./Figures/double_shock/Dshock-RCM-p-Rp6.eps>
 (epstopdf)             \includegraphics on input line 544.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf, id=484, 985.6825
+<./Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf, id=483, 985.6825
 pt x 718.685pt>
 File: ./Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1123,7 +1123,7 @@ eps>
 (epstopdf)             \includegraphics on input line 553.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf, id=531, 963.6p
+<./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf, id=530, 963.6p
 t x 718.685pt>
 File: ./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -1146,7 +1146,7 @@ n-RCM-v-Adpt1-eps-converted-to.pdf ./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1.eps>
 (epstopdf)             \includegraphics on input line 557.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf, id=532, 959.585p
+<./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf, id=531, 959.585p
 t x 718.685pt>
 File: ./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1169,7 +1169,7 @@ n-RCM-e-Adpt1-eps-converted-to.pdf ./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1.eps>
 (epstopdf)             \includegraphics on input line 562.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf, id=533, 963.6pt 
+<./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf, id=532, 963.6pt 
 x 718.685pt>
 File: ./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1192,7 +1192,7 @@ n-RCM-p-Adpt1-eps-converted-to.pdf ./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1.eps>
 (epstopdf)             \includegraphics on input line 566.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf, id=534, 963.6pt 
+<./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf, id=533, 963.6pt 
 x 718.685pt>
 File: ./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1215,7 +1215,7 @@ Blst-RCM-rho-Rp3-eps-converted-to.pdf ./Figures/strong-blast/StrBlst-RCM-rho-Rp
 (epstopdf)             \includegraphics on input line 576.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf, id=541, 1067.
+<./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf, id=540, 1067.
 99pt x 718.685pt>
 File: ./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1238,7 +1238,7 @@ s>
 (epstopdf)             \includegraphics on input line 580.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf, id=542, 1066.98
+<./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf, id=541, 1066.98
 625pt x 718.685pt>
 File: ./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1261,7 +1261,7 @@ s>
 (epstopdf)             \includegraphics on input line 585.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf, id=543, 1068.99
+<./Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf, id=542, 1068.99
 374pt x 718.685pt>
 File: ./Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1284,7 +1284,7 @@ s>
 (epstopdf)             \includegraphics on input line 589.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf, id=544, 1067.99
+<./Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf, id=543, 1067.99
 pt x 718.685pt>
 File: ./Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1322,7 +1322,7 @@ l.603 \begin{equation}
 d-to.pdf> <./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf> <./Fi
 gures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf> <./Figures/strong-bl
 ast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf>]
-<./Figures/SPH-alf2-t3-cutView.jpg, id=616, 612.2875pt x 796.9775pt>
+<./Figures/SPH-alf2-t3-cutView.jpg, id=615, 612.2875pt x 796.9775pt>
 File: ./Figures/SPH-alf2-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/SPH-alf2-t3-cutView.jpg>
@@ -1330,7 +1330,7 @@ Package pdftex.def Info: ./Figures/SPH-alf2-t3-cutView.jpg used on input line 6
 12.
 (pdftex.def)             Requested size: 111.00331pt x 144.48343pt.
 
-<./Figures/SPH-alf1-t3-cutView.jpg, id=617, 562.1pt x 786.94pt>
+<./Figures/SPH-alf1-t3-cutView.jpg, id=616, 562.1pt x 786.94pt>
 File: ./Figures/SPH-alf1-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/SPH-alf1-t3-cutView.jpg>
@@ -1338,7 +1338,7 @@ Package pdftex.def Info: ./Figures/SPH-alf1-t3-cutView.jpg used on input line 6
 16.
 (pdftex.def)             Requested size: 111.00331pt x 155.40393pt.
 
-<./Figures/SPH-alfp3-t3-cutView.jpg, id=618, 501.875pt x 803.0pt>
+<./Figures/SPH-alfp3-t3-cutView.jpg, id=617, 501.875pt x 803.0pt>
 File: ./Figures/SPH-alfp3-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/SPH-alfp3-t3-cutView.jpg>
@@ -1346,7 +1346,7 @@ Package pdftex.def Info: ./Figures/SPH-alfp3-t3-cutView.jpg used on input line
 620.
 (pdftex.def)             Requested size: 111.00331pt x 177.604pt.
  [22]
-<./Figures/SPH-alf1-t1p5-cutView.jpg, id=624, 562.1pt x 697.60625pt>
+<./Figures/SPH-alf1-t1p5-cutView.jpg, id=623, 562.1pt x 697.60625pt>
 File: ./Figures/SPH-alf1-t1p5-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/SPH-alf1-t1p5-cutView.jpg>
@@ -1354,7 +1354,7 @@ Package pdftex.def Info: ./Figures/SPH-alf1-t1p5-cutView.jpg used on input line
  630.
 (pdftex.def)             Requested size: 111.00331pt x 137.7624pt.
 
-<./Figures/GSPH-HLLC-t1p5-cutView.jpg, id=625, 593.21625pt x 702.625pt>
+<./Figures/GSPH-HLLC-t1p5-cutView.jpg, id=624, 593.21625pt x 702.625pt>
 File: ./Figures/GSPH-HLLC-t1p5-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/GSPH-HLLC-t1p5-cutView.jpg>
@@ -1362,7 +1362,7 @@ Package pdftex.def Info: ./Figures/GSPH-HLLC-t1p5-cutView.jpg used on input lin
 e 634.
 (pdftex.def)             Requested size: 111.00331pt x 131.47383pt.
 
-<./Figures/RSPH-t1p5-cutView.jpg, id=626, 557.08125pt x 608.2725pt>
+<./Figures/RSPH-t1p5-cutView.jpg, id=625, 557.08125pt x 608.2725pt>
 File: ./Figures/RSPH-t1p5-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/RSPH-t1p5-cutView.jpg>
@@ -1375,7 +1375,7 @@ Package pdftex.def Info: ./Figures/SPH-alf1-t3-cutView.jpg used on input line 6
 44.
 (pdftex.def)             Requested size: 111.00331pt x 155.40393pt.
 
-<./Figures/GSPH-HLLC-t3-cutView.jpg, id=627, 593.21625pt x 796.9775pt>
+<./Figures/GSPH-HLLC-t3-cutView.jpg, id=626, 593.21625pt x 796.9775pt>
 File: ./Figures/GSPH-HLLC-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/GSPH-HLLC-t3-cutView.jpg>
@@ -1383,7 +1383,7 @@ Package pdftex.def Info: ./Figures/GSPH-HLLC-t3-cutView.jpg used on input line
 648.
 (pdftex.def)             Requested size: 111.00331pt x 149.12889pt.
 
-<./Figures/RSPH-t3-cutView.jpg, id=628, 557.08125pt x 788.9475pt>
+<./Figures/RSPH-t3-cutView.jpg, id=627, 557.08125pt x 788.9475pt>
 File: ./Figures/RSPH-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/RSPH-t3-cutView.jpg>
@@ -1426,29 +1426,28 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  34i,13n,34p,1024b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ebp-JCPManuscript.pdf (29 pages, 6442930 bytes).
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on ebp-JCPManuscript.pdf (29 pages, 6435048 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
+ 758 PDF objects out of 1000 (max. 8388607)
+ 602 compressed objects within 7 object streams
  130 named destinations out of 1000 (max. 500000)
  353 words of extra memory for PDF output out of 10000 (max. 10000000)
 
