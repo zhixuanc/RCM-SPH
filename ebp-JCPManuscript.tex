@@ -291,12 +291,12 @@ and project the primitive variables onto this local coordinate system to define 
 \item Solve this local Riemann problem approximately using a HLLC solver;
 \item Sample the solution using the Van Der Corput sequence, defining a state  $p^{\ast}, u^{\ast}$;
 \item Project $p^{\ast}, u^{\ast}$  back to the global coordinate system, to obtain $p^{\ast}$ and $\textbf{v}^{\ast}$;
-\item Update the particle positions.
+\item Update the particle positions and physical quantities.
 \end{itemize}
 
 \section{Numerical tests} \label{numericaltests}
 We describe results from several numerical tests using SPH, RSPH and GSPH in this section.
-1D shock tube tests are used to compare standard SPH, GSPH and RSPH. Comprehensive shock tube simulations are also conducted to check the capacity of RSPH for different situations. In addition, order of accuracy is investigated for the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation with SPH, GSPH and RSPH to check equivalent overall dissipation introduced by each method.
+A 1D shock tube tests is used to compare standard SPH, GSPH and RSPH. More shock tube simulations are also conducted to check the capacity of RSPH for different situations. In addition, order of accuracy is investigated for the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation with SPH, GSPH and RSPH to check equivalent overall dissipation introduced by each method.
 
 Six 1D simulations described here are carried out:
 \begin{itemize}% [1D Tests]
@@ -543,7 +543,7 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-p-Rp6}
     \end{minipage}% 
-    \caption{Results for test 4, the double shock case. All physical properties are well re-produced. However, the oscillations are more serious than oscillations in other tests.}
+    \caption{Results for test 4, the double shock case. To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. However, the oscillations are more serious than oscillations in other tests.}
     \label{fig:RCM-double-shock}
 \end{figure}
 
@@ -588,7 +588,7 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-p-Rp3}
     \end{minipage}% 
-    \caption{Results for test 6, the strong blast test. y axis for density plot is in log base 10. All physical properties are well re-produced. The oscillations between shock and contact discontinuity is relatively larger than other area. A noticeable spike is observed near contact discontinuity.}
+    \caption{Results for test 6, the strong blast test. y axis for density plot is in log base 10.  To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. The oscillations between shock and contact discontinuity is relatively larger than other area. A noticeable spike is observed near contact discontinuity.}
     \label{fig:RCM-strong-blast}
 \end{figure}
 
