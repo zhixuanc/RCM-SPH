@@ -1,2272 +1,2175 @@
-%boundary conditions imposing for Hyperbolic system of equaiton.
-@article{thompson1990time,
-  title={Time-dependent boundary conditions for hyperbolic systems, II},
-  author={Thompson, Kevin W},
-  journal={Journal of Computational Physics},
-  volume={89},
-  number={2},
-  pages={439--461},
-  year={1990},
-  publisher={Elsevier}
-}
-@book{godlewski2013numerical,
-  title={Numerical approximation of hyperbolic systems of conservation laws},
-  author={Godlewski, Edwige and Raviart, Pierre-Arnaud},
-  volume={118},
-  year={2013},
-  publisher={Springer Science \& Business Media}
-}
-@article{kreiss1970initial,
-  title={Initial boundary value problems for hyperbolic systems},
-  author={Kreiss, Heinz-Otto},
-  journal={Communications on Pure and Applied Mathematics},
-  volume={23},
-  number={3},
-  pages={277--298},
-  year={1970},
-  publisher={Wiley Online Library}
-}
-@article{majda1975initial,
-  title={Initial-boundary value problems for hyperbolic equations with uniformly characteristic boundary},
-  author={Majda, Andrew and Osher, Stanley},
-  journal={Communications on Pure and Applied Mathematics},
-  volume={28},
-  number={5},
-  pages={607--675},
-  year={1975},
-  publisher={Wiley Online Library}
-}
-@article{ralston1971note,
-  title={Note on a paper of Kreiss},
-  author={Ralston, James V},
-  journal={Communications on Pure and Applied Mathematics},
-  volume={24},
-  number={6},
-  pages={759--762},
-  year={1971},
-  publisher={Wiley Online Library}
-}
-@article{benabdallah1987problemes,
-  title={Probl{\`e}mes aux limites pour des syst{\`e}mes hyperboliques non lin{\'e}aires de deux {\'e}quations {\`a} une dimension d'espace},
-  author={Benabdallah, Assia and Serre, Denis and LIONS, J-L},
-  journal={Comptes rendus de l'Acad{\'e}mie des sciences. S{\'e}rie 1, Math{\'e}matique},
-  volume={305},
-  number={15},
-  pages={677--680},
-  year={1987},
-  publisher={Elsevier}
-}
-@book{dubois1989boundary,
-  title={Boundary conditions for nonlinear hyperbolic systems of conservation laws},
-  author={Dubois, Fran{\c{c}}ois and Le Floch, Philippe},
-  year={1989},
-  publisher={Springer}
-}
-@techreport{oliger1976theoretical,
-  title={Theoretical and Practical Aspects of Some Initial-Boundary Value Problems in Fluid Dynamics.},
-  author={Oliger, Joseph and Sundstrom, Arne},
-  year={1976},
-  institution={DTIC Document}
-}
-%The paper that I started from to get a basic idea on IBCP.
-@article{guaily2013boundary,
-  title={Boundary conditions for hyperbolic systems of partial differentials equations},
-  author={Guaily, Amr G and Epstein, Marcelo},
-  journal={Journal of advanced research},
-  volume={4},
-  number={4},
-  pages={321--329},
-  year={2013},
-  publisher={Elsevier}
-}
-%Books on CFD
-@book{pletcher2012computational,
-  title={Computational fluid mechanics and heat transfer},
-  author={Pletcher, Richard H and Tannehill, John C and Anderson, Dale},
-  year={2012},
-  publisher={CRC Press}
-}
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
 
-%Very old paper on volcano plume---> useful as in review.
+
+%% Created for Pitman, E Bruce at 2018-03-28 12:34:13 -0400 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@article{hll,
+	Author = {A. Harten and P.D. Lax and B. van Leer},
+	Date-Added = {2018-03-28 16:32:43 +0000},
+	Date-Modified = {2018-03-28 16:34:09 +0000},
+	Journal = {SIAM Review},
+	Pages = {35-61},
+	Title = {On Upstream Differencing and Godunov-type Schemes for Hyperbolic Conservation Laws},
+	Volume = {25},
+	Year = {1983}}
+
+@article{hartenlax,
+	Author = {A. Harten and P.D. Lax},
+	Date-Added = {2018-03-27 15:16:24 +0000},
+	Date-Modified = {2018-03-27 15:17:41 +0000},
+	Journal = {SIAM J. Numer. Analy.},
+	Pages = {289--315},
+	Title = {A Random Choice Finite Difference Scheme for Hyperbolic Conservation Laws},
+	Volume = {18},
+	Year = {1981}}
+
+@article{chorinporousmedium,
+	Author = {A. Chorin},
+	Date-Added = {2018-03-27 15:08:24 +0000},
+	Date-Modified = {2018-03-27 15:11:07 +0000},
+	Journal = {Comm. Math. Phys},
+	Pages = {103--116},
+	Title = {The instability of fronts in a porous medium},
+	Volume = {91},
+	Year = {1983}}
+
+@article{thompson1990time,
+	Author = {Thompson, Kevin W},
+	Journal = {Journal of Computational Physics},
+	Number = {2},
+	Pages = {439--461},
+	Publisher = {Elsevier},
+	Title = {Time-dependent boundary conditions for hyperbolic systems, II},
+	Volume = {89},
+	Year = {1990}}
+
+@book{godlewski2013numerical,
+	Author = {Godlewski, Edwige and Raviart, Pierre-Arnaud},
+	Publisher = {Springer Science \& Business Media},
+	Title = {Numerical approximation of hyperbolic systems of conservation laws},
+	Volume = {118},
+	Year = {2013}}
+
+@article{kreiss1970initial,
+	Author = {Kreiss, Heinz-Otto},
+	Journal = {Communications on Pure and Applied Mathematics},
+	Number = {3},
+	Pages = {277--298},
+	Publisher = {Wiley Online Library},
+	Title = {Initial boundary value problems for hyperbolic systems},
+	Volume = {23},
+	Year = {1970}}
+
+@article{majda1975initial,
+	Author = {Majda, Andrew and Osher, Stanley},
+	Journal = {Communications on Pure and Applied Mathematics},
+	Number = {5},
+	Pages = {607--675},
+	Publisher = {Wiley Online Library},
+	Title = {Initial-boundary value problems for hyperbolic equations with uniformly characteristic boundary},
+	Volume = {28},
+	Year = {1975}}
+
+@article{ralston1971note,
+	Author = {Ralston, James V},
+	Journal = {Communications on Pure and Applied Mathematics},
+	Number = {6},
+	Pages = {759--762},
+	Publisher = {Wiley Online Library},
+	Title = {Note on a paper of Kreiss},
+	Volume = {24},
+	Year = {1971}}
+
+@article{benabdallah1987problemes,
+	Author = {Benabdallah, Assia and Serre, Denis and LIONS, J-L},
+	Journal = {Comptes rendus de l'Acad{\'e}mie des sciences. S{\'e}rie 1, Math{\'e}matique},
+	Number = {15},
+	Pages = {677--680},
+	Publisher = {Elsevier},
+	Title = {Probl{\`e}mes aux limites pour des syst{\`e}mes hyperboliques non lin{\'e}aires de deux {\'e}quations {\`a} une dimension d'espace},
+	Volume = {305},
+	Year = {1987}}
+
+@book{dubois1989boundary,
+	Author = {Dubois, Fran{\c{c}}ois and Le Floch, Philippe},
+	Publisher = {Springer},
+	Title = {Boundary conditions for nonlinear hyperbolic systems of conservation laws},
+	Year = {1989}}
+
+@techreport{oliger1976theoretical,
+	Author = {Oliger, Joseph and Sundstrom, Arne},
+	Institution = {DTIC Document},
+	Title = {Theoretical and Practical Aspects of Some Initial-Boundary Value Problems in Fluid Dynamics.},
+	Year = {1976}}
+
+@article{guaily2013boundary,
+	Author = {Guaily, Amr G and Epstein, Marcelo},
+	Journal = {Journal of advanced research},
+	Number = {4},
+	Pages = {321--329},
+	Publisher = {Elsevier},
+	Title = {Boundary conditions for hyperbolic systems of partial differentials equations},
+	Volume = {4},
+	Year = {2013}}
+
+@book{pletcher2012computational,
+	Author = {Pletcher, Richard H and Tannehill, John C and Anderson, Dale},
+	Publisher = {CRC Press},
+	Title = {Computational fluid mechanics and heat transfer},
+	Year = {2012}}
+
 @inproceedings{morton1956turbulent,
-  title={Turbulent gravitational convection from maintained and instantaneous sources},
-  author={Morton, BR and Taylor, Geoffrey and Turner, JS},
-  booktitle={Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences},
-  volume={234},
-  number={1196},
-  pages={1--23},
-  year={1956},
-  organization={The Royal Society}
-}
+	Author = {Morton, BR and Taylor, Geoffrey and Turner, JS},
+	Booktitle = {Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences},
+	Number = {1196},
+	Organization = {The Royal Society},
+	Pages = {1--23},
+	Title = {Turbulent gravitational convection from maintained and instantaneous sources},
+	Volume = {234},
+	Year = {1956}}
+
 @book{bullard1962volcanoes,
-  title={Volcanoes: in history, in theory, in eruption},
-  author={Bullard, Fred Mason},
-  year={1962},
-  publisher={Wiley Online Library}
-}
+	Author = {Bullard, Fred Mason},
+	Publisher = {Wiley Online Library},
+	Title = {Volcanoes: in history, in theory, in eruption},
+	Year = {1962}}
+
 @article{settle1978volcanic,
-  title={Volcanic eruption clouds and the thermal power output of explosive eruptions},
-  author={Settle, Mark},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={3},
-  number={3},
-  pages={309--324},
-  year={1978},
-  publisher={Elsevier}
-}
+	Author = {Settle, Mark},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {3},
+	Pages = {309--324},
+	Publisher = {Elsevier},
+	Title = {Volcanic eruption clouds and the thermal power output of explosive eruptions},
+	Volume = {3},
+	Year = {1978}}
+
 @article{wilson1978control,
-  title={The control of volcanic column heights by eruption energetics and dynamics},
-  author={Wilson, L and Sparks, RSJ and Huang, TC and Watkins, ND},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={83},
-  number={B4},
-  pages={1829--1836},
-  year={1978},
-  publisher={Wiley Online Library}
-}
+	Author = {Wilson, L and Sparks, RSJ and Huang, TC and Watkins, ND},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B4},
+	Pages = {1829--1836},
+	Publisher = {Wiley Online Library},
+	Title = {The control of volcanic column heights by eruption energetics and dynamics},
+	Volume = {83},
+	Year = {1978}}
+
 @article{woods1988fluid,
-  title={The fluid dynamics and thermodynamics of eruption columns},
-  author={Woods, AW},
-  journal={Bulletin of Volcanology},
-  volume={50},
-  number={3},
-  pages={169--193},
-  year={1988},
-  publisher={Springer}
-}
+	Author = {Woods, AW},
+	Journal = {Bulletin of Volcanology},
+	Number = {3},
+	Pages = {169--193},
+	Publisher = {Springer},
+	Title = {The fluid dynamics and thermodynamics of eruption columns},
+	Volume = {50},
+	Year = {1988}}
+
 @article{woods1995decompression,
-  title={The decompression of volcanic jets in a crater during explosive volcanic eruptions},
-  author={Woods, Andrew W and Bower, Sally M},
-  journal={Earth and Planetary Science Letters},
-  volume={131},
-  number={3},
-  pages={189--205},
-  year={1995},
-  publisher={Elsevier}
-}
+	Author = {Woods, Andrew W and Bower, Sally M},
+	Journal = {Earth and Planetary Science Letters},
+	Number = {3},
+	Pages = {189--205},
+	Publisher = {Elsevier},
+	Title = {The decompression of volcanic jets in a crater during explosive volcanic eruptions},
+	Volume = {131},
+	Year = {1995}}
+
 @book{sparks1997volcanic,
-  title={Volcanic plumes},
-  author={Sparks, Robert Stephen John and Bursik, MI and Carey, SN and Gilbert, Jennifer and Glaze, LS and Sigurdsson, H and Woods, AW},
-  year={1997},
-  publisher={Wiley}
-}
+	Author = {Sparks, Robert Stephen John and Bursik, MI and Carey, SN and Gilbert, Jennifer and Glaze, LS and Sigurdsson, H and Woods, AW},
+	Publisher = {Wiley},
+	Title = {Volcanic plumes},
+	Year = {1997}}
+
 @article{woods1993moist,
-  title={Moist convection and the injection of volcanic ash into the atmosphere},
-  author={Woods, Andrew W},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={98},
-  number={B10},
-  pages={17627--17636},
-  year={1993},
-  publisher={Wiley Online Library}
-}
+	Author = {Woods, Andrew W},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B10},
+	Pages = {17627--17636},
+	Publisher = {Wiley Online Library},
+	Title = {Moist convection and the injection of volcanic ash into the atmosphere},
+	Volume = {98},
+	Year = {1993}}
+
 @article{koyaguchi1996formation,
-  title={On the formation of eruption columns following explosive mixing of magma and surface-water},
-  author={Koyaguchi, Takehiro and Woods, Andrew W},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={101},
-  number={B3},
-  pages={5561--5574},
-  year={1996},
-  publisher={Wiley Online Library}
-}
+	Author = {Koyaguchi, Takehiro and Woods, Andrew W},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B3},
+	Pages = {5561--5574},
+	Publisher = {Wiley Online Library},
+	Title = {On the formation of eruption columns following explosive mixing of magma and surface-water},
+	Volume = {101},
+	Year = {1996}}
+
 @article{woods1991particle,
-  title={Particle fallout, thermal disequilibrium and volcanic plumes},
-  author={Woods, Andrew W and Bursik, Marcus I},
-  journal={Bulletin of Volcanology},
-  volume={53},
-  number={7},
-  pages={559--570},
-  year={1991},
-  publisher={Springer}
-}
+	Author = {Woods, Andrew W and Bursik, Marcus I},
+	Journal = {Bulletin of Volcanology},
+	Number = {7},
+	Pages = {559--570},
+	Publisher = {Springer},
+	Title = {Particle fallout, thermal disequilibrium and volcanic plumes},
+	Volume = {53},
+	Year = {1991}}
 
 @article{valentine1989numerical,
-  title={Numerical models of Plinian eruption columns and pyroclastic flows},
-  author={Valentine, Greg A and Wohletz, Kenneth H},
-  journal={J. Geophys. Res},
-  volume={94},
-  pages={1867--1887},
-  year={1989}
-}
+	Author = {Valentine, Greg A and Wohletz, Kenneth H},
+	Journal = {J. Geophys. Res},
+	Pages = {1867--1887},
+	Title = {Numerical models of Plinian eruption columns and pyroclastic flows},
+	Volume = {94},
+	Year = {1989}}
 
-%papers on Volcano plume simulation
 @article{girault2014effect,
-  title={The effect of total grain-size distribution on the dynamics of turbulent volcanic plumes},
-  author={Girault, Fr{\'e}d{\'e}ric and Carazzo, Guillaume and Tait, Steve and Ferrucci, Fabrizio and Kaminski, {\'E}douard},
-  journal={Earth and Planetary Science Letters},
-  volume={394},
-  pages={124--134},
-  year={2014},
-  publisher={Elsevier}
-}
+	Author = {Girault, Fr{\'e}d{\'e}ric and Carazzo, Guillaume and Tait, Steve and Ferrucci, Fabrizio and Kaminski, {\'E}douard},
+	Journal = {Earth and Planetary Science Letters},
+	Pages = {124--134},
+	Publisher = {Elsevier},
+	Title = {The effect of total grain-size distribution on the dynamics of turbulent volcanic plumes},
+	Volume = {394},
+	Year = {2014}}
 
 @article{vitturi2015plume,
-  title={PLUME-MoM 1.0: A new integral model of volcanic plumes based on the method of moments},
-  author={Vitturi, M de'Michieli and Neri, Augusto and Barsotti, Sara},
-  journal={Geoscientific Model Development},
-  volume={8},
-  number={8},
-  pages={2447},
-  year={2015},
-  publisher={Copernicus GmbH}
-}
+	Author = {Vitturi, M de'Michieli and Neri, Augusto and Barsotti, Sara},
+	Journal = {Geoscientific Model Development},
+	Number = {8},
+	Pages = {2447},
+	Publisher = {Copernicus GmbH},
+	Title = {PLUME-MoM 1.0: A new integral model of volcanic plumes based on the method of moments},
+	Volume = {8},
+	Year = {2015}}
 
 @article{pelantinumerical,
-  title={Numerical Simulation of Volcanic Jets},
-  author={Pelanti, Marica and LeVeque, Randall J}
-}
+	Author = {Pelanti, Marica and LeVeque, Randall J},
+	Title = {Numerical Simulation of Volcanic Jets}}
+
 @article{bursik2001effect,
-  title={Effect of wind on the rise height of volcanic plumes},
-  author={Bursik, M},
-  journal={Geophys. Res. Lett},
-  volume={28},
-  number={18},
-  pages={3621--3624},
-  year={2001}
-}
+	Author = {Bursik, M},
+	Journal = {Geophys. Res. Lett},
+	Number = {18},
+	Pages = {3621--3624},
+	Title = {Effect of wind on the rise height of volcanic plumes},
+	Volume = {28},
+	Year = {2001}}
+
 @article{mastin2007user,
-  title={A user-friendly one-dimensional model for wet volcanic plumes},
-  author={Mastin, Larry G},
-  journal={Geochemistry, Geophysics, Geosystems},
-  volume={8},
-  number={3},
-  year={2007},
-  publisher={Wiley Online Library}
-}
+	Author = {Mastin, Larry G},
+	Journal = {Geochemistry, Geophysics, Geosystems},
+	Number = {3},
+	Publisher = {Wiley Online Library},
+	Title = {A user-friendly one-dimensional model for wet volcanic plumes},
+	Volume = {8},
+	Year = {2007}}
+
 @book{lockwood2013volcanoes,
-  title={Volcanoes: global perspectives},
-  author={Lockwood, John P and Hazlett, Richard W},
-  year={2013},
-  publisher={John Wiley \& Sons}
-}
+	Author = {Lockwood, John P and Hazlett, Richard W},
+	Publisher = {John Wiley \& Sons},
+	Title = {Volcanoes: global perspectives},
+	Year = {2013}}
+
 @article{wohletz1984hydrodynamic,
-  title={Hydrodynamic aspects of caldera-forming eruptions: Numerical models},
-  author={Wohletz, KH and McGetchin, TR and Sandford, MT and Jones, EM},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={89},
-  number={B10},
-  pages={8269--8285},
-  year={1984},
-  publisher={Wiley Online Library}
-}
+	Author = {Wohletz, KH and McGetchin, TR and Sandford, MT and Jones, EM},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B10},
+	Pages = {8269--8285},
+	Publisher = {Wiley Online Library},
+	Title = {Hydrodynamic aspects of caldera-forming eruptions: Numerical models},
+	Volume = {89},
+	Year = {1984}}
+
 @article{valentine1989numerical,
-  title={Numerical models of Plinian eruption columns and pyroclastic flows},
-  author={Valentine, Greg A and Wohletz, Kenneth H},
-  journal={J. Geophys. Res},
-  volume={94},
-  pages={1867--1887},
-  year={1989}
-}
+	Author = {Valentine, Greg A and Wohletz, Kenneth H},
+	Journal = {J. Geophys. Res},
+	Pages = {1867--1887},
+	Title = {Numerical models of Plinian eruption columns and pyroclastic flows},
+	Volume = {94},
+	Year = {1989}}
+
 @article{dobran1993numerical,
-  title={Numerical simulation of collapsing volcanic columns},
-  author={Dobran, Flavio and Neri, Augusto and Macedonio, Giovanni},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={98},
-  number={B3},
-  pages={4231--4259},
-  year={1993},
-  publisher={Wiley Online Library}
-}
+	Author = {Dobran, Flavio and Neri, Augusto and Macedonio, Giovanni},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B3},
+	Pages = {4231--4259},
+	Publisher = {Wiley Online Library},
+	Title = {Numerical simulation of collapsing volcanic columns},
+	Volume = {98},
+	Year = {1993}}
+
 @article{neri1994influence,
-  title={Influence of eruption parameters on the thermofluid dynamics of collapsing volcanic columns},
-  author={Neri, Augusto and Dobran, Flavio},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={99},
-  number={B6},
-  pages={11833--11857},
-  year={1994},
-  publisher={Wiley Online Library}
-}
+	Author = {Neri, Augusto and Dobran, Flavio},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B6},
+	Pages = {11833--11857},
+	Publisher = {Wiley Online Library},
+	Title = {Influence of eruption parameters on the thermofluid dynamics of collapsing volcanic columns},
+	Volume = {99},
+	Year = {1994}}
+
 @article{neri1996numerical,
-  title={Numerical simulation of collapsing volcanic columns with particles of two sizes},
-  author={Neri, Augusto and Macedonio, Giovanni},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={101},
-  number={B4},
-  pages={8153--8174},
-  year={1996},
-  publisher={Wiley Online Library}
-}
+	Author = {Neri, Augusto and Macedonio, Giovanni},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B4},
+	Pages = {8153--8174},
+	Publisher = {Wiley Online Library},
+	Title = {Numerical simulation of collapsing volcanic columns with particles of two sizes},
+	Volume = {101},
+	Year = {1996}}
 
 @article{clarke2002transient,
-  title={Transient dynamics of vulcanian explosions and column collapse},
-  author={Clarke, AB and Voight, B and Neri, A and Macedonio, G},
-  journal={Nature},
-  volume={415},
-  number={6874},
-  pages={897--901},
-  year={2002},
-  publisher={Nature Publishing Group}
-}
+	Author = {Clarke, AB and Voight, B and Neri, A and Macedonio, G},
+	Journal = {Nature},
+	Number = {6874},
+	Pages = {897--901},
+	Publisher = {Nature Publishing Group},
+	Title = {Transient dynamics of vulcanian explosions and column collapse},
+	Volume = {415},
+	Year = {2002}}
+
 @article{neri1998role,
-  title={The role of magma composition and water content in explosive eruptions: 2. Pyroclastic dispersion dynamics},
-  author={Neri, Augusto and Papale, Paolo and Macedonio, Giovanni},
-  journal={Journal of volcanology and geothermal research},
-  volume={87},
-  number={1},
-  pages={95--115},
-  year={1998},
-  publisher={Elsevier}
-}
+	Author = {Neri, Augusto and Papale, Paolo and Macedonio, Giovanni},
+	Journal = {Journal of volcanology and geothermal research},
+	Number = {1},
+	Pages = {95--115},
+	Publisher = {Elsevier},
+	Title = {The role of magma composition and water content in explosive eruptions: 2. Pyroclastic dispersion dynamics},
+	Volume = {87},
+	Year = {1998}}
+
 @article{neri2002mass,
-  title={Mass partition during collapsing and transitional columns by using numerical simulations},
-  author={Neri, Augusto and Di Muro, Andrea and Rosi, Mauro},
-  journal={Journal of volcanology and geothermal research},
-  volume={115},
-  number={1},
-  pages={1--18},
-  year={2002},
-  publisher={Elsevier}
-}
+	Author = {Neri, Augusto and Di Muro, Andrea and Rosi, Mauro},
+	Journal = {Journal of volcanology and geothermal research},
+	Number = {1},
+	Pages = {1--18},
+	Publisher = {Elsevier},
+	Title = {Mass partition during collapsing and transitional columns by using numerical simulations},
+	Volume = {115},
+	Year = {2002}}
+
 @article{neri2003coupled,
-  title={Coupled conduit and atmospheric dispersal dynamics of the AD 79 Plinian eruption of Vesuvius},
-  author={Neri, Augusto and Papale, Paolo and Del Seppia, Dario and Santacroce, Roberto},
-  journal={Journal of volcanology and geothermal research},
-  volume={120},
-  number={1},
-  pages={141--160},
-  year={2003},
-  publisher={Elsevier}
-}
+	Author = {Neri, Augusto and Papale, Paolo and Del Seppia, Dario and Santacroce, Roberto},
+	Journal = {Journal of volcanology and geothermal research},
+	Number = {1},
+	Pages = {141--160},
+	Publisher = {Elsevier},
+	Title = {Coupled conduit and atmospheric dispersal dynamics of the AD 79 Plinian eruption of Vesuvius},
+	Volume = {120},
+	Year = {2003}}
+
 @article{neri2003multiparticle,
-  title={Multiparticle simulation of collapsing volcanic columns and pyroclastic flow},
-  author={Neri, Augusto and Esposti Ongaro, Thmaso and Macedonio, Giovanni and Gidaspow, Dimitri},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={108},
-  number={B4},
-  year={2003},
-  publisher={Wiley Online Library}
-}
+	Author = {Neri, Augusto and Esposti Ongaro, Thmaso and Macedonio, Giovanni and Gidaspow, Dimitri},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B4},
+	Publisher = {Wiley Online Library},
+	Title = {Multiparticle simulation of collapsing volcanic columns and pyroclastic flow},
+	Volume = {108},
+	Year = {2003}}
+
 @article{degruyter2012improving,
-  title={Improving on mass flow rate estimates of volcanic eruptions},
-  author={Degruyter, Wim and Bonadonna, Costanza},
-  journal={Geophysical Research Letters},
-  volume={39},
-  number={16},
-  year={2012},
-  publisher={Wiley Online Library}
-}
+	Author = {Degruyter, Wim and Bonadonna, Costanza},
+	Journal = {Geophysical Research Letters},
+	Number = {16},
+	Publisher = {Wiley Online Library},
+	Title = {Improving on mass flow rate estimates of volcanic eruptions},
+	Volume = {39},
+	Year = {2012}}
+
 @article{woodhouse2013interaction,
-  title={Interaction between volcanic plumes and wind during the 2010 Eyjafjallaj{\"o}kull eruption, Iceland},
-  author={Woodhouse, MJ and Hogg, AJ and Phillips, JC and Sparks, RSJ},
-  journal={Journal of Geophysical Research: Solid Earth},
-  volume={118},
-  number={1},
-  pages={92--109},
-  year={2013},
-  publisher={Wiley Online Library}
-}
+	Author = {Woodhouse, MJ and Hogg, AJ and Phillips, JC and Sparks, RSJ},
+	Journal = {Journal of Geophysical Research: Solid Earth},
+	Number = {1},
+	Pages = {92--109},
+	Publisher = {Wiley Online Library},
+	Title = {Interaction between volcanic plumes and wind during the 2010 Eyjafjallaj{\"o}kull eruption, Iceland},
+	Volume = {118},
+	Year = {2013}}
+
 @article{devenish2013using,
-  title={Using simple plume models to refine the source mass flux of volcanic eruptions according to atmospheric conditions},
-  author={Devenish, BJ},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={256},
-  pages={118--127},
-  year={2013},
-  publisher={Elsevier}
-}
+	Author = {Devenish, BJ},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Pages = {118--127},
+	Publisher = {Elsevier},
+	Title = {Using simple plume models to refine the source mass flux of volcanic eruptions according to atmospheric conditions},
+	Volume = {256},
+	Year = {2013}}
+
 @article{de2015plume,
-  title={PLUME-MoM 1.0: A new integral model of volcanic plumes based on the method of moments},
-  author={de'Michieli Vitturi, M and Neri, Augusto and Barsotti, Sara},
-  journal={Geoscientific Model Development},
-  volume={8},
-  number={8},
-  pages={2447--2463},
-  year={2015},
-  publisher={Copernicus GmbH}
-}
+	Author = {de'Michieli Vitturi, M and Neri, Augusto and Barsotti, Sara},
+	Journal = {Geoscientific Model Development},
+	Number = {8},
+	Pages = {2447--2463},
+	Publisher = {Copernicus GmbH},
+	Title = {PLUME-MoM 1.0: A new integral model of volcanic plumes based on the method of moments},
+	Volume = {8},
+	Year = {2015}}
+
 @article{folch2016fplume,
-  title={FPLUME-1.0: An integral volcanic plume model accounting for ash aggregation},
-  author={Folch, Arnau and Costa, Antonio and Macedonio, Giovannin},
-  journal={Geoscientific Model Development},
-  volume={9},
-  number={1},
-  pages={431},
-  year={2016},
-  publisher={Copernicus GmbH}
-}
+	Author = {Folch, Arnau and Costa, Antonio and Macedonio, Giovannin},
+	Journal = {Geoscientific Model Development},
+	Number = {1},
+	Pages = {431},
+	Publisher = {Copernicus GmbH},
+	Title = {FPLUME-1.0: An integral volcanic plume model accounting for ash aggregation},
+	Volume = {9},
+	Year = {2016}}
+
 @article{pouget2016sensitivity,
-  title={Sensitivity analysis of a one-dimensional model of a volcanic plume with particle fallout and collapse behavior},
-  author={Pouget, S and Bursik, M and Singla, P and Singh, T},
-  journal={Journal of Volcanology and Geothermal Research},
-  year={2016},
-  publisher={Elsevier}
-}
-%PADC
+	Author = {Pouget, S and Bursik, M and Singla, P and Singh, T},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Publisher = {Elsevier},
+	Title = {Sensitivity analysis of a one-dimensional model of a volcanic plume with particle fallout and collapse behavior},
+	Year = {2016}}
+
 @article{neri20074d,
-  title={4D simulation of explosive eruption dynamics at Vesuvius},
-  author={Neri, Augusto and Esposti Ongaro, Thmaso and Menconi, Gianluca and De'Michieli Vitturi, Mattia and Cavazzoni, Carlo and Erbacci, Giovanni and Baxter, Peter J},
-  journal={Geophysical research letters},
-  volume={34},
-  number={4},
-  year={2007},
-  publisher={Wiley Online Library}
-}
+	Author = {Neri, Augusto and Esposti Ongaro, Thmaso and Menconi, Gianluca and De'Michieli Vitturi, Mattia and Cavazzoni, Carlo and Erbacci, Giovanni and Baxter, Peter J},
+	Journal = {Geophysical research letters},
+	Number = {4},
+	Publisher = {Wiley Online Library},
+	Title = {4D simulation of explosive eruption dynamics at Vesuvius},
+	Volume = {34},
+	Year = {2007}}
+
 @article{ongaro2007parallel,
-  title={A parallel multiphase flow code for the 3D simulation of explosive volcanic eruptions},
-  author={Esposti Ongaro, Thmaso and Cavazzoni, Carlo and Erbacci, Giovanni and Neri, Augusto and Salvetti, Maria-Vittoria},
-  journal={Parallel Computing},
-  volume={33},
-  number={7},
-  pages={541--560},
-  year={2007},
-  publisher={Elsevier}
-}
+	Author = {Esposti Ongaro, Thmaso and Cavazzoni, Carlo and Erbacci, Giovanni and Neri, Augusto and Salvetti, Maria-Vittoria},
+	Journal = {Parallel Computing},
+	Number = {7},
+	Pages = {541--560},
+	Publisher = {Elsevier},
+	Title = {A parallel multiphase flow code for the 3D simulation of explosive volcanic eruptions},
+	Volume = {33},
+	Year = {2007}}
 
 @article{carcano2013semi,
-  title={A semi-implicit, second-order-accurate numerical model for multiphase underexpanded volcanic jets},
-  author={Carcano, S and Bonaventura, L and Esposti Ongaro, Thmaso and Neri, A},
-  journal={Geoscientific Model Development},
-  volume={6},
-  number={6},
-  pages={1905--1924},
-  year={2013},
-  publisher={Copernicus GmbH}
-}
-%I need add most recent paper on ATHAM, PADC, and Japanese Model.
-%SK-3D
+	Author = {Carcano, S and Bonaventura, L and Esposti Ongaro, Thmaso and Neri, A},
+	Journal = {Geoscientific Model Development},
+	Number = {6},
+	Pages = {1905--1924},
+	Publisher = {Copernicus GmbH},
+	Title = {A semi-implicit, second-order-accurate numerical model for multiphase underexpanded volcanic jets},
+	Volume = {6},
+	Year = {2013}}
 
 @article{suzuki2005numerical,
-  title={A numerical study of turbulent mixing in eruption clouds using a three-dimensional fluid dynamics model},
-  author={Suzuki, Yujiro J and Koyaguchi, Takehiro and Ogawa, Masaki and Hachisu, Izumi},
-  journal={Journal of Geophysical Research: Solid Earth},
-  volume={110},
-  number={B8},
-  year={2005},
-  publisher={Wiley Online Library}
-}
+	Author = {Suzuki, Yujiro J and Koyaguchi, Takehiro and Ogawa, Masaki and Hachisu, Izumi},
+	Journal = {Journal of Geophysical Research: Solid Earth},
+	Number = {B8},
+	Publisher = {Wiley Online Library},
+	Title = {A numerical study of turbulent mixing in eruption clouds using a three-dimensional fluid dynamics model},
+	Volume = {110},
+	Year = {2005}}
 
 @book{fischer2013mixing,
-  title={Mixing in inland and coastal waters},
-  author={Fischer, Hugo B and List, John E and Koh, C Robert and Imberger, Jorg and Brooks, Norman H},
-  year={2013},
-  publisher={Elsevier}
-}
+	Author = {Fischer, Hugo B and List, John E and Koh, C Robert and Imberger, Jorg and Brooks, Norman H},
+	Publisher = {Elsevier},
+	Title = {Mixing in inland and coastal waters},
+	Year = {2013}}
 
 @article{suzuki2010numerical,
-  title={Numerical determination of the efficiency of entrainment in volcanic eruption columns},
-  author={Suzuki, YJ and Koyaguchi, T},
-  journal={Geophysical Research Letters},
-  volume={37},
-  number={5},
-  year={2010},
-  publisher={Wiley Online Library}
-}
-@article{suzuki20133d,
-  title={3D numerical simulation of volcanic eruption clouds during the 2011 Shinmoe-dake eruptions},
-  author={Suzuki, Yujiro J and Koyaguchi, Takehiro},
-  journal={Earth, Planets and Space},
-  volume={65},
-  number={6},
-  pages={581--589},
-  year={2013},
-  publisher={Springer}
-}
-@article{suzuki2009three,
-  title={A three-dimensional numerical simulation of spreading umbrella clouds},
-  author={Suzuki, YJ and Koyaguchi, T},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={114},
-  number={B3},
-  year={2009},
-  publisher={Wiley Online Library}
-}
-@article{koyaguchi2010effects,
-  title={Effects of the crater on eruption column dynamics},
-  author={Koyaguchi, Takehiro and Suzuki, Yujiro J and Kozono, Tomofumi},
-  journal={Journal of Geophysical Research: Solid Earth (1978--2012)},
-  volume={115},
-  number={B7},
-  year={2010},
-  publisher={Wiley Online Library}
-}
-@article{koyaguchi2009effect,
-  title={The effect of intensity of turbulence in umbrella cloud on tephra dispersion during explosive volcanic eruptions: Experimental and numerical approaches},
-  author={Koyaguchi, Takehiro and Ochiai, Kiyokatsu and Suzuki, Yujiro J},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={186},
-  number={1},
-  pages={68--78},
-  year={2009},
-  publisher={Elsevier}
-}
-@article{suzuki20123,
-  title={3-D numerical simulations of eruption column collapse: Effects of vent size on pressure-balanced jet/plumes},
-  author={Suzuki, Yujiro J and Koyaguchi, Takehiro},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={221},
-  pages={1--13},
-  year={2012},
-  publisher={Elsevier}
-}
+	Author = {Suzuki, YJ and Koyaguchi, T},
+	Journal = {Geophysical Research Letters},
+	Number = {5},
+	Publisher = {Wiley Online Library},
+	Title = {Numerical determination of the efficiency of entrainment in volcanic eruption columns},
+	Volume = {37},
+	Year = {2010}}
 
-%ATHAM
+@article{suzuki20133d,
+	Author = {Suzuki, Yujiro J and Koyaguchi, Takehiro},
+	Journal = {Earth, Planets and Space},
+	Number = {6},
+	Pages = {581--589},
+	Publisher = {Springer},
+	Title = {3D numerical simulation of volcanic eruption clouds during the 2011 Shinmoe-dake eruptions},
+	Volume = {65},
+	Year = {2013}}
+
+@article{suzuki2009three,
+	Author = {Suzuki, YJ and Koyaguchi, T},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B3},
+	Publisher = {Wiley Online Library},
+	Title = {A three-dimensional numerical simulation of spreading umbrella clouds},
+	Volume = {114},
+	Year = {2009}}
+
+@article{koyaguchi2010effects,
+	Author = {Koyaguchi, Takehiro and Suzuki, Yujiro J and Kozono, Tomofumi},
+	Journal = {Journal of Geophysical Research: Solid Earth (1978--2012)},
+	Number = {B7},
+	Publisher = {Wiley Online Library},
+	Title = {Effects of the crater on eruption column dynamics},
+	Volume = {115},
+	Year = {2010}}
+
+@article{koyaguchi2009effect,
+	Author = {Koyaguchi, Takehiro and Ochiai, Kiyokatsu and Suzuki, Yujiro J},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {1},
+	Pages = {68--78},
+	Publisher = {Elsevier},
+	Title = {The effect of intensity of turbulence in umbrella cloud on tephra dispersion during explosive volcanic eruptions: Experimental and numerical approaches},
+	Volume = {186},
+	Year = {2009}}
+
+@article{suzuki20123,
+	Author = {Suzuki, Yujiro J and Koyaguchi, Takehiro},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Pages = {1--13},
+	Publisher = {Elsevier},
+	Title = {3-D numerical simulations of eruption column collapse: Effects of vent size on pressure-balanced jet/plumes},
+	Volume = {221},
+	Year = {2012}}
+
 @article{oberhuber1998volcanic,
-  title={Volcanic plume simulation on large scales},
-  author={Oberhuber, Josef M and Herzog, Michael and Graf, Hans-F and Schwanke, Karsten},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={87},
-  number={1},
-  pages={29--53},
-  year={1998},
-  publisher={Elsevier}
-}
+	Author = {Oberhuber, Josef M and Herzog, Michael and Graf, Hans-F and Schwanke, Karsten},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {1},
+	Pages = {29--53},
+	Publisher = {Elsevier},
+	Title = {Volcanic plume simulation on large scales},
+	Volume = {87},
+	Year = {1998}}
+
 @article{herzog1998effect,
-  title={The effect of phase changes of water on the development of volcanic plumes},
-  author={Herzog, Michael and Graf, Hans-F and Textor, Christiane and Oberhuber, Josef M},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={87},
-  number={1},
-  pages={55--74},
-  year={1998},
-  publisher={Elsevier}
-}
+	Author = {Herzog, Michael and Graf, Hans-F and Textor, Christiane and Oberhuber, Josef M},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {1},
+	Pages = {55--74},
+	Publisher = {Elsevier},
+	Title = {The effect of phase changes of water on the development of volcanic plumes},
+	Volume = {87},
+	Year = {1998}}
+
 @article{langmann1997radiative,
-  title={Radiative forcing of sulfate aerosols as determined by a regional circulation-chemistry transport model},
-  author={Langmann, B{\"a}rbel and Herzog, Michael and Graf, Hans-F},
-  journal={Journal of Aerosol Science},
-  volume={28},
-  pages={S389--S390},
-  year={1997},
-  publisher={Pergamon}
-}
+	Author = {Langmann, B{\"a}rbel and Herzog, Michael and Graf, Hans-F},
+	Journal = {Journal of Aerosol Science},
+	Pages = {S389--S390},
+	Publisher = {Pergamon},
+	Title = {Radiative forcing of sulfate aerosols as determined by a regional circulation-chemistry transport model},
+	Volume = {28},
+	Year = {1997}}
+
 @article{trentmann2002simulation,
-  title={Simulation of a biomass-burning plume: Comparison of model results with observations},
-  author={Trentmann, J and Andreae, MO and Graf, H-F and Hobbs, PV and Ottmar, RD and Trautmann, T},
-  journal={Journal of Geophysical Research: Atmospheres (1984--2012)},
-  volume={107},
-  number={D2},
-  pages={AAC--5},
-  year={2002},
-  publisher={Wiley Online Library}
-}
+	Author = {Trentmann, J and Andreae, MO and Graf, H-F and Hobbs, PV and Ottmar, RD and Trautmann, T},
+	Journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+	Number = {D2},
+	Pages = {AAC--5},
+	Publisher = {Wiley Online Library},
+	Title = {Simulation of a biomass-burning plume: Comparison of model results with observations},
+	Volume = {107},
+	Year = {2002}}
+
 @article{textor2003injection,
-  title={Injection of gases into the stratosphere by explosive volcanic eruptions},
-  author={Textor, Christiane and Graf, Hans-F and Herzog, Michael and Oberhuber, JM},
-  journal={Journal of Geophysical Research: Atmospheres (1984--2012)},
-  volume={108},
-  number={D19},
-  year={2003},
-  publisher={Wiley Online Library}
-}
+	Author = {Textor, Christiane and Graf, Hans-F and Herzog, Michael and Oberhuber, JM},
+	Journal = {Journal of Geophysical Research: Atmospheres (1984--2012)},
+	Number = {D19},
+	Publisher = {Wiley Online Library},
+	Title = {Injection of gases into the stratosphere by explosive volcanic eruptions},
+	Volume = {108},
+	Year = {2003}}
+
 @article{herzog2003prognostic,
-  title={A prognostic turbulence scheme for the nonhydrostatic plume model ATHAM},
-  author={Herzog, Michael and Oberhuber, Josef M and Graf, Hans-F},
-  journal={Journal of the Atmospheric Sciences},
-  volume={60},
-  number={22},
-  pages={2783--2796},
-  year={2003}
-}
+	Author = {Herzog, Michael and Oberhuber, Josef M and Graf, Hans-F},
+	Journal = {Journal of the Atmospheric Sciences},
+	Number = {22},
+	Pages = {2783--2796},
+	Title = {A prognostic turbulence scheme for the nonhydrostatic plume model ATHAM},
+	Volume = {60},
+	Year = {2003}}
 
 @article{textor2006volcanic1,
-  title={Volcanic particle aggregation in explosive eruption columns. Part I: Parameterization of the microphysics of hydrometeors and ash},
-  author={Textor, Christiane and Graf, Hans-F and Herzog, Michael and Oberhuber, Josef M and Rose, William I and Ernst, Gerald GJ},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={150},
-  number={4},
-  pages={359--377},
-  year={2006},
-  publisher={Elsevier}
-}
+	Author = {Textor, Christiane and Graf, Hans-F and Herzog, Michael and Oberhuber, Josef M and Rose, William I and Ernst, Gerald GJ},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {4},
+	Pages = {359--377},
+	Publisher = {Elsevier},
+	Title = {Volcanic particle aggregation in explosive eruption columns. Part I: Parameterization of the microphysics of hydrometeors and ash},
+	Volume = {150},
+	Year = {2006}}
+
 @article{textor2006volcanic2,
-  title={Volcanic particle aggregation in explosive eruption columns. Part II: Numerical experiments},
-  author={Textor, C and Graf, Hans-F and Herzog, Michael and Oberhuber, Josef M and Rose, William I and Ernst, GGJ},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={150},
-  number={4},
-  pages={378--394},
-  year={2006},
-  publisher={Elsevier}
-}
+	Author = {Textor, C and Graf, Hans-F and Herzog, Michael and Oberhuber, Josef M and Rose, William I and Ernst, GGJ},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {4},
+	Pages = {378--394},
+	Publisher = {Elsevier},
+	Title = {Volcanic particle aggregation in explosive eruption columns. Part II: Numerical experiments},
+	Volume = {150},
+	Year = {2006}}
+
 @book{kobs2009modeling,
-  title={Modeling particle motion and near-vent deposition in explosive volcanic eruptions},
-  author={Kobs, Shannon},
-  year={2009},
-  publisher={State University of New York at Buffalo}
-}
+	Author = {Kobs, Shannon},
+	Publisher = {State University of New York at Buffalo},
+	Title = {Modeling particle motion and near-vent deposition in explosive volcanic eruptions},
+	Year = {2009}}
+
 @article{herzog2010applying,
-  title={Applying the three-dimensional model ATHAM to volcanic plumes: Dynamic of large co-ignimbrite eruptions and associated injection heights for volcanic gases},
-  author={Herzog, Michael and Graf, Hans-F},
-  journal={Geophysical Research Letters},
-  volume={37},
-  number={19},
-  year={2010},
-  publisher={Wiley Online Library}
-}
+	Author = {Herzog, Michael and Graf, Hans-F},
+	Journal = {Geophysical Research Letters},
+	Number = {19},
+	Publisher = {Wiley Online Library},
+	Title = {Applying the three-dimensional model ATHAM to volcanic plumes: Dynamic of large co-ignimbrite eruptions and associated injection heights for volcanic gases},
+	Volume = {37},
+	Year = {2010}}
+
 @article{bursik2009volcanic,
-  title={Volcanic plumes and wind: Jetstream interaction examples and implications for air traffic},
-  author={Bursik, MI and Kobs, SE and Burns, A and Braitseva, OA and Bazanova, LI and Melekestsev, IV and Kurbatov, A and Pieri, DC},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={186},
-  number={1},
-  pages={60--67},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Bursik, MI and Kobs, SE and Burns, A and Braitseva, OA and Bazanova, LI and Melekestsev, IV and Kurbatov, A and Pieri, DC},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {1},
+	Pages = {60--67},
+	Publisher = {Elsevier},
+	Title = {Volcanic plumes and wind: Jetstream interaction examples and implications for air traffic},
+	Volume = {186},
+	Year = {2009}}
+
 @article{van2015hail,
-  title={Hail formation triggers rapid ash aggregation in volcanic plumes},
-  author={Van Eaton, Alexa R and Mastin, Larry G and Herzog, Michael and Schwaiger, Hans F and Schneider, David J and Wallace, Kristi L and Clarke, Amanda B},
-  journal={Nature communications},
-  volume={6},
-  year={2015},
-  publisher={Nature Publishing Group}
-}
+	Author = {Van Eaton, Alexa R and Mastin, Larry G and Herzog, Michael and Schwaiger, Hans F and Schneider, David J and Wallace, Kristi L and Clarke, Amanda B},
+	Journal = {Nature communications},
+	Publisher = {Nature Publishing Group},
+	Title = {Hail formation triggers rapid ash aggregation in volcanic plumes},
+	Volume = {6},
+	Year = {2015}}
 
-%ASHEE
 @article{cerminara2016ashee,
-  title={ASHEE-1.0: a compressible, equilibrium-Eulerian model for volcanic ash plumes},
-  author={Cerminara, M and Esposti Ongaro, Thmaso and Berselli, LC},
-  journal={Geoscientific Model Development},
-  volume={9},
-  number={2},
-  pages={697--730},
-  year={2016},
-  publisher={Copernicus GmbH}
-}
+	Author = {Cerminara, M and Esposti Ongaro, Thmaso and Berselli, LC},
+	Journal = {Geoscientific Model Development},
+	Number = {2},
+	Pages = {697--730},
+	Publisher = {Copernicus GmbH},
+	Title = {ASHEE-1.0: a compressible, equilibrium-Eulerian model for volcanic ash plumes},
+	Volume = {9},
+	Year = {2016}}
 
-%review type papers on Volcano including inter-comparison
 @article{bonadonna2012future,
-  title={Future developments in modelling and monitoring of volcanic ash clouds: outcomes from the first IAVCEI-WMO workshop on Ash Dispersal Forecast and Civil Aviation},
-  author={Bonadonna, Costanza and Folch, Arnau and Loughlin, Susan and Puempel, Herbert},
-  journal={Bulletin of volcanology},
-  volume={74},
-  number={1},
-  pages={1--10},
-  year={2012},
-  publisher={Springer}
-}
+	Author = {Bonadonna, Costanza and Folch, Arnau and Loughlin, Susan and Puempel, Herbert},
+	Journal = {Bulletin of volcanology},
+	Number = {1},
+	Pages = {1--10},
+	Publisher = {Springer},
+	Title = {Future developments in modelling and monitoring of volcanic ash clouds: outcomes from the first IAVCEI-WMO workshop on Ash Dispersal Forecast and Civil Aviation},
+	Volume = {74},
+	Year = {2012}}
 
 @article{costa2016results,
-  title={Results of the eruptive column model inter-comparison study},
-  author={Costa, A and Suzuki, YJ and Cerminara, M and Devenish, BJ and Esposti Ongaro, Thmaso and Herzog, M and Van Eaton, AR and Denby, LC and Bursik, M and de' Michieli Vitturi, Mattia and others},
-  journal={Journal of Volcanology and Geothermal Research},
-  year={2016},
-  publisher={Elsevier}
-}
+	Author = {Costa, A and Suzuki, YJ and Cerminara, M and Devenish, BJ and Esposti Ongaro, Thmaso and Herzog, M and Van Eaton, AR and Denby, LC and Bursik, M and de' Michieli Vitturi, Mattia and others},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Publisher = {Elsevier},
+	Title = {Results of the eruptive column model inter-comparison study},
+	Year = {2016}}
 
 @article{peterson2008forecasting,
-  title={Forecasting exposure to volcanic ash based on ash dispersion modeling},
-  author={Peterson, Rorik A and Dean, Ken G},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={170},
-  number={3},
-  pages={230--246},
-  year={2008},
-  publisher={Elsevier}
-}
-%Volcano umbrella 
+	Author = {Peterson, Rorik A and Dean, Ken G},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {3},
+	Pages = {230--246},
+	Publisher = {Elsevier},
+	Title = {Forecasting exposure to volcanic ash based on ash dispersion modeling},
+	Volume = {170},
+	Year = {2008}}
+
 @article{costa2013density,
-  title={Density-driven transport in the umbrella region of volcanic clouds: Implications for tephra dispersion models},
-  author={Costa, Antonio and Folch, Arnau and Macedonio, Giovanni},
-  journal={Geophysical Research Letters},
-  volume={40},
-  number={18},
-  pages={4823--4827},
-  year={2013},
-  publisher={Wiley Online Library}
-}
+	Author = {Costa, Antonio and Folch, Arnau and Macedonio, Giovanni},
+	Journal = {Geophysical Research Letters},
+	Number = {18},
+	Pages = {4823--4827},
+	Publisher = {Wiley Online Library},
+	Title = {Density-driven transport in the umbrella region of volcanic clouds: Implications for tephra dispersion models},
+	Volume = {40},
+	Year = {2013}}
 
 @article{cerminara2016large,
-  title={Large Eddy Simulation of gas--particle kinematic decoupling and turbulent entrainment in volcanic plumes},
-  author={Cerminara, Matteo and Esposti Ongaro, Thmaso and Neri, Augusto},
-  journal={Journal of Volcanology and Geothermal Research},
-  year={2016},
-  publisher={Elsevier}
-}
+	Author = {Cerminara, Matteo and Esposti Ongaro, Thmaso and Neri, Augusto},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Publisher = {Elsevier},
+	Title = {Large Eddy Simulation of gas--particle kinematic decoupling and turbulent entrainment in volcanic plumes},
+	Year = {2016}}
 
-%exmperimental or observation type of paper on volcano plume
 @article{chojnicki2014flow,
-  title={The flow structure of jets from transient sources and implications for modeling short-duration explosive volcanic eruptions},
-  author={Chojnicki, KN and Clarke, AB and Adrian, RJ and Phillips, JC},
-  journal={Geochemistry, Geophysics, Geosystems},
-  volume={15},
-  number={12},
-  pages={4831--4845},
-  year={2014},
-  publisher={Wiley Online Library}
-}
+	Author = {Chojnicki, KN and Clarke, AB and Adrian, RJ and Phillips, JC},
+	Journal = {Geochemistry, Geophysics, Geosystems},
+	Number = {12},
+	Pages = {4831--4845},
+	Publisher = {Wiley Online Library},
+	Title = {The flow structure of jets from transient sources and implications for modeling short-duration explosive volcanic eruptions},
+	Volume = {15},
+	Year = {2014}}
 
 @article{sigurdsson19841982,
-  title={The 1982 eruptions of El Chich{\'o}n volcano, Mexico: stratigraphy of pyroclastic deposits},
-  author={Sigurdsson, H and Carey, SN and Espindola, JM},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={23},
-  number={1},
-  pages={11--37},
-  year={1984},
-  publisher={Elsevier}
-}
+	Author = {Sigurdsson, H and Carey, SN and Espindola, JM},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {1},
+	Pages = {11--37},
+	Publisher = {Elsevier},
+	Title = {The 1982 eruptions of El Chich{\'o}n volcano, Mexico: stratigraphy of pyroclastic deposits},
+	Volume = {23},
+	Year = {1984}}
 
 @article{carey1982influence,
-  title={Influence of particle aggregation on deposition of distal tephra from the May 18, 1980, eruption of Mount St. Helens volcano},
-  author={Carey, Steven N and Sigurdsson, Haraldur},
-  journal={Journal of Geophysical Research: Solid Earth},
-  volume={87},
-  number={B8},
-  pages={7061--7072},
-  year={1982},
-  publisher={Wiley Online Library}
-}
+	Author = {Carey, Steven N and Sigurdsson, Haraldur},
+	Journal = {Journal of Geophysical Research: Solid Earth},
+	Number = {B8},
+	Pages = {7061--7072},
+	Publisher = {Wiley Online Library},
+	Title = {Influence of particle aggregation on deposition of distal tephra from the May 18, 1980, eruption of Mount St. Helens volcano},
+	Volume = {87},
+	Year = {1982}}
 
 @article{taddeucci2011aggregation,
-  title={Aggregation-dominated ash settling from the Eyjafjallaj{\"o}kull volcanic cloud illuminated by field and laboratory high-speed imaging},
-  author={Taddeucci, J and Scarlato, P and Montanaro, C and Cimarelli, C and Del Bello, E and Freda, C and Andronico, D and Gudmundsson, MT and Dingwell, DB},
-  journal={Geology},
-  volume={39},
-  number={9},
-  pages={891--894},
-  year={2011},
-  publisher={Geological Society of America}
-}
+	Author = {Taddeucci, J and Scarlato, P and Montanaro, C and Cimarelli, C and Del Bello, E and Freda, C and Andronico, D and Gudmundsson, MT and Dingwell, DB},
+	Journal = {Geology},
+	Number = {9},
+	Pages = {891--894},
+	Publisher = {Geological Society of America},
+	Title = {Aggregation-dominated ash settling from the Eyjafjallaj{\"o}kull volcanic cloud illuminated by field and laboratory high-speed imaging},
+	Volume = {39},
+	Year = {2011}}
 
 @article{ernst1996sedimentation,
-  title={Sedimentation from turbulent jets and plumes},
-  author={Ernst, Gerald GJ and Sparks, R Stephen J and Carey, Steven N and Bursik, Marcus I},
-  journal={Journal of Geophysical Research: Solid Earth},
-  volume={101},
-  number={B3},
-  pages={5575--5589},
-  year={1996},
-  publisher={Wiley Online Library}
-}
+	Author = {Ernst, Gerald GJ and Sparks, R Stephen J and Carey, Steven N and Bursik, Marcus I},
+	Journal = {Journal of Geophysical Research: Solid Earth},
+	Number = {B3},
+	Pages = {5575--5589},
+	Publisher = {Wiley Online Library},
+	Title = {Sedimentation from turbulent jets and plumes},
+	Volume = {101},
+	Year = {1996}}
 
-%1D plume softwares
-@misc { 114,
-	title = {puffin},
-	month = {Jan},
-	url = {https://vhub.org/resources/114},
-	year = {2013},
-	author = {Bursik , Marcus I and Carbonara , Alejandro Uriel and Zawicki , Sean Michael}
-}
-@misc { 267,
-	title = {bent: A model of plumes in crossflow},
-	month = {Nov},
-	url = {https://vhub.org/resources/267},
-	year = {2010},
-	author = {Bursik , Marcus I}
-}
-@misc { 1194,
-	title = {Plumeria 2.3.1},
-	month = {Dec},
-	url = {https://vhub.org/resources/1194},
-	year = {2011},
-	author = {Mastin , Larry G}
-}
-@misc { 3541,
-	title = {PlumeMoM},
-	month = {Mar},
-	url = {https://vhub.org/resources/3541},
-	year = {2015},
-	author = {de' Michieli Vitturi, Mattia}
-}
+@misc{114,
+	Author = {Bursik , Marcus I and Carbonara , Alejandro Uriel and Zawicki , Sean Michael},
+	Month = {Jan},
+	Title = {puffin},
+	Url = {https://vhub.org/resources/114},
+	Year = {2013},
+	Bdsk-Url-1 = {https://vhub.org/resources/114}}
+
+@misc{267,
+	Author = {Bursik , Marcus I},
+	Month = {Nov},
+	Title = {bent: A model of plumes in crossflow},
+	Url = {https://vhub.org/resources/267},
+	Year = {2010},
+	Bdsk-Url-1 = {https://vhub.org/resources/267}}
+
+@misc{1194,
+	Author = {Mastin , Larry G},
+	Month = {Dec},
+	Title = {Plumeria 2.3.1},
+	Url = {https://vhub.org/resources/1194},
+	Year = {2011},
+	Bdsk-Url-1 = {https://vhub.org/resources/1194}}
+
+@misc{3541,
+	Author = {de' Michieli Vitturi, Mattia},
+	Month = {Mar},
+	Title = {PlumeMoM},
+	Url = {https://vhub.org/resources/3541},
+	Year = {2015},
+	Bdsk-Url-1 = {https://vhub.org/resources/3541}}
+
 @misc{draxler2015hysplit,
-  title={HYSPLIT (HYbrid Single-Particle Lagrangian Integrated Trajectory) Model access via NOAA ARL READY Website. NOAA Air Resources Laboratory, Silver Spring},
-  url={http://www.arl.noaa.gov/HYSPLIT_info.php},
-  author={Draxler, R.R. and Rolph, G.D.},
-  year={2015},
-  publisher={MD}
-}
+	Author = {Draxler, R.R. and Rolph, G.D.},
+	Publisher = {MD},
+	Title = {HYSPLIT (HYbrid Single-Particle Lagrangian Integrated Trajectory) Model access via NOAA ARL READY Website. NOAA Air Resources Laboratory, Silver Spring},
+	Url = {http://www.arl.noaa.gov/HYSPLIT_info.php},
+	Year = {2015},
+	Bdsk-Url-1 = {http://www.arl.noaa.gov/HYSPLIT_info.php}}
+
 @misc{rolph2015ready,
-  title={Real-time Environmental Applications and Display sYstem (READY) Website (http://ready.arl.noaa.gov). NOAA Air Resources Laboratory, Silver Spring,},
-  author={Rolph, G.D.},
-  year={2015},
-  publisher={MD}
-}
+	Author = {Rolph, G.D.},
+	Publisher = {MD},
+	Title = {Real-time Environmental Applications and Display sYstem (READY) Website (http://ready.arl.noaa.gov). NOAA Air Resources Laboratory, Silver Spring,},
+	Year = {2015}}
 
 @article{stein2015noaa,
-  title={NOAA’s HYSPLIT atmospheric transport and dispersion modeling system},
-  author={Stein, AF and Draxler, RR and Rolph, GD and Stunder, BJB and Cohen, MD and Ngan, F},
-  journal={Bulletin of the American Meteorological Society},
-  volume={96},
-  number={12},
-  pages={2059--2077},
-  year={2015}
-}
+	Author = {Stein, AF and Draxler, RR and Rolph, GD and Stunder, BJB and Cohen, MD and Ngan, F},
+	Journal = {Bulletin of the American Meteorological Society},
+	Number = {12},
+	Pages = {2059--2077},
+	Title = {NOAA's HYSPLIT atmospheric transport and dispersion modeling system},
+	Volume = {96},
+	Year = {2015}}
 
-%SPH
 @article{gingold1977smoothed,
-  title={Smoothed particle hydrodynamics: theory and application to non-spherical stars},
-  author={Gingold, Robert A and Monaghan, Joseph J},
-  journal={Monthly notices of the royal astronomical society},
-  volume={181},
-  number={3},
-  pages={375--389},
-  year={1977},
-  publisher={Oxford University Press}
-}
+	Author = {Gingold, Robert A and Monaghan, Joseph J},
+	Journal = {Monthly notices of the royal astronomical society},
+	Number = {3},
+	Pages = {375--389},
+	Publisher = {Oxford University Press},
+	Title = {Smoothed particle hydrodynamics: theory and application to non-spherical stars},
+	Volume = {181},
+	Year = {1977}}
+
 @article{lucy1977numerical,
-  title={A numerical approach to the testing of the fission hypothesis},
-  author={Lucy, Leon B},
-  journal={The astronomical journal},
-  volume={82},
-  pages={1013--1024},
-  year={1977}
-}
+	Author = {Lucy, Leon B},
+	Journal = {The astronomical journal},
+	Pages = {1013--1024},
+	Title = {A numerical approach to the testing of the fission hypothesis},
+	Volume = {82},
+	Year = {1977}}
 
 @article{gingold1978binary,
-  title={Binary fission in damped rotating polytropes},
-  author={Gingold, Robert A and Monaghan, Joseph J},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={184},
-  number={3},
-  pages={481--499},
-  year={1978},
-  publisher={The Royal Astronomical Society}
-}
+	Author = {Gingold, Robert A and Monaghan, Joseph J},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {481--499},
+	Publisher = {The Royal Astronomical Society},
+	Title = {Binary fission in damped rotating polytropes},
+	Volume = {184},
+	Year = {1978}}
 
 @article{monaghan1983shock,
-  title={Shock simulation by the particle method SPH},
-  author={Monaghan, JJ and Gingold, RA},
-  journal={Journal of computational physics},
-  volume={52},
-  number={2},
-  pages={374--389},
-  year={1983},
-  publisher={Elsevier}
-}
+	Author = {Monaghan, JJ and Gingold, RA},
+	Journal = {Journal of computational physics},
+	Number = {2},
+	Pages = {374--389},
+	Publisher = {Elsevier},
+	Title = {Shock simulation by the particle method SPH},
+	Volume = {52},
+	Year = {1983}}
 
 @article{swegle1995smoothed,
-  title={Smoothed particle hydrodynamics stability analysis},
-  author={Swegle, JW and Hicks, DL and Attaway, SW},
-  journal={Journal of computational physics},
-  volume={116},
-  number={1},
-  pages={123--134},
-  year={1995},
-  publisher={Elsevier}
-}
-
+	Author = {Swegle, JW and Hicks, DL and Attaway, SW},
+	Journal = {Journal of computational physics},
+	Number = {1},
+	Pages = {123--134},
+	Publisher = {Elsevier},
+	Title = {Smoothed particle hydrodynamics stability analysis},
+	Volume = {116},
+	Year = {1995}}
 
 @article{ritchie2001multiphase,
-  title={Multiphase smoothed-particle hydrodynamics},
-  author={Ritchie, Benedict W and Thomas, Peter A},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={323},
-  number={3},
-  pages={743--756},
-  year={2001},
-  publisher={Blackwell Science Ltd Oxford, UK}
-}
+	Author = {Ritchie, Benedict W and Thomas, Peter A},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {743--756},
+	Publisher = {Blackwell Science Ltd Oxford, UK},
+	Title = {Multiphase smoothed-particle hydrodynamics},
+	Volume = {323},
+	Year = {2001}}
 
 @article{chen2015sph,
-  title={An SPH model for multiphase flows with complex interfaces and large density differences},
-  author={Chen, Z and Zong, Z and Liu, MB and Zou, L and Li, HT and Shu, C},
-  journal={Journal of Computational Physics},
-  volume={283},
-  pages={169--188},
-  year={2015},
-  publisher={Elsevier}
-}
+	Author = {Chen, Z and Zong, Z and Liu, MB and Zou, L and Li, HT and Shu, C},
+	Journal = {Journal of Computational Physics},
+	Pages = {169--188},
+	Publisher = {Elsevier},
+	Title = {An SPH model for multiphase flows with complex interfaces and large density differences},
+	Volume = {283},
+	Year = {2015}}
 
 @article{adami2010new,
-  title={A new surface-tension formulation for multi-phase SPH using a reproducing divergence approximation},
-  author={Adami, S and Hu, XY and Adams, NA},
-  journal={Journal of Computational Physics},
-  volume={229},
-  number={13},
-  pages={5011--5021},
-  year={2010},
-  publisher={Elsevier}
-}
+	Author = {Adami, S and Hu, XY and Adams, NA},
+	Journal = {Journal of Computational Physics},
+	Number = {13},
+	Pages = {5011--5021},
+	Publisher = {Elsevier},
+	Title = {A new surface-tension formulation for multi-phase SPH using a reproducing divergence approximation},
+	Volume = {229},
+	Year = {2010}}
 
 @article{hu2007incompressible,
-  title={An incompressible multi-phase SPH method},
-  author={Hu, XY and Adams, Nikolaus A},
-  journal={Journal of computational physics},
-  volume={227},
-  number={1},
-  pages={264--278},
-  year={2007},
-  publisher={Elsevier}
-}
+	Author = {Hu, XY and Adams, Nikolaus A},
+	Journal = {Journal of computational physics},
+	Number = {1},
+	Pages = {264--278},
+	Publisher = {Elsevier},
+	Title = {An incompressible multi-phase SPH method},
+	Volume = {227},
+	Year = {2007}}
 
 @article{colagrossi2003numerical,
-  title={Numerical simulation of interfacial flows by smoothed particle hydrodynamics},
-  author={Colagrossi, Andrea and Landrini, Maurizio},
-  journal={Journal of computational physics},
-  volume={191},
-  number={2},
-  pages={448--475},
-  year={2003},
-  publisher={Elsevier}
-}
+	Author = {Colagrossi, Andrea and Landrini, Maurizio},
+	Journal = {Journal of computational physics},
+	Number = {2},
+	Pages = {448--475},
+	Publisher = {Elsevier},
+	Title = {Numerical simulation of interfacial flows by smoothed particle hydrodynamics},
+	Volume = {191},
+	Year = {2003}}
 
 @article{grenier2009hamiltonian,
-  title={An Hamiltonian interface SPH formulation for multi-fluid and free surface flows},
-  author={Grenier, Nicolas and Antuono, Matteo and Colagrossi, Andrea and Le Touz{\'e}, David and Alessandrini, B},
-  journal={Journal of Computational Physics},
-  volume={228},
-  number={22},
-  pages={8380--8393},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Grenier, Nicolas and Antuono, Matteo and Colagrossi, Andrea and Le Touz{\'e}, David and Alessandrini, B},
+	Journal = {Journal of Computational Physics},
+	Number = {22},
+	Pages = {8380--8393},
+	Publisher = {Elsevier},
+	Title = {An Hamiltonian interface SPH formulation for multi-fluid and free surface flows},
+	Volume = {228},
+	Year = {2009}}
 
 @article{monaghan2013simple,
-  title={A simple SPH algorithm for multi-fluid flow with high density ratios},
-  author={Monaghan, JJ and Rafiee, Ashkan},
-  journal={International Journal for Numerical Methods in Fluids},
-  volume={71},
-  number={5},
-  pages={537--561},
-  year={2013},
-  publisher={Wiley Online Library}
-}
+	Author = {Monaghan, JJ and Rafiee, Ashkan},
+	Journal = {International Journal for Numerical Methods in Fluids},
+	Number = {5},
+	Pages = {537--561},
+	Publisher = {Wiley Online Library},
+	Title = {A simple SPH algorithm for multi-fluid flow with high density ratios},
+	Volume = {71},
+	Year = {2013}}
 
 @article{cha2010kelvin,
-  title={Kelvin--Helmholtz instabilities with Godunov smoothed particle hydrodynamics},
-  author={Cha, Seung-Hoon and Inutsuka, Shu-Ichiro and Nayakshin, Sergei},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={403},
-  number={3},
-  pages={1165--1174},
-  year={2010},
-  publisher={The Royal Astronomical Society}
-}
+	Author = {Cha, Seung-Hoon and Inutsuka, Shu-Ichiro and Nayakshin, Sergei},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {1165--1174},
+	Publisher = {The Royal Astronomical Society},
+	Title = {Kelvin--Helmholtz instabilities with Godunov smoothed particle hydrodynamics},
+	Volume = {403},
+	Year = {2010}}
 
 @article{zhuimproved,
-  title={An improved SPH model for multiphase flows with large density ratios},
-  author={Zhu, GX and Zou, L and Chen, Z and Wang, AM and Liu, MB},
-  journal={International Journal for Numerical Methods in Fluids},
-  publisher={Wiley Online Library}
-}
+	Author = {Zhu, GX and Zou, L and Chen, Z and Wang, AM and Liu, MB},
+	Journal = {International Journal for Numerical Methods in Fluids},
+	Publisher = {Wiley Online Library},
+	Title = {An improved SPH model for multiphase flows with large density ratios}}
 
 @article{behjati2017modelling,
-  title={Modelling of immiscible liquid-liquid systems by Smoothed Particle Hydrodynamics},
-  author={Behjati, H Elekaei and Kashani, M Navvab and Biggs, MJ},
-  journal={Journal of Colloid and Interface Science},
-  year={2017},
-  publisher={Elsevier}
-}
+	Author = {Behjati, H Elekaei and Kashani, M Navvab and Biggs, MJ},
+	Journal = {Journal of Colloid and Interface Science},
+	Publisher = {Elsevier},
+	Title = {Modelling of immiscible liquid-liquid systems by Smoothed Particle Hydrodynamics},
+	Year = {2017}}
 
 @article{agertz2007fundamental,
-  title={Fundamental differences between SPH and grid methods},
-  author={Agertz, Oscar and Moore, Ben and Stadel, Joachim and Potter, Doug and Miniati, Francesco and Read, Justin and Mayer, Lucio and Gawryszczak, Artur and Kravtsov, Andrey and Nordlund, {\AA}ke and others},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={380},
-  number={3},
-  pages={963--978},
-  year={2007},
-  publisher={Blackwell Publishing Ltd Oxford, UK}
-}
+	Author = {Agertz, Oscar and Moore, Ben and Stadel, Joachim and Potter, Doug and Miniati, Francesco and Read, Justin and Mayer, Lucio and Gawryszczak, Artur and Kravtsov, Andrey and Nordlund, {\AA}ke and others},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {963--978},
+	Publisher = {Blackwell Publishing Ltd Oxford, UK},
+	Title = {Fundamental differences between SPH and grid methods},
+	Volume = {380},
+	Year = {2007}}
 
 @article{price2008modelling,
-  title={Modelling discontinuities and Kelvin--Helmholtz instabilities in SPH},
-  author={Price, Daniel J},
-  journal={Journal of Computational Physics},
-  volume={227},
-  number={24},
-  pages={10040--10057},
-  year={2008},
-  publisher={Elsevier}
-}
+	Author = {Price, Daniel J},
+	Journal = {Journal of Computational Physics},
+	Number = {24},
+	Pages = {10040--10057},
+	Publisher = {Elsevier},
+	Title = {Modelling discontinuities and Kelvin--Helmholtz instabilities in SPH},
+	Volume = {227},
+	Year = {2008}}
 
 @article{wadsley2008treatment,
-  title={On the treatment of entropy mixing in numerical cosmology},
-  author={Wadsley, JW and Veeravalli, G and Couchman, HMP},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={387},
-  number={1},
-  pages={427--438},
-  year={2008},
-  publisher={Blackwell Publishing Ltd Oxford, UK}
-}
+	Author = {Wadsley, JW and Veeravalli, G and Couchman, HMP},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {1},
+	Pages = {427--438},
+	Publisher = {Blackwell Publishing Ltd Oxford, UK},
+	Title = {On the treatment of entropy mixing in numerical cosmology},
+	Volume = {387},
+	Year = {2008}}
 
 @inproceedings{borgani2012hydrodynamic,
-  title={Hydrodynamic simulations with the Godunov SPH},
-  author={Borgani, S and Murante, G and Brunino, R and Cha, S-H},
-  booktitle={Advances in Computational Astrophysics: Methods, Tools, and Outcome},
-  volume={453},
-  pages={259},
-  year={2012}
-}
+	Author = {Borgani, S and Murante, G and Brunino, R and Cha, S-H},
+	Booktitle = {Advances in Computational Astrophysics: Methods, Tools, and Outcome},
+	Pages = {259},
+	Title = {Hydrodynamic simulations with the Godunov SPH},
+	Volume = {453},
+	Year = {2012}}
+
 @article{evrard1988beyond,
-  title={Beyond N-body: 3D cosmological gas dynamics},
-  author={Evrard, August E},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={235},
-  number={3},
-  pages={911--934},
-  year={1988},
-  publisher={The Royal Astronomical Society}
-}
+	Author = {Evrard, August E},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {911--934},
+	Publisher = {The Royal Astronomical Society},
+	Title = {Beyond N-body: 3D cosmological gas dynamics},
+	Volume = {235},
+	Year = {1988}}
+
 @article{hernquist1989treesph,
-  title={TREESPH-A unification of SPH with the hierarchical tree method},
-  author={Hernquist, Lars and Katz, Neal},
-  journal={The Astrophysical Journal Supplement Series},
-  volume={70},
-  pages={419--446},
-  year={1989}
-}
+	Author = {Hernquist, Lars and Katz, Neal},
+	Journal = {The Astrophysical Journal Supplement Series},
+	Pages = {419--446},
+	Title = {TREESPH-A unification of SPH with the hierarchical tree method},
+	Volume = {70},
+	Year = {1989}}
 
 @article{monaghan1989problem,
-  title={On the problem of penetration in particle methods},
-  author={Monaghan, JJ},
-  journal={Journal of Computational Physics},
-  volume={82},
-  number={1},
-  pages={1--15},
-  year={1989},
-  publisher={Elsevier}
-}
+	Author = {Monaghan, JJ},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {1--15},
+	Publisher = {Elsevier},
+	Title = {On the problem of penetration in particle methods},
+	Volume = {82},
+	Year = {1989}}
+
 @article{hernquist1989treesph,
-  title={TREESPH-A unification of SPH with the hierarchical tree method},
-  author={Hernquist, Lars and Katz, Neal},
-  journal={The Astrophysical Journal Supplement Series},
-  volume={70},
-  pages={419--446},
-  year={1989}
-}
+	Author = {Hernquist, Lars and Katz, Neal},
+	Journal = {The Astrophysical Journal Supplement Series},
+	Pages = {419--446},
+	Title = {TREESPH-A unification of SPH with the hierarchical tree method},
+	Volume = {70},
+	Year = {1989}}
+
 @article{monaghan1992smoothed,
-  title={Smoothed particle hydrodynamics},
-  author={Monaghan, Joe J},
-  journal={Annual review of astronomy and astrophysics},
-  volume={30},
-  pages={543--574},
-  year={1992}
-}
+	Author = {Monaghan, Joe J},
+	Journal = {Annual review of astronomy and astrophysics},
+	Pages = {543--574},
+	Title = {Smoothed particle hydrodynamics},
+	Volume = {30},
+	Year = {1992}}
+
 @article{steinmetz1993capabilities,
-  title={On the capabilities and limits of smoothed particle hydrodynamics},
-  author={Steinmetz, Matthias and M{\"u}ller, Ewald},
-  journal={Astronomy and Astrophysics},
-  volume={268},
-  pages={391--410},
-  year={1993}
-}
+	Author = {Steinmetz, Matthias and M{\"u}ller, Ewald},
+	Journal = {Astronomy and Astrophysics},
+	Pages = {391--410},
+	Title = {On the capabilities and limits of smoothed particle hydrodynamics},
+	Volume = {268},
+	Year = {1993}}
+
 @article{monaghan1997sph,
-  title={SPH and Riemann solvers},
-  author={Monaghan, JJ},
-  journal={Journal of Computational Physics},
-  volume={136},
-  number={2},
-  pages={298--307},
-  year={1997},
-  publisher={Elsevier}
-}
+	Author = {Monaghan, JJ},
+	Journal = {Journal of Computational Physics},
+	Number = {2},
+	Pages = {298--307},
+	Publisher = {Elsevier},
+	Title = {SPH and Riemann solvers},
+	Volume = {136},
+	Year = {1997}}
 
 @article{sigalotti2006shock,
-  title={A shock-capturing SPH scheme based on adaptive kernel estimation},
-  author={Sigalotti, Leonardo Di G and L{\'o}pez, Hender and Donoso, Arnaldo and Sira, Eloy and Klapp, Jaime},
-  journal={Journal of Computational Physics},
-  volume={212},
-  number={1},
-  pages={124--149},
-  year={2006},
-  publisher={Elsevier}
-}
+	Author = {Sigalotti, Leonardo Di G and L{\'o}pez, Hender and Donoso, Arnaldo and Sira, Eloy and Klapp, Jaime},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {124--149},
+	Publisher = {Elsevier},
+	Title = {A shock-capturing SPH scheme based on adaptive kernel estimation},
+	Volume = {212},
+	Year = {2006}}
 
 @article{cleary1999conduction,
-  title={Conduction modelling using smoothed particle hydrodynamics},
-  author={Cleary, Paul W and Monaghan, Joseph J},
-  journal={Journal of Computational Physics},
-  volume={148},
-  number={1},
-  pages={227--264},
-  year={1999},
-  publisher={Elsevier}
-}
+	Author = {Cleary, Paul W and Monaghan, Joseph J},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {227--264},
+	Publisher = {Elsevier},
+	Title = {Conduction modelling using smoothed particle hydrodynamics},
+	Volume = {148},
+	Year = {1999}}
+
 @article{monaghan2005smoothed,
-  title={Smoothed particle hydrodynamics},
-  author={Monaghan, JJ},
-  journal={Reports on progress in physics},
-  volume={68},
-  number={8},
-  pages={1703},
-  year={2005},
-  publisher={IOP Publishing}
-}
+	Author = {Monaghan, JJ},
+	Journal = {Reports on progress in physics},
+	Number = {8},
+	Pages = {1703},
+	Publisher = {IOP Publishing},
+	Title = {Smoothed particle hydrodynamics},
+	Volume = {68},
+	Year = {2005}}
+
 @article{sigalotti2006shock,
-  title={A shock-capturing SPH scheme based on adaptive kernel estimation},
-  author={Sigalotti, Leonardo Di G and L{\'o}pez, Hender and Donoso, Arnaldo and Sira, Eloy and Klapp, Jaime},
-  journal={Journal of Computational Physics},
-  volume={212},
-  number={1},
-  pages={124--149},
-  year={2006},
-  publisher={Elsevier}
-}
+	Author = {Sigalotti, Leonardo Di G and L{\'o}pez, Hender and Donoso, Arnaldo and Sira, Eloy and Klapp, Jaime},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {124--149},
+	Publisher = {Elsevier},
+	Title = {A shock-capturing SPH scheme based on adaptive kernel estimation},
+	Volume = {212},
+	Year = {2006}}
+
 @article{rosswog2009astrophysical,
-  title={Astrophysical smooth particle hydrodynamics},
-  author={Rosswog, Stephan},
-  journal={New Astronomy Reviews},
-  volume={53},
-  number={4},
-  pages={78--104},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Rosswog, Stephan},
+	Journal = {New Astronomy Reviews},
+	Number = {4},
+	Pages = {78--104},
+	Publisher = {Elsevier},
+	Title = {Astrophysical smooth particle hydrodynamics},
+	Volume = {53},
+	Year = {2009}}
+
 @article{ellero2012smoothed,
-  title={Smoothed Particle Hydrodynamics},
-  author={Ellero, M},
-  journal={Fluid-Structure Interactions in Soft-Matter Systems: From the Mesoscale to the Macroscale},
-  pages={22},
-  year={2012}
-}
+	Author = {Ellero, M},
+	Journal = {Fluid-Structure Interactions in Soft-Matter Systems: From the Mesoscale to the Macroscale},
+	Pages = {22},
+	Title = {Smoothed Particle Hydrodynamics},
+	Year = {2012}}
+
 @article{monaghan2012smoothed,
-  title={Smoothed particle hydrodynamics and its diverse applications},
-  author={Monaghan, JJ},
-  journal={Annual Review of Fluid Mechanics},
-  volume={44},
-  pages={323--346},
-  year={2012},
-  publisher={Annual Reviews}
-}
+	Author = {Monaghan, JJ},
+	Journal = {Annual Review of Fluid Mechanics},
+	Pages = {323--346},
+	Publisher = {Annual Reviews},
+	Title = {Smoothed particle hydrodynamics and its diverse applications},
+	Volume = {44},
+	Year = {2012}}
+
 @article{saitoh2013density,
-  title={A density-independent formulation of smoothed particle hydrodynamics},
-  author={Saitoh, Takayuki R and Makino, Junichiro},
-  journal={The Astrophysical Journal},
-  volume={768},
-  number={1},
-  pages={44},
-  year={2013},
-  publisher={IOP Publishing}
-}
+	Author = {Saitoh, Takayuki R and Makino, Junichiro},
+	Journal = {The Astrophysical Journal},
+	Number = {1},
+	Pages = {44},
+	Publisher = {IOP Publishing},
+	Title = {A density-independent formulation of smoothed particle hydrodynamics},
+	Volume = {768},
+	Year = {2013}}
+
 @techreport{takayuki2012density,
-  title={A Density Independent Formulation of Smoothed Particle Hydrodynamics},
-  author={Takayuki, Saitoh R and Makino, Junichiro},
-  year={2012}
-}
+	Author = {Takayuki, Saitoh R and Makino, Junichiro},
+	Title = {A Density Independent Formulation of Smoothed Particle Hydrodynamics},
+	Year = {2012}}
+
 @article{price2012smoothed,
-  title={Smoothed particle hydrodynamics and magnetohydrodynamics},
-  author={Price, Daniel J},
-  journal={Journal of Computational Physics},
-  volume={231},
-  number={3},
-  pages={759--794},
-  year={2012},
-  publisher={Elsevier}
-}
+	Author = {Price, Daniel J},
+	Journal = {Journal of Computational Physics},
+	Number = {3},
+	Pages = {759--794},
+	Publisher = {Elsevier},
+	Title = {Smoothed particle hydrodynamics and magnetohydrodynamics},
+	Volume = {231},
+	Year = {2012}}
+
 @article{monaghan1985extrapolating,
-  title={Extrapolating B splines for interpolation},
-  author={Monaghan, JJ},
-  journal={Journal of Computational Physics},
-  volume={60},
-  number={2},
-  pages={253--262},
-  year={1985},
-  publisher={Elsevier}
-}
+	Author = {Monaghan, JJ},
+	Journal = {Journal of Computational Physics},
+	Number = {2},
+	Pages = {253--262},
+	Publisher = {Elsevier},
+	Title = {Extrapolating B splines for interpolation},
+	Volume = {60},
+	Year = {1985}}
+
 @article{monaghan1995sph,
-  title={SPH simulation of multi-phase flow},
-  author={Monaghan, JJ and Kocharyan, A},
-  journal={Computer Physics Communications},
-  volume={87},
-  number={1},
-  pages={225--235},
-  year={1995},
-  publisher={Elsevier}
-}
+	Author = {Monaghan, JJ and Kocharyan, A},
+	Journal = {Computer Physics Communications},
+	Number = {1},
+	Pages = {225--235},
+	Publisher = {Elsevier},
+	Title = {SPH simulation of multi-phase flow},
+	Volume = {87},
+	Year = {1995}}
+
 @article{morris1997modeling,
-  title={Modeling low Reynolds number incompressible flows using SPH},
-  author={Morris, Joseph P and Fox, Patrick J and Zhu, Yi},
-  journal={Journal of computational physics},
-  volume={136},
-  number={1},
-  pages={214--226},
-  year={1997},
-  publisher={Elsevier}
-}
+	Author = {Morris, Joseph P and Fox, Patrick J and Zhu, Yi},
+	Journal = {Journal of computational physics},
+	Number = {1},
+	Pages = {214--226},
+	Publisher = {Elsevier},
+	Title = {Modeling low Reynolds number incompressible flows using SPH},
+	Volume = {136},
+	Year = {1997}}
 
 @article{chen1999improvement,
-  title={An improvement for tensile instability in smoothed particle hydrodynamics},
-  author={Chen, JK and Beraun, JE and Jih, CJ},
-  journal={Computational Mechanics},
-  volume={23},
-  number={4},
-  pages={279--287},
-  year={1999},
-  publisher={Springer}
-}
+	Author = {Chen, JK and Beraun, JE and Jih, CJ},
+	Journal = {Computational Mechanics},
+	Number = {4},
+	Pages = {279--287},
+	Publisher = {Springer},
+	Title = {An improvement for tensile instability in smoothed particle hydrodynamics},
+	Volume = {23},
+	Year = {1999}}
+
 @article{adami2012generalized,
-  title={A generalized wall boundary condition for smoothed particle hydrodynamics},
-  author={Adami, S and Hu, XY and Adams, NA},
-  journal={Journal of Computational Physics},
-  volume={231},
-  number={21},
-  pages={7057--7075},
-  year={2012},
-  publisher={Elsevier}
-}
+	Author = {Adami, S and Hu, XY and Adams, NA},
+	Journal = {Journal of Computational Physics},
+	Number = {21},
+	Pages = {7057--7075},
+	Publisher = {Elsevier},
+	Title = {A generalized wall boundary condition for smoothed particle hydrodynamics},
+	Volume = {231},
+	Year = {2012}}
+
 @article{kumar2013parallel,
-  title={Parallel Godunov smoothed particle hydrodynamics (SPH) with improved treatment of Boundary Conditions and an application to granular flows},
-  author={Kumar, Dinesh and Patra, Abani K and Pitman, E Bruce and Chi, H},
-  journal={Computer Physics Communications},
-  volume={184},
-  number={10},
-  pages={2277--2286},
-  year={2013},
-  publisher={Elsevier}
-}
+	Author = {Kumar, Dinesh and Patra, Abani K and Pitman, E Bruce and Chi, H},
+	Journal = {Computer Physics Communications},
+	Number = {10},
+	Pages = {2277--2286},
+	Publisher = {Elsevier},
+	Title = {Parallel Godunov smoothed particle hydrodynamics (SPH) with improved treatment of Boundary Conditions and an application to granular flows},
+	Volume = {184},
+	Year = {2013}}
+
 @article{monaghan2009sph,
-  title={SPH particle boundary forces for arbitrary boundaries},
-  author={Monaghan, Joe J and Kajtar, Jules B},
-  journal={Computer Physics Communications},
-  volume={180},
-  number={10},
-  pages={1811--1820},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Monaghan, Joe J and Kajtar, Jules B},
+	Journal = {Computer Physics Communications},
+	Number = {10},
+	Pages = {1811--1820},
+	Publisher = {Elsevier},
+	Title = {SPH particle boundary forces for arbitrary boundaries},
+	Volume = {180},
+	Year = {2009}}
+
 @article{yildiz2009sph,
-  title={SPH with the multiple boundary tangent method},
-  author={Yildiz, M and Rook, RA and Suleman, A},
-  journal={International journal for numerical methods in engineering},
-  volume={77},
-  number={10},
-  pages={1416--1438},
-  year={2009},
-  publisher={Wiley Online Library}
-}
+	Author = {Yildiz, M and Rook, RA and Suleman, A},
+	Journal = {International journal for numerical methods in engineering},
+	Number = {10},
+	Pages = {1416--1438},
+	Publisher = {Wiley Online Library},
+	Title = {SPH with the multiple boundary tangent method},
+	Volume = {77},
+	Year = {2009}}
+
 @inproceedings{ihmsen2011parallel,
-  title={A Parallel SPH Implementation on Multi-Core CPUs},
-  author={Ihmsen, Markus and Akinci, Nadir and Becker, Markus and Teschner, Matthias},
-  booktitle={Computer Graphics Forum},
-  volume={30},
-  number={1},
-  pages={99--112},
-  year={2011},
-  organization={Wiley Online Library}
-}
+	Author = {Ihmsen, Markus and Akinci, Nadir and Becker, Markus and Teschner, Matthias},
+	Booktitle = {Computer Graphics Forum},
+	Number = {1},
+	Organization = {Wiley Online Library},
+	Pages = {99--112},
+	Title = {A Parallel SPH Implementation on Multi-Core CPUs},
+	Volume = {30},
+	Year = {2011}}
+
 @article{cherfils2012josephine,
-  title={JOSEPHINE: A parallel SPH code for free-surface flows},
-  author={Cherfils, JM and Pinon, G and Rivoalen, Elie},
-  journal={Computer Physics Communications},
-  volume={183},
-  number={7},
-  pages={1468--1480},
-  year={2012},
-  publisher={Elsevier}
-}
+	Author = {Cherfils, JM and Pinon, G and Rivoalen, Elie},
+	Journal = {Computer Physics Communications},
+	Number = {7},
+	Pages = {1468--1480},
+	Publisher = {Elsevier},
+	Title = {JOSEPHINE: A parallel SPH code for free-surface flows},
+	Volume = {183},
+	Year = {2012}}
+
 @article{herault2010sphgpu,
-  title={SPH on GPU with CUDA},
-  author={H{\'e}rault, Alexis and Bilotta, Giuseppe and Dalrymple, Robert A},
-  journal={Journal of Hydraulic Research},
-  volume={48},
-  number={S1},
-  pages={74--79},
-  year={2010},
-  publisher={Taylor \& Francis}
-}
+	Author = {H{\'e}rault, Alexis and Bilotta, Giuseppe and Dalrymple, Robert A},
+	Journal = {Journal of Hydraulic Research},
+	Number = {S1},
+	Pages = {74--79},
+	Publisher = {Taylor \& Francis},
+	Title = {SPH on GPU with CUDA},
+	Volume = {48},
+	Year = {2010}}
+
 @article{crespo2011gpus,
-  title={GPUs, a new tool of acceleration in CFD: efficiency and reliability on smoothed particle hydrodynamics methods},
-  author={Crespo, AJC and Dominguez, Jose M and Barreiro, Anxo and G{\'o}mez-Gesteira, Moncho and Rogers, Benedict D},
-  journal={PLoS One},
-  volume={6},
-  number={6},
-  pages={e20685},
-  year={2011},
-  publisher={Public Library of Science}
-}
+	Author = {Crespo, AJC and Dominguez, Jose M and Barreiro, Anxo and G{\'o}mez-Gesteira, Moncho and Rogers, Benedict D},
+	Journal = {PLoS One},
+	Number = {6},
+	Pages = {e20685},
+	Publisher = {Public Library of Science},
+	Title = {GPUs, a new tool of acceleration in CFD: efficiency and reliability on smoothed particle hydrodynamics methods},
+	Volume = {6},
+	Year = {2011}}
+
 @article{dominguez2013optimization,
-  title={Optimization strategies for CPU and GPU implementations of a smoothed particle hydrodynamics method},
-  author={Dom{\'\i}nguez, Jose M and Crespo, Alejandro JC and G{\'o}mez-Gesteira, Moncho},
-  journal={Computer Physics Communications},
-  volume={184},
-  number={3},
-  pages={617--627},
-  year={2013},
-  publisher={Elsevier}
-}
+	Author = {Dom{\'\i}nguez, Jose M and Crespo, Alejandro JC and G{\'o}mez-Gesteira, Moncho},
+	Journal = {Computer Physics Communications},
+	Number = {3},
+	Pages = {617--627},
+	Publisher = {Elsevier},
+	Title = {Optimization strategies for CPU and GPU implementations of a smoothed particle hydrodynamics method},
+	Volume = {184},
+	Year = {2013}}
+
 @article{loren2014two,
-  title={Two-fluid dust and gas mixtures in smoothed particle hydrodynamics: a semi-implicit approach},
-  author={Lor{\'e}n-Aguilar, Pablo and Bate, Matthew R},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={443},
-  number={1},
-  pages={927--945},
-  year={2014},
-  publisher={Oxford University Press}
-}
+	Author = {Lor{\'e}n-Aguilar, Pablo and Bate, Matthew R},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {1},
+	Pages = {927--945},
+	Publisher = {Oxford University Press},
+	Title = {Two-fluid dust and gas mixtures in smoothed particle hydrodynamics: a semi-implicit approach},
+	Volume = {443},
+	Year = {2014}}
+
 @article{rook2007modeling,
-  title={Modeling transient heat transfer using SPH and implicit time integration},
-  author={Rook, Rusty and Yildiz, Mehmet and Dost, Sadik},
-  journal={Numerical Heat Transfer, Part B: Fundamentals},
-  volume={51},
-  number={1},
-  pages={1--23},
-  year={2007},
-  publisher={Taylor \& Francis}
-}
+	Author = {Rook, Rusty and Yildiz, Mehmet and Dost, Sadik},
+	Journal = {Numerical Heat Transfer, Part B: Fundamentals},
+	Number = {1},
+	Pages = {1--23},
+	Publisher = {Taylor \& Francis},
+	Title = {Modeling transient heat transfer using SPH and implicit time integration},
+	Volume = {51},
+	Year = {2007}}
 
 @article{vacondio2012accurate,
-  title={Accurate particle splitting for smoothed particle hydrodynamics in shallow water with shock capturing},
-  author={Vacondio, R and Rogers, BD and Stansby, PK},
-  journal={International Journal for Numerical Methods in Fluids},
-  volume={69},
-  number={8},
-  pages={1377--1410},
-  year={2012},
-  publisher={Wiley Online Library}
-}
+	Author = {Vacondio, R and Rogers, BD and Stansby, PK},
+	Journal = {International Journal for Numerical Methods in Fluids},
+	Number = {8},
+	Pages = {1377--1410},
+	Publisher = {Wiley Online Library},
+	Title = {Accurate particle splitting for smoothed particle hydrodynamics in shallow water with shock capturing},
+	Volume = {69},
+	Year = {2012}}
+
 @article{feldman2007dynamic,
-  title={Dynamic refinement and boundary contact forces in SPH with applications in fluid flow problems},
-  author={Feldman, J and Bonet, J},
-  journal={International Journal for Numerical Methods in Engineering},
-  volume={72},
-  number={3},
-  pages={295--324},
-  year={2007},
-  publisher={Wiley Online Library}
-}
+	Author = {Feldman, J and Bonet, J},
+	Journal = {International Journal for Numerical Methods in Engineering},
+	Number = {3},
+	Pages = {295--324},
+	Publisher = {Wiley Online Library},
+	Title = {Dynamic refinement and boundary contact forces in SPH with applications in fluid flow problems},
+	Volume = {72},
+	Year = {2007}}
+
 @article{lastiwka2009permeable,
-  title={Permeable and non-reflecting boundary conditions in SPH},
-  author={Lastiwka, Martin and Basa, Mihai and Quinlan, Nathan J},
-  year={2009},
-  publisher={Wiley}
-}
+	Author = {Lastiwka, Martin and Basa, Mihai and Quinlan, Nathan J},
+	Publisher = {Wiley},
+	Title = {Permeable and non-reflecting boundary conditions in SPH},
+	Year = {2009}}
+
 @article{colagrossi2005meshless,
-  title={A meshless Lagrangian method for free-surface and interface flows with fragmentation},
-  author={Colagrossi, Andrea},
-  year={2005},
-  publisher={La Sapienza}
-}
+	Author = {Colagrossi, Andrea},
+	Publisher = {La Sapienza},
+	Title = {A meshless Lagrangian method for free-surface and interface flows with fragmentation},
+	Year = {2005}}
+
 @article{molteni2009simple,
-  title={A simple procedure to improve the pressure evaluation in hydrodynamic context using the SPH},
-  author={Molteni, Diego and Colagrossi, Andrea},
-  journal={Computer Physics Communications},
-  volume={180},
-  number={6},
-  pages={861--872},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Molteni, Diego and Colagrossi, Andrea},
+	Journal = {Computer Physics Communications},
+	Number = {6},
+	Pages = {861--872},
+	Publisher = {Elsevier},
+	Title = {A simple procedure to improve the pressure evaluation in hydrodynamic context using the SPH},
+	Volume = {180},
+	Year = {2009}}
+
 @article{kondo2011improvement,
-  title={Improvement of stability in moving particle semi-implicit method},
-  author={Kondo, Masahiro and Koshizuka, Seiichi},
-  journal={International Journal for Numerical Methods in Fluids},
-  volume={65},
-  number={6},
-  pages={638--654},
-  year={2011},
-  publisher={Wiley Online Library}
-}
+	Author = {Kondo, Masahiro and Koshizuka, Seiichi},
+	Journal = {International Journal for Numerical Methods in Fluids},
+	Number = {6},
+	Pages = {638--654},
+	Publisher = {Wiley Online Library},
+	Title = {Improvement of stability in moving particle semi-implicit method},
+	Volume = {65},
+	Year = {2011}}
+
 @article{macia2011theoretical,
-  title={Theoretical analysis of the no-slip boundary condition enforcement in SPH methods},
-  author={Maci{\'a}, Fabricio and Antuono, Matteo and Gonz{\'a}lez, Leo M and Colagrossi, Andrea},
-  journal={Progress of theoretical physics},
-  volume={125},
-  number={6},
-  pages={1091--1121},
-  year={2011},
-  publisher={Oxford University Press}
-}
+	Author = {Maci{\'a}, Fabricio and Antuono, Matteo and Gonz{\'a}lez, Leo M and Colagrossi, Andrea},
+	Journal = {Progress of theoretical physics},
+	Number = {6},
+	Pages = {1091--1121},
+	Publisher = {Oxford University Press},
+	Title = {Theoretical analysis of the no-slip boundary condition enforcement in SPH methods},
+	Volume = {125},
+	Year = {2011}}
+
 @article{gotoh2004sph,
-  title={SPH-LES model for numerical investigation of wave interaction with partially immersed breakwater},
-  author={Gotoh, Hitoshi and Shao, Songdong and Memita, Tetsu},
-  journal={Coastal Engineering Journal},
-  volume={46},
-  number={01},
-  pages={39--63},
-  year={2004},
-  publisher={World Scientific}
-}
+	Author = {Gotoh, Hitoshi and Shao, Songdong and Memita, Tetsu},
+	Journal = {Coastal Engineering Journal},
+	Number = {01},
+	Pages = {39--63},
+	Publisher = {World Scientific},
+	Title = {SPH-LES model for numerical investigation of wave interaction with partially immersed breakwater},
+	Volume = {46},
+	Year = {2004}}
+
 @article{shao2006sph,
-  title={SPH computation of plunging waves using a 2-D sub-particle scale (SPS) turbulence model},
-  author={Shao, Songdong and Ji, Changming},
-  journal={International Journal for numerical methods in fluids},
-  volume={51},
-  number={8},
-  pages={913--936},
-  year={2006},
-  publisher={Wiley Online Library}
-}
+	Author = {Shao, Songdong and Ji, Changming},
+	Journal = {International Journal for numerical methods in fluids},
+	Number = {8},
+	Pages = {913--936},
+	Publisher = {Wiley Online Library},
+	Title = {SPH computation of plunging waves using a 2-D sub-particle scale (SPS) turbulence model},
+	Volume = {51},
+	Year = {2006}}
+
 @inproceedings{becker2007weakly,
-  title={Weakly compressible SPH for free surface flows},
-  author={Becker, Markus and Teschner, Matthias},
-  booktitle={Proceedings of the 2007 ACM SIGGRAPH/Eurographics symposium on Computer animation},
-  pages={209--217},
-  year={2007},
-  organization={Eurographics Association}
-}
+	Author = {Becker, Markus and Teschner, Matthias},
+	Booktitle = {Proceedings of the 2007 ACM SIGGRAPH/Eurographics symposium on Computer animation},
+	Organization = {Eurographics Association},
+	Pages = {209--217},
+	Title = {Weakly compressible SPH for free surface flows},
+	Year = {2007}}
+
 @article{hu2009constant,
-  title={A constant-density approach for incompressible multi-phase SPH},
-  author={Hu, XY and Adams, NA},
-  journal={Journal of Computational Physics},
-  volume={228},
-  number={6},
-  pages={2082--2091},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Hu, XY and Adams, NA},
+	Journal = {Journal of Computational Physics},
+	Number = {6},
+	Pages = {2082--2091},
+	Publisher = {Elsevier},
+	Title = {A constant-density approach for incompressible multi-phase SPH},
+	Volume = {228},
+	Year = {2009}}
 
 @article{tong2014incompressible,
-  title={An incompressible multi-phase smoothed particle hydrodynamics (SPH) method for modelling thermocapillary flow},
-  author={Tong, Mingming and Browne, David J},
-  journal={International Journal of Heat and Mass Transfer},
-  volume={73},
-  pages={284--292},
-  year={2014},
-  publisher={Elsevier}
-}
+	Author = {Tong, Mingming and Browne, David J},
+	Journal = {International Journal of Heat and Mass Transfer},
+	Pages = {284--292},
+	Publisher = {Elsevier},
+	Title = {An incompressible multi-phase smoothed particle hydrodynamics (SPH) method for modelling thermocapillary flow},
+	Volume = {73},
+	Year = {2014}}
 
-%implementation of SPH in geology
 @article{bursik2003smoothed,
-  title={A smoothed-particle hydrodynamic automaton of landform degradation by overland flow},
-  author={Bursik, M and Mart{\i}nez-Hackert, B and Delgado, H and Gonzalez-Huesca, A},
-  journal={Geomorphology},
-  volume={53},
-  number={1},
-  pages={25--44},
-  year={2003},
-  publisher={Elsevier}
-}
+	Author = {Bursik, M and Mart{\i}nez-Hackert, B and Delgado, H and Gonzalez-Huesca, A},
+	Journal = {Geomorphology},
+	Number = {1},
+	Pages = {25--44},
+	Publisher = {Elsevier},
+	Title = {A smoothed-particle hydrodynamic automaton of landform degradation by overland flow},
+	Volume = {53},
+	Year = {2003}}
+
 @article{herault2010sph,
-  title={SPH modeling of lava flows with GPU implementation},
-  author={H{\'e}rault, Alexis and Bilotta, Giuseppe and Del Negro, Ciro and Russo, Giovanni and Vicari, Annamaria},
-  journal={From physics to control through an emergent view, World Scientific Series on Nonlinear Science, Series B},
-  volume={15},
-  pages={183--188},
-  year={2010}
-}
+	Author = {H{\'e}rault, Alexis and Bilotta, Giuseppe and Del Negro, Ciro and Russo, Giovanni and Vicari, Annamaria},
+	Journal = {From physics to control through an emergent view, World Scientific Series on Nonlinear Science, Series B},
+	Pages = {183--188},
+	Title = {SPH modeling of lava flows with GPU implementation},
+	Volume = {15},
+	Year = {2010}}
+
 @article{haddad2016smoothed,
-  title={Smoothed particle hydrodynamic modeling of volcanic debris flows: Application to Huiloac Gorge lahars (Popocat{\'e}petl volcano, Mexico)},
-  author={Haddad, Bouchra and Palacios, David and Pastor, Manuel and Zamorano, Jos{\'e} Juan},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={324},
-  pages={73--87},
-  year={2016},
-  publisher={Elsevier}
-}
+	Author = {Haddad, Bouchra and Palacios, David and Pastor, Manuel and Zamorano, Jos{\'e} Juan},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Pages = {73--87},
+	Publisher = {Elsevier},
+	Title = {Smoothed particle hydrodynamic modeling of volcanic debris flows: Application to Huiloac Gorge lahars (Popocat{\'e}petl volcano, Mexico)},
+	Volume = {324},
+	Year = {2016}}
 
-%GSPH
 @article{inutsuka2002reformulation,
-  title={Reformulation of smoothed particle hydrodynamics with Riemann solver},
-  author={Inutsuka, Shu-ichiro},
-  journal={Journal of Computational Physics},
-  volume={179},
-  number={1},
-  pages={238--267},
-  year={2002},
-  publisher={Elsevier}
-}
-@article{iwasaki2011smoothed,
-  title={Smoothed particle magnetohydrodynamics with a Riemann solver and the method of characteristics},
-  author={Iwasaki, Kazunari and Inutsuka, Shu-ichiro},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={418},
-  number={3},
-  pages={1668--1688},
-  year={2011},
-  publisher={Oxford University Press}
-}
-@inproceedings{borgani2012hydrodynamic,
-  title={Hydrodynamic Simulations with the Godunov SPH},
-  author={Borgani, S and Murante, G and Brunino, R and Cha, S-H},
-  booktitle={Advances in Computational Astrophysics: Methods, Tools, and Outcome},
-  volume={453},
-  pages={259},
-  year={2012}
-}
+	Author = {Inutsuka, Shu-ichiro},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {238--267},
+	Publisher = {Elsevier},
+	Title = {Reformulation of smoothed particle hydrodynamics with Riemann solver},
+	Volume = {179},
+	Year = {2002}}
 
-%Riemann Solvers
+@article{iwasaki2011smoothed,
+	Author = {Iwasaki, Kazunari and Inutsuka, Shu-ichiro},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {1668--1688},
+	Publisher = {Oxford University Press},
+	Title = {Smoothed particle magnetohydrodynamics with a Riemann solver and the method of characteristics},
+	Volume = {418},
+	Year = {2011}}
+
+@inproceedings{borgani2012hydrodynamic,
+	Author = {Borgani, S and Murante, G and Brunino, R and Cha, S-H},
+	Booktitle = {Advances in Computational Astrophysics: Methods, Tools, and Outcome},
+	Pages = {259},
+	Title = {Hydrodynamic Simulations with the Godunov SPH},
+	Volume = {453},
+	Year = {2012}}
+
 @article{roe1981approximate,
-  title={Approximate Riemann solvers, parameter vectors, and difference schemes},
-  author={Roe, Philip L},
-  journal={Journal of computational physics},
-  volume={43},
-  number={2},
-  pages={357--372},
-  year={1981},
-  publisher={Elsevier}
-}
+	Author = {Roe, Philip L},
+	Journal = {Journal of computational physics},
+	Number = {2},
+	Pages = {357--372},
+	Publisher = {Elsevier},
+	Title = {Approximate Riemann solvers, parameter vectors, and difference schemes},
+	Volume = {43},
+	Year = {1981}}
 
 @article{davis1988simplified,
-  title={Simplified second-order Godunov-type methods},
-  author={Davis, SF},
-  journal={SIAM Journal on Scientific and Statistical Computing},
-  volume={9},
-  number={3},
-  pages={445--473},
-  year={1988},
-  publisher={SIAM}
-}
+	Author = {Davis, SF},
+	Journal = {SIAM Journal on Scientific and Statistical Computing},
+	Number = {3},
+	Pages = {445--473},
+	Publisher = {SIAM},
+	Title = {Simplified second-order Godunov-type methods},
+	Volume = {9},
+	Year = {1988}}
 
 @article{einfeldt1991godunov,
-  title={On Godunov-type methods near low densities},
-  author={Einfeldt, Bernd and Munz, Claus-Dieter and Roe, Philip L and Sj{\"o}green, Bj{\"o}rn},
-  journal={Journal of computational physics},
-  volume={92},
-  number={2},
-  pages={273--295},
-  year={1991},
-  publisher={Elsevier}
-}
+	Author = {Einfeldt, Bernd and Munz, Claus-Dieter and Roe, Philip L and Sj{\"o}green, Bj{\"o}rn},
+	Journal = {Journal of computational physics},
+	Number = {2},
+	Pages = {273--295},
+	Publisher = {Elsevier},
+	Title = {On Godunov-type methods near low densities},
+	Volume = {92},
+	Year = {1991}}
 
 @article{toro1994restoration,
-  title={Restoration of the contact surface in the HLL-Riemann solver},
-  author={Toro, Eleuterio F and Spruce, Michael and Speares, William},
-  journal={Shock waves},
-  volume={4},
-  number={1},
-  pages={25--34},
-  year={1994},
-  publisher={Springer}
-}
+	Author = {Toro, Eleuterio F and Spruce, Michael and Speares, William},
+	Journal = {Shock waves},
+	Number = {1},
+	Pages = {25--34},
+	Publisher = {Springer},
+	Title = {Restoration of the contact surface in the HLL-Riemann solver},
+	Volume = {4},
+	Year = {1994}}
+
 @article{rider1994review,
-  title={A review of approximate Riemann solvers with Godunov's method in Lagrangian coordinates},
-  author={Rider, William J},
-  journal={Computers \& fluids},
-  volume={23},
-  number={2},
-  pages={397--413},
-  year={1994},
-  publisher={Elsevier}
-}
+	Author = {Rider, William J},
+	Journal = {Computers \& fluids},
+	Number = {2},
+	Pages = {397--413},
+	Publisher = {Elsevier},
+	Title = {A review of approximate Riemann solvers with Godunov's method in Lagrangian coordinates},
+	Volume = {23},
+	Year = {1994}}
+
 @article{batten1997average,
-  title={Average-state Jacobians and implicit methods for compressible viscous and turbulent flows},
-  author={Batten, P and Leschziner, MA and Goldberg, UC},
-  journal={Journal of computational physics},
-  volume={137},
-  number={1},
-  pages={38--78},
-  year={1997},
-  publisher={Elsevier}
-}
+	Author = {Batten, P and Leschziner, MA and Goldberg, UC},
+	Journal = {Journal of computational physics},
+	Number = {1},
+	Pages = {38--78},
+	Publisher = {Elsevier},
+	Title = {Average-state Jacobians and implicit methods for compressible viscous and turbulent flows},
+	Volume = {137},
+	Year = {1997}}
+
 @article{luo2004computation,
-  title={On the computation of multi-material flows using ALE formulation},
-  author={Luo, Hong and Baum, Joseph D and L{\"o}hner, Rainald},
-  journal={Journal of Computational Physics},
-  volume={194},
-  number={1},
-  pages={304--328},
-  year={2004},
-  publisher={Elsevier}
-}
+	Author = {Luo, Hong and Baum, Joseph D and L{\"o}hner, Rainald},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {304--328},
+	Publisher = {Elsevier},
+	Title = {On the computation of multi-material flows using ALE formulation},
+	Volume = {194},
+	Year = {2004}}
+
 @book{toro2013riemann,
-  title={Riemann solvers and numerical methods for fluid dynamics: a practical introduction},
-  author={Toro, Eleuterio F},
-  year={2013},
-  publisher={Springer Science \& Business Media}
-}
+	Author = {Toro, Eleuterio F},
+	Publisher = {Springer Science \& Business Media},
+	Title = {Riemann solvers and numerical methods for fluid dynamics: a practical introduction},
+	Year = {2013}}
+
 @article{puri2014approximate,
-  title={Approximate Riemann solvers for the Godunov SPH (GSPH)},
-  author={Puri, Kunal and Ramachandran, Prabhu},
-  journal={Journal of Computational Physics},
-  volume={270},
-  pages={432--458},
-  year={2014},
-  publisher={Elsevier}
-}
+	Author = {Puri, Kunal and Ramachandran, Prabhu},
+	Journal = {Journal of Computational Physics},
+	Pages = {432--458},
+	Publisher = {Elsevier},
+	Title = {Approximate Riemann solvers for the Godunov SPH (GSPH)},
+	Volume = {270},
+	Year = {2014}}
 
 @article{glimm1965solutions,
-  title={Solutions in the large for nonlinear hyperbolic systems of equations},
-  author={Glimm, James},
-  journal={Communications on pure and applied mathematics},
-  volume={18},
-  number={4},
-  pages={697--715},
-  year={1965},
-  publisher={Wiley Online Library}
-}
+	Author = {Glimm, James},
+	Journal = {Communications on pure and applied mathematics},
+	Number = {4},
+	Pages = {697--715},
+	Publisher = {Wiley Online Library},
+	Title = {Solutions in the large for nonlinear hyperbolic systems of equations},
+	Volume = {18},
+	Year = {1965}}
 
 @book{hammersley2013monte,
-  title={Monte carlo methods},
-  author={Hammersley, John},
-  year={2013},
-  publisher={Springer Science \& Business Media}
-}
-%%Reformulate SPH by Galerkin
+	Author = {Hammersley, John},
+	Publisher = {Springer Science \& Business Media},
+	Title = {Monte carlo methods},
+	Year = {2013}}
+
 @article{diltsg1999moving,
-  title={Moving-least-squares-particle hydrodynamics—I Consistency and stability},
-  author={Dilts, Gary A},
-  journal={International Journal for Numerical Methods in Engineering},
-  volume={44},
-  number={8},
-  pages={1115--1155},
-  year={1999},
-  publisher={Wiley Online Library}
-}
+	Author = {Dilts, Gary A},
+	Journal = {International Journal for Numerical Methods in Engineering},
+	Number = {8},
+	Pages = {1115--1155},
+	Publisher = {Wiley Online Library},
+	Title = {Moving-least-squares-particle hydrodynamics---I Consistency and stability},
+	Volume = {44},
+	Year = {1999}}
 
 @article{monaghan1985refined,
-  title={A refined particle method for astrophysical problems},
-  author={Monaghan, Joseph J and Lattanzio, John C},
-  journal={Astronomy and astrophysics},
-  volume={149},
-  pages={135--143},
-  year={1985}
-}
+	Author = {Monaghan, Joseph J and Lattanzio, John C},
+	Journal = {Astronomy and astrophysics},
+	Pages = {135--143},
+	Title = {A refined particle method for astrophysical problems},
+	Volume = {149},
+	Year = {1985}}
 
-%%turbulent && SPH
 @article{shao2006sph,
-  title={SPH computation of plunging waves using a 2-D sub-particle scale (SPS) turbulence model},
-  author={Shao, Songdong and Ji, Changming},
-  journal={International Journal for numerical methods in fluids},
-  volume={51},
-  number={8},
-  pages={913--936},
-  year={2006},
-  publisher={Wiley Online Library}
-}
+	Author = {Shao, Songdong and Ji, Changming},
+	Journal = {International Journal for numerical methods in fluids},
+	Number = {8},
+	Pages = {913--936},
+	Publisher = {Wiley Online Library},
+	Title = {SPH computation of plunging waves using a 2-D sub-particle scale (SPS) turbulence model},
+	Volume = {51},
+	Year = {2006}}
+
 @article{violeau2007numerical,
-  title={Numerical modelling of complex turbulent free-surface flows with the SPH method: an overview},
-  author={Violeau, Damien and Issa, Reza},
-  journal={International Journal for Numerical Methods in Fluids},
-  volume={53},
-  pages={277--304},
-  year={2007}
-}
+	Author = {Violeau, Damien and Issa, Reza},
+	Journal = {International Journal for Numerical Methods in Fluids},
+	Pages = {277--304},
+	Title = {Numerical modelling of complex turbulent free-surface flows with the SPH method: an overview},
+	Volume = {53},
+	Year = {2007}}
 
 @article{holm1999fluctuation,
-  title={Fluctuation effects on 3D Lagrangian mean and Eulerian mean fluid motion},
-  author={Holm, Darryl D},
-  journal={Physica D: Nonlinear Phenomena},
-  volume={133},
-  number={1},
-  pages={215--269},
-  year={1999},
-  publisher={Elsevier}
-}
+	Author = {Holm, Darryl D},
+	Journal = {Physica D: Nonlinear Phenomena},
+	Number = {1},
+	Pages = {215--269},
+	Publisher = {Elsevier},
+	Title = {Fluctuation effects on 3D Lagrangian mean and Eulerian mean fluid motion},
+	Volume = {133},
+	Year = {1999}}
 
 @article{monaghan2011turbulence,
-  title={A turbulence model for Smoothed Particle Hydrodynamics},
-  author={Monaghan, Joe J},
-  journal={European Journal of Mechanics-B/Fluids},
-  volume={30},
-  number={4},
-  pages={360--370},
-  year={2011},
-  publisher={Elsevier}
-}
+	Author = {Monaghan, Joe J},
+	Journal = {European Journal of Mechanics-B/Fluids},
+	Number = {4},
+	Pages = {360--370},
+	Publisher = {Elsevier},
+	Title = {A turbulence model for Smoothed Particle Hydrodynamics},
+	Volume = {30},
+	Year = {2011}}
 
 @article{issa2005numerical,
-  title={Numerical assessment of the Smoothed Particle Hydrodynamics gridless method for incompressible flows and its extension to turbulent flows},
-  author={Issa, Reza},
-  year={2005}
-}
+	Author = {Issa, Reza},
+	Title = {Numerical assessment of the Smoothed Particle Hydrodynamics gridless method for incompressible flows and its extension to turbulent flows},
+	Year = {2005}}
 
 @article{monaghan2002sph,
-  title={SPH compressible turbulence},
-  author={Monaghan, JJ},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={335},
-  number={3},
-  pages={843--852},
-  year={2002},
-  publisher={Oxford University Press}
-}
+	Author = {Monaghan, JJ},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {843--852},
+	Publisher = {Oxford University Press},
+	Title = {SPH compressible turbulence},
+	Volume = {335},
+	Year = {2002}}
 
 @book{gatski2013compressibility,
-  title={Compressibility, turbulence and high speed flow},
-  author={Gatski, Thomas B and Bonnet, Jean-Paul},
-  year={2013},
-  publisher={Academic Press}
-}
+	Author = {Gatski, Thomas B and Bonnet, Jean-Paul},
+	Publisher = {Academic Press},
+	Title = {Compressibility, turbulence and high speed flow},
+	Year = {2013}}
 
-@misc {NASACompressibleTurbulence,
-	title = {Implementing Turbulence Models into the Compressible RANS Equations},
-	month = {Agu},
-	url={http://turbmodels.larc.nasa.gov/implementrans.html},
-	year = {2014},
-	author = {Christopher Rumsey}
-}
+@misc{NASACompressibleTurbulence,
+	Author = {Christopher Rumsey},
+	Month = {Agu},
+	Title = {Implementing Turbulence Models into the Compressible RANS Equations},
+	Url = {http://turbmodels.larc.nasa.gov/implementrans.html},
+	Year = {2014},
+	Bdsk-Url-1 = {http://turbmodels.larc.nasa.gov/implementrans.html}}
 
 @book{cebeci2013analysis,
-  title={Analysis of turbulent flows with computer programs},
-  author={Cebeci, Tuncer},
-  year={2013},
-  publisher={Butterworth-Heinemann}
-}
+	Author = {Cebeci, Tuncer},
+	Publisher = {Butterworth-Heinemann},
+	Title = {Analysis of turbulent flows with computer programs},
+	Year = {2013}}
 
 @article{kays1994turbulent,
-  title={Turbulent Prandtl number—where are we?},
-  author={Kays, William M},
-  journal={Journal of Heat Transfer},
-  volume={116},
-  number={2},
-  pages={284--295},
-  year={1994},
-  publisher={American Society of Mechanical Engineers}
-}
+	Author = {Kays, William M},
+	Journal = {Journal of Heat Transfer},
+	Number = {2},
+	Pages = {284--295},
+	Publisher = {American Society of Mechanical Engineers},
+	Title = {Turbulent Prandtl number---where are we?},
+	Volume = {116},
+	Year = {1994}}
 
-
-%%SPH parallel
 @article{goozee2003distributed,
-  title={Distributed and shared memory parallelism with a smoothed particle hydrodynamics code},
-  author={Gooz{\'e}e, Richard J and Jacobs, Peter A},
-  journal={ANZIAM Journal},
-  volume={44},
-  pages={202--228},
-  year={2003}
-}
+	Author = {Gooz{\'e}e, Richard J and Jacobs, Peter A},
+	Journal = {ANZIAM Journal},
+	Pages = {202--228},
+	Title = {Distributed and shared memory parallelism with a smoothed particle hydrodynamics code},
+	Volume = {44},
+	Year = {2003}}
 
 @article{holmes2011framework,
-  title={A framework for parallel computational physics algorithms on multi-core: SPH in parallel},
-  author={Holmes, David W and Williams, John R and Tilke, Peter},
-  journal={Advances in Engineering Software},
-  volume={42},
-  number={11},
-  pages={999--1008},
-  year={2011},
-  publisher={Elsevier}
-}
+	Author = {Holmes, David W and Williams, John R and Tilke, Peter},
+	Journal = {Advances in Engineering Software},
+	Number = {11},
+	Pages = {999--1008},
+	Publisher = {Elsevier},
+	Title = {A framework for parallel computational physics algorithms on multi-core: SPH in parallel},
+	Volume = {42},
+	Year = {2011}}
 
 @inproceedings{wenbo2014performance,
-  title={Performance analysis of parallel smoothed particle hydrodynamics on multi-core CPUs},
-  author={Wenbo, Chen and Yao, Yucheng and Zhang, Yang},
-  booktitle={Cloud Computing and Internet of Things (CCIOT), 2014 International Conference on},
-  pages={85--90},
-  year={2014},
-  organization={IEEE}
-}
+	Author = {Wenbo, Chen and Yao, Yucheng and Zhang, Yang},
+	Booktitle = {Cloud Computing and Internet of Things (CCIOT), 2014 International Conference on},
+	Organization = {IEEE},
+	Pages = {85--90},
+	Title = {Performance analysis of parallel smoothed particle hydrodynamics on multi-core CPUs},
+	Year = {2014}}
 
 @inproceedings{adams2007adaptively,
-  title={Adaptively sampled particle fluids},
-  author={Adams, Bart and Pauly, Mark and Keiser, Richard and Guibas, Leonidas J},
-  booktitle={ACM Transactions on Graphics (TOG)},
-  volume={26},
-  number={3},
-  pages={48},
-  year={2007},
-  organization={ACM}
-}
+	Author = {Adams, Bart and Pauly, Mark and Keiser, Richard and Guibas, Leonidas J},
+	Booktitle = {ACM Transactions on Graphics (TOG)},
+	Number = {3},
+	Organization = {ACM},
+	Pages = {48},
+	Title = {Adaptively sampled particle fluids},
+	Volume = {26},
+	Year = {2007}}
 
 @article{dominguez2011optimization,
-  title={Optimization strategies for parallel CPU and GPU implementations of a meshfree particle method},
-  author={Dom{\'\i}nguez, Jose M and Crespo, Alejandro JC and G{\'o}mez-Gesteira, Moncho},
-  journal={arXiv preprint arXiv:1110.3711},
-  year={2011}
-}
+	Author = {Dom{\'\i}nguez, Jose M and Crespo, Alejandro JC and G{\'o}mez-Gesteira, Moncho},
+	Journal = {arXiv preprint arXiv:1110.3711},
+	Title = {Optimization strategies for parallel CPU and GPU implementations of a meshfree particle method},
+	Year = {2011}}
 
 @article{marrone2012study,
-  title={Study of ship wave breaking patterns using 3D parallel SPH simulations},
-  author={Marrone, S and Bouscasse, B and Colagrossi, A and Antuono, M},
-  journal={Computers \& Fluids},
-  volume={69},
-  pages={54--66},
-  year={2012},
-  publisher={Elsevier}
-}
+	Author = {Marrone, S and Bouscasse, B and Colagrossi, A and Antuono, M},
+	Journal = {Computers \& Fluids},
+	Pages = {54--66},
+	Publisher = {Elsevier},
+	Title = {Study of ship wave breaking patterns using 3D parallel SPH simulations},
+	Volume = {69},
+	Year = {2012}}
 
 @article{ferrari2009new,
-  title={A new 3D parallel SPH scheme for free surface flows},
-  author={Ferrari, Angela and Dumbser, Michael and Toro, Eleuterio F and Armanini, Aronne},
-  journal={Computers \& Fluids},
-  volume={38},
-  number={6},
-  pages={1203--1217},
-  year={2009},
-  publisher={Elsevier}
-}
+	Author = {Ferrari, Angela and Dumbser, Michael and Toro, Eleuterio F and Armanini, Aronne},
+	Journal = {Computers \& Fluids},
+	Number = {6},
+	Pages = {1203--1217},
+	Publisher = {Elsevier},
+	Title = {A new 3D parallel SPH scheme for free surface flows},
+	Volume = {38},
+	Year = {2009}}
 
 @article{crespo2015dualsphysics,
-  title={DualSPHysics: Open-source parallel CFD solver based on Smoothed Particle Hydrodynamics (SPH)},
-  author={Crespo, AJC and Dom{\'\i}nguez, JM and Rogers, BD and G{\'o}mez-Gesteira, M and Longshaw, S and Canelas, R and Vacondio, R and Barreiro, A and Garc{\'\i}a-Feal, O},
-  journal={Computer Physics Communications},
-  volume={187},
-  pages={204--216},
-  year={2015},
-  publisher={Elsevier}
-}
+	Author = {Crespo, AJC and Dom{\'\i}nguez, JM and Rogers, BD and G{\'o}mez-Gesteira, M and Longshaw, S and Canelas, R and Vacondio, R and Barreiro, A and Garc{\'\i}a-Feal, O},
+	Journal = {Computer Physics Communications},
+	Pages = {204--216},
+	Publisher = {Elsevier},
+	Title = {DualSPHysics: Open-source parallel CFD solver based on Smoothed Particle Hydrodynamics (SPH)},
+	Volume = {187},
+	Year = {2015}}
 
-%Dr. Patra's paper
 @article{laszloffy2000simple,
-  title={Simple data management, scheduling and solution strategies for managing the irregularities in parallel adaptive hp finite element simulations},
-  author={Laszloffy, Andras and Long, Jingping and Patra, Abani K},
-  journal={Parallel Computing},
-  volume={26},
-  number={13},
-  pages={1765--1788},
-  year={2000},
-  publisher={Elsevier}
-}
+	Author = {Laszloffy, Andras and Long, Jingping and Patra, Abani K},
+	Journal = {Parallel Computing},
+	Number = {13},
+	Pages = {1765--1788},
+	Publisher = {Elsevier},
+	Title = {Simple data management, scheduling and solution strategies for managing the irregularities in parallel adaptive hp finite element simulations},
+	Volume = {26},
+	Year = {2000}}
 
 @article{patra2003data,
-  title={Data structures and load balancing for parallel adaptive hp finite-element methods},
-  author={Patra, AK and Laszloffy, A and Long, J},
-  journal={Computers \& Mathematics with Applications},
-  volume={46},
-  number={1},
-  pages={105--123},
-  year={2003},
-  publisher={Elsevier}
-}
+	Author = {Patra, AK and Laszloffy, A and Long, J},
+	Journal = {Computers \& Mathematics with Applications},
+	Number = {1},
+	Pages = {105--123},
+	Publisher = {Elsevier},
+	Title = {Data structures and load balancing for parallel adaptive hp finite-element methods},
+	Volume = {46},
+	Year = {2003}}
 
 @article{patra2005parallel,
-  title={Parallel adaptive numerical simulation of dry avalanches over natural terrain},
-  author={Patra, Abani K and Bauer, AC and Nichita, CC and Pitman, E Bruce and Sheridan, MF and Bursik, M and Rupp, B and Webber, A and Stinton, AJ and Namikawa, LM and others},
-  journal={Journal of Volcanology and Geothermal Research},
-  volume={139},
-  number={1},
-  pages={1--21},
-  year={2005},
-  publisher={Elsevier}
-}
+	Author = {Patra, Abani K and Bauer, AC and Nichita, CC and Pitman, E Bruce and Sheridan, MF and Bursik, M and Rupp, B and Webber, A and Stinton, AJ and Namikawa, LM and others},
+	Journal = {Journal of Volcanology and Geothermal Research},
+	Number = {1},
+	Pages = {1--21},
+	Publisher = {Elsevier},
+	Title = {Parallel adaptive numerical simulation of dry avalanches over natural terrain},
+	Volume = {139},
+	Year = {2005}}
 
 @article{pitman2003computing,
-  title={Computing granular avalanches and landslides},
-  author={Pitman, E Bruce and Nichita, C Camil and Patra, Abani and Bauer, Andy and Sheridan, Michael and Bursik, Marcus},
-  journal={Physics of Fluids (1994-present)},
-  volume={15},
-  number={12},
-  pages={3638--3646},
-  year={2003},
-  publisher={AIP Publishing}
-}
+	Author = {Pitman, E Bruce and Nichita, C Camil and Patra, Abani and Bauer, Andy and Sheridan, Michael and Bursik, Marcus},
+	Journal = {Physics of Fluids (1994-present)},
+	Number = {12},
+	Pages = {3638--3646},
+	Publisher = {AIP Publishing},
+	Title = {Computing granular avalanches and landslides},
+	Volume = {15},
+	Year = {2003}}
 
 @article{patra1995problem,
-  title={Problem decomposition for adaptive hp finite element methods},
-  author={Patra, Abani and Oden, J Tinsley},
-  journal={Computing Systems in Engineering},
-  volume={6},
-  number={2},
-  pages={97--109},
-  year={1995},
-  publisher={Elsevier}
-}
+	Author = {Patra, Abani and Oden, J Tinsley},
+	Journal = {Computing Systems in Engineering},
+	Number = {2},
+	Pages = {97--109},
+	Publisher = {Elsevier},
+	Title = {Problem decomposition for adaptive hp finite element methods},
+	Volume = {6},
+	Year = {1995}}
 
 @inproceedings{patra1999efficient,
-  title={Efficient mesh partitioning for adaptive hp finite element meshes},
-  author={Patra, AK and Kim, DW},
-  booktitle={In International Conference on Domain Decomposition Methods},
-  year={1999},
-  organization={Citeseer}
-}
+	Author = {Patra, AK and Kim, DW},
+	Booktitle = {In International Conference on Domain Decomposition Methods},
+	Organization = {Citeseer},
+	Title = {Efficient mesh partitioning for adaptive hp finite element meshes},
+	Year = {1999}}
 
-@Article{gmd-2017-119,
-AUTHOR = {Cao, Z. and Patra, A. and Bursik, M. and Pitman, E. B. and Jones, M.},
-TITLE = {Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume model based on smoothed particle hydrodynamics},
-JOURNAL = {Geoscientific Model Development Discussions},
-VOLUME = {2017},
-YEAR = {2017},
-PAGES = {1--37},
-URL = {https://www.geosci-model-dev-discuss.net/gmd-2017-119/},
-DOI = {10.5194/gmd-2017-119}
-}
+@article{gmd-2017-119,
+	Author = {Cao, Z. and Patra, A. and Bursik, M. and Pitman, E. B. and Jones, M.},
+	Doi = {10.5194/gmd-2017-119},
+	Journal = {Geoscientific Model Development Discussions},
+	Pages = {1--37},
+	Title = {Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume model based on smoothed particle hydrodynamics},
+	Url = {https://www.geosci-model-dev-discuss.net/gmd-2017-119/},
+	Volume = {2017},
+	Year = {2017},
+	Bdsk-Url-1 = {https://www.geosci-model-dev-discuss.net/gmd-2017-119/},
+	Bdsk-Url-2 = {http://dx.doi.org/10.5194/gmd-2017-119}}
 
 @article{cao2017data,
-  title={Data Management and Volcano Plume Simulation with Parallel SPH Method and Dynamic Halo Domains},
-  author={Cao, Zhixuan and Patra, Abani and Jones, Matthew},
-  journal={Procedia Computer Science},
-  volume={108},
-  pages={786--795},
-  year={2017},
-  publisher={Elsevier}
-}
-%SFC 
+	Author = {Cao, Zhixuan and Patra, Abani and Jones, Matthew},
+	Journal = {Procedia Computer Science},
+	Pages = {786--795},
+	Publisher = {Elsevier},
+	Title = {Data Management and Volcano Plume Simulation with Parallel SPH Method and Dynamic Halo Domains},
+	Volume = {108},
+	Year = {2017}}
+
 @book{sagan2012space,
-  title={Space-filling curves},
-  author={Sagan, Hans},
-  year={2012},
-  publisher={Springer Science \& Business Media}
-}
+	Author = {Sagan, Hans},
+	Publisher = {Springer Science \& Business Media},
+	Title = {Space-filling curves},
+	Year = {2012}}
 
-%domain partition
 @incollection{biswas1999experiments,
-  title={Experiments with repartitioning and load balancing adaptive meshes},
-  author={Biswas, Rupak and Oliker, Leonid},
-  booktitle={Grid Generation and Adaptive Algorithms},
-  pages={89--111},
-  year={1999},
-  publisher={Springer}
-}
+	Author = {Biswas, Rupak and Oliker, Leonid},
+	Booktitle = {Grid Generation and Adaptive Algorithms},
+	Pages = {89--111},
+	Publisher = {Springer},
+	Title = {Experiments with repartitioning and load balancing adaptive meshes},
+	Year = {1999}}
 
-%Paper on JPUE experiments
 @article{papanicolaou1988investigations,
-  title={Investigations of round vertical turbulent buoyant jets},
-  author={Papanicolaou, Panos N and List, E John},
-  journal={Journal of Fluid Mechanics},
-  volume={195},
-  pages={341--391},
-  year={1988},
-  publisher={Cambridge Univ Press}
-}
+	Author = {Papanicolaou, Panos N and List, E John},
+	Journal = {Journal of Fluid Mechanics},
+	Pages = {341--391},
+	Publisher = {Cambridge Univ Press},
+	Title = {Investigations of round vertical turbulent buoyant jets},
+	Volume = {195},
+	Year = {1988}}
+
 @article{dimotakis1983structure,
-  title={Structure and dynamics of round turbulent jets},
-  author={Dimotakis, Paul E and Miake-Lye, Richard C and Papantoniou, Dimitris A},
-  journal={Physics of Fluids},
-  volume={26},
-  number={11},
-  pages={3185--3192},
-  year={1983},
-  publisher={American Institute of Physics}
-}
+	Author = {Dimotakis, Paul E and Miake-Lye, Richard C and Papantoniou, Dimitris A},
+	Journal = {Physics of Fluids},
+	Number = {11},
+	Pages = {3185--3192},
+	Publisher = {American Institute of Physics},
+	Title = {Structure and dynamics of round turbulent jets},
+	Volume = {26},
+	Year = {1983}}
+
 @article{list1982turbulent,
-  title={Turbulent jets and plumes},
-  author={List, EJ},
-  journal={Annual review of fluid mechanics},
-  volume={14},
-  number={1},
-  pages={189--212},
-  year={1982},
-  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
-}
+	Author = {List, EJ},
+	Journal = {Annual review of fluid mechanics},
+	Number = {1},
+	Pages = {189--212},
+	Publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
+	Title = {Turbulent jets and plumes},
+	Volume = {14},
+	Year = {1982}}
 
 @article{george1977turbulence,
-  title={Turbulence measurements in an axisymmetric buoyant plume},
-  author={George, William K and Alpert, Ronald L and Tamanini, Francesco},
-  journal={International Journal of Heat and Mass Transfer},
-  volume={20},
-  number={11},
-  pages={1145--1154},
-  year={1977},
-  publisher={Elsevier}
-}
+	Author = {George, William K and Alpert, Ronald L and Tamanini, Francesco},
+	Journal = {International Journal of Heat and Mass Transfer},
+	Number = {11},
+	Pages = {1145--1154},
+	Publisher = {Elsevier},
+	Title = {Turbulence measurements in an axisymmetric buoyant plume},
+	Volume = {20},
+	Year = {1977}}
 
 @article{papantoniou1989large,
-  title={Large-scale structure in the far field of byoyant jets},
-  author={Papantoniou, Dimitris and List, E John},
-  journal={Journal of Fluid Mechanics},
-  volume={209},
-  pages={151--190},
-  year={1989},
-  publisher={Cambridge University Press}
-}
+	Author = {Papantoniou, Dimitris and List, E John},
+	Journal = {Journal of Fluid Mechanics},
+	Pages = {151--190},
+	Publisher = {Cambridge University Press},
+	Title = {Large-scale structure in the far field of byoyant jets},
+	Volume = {209},
+	Year = {1989}}
 
 @article{crimaldi2001high,
-  title={High-resolution measurements of the spatial and temporal scalar structure of a turbulent plume},
-  author={Crimaldi, JP and Koseff, JR},
-  journal={Experiments in Fluids},
-  volume={31},
-  number={1},
-  pages={90--102},
-  year={2001},
-  publisher={Springer}
-}
+	Author = {Crimaldi, JP and Koseff, JR},
+	Journal = {Experiments in Fluids},
+	Number = {1},
+	Pages = {90--102},
+	Publisher = {Springer},
+	Title = {High-resolution measurements of the spatial and temporal scalar structure of a turbulent plume},
+	Volume = {31},
+	Year = {2001}}
 
 @article{ezzamel2015dynamical,
-  title={Dynamical variability of axisymmetric buoyant plumes},
-  author={Ezzamel, Adam and Salizzoni, Pietro and Hunt, Gary R},
-  journal={Journal of Fluid Mechanics},
-  volume={765},
-  pages={576--611},
-  year={2015},
-  publisher={Cambridge University Press}
-}
+	Author = {Ezzamel, Adam and Salizzoni, Pietro and Hunt, Gary R},
+	Journal = {Journal of Fluid Mechanics},
+	Pages = {576--611},
+	Publisher = {Cambridge University Press},
+	Title = {Dynamical variability of axisymmetric buoyant plumes},
+	Volume = {765},
+	Year = {2015}}
 
-%mesh based interface capturing
 @article{harlow1965numerical,
-  title={Numerical calculation of time-dependent viscous incompressible flow of fluid with free surface},
-  author={Harlow, Francis H and Welch, J Eddie and others},
-  journal={Physics of fluids},
-  volume={8},
-  number={12},
-  pages={2182},
-  year={1965}
-}
+	Author = {Harlow, Francis H and Welch, J Eddie and others},
+	Journal = {Physics of fluids},
+	Number = {12},
+	Pages = {2182},
+	Title = {Numerical calculation of time-dependent viscous incompressible flow of fluid with free surface},
+	Volume = {8},
+	Year = {1965}}
+
 @article{cheng1995simplified,
-  title={A simplified marker and cell method for unsteady flows on non-staggered grids},
-  author={Cheng, Liang and Armfield, Steven},
-  journal={International journal for numerical methods in fluids},
-  volume={21},
-  number={1},
-  pages={15--34},
-  year={1995},
-  publisher={Wiley Online Library}
-}
+	Author = {Cheng, Liang and Armfield, Steven},
+	Journal = {International journal for numerical methods in fluids},
+	Number = {1},
+	Pages = {15--34},
+	Publisher = {Wiley Online Library},
+	Title = {A simplified marker and cell method for unsteady flows on non-staggered grids},
+	Volume = {21},
+	Year = {1995}}
+
 @book{wrobel1991computational,
-  title={Computational Modelling of Free and Moving Boundary Problems: Fluid flow},
-  author={Wrobel, Luiz C and Brebbia, CA},
-  volume={1},
-  year={1991},
-  publisher={Walter de Gruyter}
-}
+	Author = {Wrobel, Luiz C and Brebbia, CA},
+	Publisher = {Walter de Gruyter},
+	Title = {Computational Modelling of Free and Moving Boundary Problems: Fluid flow},
+	Volume = {1},
+	Year = {1991}}
+
 @article{unverdi1992front,
-  title={A front-tracking method for viscous, incompressible, multi-fluid flows},
-  author={Unverdi, Salih Ozen and Tryggvason, Gr{\'e}tar},
-  journal={Journal of computational physics},
-  volume={100},
-  number={1},
-  pages={25--37},
-  year={1992},
-  publisher={Elsevier}
-}
+	Author = {Unverdi, Salih Ozen and Tryggvason, Gr{\'e}tar},
+	Journal = {Journal of computational physics},
+	Number = {1},
+	Pages = {25--37},
+	Publisher = {Elsevier},
+	Title = {A front-tracking method for viscous, incompressible, multi-fluid flows},
+	Volume = {100},
+	Year = {1992}}
+
 @article{anderson1998diffuse,
-  title={Diffuse-interface methods in fluid mechanics},
-  author={Anderson, DM and McFadden, Geoffrey B and Wheeler, AA},
-  journal={Annual review of fluid mechanics},
-  volume={30},
-  number={1},
-  pages={139--165},
-  year={1998},
-  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
-}
+	Author = {Anderson, DM and McFadden, Geoffrey B and Wheeler, AA},
+	Journal = {Annual review of fluid mechanics},
+	Number = {1},
+	Pages = {139--165},
+	Publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
+	Title = {Diffuse-interface methods in fluid mechanics},
+	Volume = {30},
+	Year = {1998}}
+
 @article{hirt1981volume,
-  title={Volume of fluid (VOF) method for the dynamics of free boundaries},
-  author={Hirt, Cyril W and Nichols, Billy D},
-  journal={Journal of computational physics},
-  volume={39},
-  number={1},
-  pages={201--225},
-  year={1981},
-  publisher={Elsevier}
-}
+	Author = {Hirt, Cyril W and Nichols, Billy D},
+	Journal = {Journal of computational physics},
+	Number = {1},
+	Pages = {201--225},
+	Publisher = {Elsevier},
+	Title = {Volume of fluid (VOF) method for the dynamics of free boundaries},
+	Volume = {39},
+	Year = {1981}}
+
 @article{gerlach2006comparison,
-  title={Comparison of volume-of-fluid methods for surface tension-dominant two-phase flows},
-  author={Gerlach, D and Tomar, G and Biswas, G and Durst, F},
-  journal={International Journal of Heat and Mass Transfer},
-  volume={49},
-  number={3},
-  pages={740--754},
-  year={2006},
-  publisher={Elsevier}
-}
+	Author = {Gerlach, D and Tomar, G and Biswas, G and Durst, F},
+	Journal = {International Journal of Heat and Mass Transfer},
+	Number = {3},
+	Pages = {740--754},
+	Publisher = {Elsevier},
+	Title = {Comparison of volume-of-fluid methods for surface tension-dominant two-phase flows},
+	Volume = {49},
+	Year = {2006}}
+
 @article{gopala2008volume,
-  title={Volume of fluid methods for immiscible-fluid and free-surface flows},
-  author={Gopala, Vinay R and van Wachem, Berend GM},
-  journal={Chemical Engineering Journal},
-  volume={141},
-  number={1},
-  pages={204--221},
-  year={2008},
-  publisher={Elsevier}
-}
+	Author = {Gopala, Vinay R and van Wachem, Berend GM},
+	Journal = {Chemical Engineering Journal},
+	Number = {1},
+	Pages = {204--221},
+	Publisher = {Elsevier},
+	Title = {Volume of fluid methods for immiscible-fluid and free-surface flows},
+	Volume = {141},
+	Year = {2008}}
 
 @article{jacobson2008mixing,
-  title={Mixing closures for conservation laws in stratified flows},
-  author={Jacobson, Tivon and Milewski, Paul A and Tabak, Esteban G},
-  journal={Studies in Applied Mathematics},
-  volume={121},
-  number={1},
-  pages={89--116},
-  year={2008},
-  publisher={Wiley Online Library}
-}
+	Author = {Jacobson, Tivon and Milewski, Paul A and Tabak, Esteban G},
+	Journal = {Studies in Applied Mathematics},
+	Number = {1},
+	Pages = {89--116},
+	Publisher = {Wiley Online Library},
+	Title = {Mixing closures for conservation laws in stratified flows},
+	Volume = {121},
+	Year = {2008}}
 
 @article{youngs1982time,
-  title={Time-dependent multi-material flow with large fluid distortion},
-  author={Youngs, David L},
-  journal={Numerical methods for fluid dynamics},
-  volume={24},
-  number={2},
-  pages={273--285},
-  year={1982},
-  publisher={Academic Press, New York}
-}
+	Author = {Youngs, David L},
+	Journal = {Numerical methods for fluid dynamics},
+	Number = {2},
+	Pages = {273--285},
+	Publisher = {Academic Press, New York},
+	Title = {Time-dependent multi-material flow with large fluid distortion},
+	Volume = {24},
+	Year = {1982}}
 
-%Other paper
 @article{weller1998tensorial,
-  title={A tensorial approach to computational continuum mechanics using object-oriented techniques},
-  author={Weller, Henry G and Tabor, G and Jasak, Hrvoje and Fureby, C},
-  journal={Computers in physics},
-  volume={12},
-  number={6},
-  pages={620--631},
-  year={1998},
-  publisher={AIP Publishing}
-}
+	Author = {Weller, Henry G and Tabor, G and Jasak, Hrvoje and Fureby, C},
+	Journal = {Computers in physics},
+	Number = {6},
+	Pages = {620--631},
+	Publisher = {AIP Publishing},
+	Title = {A tensorial approach to computational continuum mechanics using object-oriented techniques},
+	Volume = {12},
+	Year = {1998}}
 
-%Someweb site:
 @misc{PlumePhoto:online,
-author = {UCL Volcano $CO_2$s Group},
-title = {Sakurajima News Reports @online},
-month = {Jun},
-year = {2009},
-url = {https://www.ucl.ac.uk/vco2/NewsReports/Sakurajima_News_Reports},
-note = {Accessed: 2016-04-30}
-}
+	Author = {UCL Volcano $CO_2$s Group},
+	Month = {Jun},
+	Note = {Accessed: 2016-04-30},
+	Title = {Sakurajima News Reports @online},
+	Url = {https://www.ucl.ac.uk/vco2/NewsReports/Sakurajima_News_Reports},
+	Year = {2009},
+	Bdsk-Url-1 = {https://www.ucl.ac.uk/vco2/NewsReports/Sakurajima_News_Reports}}
 
-
-%paper for high speed turbulent simulation.
 @article{sod1978survey,
-  title={A survey of several finite difference methods for systems of nonlinear hyperbolic conservation laws},
-  author={Sod, Gary A},
-  journal={Journal of computational physics},
-  volume={27},
-  number={1},
-  pages={1--31},
-  year={1978},
-  publisher={Elsevier}
-}
+	Author = {Sod, Gary A},
+	Journal = {Journal of computational physics},
+	Number = {1},
+	Pages = {1--31},
+	Publisher = {Elsevier},
+	Title = {A survey of several finite difference methods for systems of nonlinear hyperbolic conservation laws},
+	Volume = {27},
+	Year = {1978}}
 
-% newly added reference for JCP paper
 @incollection{klapp2012strong,
-  title={Strong Shocks with Smoothed Particle Hydrodynamics},
-  author={Klapp, Jaime and Sigalotti, Leonardo Di G and Pe{\~n}a-Polo, Franklin and Trujillo, Leonardo},
-  booktitle={Experimental and Theoretical Advances in Fluid Dynamics},
-  pages={69--79},
-  year={2012},
-  publisher={Springer}
-}
+	Author = {Klapp, Jaime and Sigalotti, Leonardo Di G and Pe{\~n}a-Polo, Franklin and Trujillo, Leonardo},
+	Booktitle = {Experimental and Theoretical Advances in Fluid Dynamics},
+	Pages = {69--79},
+	Publisher = {Springer},
+	Title = {Strong Shocks with Smoothed Particle Hydrodynamics},
+	Year = {2012}}
 
 @article{flebbe1994smoothed,
-  title={Smoothed particle hydrodynamics: physical viscosity and the simulation of accretion disks},
-  author={Flebbe, Olaf and Muenzel, S and Herold, H and Riffert, H and Ruder, H},
-  journal={The Astrophysical Journal},
-  volume={431},
-  pages={754--760},
-  year={1994}
-}
+	Author = {Flebbe, Olaf and Muenzel, S and Herold, H and Riffert, H and Ruder, H},
+	Journal = {The Astrophysical Journal},
+	Pages = {754--760},
+	Title = {Smoothed particle hydrodynamics: physical viscosity and the simulation of accretion disks},
+	Volume = {431},
+	Year = {1994}}
 
 @article{morris1997switch,
-  title={A switch to reduce SPH viscosity},
-  author={Morris, JP and Monaghan, JJ},
-  journal={Journal of Computational Physics},
-  volume={136},
-  number={1},
-  pages={41--50},
-  year={1997},
-  publisher={Elsevier}
-}
+	Author = {Morris, JP and Monaghan, JJ},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {41--50},
+	Publisher = {Elsevier},
+	Title = {A switch to reduce SPH viscosity},
+	Volume = {136},
+	Year = {1997}}
 
 @article{dolag2005turbulent,
-  title={Turbulent gas motions in galaxy cluster simulations: the role of smoothed particle hydrodynamics viscosity},
-  author={Dolag, K and Vazza, F and Brunetti, Gf and Tormen, G},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={364},
-  number={3},
-  pages={753--772},
-  year={2005},
-  publisher={Blackwell Science Ltd Oxford, UK}
-}
+	Author = {Dolag, K and Vazza, F and Brunetti, Gf and Tormen, G},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {3},
+	Pages = {753--772},
+	Publisher = {Blackwell Science Ltd Oxford, UK},
+	Title = {Turbulent gas motions in galaxy cluster simulations: the role of smoothed particle hydrodynamics viscosity},
+	Volume = {364},
+	Year = {2005}}
 
 @article{cullen2010inviscid,
-  title={Inviscid smoothed particle hydrodynamics},
-  author={Cullen, Lee and Dehnen, Walter},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={408},
-  number={2},
-  pages={669--683},
-  year={2010},
-  publisher={The Royal Astronomical Society}
-}
+	Author = {Cullen, Lee and Dehnen, Walter},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {2},
+	Pages = {669--683},
+	Publisher = {The Royal Astronomical Society},
+	Title = {Inviscid smoothed particle hydrodynamics},
+	Volume = {408},
+	Year = {2010}}
 
 @article{cha2003implementations,
-  title={Implementations and tests of Godunov-type particle hydrodynamics},
-  author={Cha, S-H and Whitworth, Anthony Peter},
-  journal={Monthly Notices of the Royal Astronomical Society},
-  volume={340},
-  number={1},
-  pages={73--90},
-  year={2003},
-  publisher={Blackwell Science Ltd Oxford, UK}
-}
+	Author = {Cha, S-H and Whitworth, Anthony Peter},
+	Journal = {Monthly Notices of the Royal Astronomical Society},
+	Number = {1},
+	Pages = {73--90},
+	Publisher = {Blackwell Science Ltd Oxford, UK},
+	Title = {Implementations and tests of Godunov-type particle hydrodynamics},
+	Volume = {340},
+	Year = {2003}}
 
 @article{puri2014comparison,
-  title={A comparison of SPH schemes for the compressible Euler equations},
-  author={Puri, Kunal and Ramachandran, Prabhu},
-  journal={Journal of Computational Physics},
-  volume={256},
-  pages={308--333},
-  year={2014},
-  publisher={Elsevier}
-}
+	Author = {Puri, Kunal and Ramachandran, Prabhu},
+	Journal = {Journal of Computational Physics},
+	Pages = {308--333},
+	Publisher = {Elsevier},
+	Title = {A comparison of SPH schemes for the compressible Euler equations},
+	Volume = {256},
+	Year = {2014}}
 
 @article{sigalotti2008adaptive,
-  title={Adaptive kernel estimation and SPH tensile instability},
-  author={Sigalotti, Leonardo Di G and L{\'o}pez, Hender},
-  journal={Computers \& Mathematics with Applications},
-  volume={55},
-  number={1},
-  pages={23--50},
-  year={2008},
-  publisher={Elsevier}
-}
+	Author = {Sigalotti, Leonardo Di G and L{\'o}pez, Hender},
+	Journal = {Computers \& Mathematics with Applications},
+	Number = {1},
+	Pages = {23--50},
+	Publisher = {Elsevier},
+	Title = {Adaptive kernel estimation and SPH tensile instability},
+	Volume = {55},
+	Year = {2008}}
 
 @article{glimm1965solutions,
-  title={Solutions in the large for nonlinear hyperbolic systems of equations},
-  author={Glimm, James},
-  journal={Communications on pure and applied mathematics},
-  volume={18},
-  number={4},
-  pages={697--715},
-  year={1965},
-  publisher={Wiley Online Library}
-}
+	Author = {Glimm, James},
+	Journal = {Communications on pure and applied mathematics},
+	Number = {4},
+	Pages = {697--715},
+	Publisher = {Wiley Online Library},
+	Title = {Solutions in the large for nonlinear hyperbolic systems of equations},
+	Volume = {18},
+	Year = {1965}}
 
 @article{chorin1976random,
-  title={Random choice solution of hyperbolic systems},
-  author={Chorin, Alexandre Joel},
-  journal={Journal of Computational Physics},
-  volume={22},
-  number={4},
-  pages={517--533},
-  year={1976},
-  publisher={Elsevier}
-}
+	Author = {Chorin, Alexandre Joel},
+	Journal = {Journal of Computational Physics},
+	Number = {4},
+	Pages = {517--533},
+	Publisher = {Elsevier},
+	Title = {Random choice solution of hyperbolic systems},
+	Volume = {22},
+	Year = {1976}}
 
 @article{colella1982glimm,
-  title={Glimm’s method for gas dynamics},
-  author={Colella, Phillip},
-  journal={SIAM Journal on Scientific and Statistical Computing},
-  volume={3},
-  number={1},
-  pages={76--110},
-  year={1982},
-  publisher={SIAM}
-}
+	Author = {Colella, Phillip},
+	Journal = {SIAM Journal on Scientific and Statistical Computing},
+	Number = {1},
+	Pages = {76--110},
+	Publisher = {SIAM},
+	Title = {Glimm's method for gas dynamics},
+	Volume = {3},
+	Year = {1982}}
 
 @article{sod1977numerical,
-  title={A numerical study of a converging cylindrical shock},
-  author={Sod, Gary A},
-  journal={Journal of Fluid Mechanics},
-  volume={83},
-  number={4},
-  pages={785--794},
-  year={1977},
-  publisher={Cambridge University Press}
-}
+	Author = {Sod, Gary A},
+	Journal = {Journal of Fluid Mechanics},
+	Number = {4},
+	Pages = {785--794},
+	Publisher = {Cambridge University Press},
+	Title = {A numerical study of a converging cylindrical shock},
+	Volume = {83},
+	Year = {1977}}
 
 @article{concus1979numerical,
-  title={Numerical solution of a nonlinear hyperbolic equation by the random choice method},
-  author={Concus, Paul and Proskurowski, Wlodzimierz},
-  journal={Journal of Computational Physics},
-  volume={30},
-  number={2},
-  pages={153--166},
-  year={1979},
-  publisher={Elsevier}
-}
+	Author = {Concus, Paul and Proskurowski, Wlodzimierz},
+	Journal = {Journal of Computational Physics},
+	Number = {2},
+	Pages = {153--166},
+	Publisher = {Elsevier},
+	Title = {Numerical solution of a nonlinear hyperbolic equation by the random choice method},
+	Volume = {30},
+	Year = {1979}}
 
 @article{freistuhler1992numerical,
-  title={A numerical study of a rotationally degenerate hyperbolic system. Part I. The Riemann problem},
-  author={Freist{\"u}hler, Heinrich and Pitman, E Bruce},
-  journal={Journal of Computational Physics},
-  volume={100},
-  number={2},
-  pages={306--321},
-  year={1992},
-  publisher={Elsevier}
-}
+	Author = {Freist{\"u}hler, Heinrich and Pitman, E Bruce},
+	Journal = {Journal of Computational Physics},
+	Number = {2},
+	Pages = {306--321},
+	Publisher = {Elsevier},
+	Title = {A numerical study of a rotationally degenerate hyperbolic system. Part I. The Riemann problem},
+	Volume = {100},
+	Year = {1992}}
 
 @article{liu2010smoothed,
-  title={Smoothed particle hydrodynamics (SPH): an overview and recent developments},
-  author={Liu, MB and Liu, GR},
-  journal={Archives of computational methods in engineering},
-  volume={17},
-  number={1},
-  pages={25--76},
-  year={2010},
-  publisher={Springer}
-}
+	Author = {Liu, MB and Liu, GR},
+	Journal = {Archives of computational methods in engineering},
+	Number = {1},
+	Pages = {25--76},
+	Publisher = {Springer},
+	Title = {Smoothed particle hydrodynamics (SPH): an overview and recent developments},
+	Volume = {17},
+	Year = {2010}}
 
 @book{hammersley2013monte,
-  title={Monte carlo methods},
-  author={Hammersley, John},
-  year={2013},
-  publisher={Springer Science \& Business Media}
-}
+	Author = {Hammersley, John},
+	Publisher = {Springer Science \& Business Media},
+	Title = {Monte carlo methods},
+	Year = {2013}}
 
 @article{colella1982glimm,
-  title={Glimm’s method for gas dynamics},
-  author={Colella, Phillip},
-  journal={SIAM Journal on Scientific and Statistical Computing},
-  volume={3},
-  number={1},
-  pages={76--110},
-  year={1982},
-  publisher={SIAM}
-}
+	Author = {Colella, Phillip},
+	Journal = {SIAM Journal on Scientific and Statistical Computing},
+	Number = {1},
+	Pages = {76--110},
+	Publisher = {SIAM},
+	Title = {Glimm's method for gas dynamics},
+	Volume = {3},
+	Year = {1982}}
 
 @article{noh1987errors,
-  title={Errors for calculations of strong shocks using an artificial viscosity and an artificial heat flux},
-  author={Noh, William F},
-  journal={Journal of Computational Physics},
-  volume={72},
-  number={1},
-  pages={78--120},
-  year={1987},
-  publisher={Elsevier}
-}
+	Author = {Noh, William F},
+	Journal = {Journal of Computational Physics},
+	Number = {1},
+	Pages = {78--120},
+	Publisher = {Elsevier},
+	Title = {Errors for calculations of strong shocks using an artificial viscosity and an artificial heat flux},
+	Volume = {72},
+	Year = {1987}}
 
 @article{cheng2007high,
-  title={A high order ENO conservative Lagrangian type scheme for the compressible Euler equations},
-  author={Cheng, Juan and Shu, Chi-Wang},
-  journal={Journal of Computational Physics},
-  volume={227},
-  number={2},
-  pages={1567--1596},
-  year={2007},
-  publisher={Elsevier}
-}
+	Author = {Cheng, Juan and Shu, Chi-Wang},
+	Journal = {Journal of Computational Physics},
+	Number = {2},
+	Pages = {1567--1596},
+	Publisher = {Elsevier},
+	Title = {A high order ENO conservative Lagrangian type scheme for the compressible Euler equations},
+	Volume = {227},
+	Year = {2007}}
