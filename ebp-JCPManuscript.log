@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 JUN 2018 19:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  25 JUN 2018 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,11 +369,11 @@ LaTeX Info: Redefining \nameref on input line 32.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
  [4] [5] [6] [7] [8]
-<./Figures/RSPH-GSPH.pdf, id=231, 722.7pt x 542.025pt>
-File: ./Figures/RSPH-GSPH.pdf Graphic file (type pdf)
+<./Figures/RSPH-GSPH.jpg, id=231, 722.7pt x 542.025pt>
+File: ./Figures/RSPH-GSPH.jpg Graphic file (type jpg)
 
-<use ./Figures/RSPH-GSPH.pdf>
-Package pdftex.def Info: ./Figures/RSPH-GSPH.pdf used on input line 273.
+<use ./Figures/RSPH-GSPH.jpg>
+Package pdftex.def Info: ./Figures/RSPH-GSPH.jpg used on input line 273.
 (pdftex.def)             Requested size: 172.5pt x 129.36911pt.
  [9] [10pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.1}) has been already used, duplicate ignored
@@ -382,7 +382,7 @@ e.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.289 \item
             For each pair of particles, establish a local coordinate system ...
- <./Figures/RSPH-GSPH.pdf>]
+ <./Figures/RSPH-GSPH.jpg>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 289.
 
 
@@ -396,701 +396,277 @@ Overfull \hbox (10.33409pt too wide) in paragraph at lines 313--326
  [][] 
  []
 
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-rho.eps>
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 302621 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:44
-(epstopdf)                    size: 59653 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-rho-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-rho.eps>
-(epstopdf)             \includegraphics on input line 333.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/RCM-Sod-SPH-alf-rho.jpg, id=262, 1114.4034pt x 714.7503pt>
+File: ./Figures/RCM-Sod-SPH-alf-rho.jpg Graphic file (type jpg)
 
-<./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf, id=276, 1114.1625pt x 
-714.67pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf Graphic file (type
- pdf)
- <use ./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf
- used on input line 333.
-(pdftex.def)             Requested size: 169.05524pt x 119.5403pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-v.eps>
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 306794 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-v-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:46
-(epstopdf)                    size: 60367 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-v-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-v.eps>
-(epstopdf)             \includegraphics on input line 337.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/RCM-Sod-SPH-alf-rho.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-rho.jpg used on input line 3
+33.
+(pdftex.def)             Requested size: 169.05779pt x 119.53192pt.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf, id=277, 1109.14375pt x 7
-18.685pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf u
-sed on input line 337.
-(pdftex.def)             Requested size: 169.05531pt x 119.53197pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom.eps
->
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 145096 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps
--converted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:48
-(epstopdf)                    size: 30165 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-rho-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom.eps>
-(epstopdf)             \includegraphics on input line 342.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/RCM-Sod-SPH-alf-v.jpg, id=263, 1109.3445pt x 718.3638pt>
+File: ./Figures/RCM-Sod-SPH-alf-v.jpg Graphic file (type jpg)
 
-<./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf, id=278, 1110.1475
-pt x 716.6775pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf Graphic file 
-(type pdf)
+<use ./Figures/RCM-Sod-SPH-alf-v.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-v.jpg used on input line 337
+.
+(pdftex.def)             Requested size: 169.05206pt x 119.53336pt.
 
-<use ./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-t
-o.pdf used on input line 342.
-(pdftex.def)             Requested size: 169.05586pt x 119.53708pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-v-zoom.eps>
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 154330 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:50
-(epstopdf)                    size: 33269 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-v-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-v-zoom.eps>
-(epstopdf)             \includegraphics on input line 346.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg, id=264, 1110.0672pt x 716.9184pt>
+File: ./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg Graphic file (type jpg)
 
-<./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf, id=279, 1109.14375p
-t x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf Graphic file (t
-ype pdf)
- <use ./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.
-pdf used on input line 346.
-(pdftex.def)             Requested size: 169.05531pt x 119.53197pt.
+<use ./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg used on input l
+ine 342.
+(pdftex.def)             Requested size: 169.06056pt x 119.53351pt.
 
-[12pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
-has been already used, duplicate ignored
+<./Figures/RCM-Sod-SPH-alf-v-zoom.jpg, id=265, 1109.3445pt x 718.3638pt>
+File: ./Figures/RCM-Sod-SPH-alf-v-zoom.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-SPH-alf-v-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-v-zoom.jpg used on input lin
+e 346.
+(pdftex.def)             Requested size: 169.05206pt x 119.53336pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{table.1})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.351 
-      ]
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-e.eps>
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 304755 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-e-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:52
-(epstopdf)                    size: 59692 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-e-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-e.eps>
-(epstopdf)             \includegraphics on input line 356.
-Package epstopdf Info: Output file is already uptodate.
+      ] <./Figures/RCM-Sod-SPH-alf-e.jpg, id=271, 1104.2856pt x 718.3638pt>
+File: ./Figures/RCM-Sod-SPH-alf-e.jpg Graphic file (type jpg)
 
-<./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf, id=285, 1104.125pt x 718
-.685pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf u
-sed on input line 356.
-(pdftex.def)             Requested size: 169.06535pt x 119.53197pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-p.eps>
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 304686 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-p-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:54
-(epstopdf)                    size: 61141 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-p-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-p.eps>
-(epstopdf)             \includegraphics on input line 360.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/RCM-Sod-SPH-alf-e.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-e.jpg used on input line 356
+.
+(pdftex.def)             Requested size: 169.05624pt x 119.53336pt.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf, id=286, 1109.14375pt x 7
-16.6775pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf u
-sed on input line 360.
-(pdftex.def)             Requested size: 169.05531pt x 119.53708pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-e-zoom.eps>
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 56414 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:56
-(epstopdf)                    size: 15404 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-e-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-e-zoom.eps>
-(epstopdf)             \includegraphics on input line 365.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/RCM-Sod-SPH-alf-p.jpg, id=272, 1109.3445pt x 716.9184pt>
+File: ./Figures/RCM-Sod-SPH-alf-p.jpg Graphic file (type jpg)
 
-<./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf, id=287, 1104.125pt 
-x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf Graphic file (t
-ype pdf)
- <use ./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.
-pdf used on input line 365.
-(pdftex.def)             Requested size: 169.06535pt x 119.53197pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-SPH-alf-p-zoom.eps>
-(epstopdf)                    date: 2018-06-07 16:51:39
-(epstopdf)                    size: 79036 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2018-06-07 16:53:58
-(epstopdf)                    size: 20136 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-SPH-
-alf-p-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-SPH-alf-p-zoom.eps>
-(epstopdf)             \includegraphics on input line 369.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/RCM-Sod-SPH-alf-p.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-p.jpg used on input line 360
+.
+(pdftex.def)             Requested size: 169.05206pt x 119.53351pt.
 
-<./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf, id=288, 1109.14375p
-t x 716.6775pt>
-File: ./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf Graphic file (t
-ype pdf)
+<./Figures/RCM-Sod-SPH-alf-e-zoom.jpg, id=273, 1104.2856pt x 718.3638pt>
+File: ./Figures/RCM-Sod-SPH-alf-e-zoom.jpg Graphic file (type jpg)
 
-<use ./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.
-pdf used on input line 369.
-(pdftex.def)             Requested size: 169.05531pt x 119.53708pt.
+<use ./Figures/RCM-Sod-SPH-alf-e-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-e-zoom.jpg used on input lin
+e 365.
+(pdftex.def)             Requested size: 169.05624pt x 119.53336pt.
+
+<./Figures/RCM-Sod-SPH-alf-p-zoom.jpg, id=274, 1109.3445pt x 716.9184pt>
+File: ./Figures/RCM-Sod-SPH-alf-p-zoom.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-SPH-alf-p-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-p-zoom.jpg used on input lin
+e 369.
+(pdftex.def)             Requested size: 169.05206pt x 119.53351pt.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.375 
-       <./Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf> <./Figures/Sod/
-RCM-Sod-SPH-alf-v-eps-converted-to.pdf> <./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom
--eps-converted-to.pdf> <./Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.p
-df>] [14pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.382 
-       <./Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf> <./Figures/Sod/RC
-M-Sod-SPH-alf-p-eps-converted-to.pdf> <./Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps
--converted-to.pdf> <./Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-rho.eps
->
-(epstopdf)                    date: 2018-05-29 13:14:14
-(epstopdf)                    size: 245984 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps
--converted-to.pdf>
-(epstopdf)                    date: 2018-06-11 09:57:10
-(epstopdf)                    size: 42852 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-rho-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-rho.eps>
-(epstopdf)             \includegraphics on input line 387.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf, id=360, 1441.385p
-t x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf Graphic file 
-(type pdf)
-
-<use ./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-t
-o.pdf used on input line 387.
-(pdftex.def)             Requested size: 169.06584pt x 102.45753pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-v.eps>
-(epstopdf)                    date: 2018-05-29 13:20:24
-(epstopdf)                    size: 249413 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2018-05-30 11:33:43
-(epstopdf)                    size: 43164 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-v-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-v.eps>
-(epstopdf)             \includegraphics on input line 391.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf, id=361, 1441.385pt 
-x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf Graphic file (t
-ype pdf)
- <use ./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.
-pdf used on input line 391.
-(pdftex.def)             Requested size: 169.06584pt x 102.45753pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-e.eps>
-(epstopdf)                    date: 2018-05-29 13:10:32
-(epstopdf)                    size: 245564 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2018-05-30 11:33:45
-(epstopdf)                    size: 42518 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-e-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-e.eps>
-(epstopdf)             \includegraphics on input line 396.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf, id=362, 1441.385pt 
-x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf Graphic file (t
-ype pdf)
- <use ./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.
-pdf used on input line 396.
-(pdftex.def)             Requested size: 169.06584pt x 102.45753pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-p.eps>
-(epstopdf)                    date: 2018-05-29 14:26:48
-(epstopdf)                    size: 247552 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2018-05-30 11:33:47
-(epstopdf)                    size: 42585 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-p-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-p.eps>
-(epstopdf)             \includegraphics on input line 400.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf, id=363, 1445.4pt x 
-721.69624pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf Graphic file (t
-ype pdf)
- <use ./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.
-pdf used on input line 400.
-(pdftex.def)             Requested size: 169.05157pt x 102.45735pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoo
-m.eps>
-(epstopdf)                    date: 2018-05-29 13:13:44
-(epstopdf)                    size: 122990 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoo
-m-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-11 09:57:12
-(epstopdf)                    size: 21062 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-rho-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-rho-z
-oom.eps>
-(epstopdf)             \includegraphics on input line 405.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf, id=364, 1441
-.385pt x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf Graphic 
-file (type pdf)
-
-<use ./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-conver
-ted-to.pdf used on input line 405.
-(pdftex.def)             Requested size: 169.06584pt x 102.45753pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom.
-eps>
-(epstopdf)                    date: 2018-06-07 09:52:20
-(epstopdf)                    size: 117296 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-07 09:54:50
-(epstopdf)                    size: 20946 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-v-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom.
-eps>
-(epstopdf)             \includegraphics on input line 409.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf, id=365, 1439.3
-775pt x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use ./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converte
-d-to.pdf used on input line 409.
-(pdftex.def)             Requested size: 169.05pt x 102.45753pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom.
-eps>
-(epstopdf)                    date: 2018-05-29 13:11:02
-(epstopdf)                    size: 61557 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-30 11:33:51
-(epstopdf)                    size: 13269 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-e-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom.
-eps>
-(epstopdf)             \includegraphics on input line 414.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf, id=366, 1441.3
-85pt x 718.685pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use ./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converte
-d-to.pdf used on input line 414.
-(pdftex.def)             Requested size: 169.06584pt x 102.45753pt.
-Package epstopdf Info: Source file: <./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom.
-eps>
-(epstopdf)                    date: 2018-05-29 14:29:28
-(epstopdf)                    size: 121826 bytes
-(epstopdf)             Output file: <./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-30 11:33:54
-(epstopdf)                    size: 22726 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sod/RCM-Sod-GSPH
--compare-p-zoom-eps-converted-to.pdf ./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom.
-eps>
-(epstopdf)             \includegraphics on input line 418.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf, id=367, 1445.4
-pt x 721.69624pt>
-File: ./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use ./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converte
-d-to.pdf used on input line 418.
-(pdftex.def)             Requested size: 169.05157pt x 102.45735pt.
- [15]
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+       <./Figures/RCM-Sod-SPH-alf-rho.jpg> <./Figures/RCM-Sod-SPH-alf-v.jpg> <.
+/Figures/RCM-Sod-SPH-alf-rho-zoom.jpg> <./Figures/RCM-Sod-SPH-alf-v-zoom.jpg>]
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
+l.382 
+       <./Figures/RCM-Sod-SPH-alf-e.jpg> <./Figures/RCM-Sod-SPH-alf-p.jpg> <./F
+igures/RCM-Sod-SPH-alf-e-zoom.jpg> <./Figures/RCM-Sod-SPH-alf-p-zoom.jpg>]
+<./Figures/RCM-Sod-GSPH-compare-rho.jpg, id=299, 1441.0638pt x 718.3638pt>
+File: ./Figures/RCM-Sod-GSPH-compare-rho.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-GSPH-compare-rho.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-rho.jpg used on input l
+ine 387.
+(pdftex.def)             Requested size: 169.05016pt x 102.4556pt.
+
+<./Figures/RCM-Sod-GSPH-compare-v.jpg, id=300, 1441.0638pt x 718.3638pt>
+File: ./Figures/RCM-Sod-GSPH-compare-v.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-GSPH-compare-v.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-v.jpg used on input lin
+e 391.
+(pdftex.def)             Requested size: 169.05016pt x 102.4556pt.
+
+<./Figures/RCM-Sod-GSPH-compare-e.jpg, id=301, 1441.0638pt x 718.3638pt>
+File: ./Figures/RCM-Sod-GSPH-compare-e.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-GSPH-compare-e.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-e.jpg used on input lin
+e 396.
+(pdftex.def)             Requested size: 169.05016pt x 102.4556pt.
+
+<./Figures/RCM-Sod-GSPH-compare-p.jpg, id=302, 1445.4pt x 721.9773pt>
+File: ./Figures/RCM-Sod-GSPH-compare-p.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-GSPH-compare-p.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-p.jpg used on input lin
+e 400.
+(pdftex.def)             Requested size: 169.05157pt x 102.4642pt.
+
+<./Figures/RCM-Sod-GSPH-compare-rho-zoom.jpg, id=303, 1441.0638pt x 718.3638pt>
+File: ./Figures/RCM-Sod-GSPH-compare-rho-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH-compare-rho-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-rho-zoom.jpg used on in
+put line 405.
+(pdftex.def)             Requested size: 169.05016pt x 102.4556pt.
+
+<./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg, id=304, 1439.6184pt x 718.3638pt>
+File: ./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg used on inpu
+t line 409.
+(pdftex.def)             Requested size: 169.05634pt x 102.4556pt.
+
+<./Figures/RCM-Sod-GSPH-compare-e-zoom.jpg, id=305, 1441.0638pt x 718.3638pt>
+File: ./Figures/RCM-Sod-GSPH-compare-e-zoom.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-GSPH-compare-e-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-e-zoom.jpg used on inpu
+t line 414.
+(pdftex.def)             Requested size: 169.05016pt x 102.4556pt.
+
+<./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg, id=306, 1445.4pt x 721.9773pt>
+File: ./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg Graphic file (type jpg)
+
+<use ./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg used on inpu
+t line 418.
+(pdftex.def)             Requested size: 169.05157pt x 102.4642pt.
+ [15] [16pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.425 
-       <./Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf> <./Figures
-/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf> <./Figures/Sod/RCM-Sod-GSPH-c
-ompare-e-eps-converted-to.pdf> <./Figures/Sod/RCM-Sod-GSPH-compare-p-eps-conver
-ted-to.pdf> <./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf> 
-<./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf> <./Figures/Sod
-/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf> <./Figures/Sod/RCM-Sod-GSPH-
-compare-p-zoom-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Figures/Accuracy-des.eps>
-(epstopdf)                    date: 2018-05-29 14:59:48
-(epstopdf)                    size: 30051 bytes
-(epstopdf)             Output file: <./Figures/Accuracy-des-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2018-06-07 09:22:42
-(epstopdf)                    size: 9786 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Accuracy-des-eps
--converted-to.pdf ./Figures/Accuracy-des.eps>
-(epstopdf)             \includegraphics on input line 439.
-Package epstopdf Info: Output file is already uptodate.
+       <./Figures/RCM-Sod-GSPH-compare-rho.jpg> <./Figures/RCM-Sod-GSPH-compare
+-v.jpg> <./Figures/RCM-Sod-GSPH-compare-e.jpg> <./Figures/RCM-Sod-GSPH-compare-
+p.jpg> <./Figures/RCM-Sod-GSPH-compare-rho-zoom.jpg> <./Figures/RCM-Sod-GSPH-co
+mpare-v-zoom.jpg> <./Figures/RCM-Sod-GSPH-compare-e-zoom.jpg> <./Figures/RCM-So
+d-GSPH-compare-p-zoom.jpg>]
+<./Figures/Accuracy-des.jpg, id=323, 852.0633pt x 718.3638pt>
+File: ./Figures/Accuracy-des.jpg Graphic file (type jpg)
 
-<./Figures/Accuracy-des-eps-converted-to.pdf, id=423, 852.18375pt x 718.685pt>
-File: ./Figures/Accuracy-des-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/Accuracy-des.jpg>
+Package pdftex.def Info: ./Figures/Accuracy-des.jpg used on input line 439.
+(pdftex.def)             Requested size: 113.39548pt x 95.5938pt.
 
-<use ./Figures/Accuracy-des-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Accuracy-des-eps-converted-to.pdf used on in
-put line 439.
-(pdftex.def)             Requested size: 113.39548pt x 95.62556pt.
-Package epstopdf Info: Source file: <./Figures/Accuracy-vel.eps>
-(epstopdf)                    date: 2018-05-29 14:57:26
-(epstopdf)                    size: 30083 bytes
-(epstopdf)             Output file: <./Figures/Accuracy-vel-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2018-06-07 09:22:44
-(epstopdf)                    size: 9720 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Accuracy-vel-eps
--converted-to.pdf ./Figures/Accuracy-vel.eps>
-(epstopdf)             \includegraphics on input line 443.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/Accuracy-vel.jpg, id=324, 854.2314pt x 718.3638pt>
+File: ./Figures/Accuracy-vel.jpg Graphic file (type jpg)
 
-<./Figures/Accuracy-vel-eps-converted-to.pdf, id=424, 854.19125pt x 718.685pt>
-File: ./Figures/Accuracy-vel-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/Accuracy-vel.jpg>
+Package pdftex.def Info: ./Figures/Accuracy-vel.jpg used on input line 443.
+(pdftex.def)             Requested size: 113.39548pt x 95.35265pt.
 
-<use ./Figures/Accuracy-vel-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Accuracy-vel-eps-converted-to.pdf used on in
-put line 443.
-(pdftex.def)             Requested size: 113.39548pt x 95.40625pt.
-Package epstopdf Info: Source file: <./Figures/Accuracy-pre.eps>
-(epstopdf)                    date: 2018-05-29 14:56:12
-(epstopdf)                    size: 29956 bytes
-(epstopdf)             Output file: <./Figures/Accuracy-pre-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2018-06-07 09:22:47
-(epstopdf)                    size: 9647 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Accuracy-pre-eps
--converted-to.pdf ./Figures/Accuracy-pre.eps>
-(epstopdf)             \includegraphics on input line 447.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/Accuracy-pre.jpg, id=325, 853.5087pt x 718.3638pt>
+File: ./Figures/Accuracy-pre.jpg Graphic file (type jpg)
 
-<./Figures/Accuracy-pre-eps-converted-to.pdf, id=425, 853.1875pt x 718.685pt>
-File: ./Figures/Accuracy-pre-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Figures/Accuracy-pre-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Accuracy-pre-eps-converted-to.pdf used on in
-put line 447.
-(pdftex.def)             Requested size: 113.39548pt x 95.51591pt.
+<use ./Figures/Accuracy-pre.jpg>
+Package pdftex.def Info: ./Figures/Accuracy-pre.jpg used on input line 447.
+(pdftex.def)             Requested size: 113.39548pt x 95.44034pt.
  [17]
-Package epstopdf Info: Source file: <./Figures/GSPH-Sod/GRod-RCM-rho.eps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 171172 bytes
-(epstopdf)             Output file: <./Figures/GSPH-Sod/GRod-RCM-rho-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:42
-(epstopdf)                    size: 31155 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/GSPH-Sod/GRod-RC
-M-rho-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-rho.eps>
-(epstopdf)             \includegraphics on input line 464.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/GRod-RCM-rho.jpg, id=341, 970.5861pt x 716.9184pt>
+File: ./Figures/GRod-RCM-rho.jpg Graphic file (type jpg)
 
-<./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf, id=441, 970.62625pt x 71
-6.6775pt>
-File: ./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf u
-sed on input line 464.
-(pdftex.def)             Requested size: 141.74173pt x 104.65373pt.
-Package epstopdf Info: Source file: <./Figures/GSPH-Sod/GRod-RCM-v.eps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 172881 bytes
-(epstopdf)             Output file: <./Figures/GSPH-Sod/GRod-RCM-v-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:44
-(epstopdf)                    size: 31392 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/GSPH-Sod/GRod-RC
-M-v-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-v.eps>
-(epstopdf)             \includegraphics on input line 468.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/GRod-RCM-rho.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-rho.jpg used on input line 464.
+(pdftex.def)             Requested size: 141.74173pt x 104.6889pt.
 
-<./Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf, id=442, 968.61874pt x 714.
-67pt>
-File: ./Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf Graphic file (type pdf
-)
- <use ./Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf use
-d on input line 468.
-(pdftex.def)             Requested size: 141.74173pt x 104.57867pt.
-Package epstopdf Info: Source file: <./Figures/GSPH-Sod/GRod-RCM-e.eps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 171780 bytes
-(epstopdf)             Output file: <./Figures/GSPH-Sod/GRod-RCM-e-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:45
-(epstopdf)                    size: 30021 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/GSPH-Sod/GRod-RC
-M-e-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-e.eps>
-(epstopdf)             \includegraphics on input line 473.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/GRod-RCM-v.jpg, id=342, 968.418pt x 714.7503pt>
+File: ./Figures/GRod-RCM-v.jpg Graphic file (type jpg)
 
-<./Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf, id=443, 968.61874pt x 714.
-67pt>
-File: ./Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf Graphic file (type pdf
-)
- <use ./Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf use
-d on input line 473.
-(pdftex.def)             Requested size: 141.74173pt x 104.57867pt.
-Package epstopdf Info: Source file: <./Figures/GSPH-Sod/GRod-RCM-p.eps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 176406 bytes
-(epstopdf)             Output file: <./Figures/GSPH-Sod/GRod-RCM-p-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:47
-(epstopdf)                    size: 30633 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/GSPH-Sod/GRod-RC
-M-p-eps-converted-to.pdf ./Figures/GSPH-Sod/GRod-RCM-p.eps>
-(epstopdf)             \includegraphics on input line 477.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/GRod-RCM-v.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-v.jpg used on input line 468.
+(pdftex.def)             Requested size: 141.74173pt x 104.61224pt.
 
-<./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf, id=444, 965.6075pt x 718.6
-85pt>
-File: ./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf Graphic file (type pdf
-)
- <use ./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf use
-d on input line 477.
-(pdftex.def)             Requested size: 141.74173pt x 105.49518pt.
+<./Figures/GRod-RCM-e.jpg, id=343, 968.418pt x 714.7503pt>
+File: ./Figures/GRod-RCM-e.jpg Graphic file (type jpg)
+
+<use ./Figures/GRod-RCM-e.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-e.jpg used on input line 473.
+(pdftex.def)             Requested size: 141.74173pt x 104.61224pt.
+
+<./Figures/GRod-RCM-p.jpg, id=344, 965.5272pt x 718.3638pt>
+File: ./Figures/GRod-RCM-p.jpg Graphic file (type jpg)
+
+<use ./Figures/GRod-RCM-p.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-p.jpg used on input line 477.
+(pdftex.def)             Requested size: 141.74173pt x 105.44803pt.
  [18pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.482 
-       <./Figures/Accuracy-des-eps-converted-to.pdf> <./Figures/Accuracy-vel-ep
-s-converted-to.pdf> <./Figures/Accuracy-pre-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Figures/double_exp/Dexp-RCM-rho.eps>
-(epstopdf)                    date: 2018-06-13 09:38:41
-(epstopdf)                    size: 175519 bytes
-(epstopdf)             Output file: <./Figures/double_exp/Dexp-RCM-rho-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:49
-(epstopdf)                    size: 37512 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_exp/Dexp-
-RCM-rho-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-rho.eps>
-(epstopdf)             \includegraphics on input line 487.
-Package epstopdf Info: Output file is already uptodate.
+       <./Figures/Accuracy-des.jpg> <./Figures/Accuracy-vel.jpg> <./Figures/Acc
+uracy-pre.jpg>] <./Figures/Dexp-RCM-rho.jpg, id=352, 971.3088pt x 716.9184pt>
+File: ./Figures/Dexp-RCM-rho.jpg Graphic file (type jpg)
 
-<./Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf, id=477, 971.63pt x 716
-.6775pt>
-File: ./Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf Graphic file (type
- pdf)
- <use ./Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf
- used on input line 487.
-(pdftex.def)             Requested size: 141.74173pt x 104.54437pt.
-Package epstopdf Info: Source file: <./Figures/double_exp/Dexp-RCM-v.eps>
-(epstopdf)                    date: 2018-06-13 09:38:41
-(epstopdf)                    size: 176015 bytes
-(epstopdf)             Output file: <./Figures/double_exp/Dexp-RCM-v-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:51
-(epstopdf)                    size: 37083 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_exp/Dexp-
-RCM-v-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-v.eps>
-(epstopdf)             \includegraphics on input line 491.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/Dexp-RCM-rho.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-rho.jpg used on input line 487.
+(pdftex.def)             Requested size: 141.74173pt x 104.61232pt.
 
-<./Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf, id=478, 969.6225pt x 716
-.6775pt>
-File: ./Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf u
-sed on input line 491.
-(pdftex.def)             Requested size: 141.74173pt x 104.76308pt.
-Package epstopdf Info: Source file: <./Figures/double_exp/Dexp-RCM-e.eps>
-(epstopdf)                    date: 2018-06-13 09:38:41
-(epstopdf)                    size: 172388 bytes
-(epstopdf)             Output file: <./Figures/double_exp/Dexp-RCM-e-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:53
-(epstopdf)                    size: 37463 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_exp/Dexp-
-RCM-e-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-e.eps>
-(epstopdf)             \includegraphics on input line 496.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/Dexp-RCM-v.jpg, id=353, 969.8634pt x 716.9184pt>
+File: ./Figures/Dexp-RCM-v.jpg Graphic file (type jpg)
 
-<./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf, id=479, 971.63pt x 714.6
-7pt>
-File: ./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf u
-sed on input line 496.
-(pdftex.def)             Requested size: 141.74173pt x 104.25153pt.
-Package epstopdf Info: Source file: <./Figures/double_exp/Dexp-RCM-p.eps>
-(epstopdf)                    date: 2018-06-13 09:38:41
-(epstopdf)                    size: 175309 bytes
-(epstopdf)             Output file: <./Figures/double_exp/Dexp-RCM-p-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:55
-(epstopdf)                    size: 36556 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_exp/Dexp-
-RCM-p-eps-converted-to.pdf ./Figures/double_exp/Dexp-RCM-p.eps>
-(epstopdf)             \includegraphics on input line 500.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/Dexp-RCM-v.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-v.jpg used on input line 491.
+(pdftex.def)             Requested size: 141.74173pt x 104.76547pt.
 
-<./Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf, id=480, 966.61125pt x 71
-8.685pt>
-File: ./Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf u
-sed on input line 500.
-(pdftex.def)             Requested size: 141.74173pt x 105.38551pt.
-Package epstopdf Info: Source file: <./Figures/double_shock/Dshock-RCM-rho-Rp6.
-eps>
-(epstopdf)                    date: 2018-06-13 09:42:40
-(epstopdf)                    size: 174561 bytes
-(epstopdf)             Output file: <./Figures/double_shock/Dshock-RCM-rho-Rp6-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:57
-(epstopdf)                    size: 23311 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_shock/Dsh
-ock-RCM-rho-Rp6-eps-converted-to.pdf ./Figures/double_shock/Dshock-RCM-rho-Rp6.
-eps>
-(epstopdf)             \includegraphics on input line 510.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/Dexp-RCM-e.jpg, id=354, 971.3088pt x 714.7503pt>
+File: ./Figures/Dexp-RCM-e.jpg Graphic file (type jpg)
 
-<./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf, id=481, 971.63
-pt x 716.6775pt>
-File: ./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf Graphic fi
-le (type pdf)
+<use ./Figures/Dexp-RCM-e.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-e.jpg used on input line 496.
+(pdftex.def)             Requested size: 141.74173pt x 104.29596pt.
 
-<use ./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converte
-d-to.pdf used on input line 510.
-(pdftex.def)             Requested size: 141.74173pt x 104.54437pt.
-Package epstopdf Info: Source file: <./Figures/double_shock/Dshock-RCM-v-Rp6.ep
-s>
-(epstopdf)                    date: 2018-06-13 09:42:40
-(epstopdf)                    size: 175400 bytes
-(epstopdf)             Output file: <./Figures/double_shock/Dshock-RCM-v-Rp6-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:01:58
-(epstopdf)                    size: 23027 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_shock/Dsh
-ock-RCM-v-Rp6-eps-converted-to.pdf ./Figures/double_shock/Dshock-RCM-v-Rp6.eps>
+<./Figures/Dexp-RCM-p.jpg, id=355, 966.9726pt x 718.3638pt>
+File: ./Figures/Dexp-RCM-p.jpg Graphic file (type jpg)
 
-(epstopdf)             \includegraphics on input line 514.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/Dexp-RCM-p.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-p.jpg used on input line 500.
+(pdftex.def)             Requested size: 141.74173pt x 105.29457pt.
 
-<./Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf, id=482, 970.6262
-5pt x 716.6775pt>
-File: ./Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf Graphic file
- (type pdf)
+<./Figures/Dshock-RCM-rho-Rp6.jpg, id=356, 971.3088pt x 716.9184pt>
+File: ./Figures/Dshock-RCM-rho-Rp6.jpg Graphic file (type jpg)
 
-<use ./Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-
-to.pdf used on input line 514.
-(pdftex.def)             Requested size: 141.74173pt x 104.65373pt.
-Package epstopdf Info: Source file: <./Figures/double_shock/Dshock-RCM-e-Rp6.ep
-s>
-(epstopdf)                    date: 2018-06-13 09:42:40
-(epstopdf)                    size: 172973 bytes
-(epstopdf)             Output file: <./Figures/double_shock/Dshock-RCM-e-Rp6-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:00
-(epstopdf)                    size: 23246 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_shock/Dsh
-ock-RCM-e-Rp6-eps-converted-to.pdf ./Figures/double_shock/Dshock-RCM-e-Rp6.eps>
+<use ./Figures/Dshock-RCM-rho-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-rho-Rp6.jpg used on input line 51
+0.
+(pdftex.def)             Requested size: 141.74173pt x 104.61232pt.
 
-(epstopdf)             \includegraphics on input line 519.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/Dshock-RCM-v-Rp6.jpg, id=357, 970.5861pt x 716.9184pt>
+File: ./Figures/Dshock-RCM-v-Rp6.jpg Graphic file (type jpg)
 
-<./Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf, id=483, 970.6262
-5pt x 716.6775pt>
-File: ./Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf Graphic file
- (type pdf)
+<use ./Figures/Dshock-RCM-v-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-v-Rp6.jpg used on input line 514.
 
-<use ./Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-
-to.pdf used on input line 519.
-(pdftex.def)             Requested size: 141.74173pt x 104.65373pt.
-Package epstopdf Info: Source file: <./Figures/double_shock/Dshock-RCM-p-Rp6.ep
-s>
-(epstopdf)                    date: 2018-06-13 09:42:40
-(epstopdf)                    size: 173104 bytes
-(epstopdf)             Output file: <./Figures/double_shock/Dshock-RCM-p-Rp6-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:02
-(epstopdf)                    size: 23389 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/double_shock/Dsh
-ock-RCM-p-Rp6-eps-converted-to.pdf ./Figures/double_shock/Dshock-RCM-p-Rp6.eps>
+(pdftex.def)             Requested size: 141.74173pt x 104.6889pt.
 
-(epstopdf)             \includegraphics on input line 523.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/Dshock-RCM-e-Rp6.jpg, id=358, 970.5861pt x 716.9184pt>
+File: ./Figures/Dshock-RCM-e-Rp6.jpg Graphic file (type jpg)
 
-<./Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf, id=484, 964.6037
-4pt x 718.685pt>
-File: ./Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf Graphic file
- (type pdf)
+<use ./Figures/Dshock-RCM-e-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-e-Rp6.jpg used on input line 519.
 
-<use ./Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-
-to.pdf used on input line 523.
-(pdftex.def)             Requested size: 141.74173pt x 105.60484pt.
+(pdftex.def)             Requested size: 141.74173pt x 104.6889pt.
+
+<./Figures/Dshock-RCM-p-Rp6.jpg, id=359, 964.8045pt x 718.3638pt>
+File: ./Figures/Dshock-RCM-p-Rp6.jpg Graphic file (type jpg)
+
+<use ./Figures/Dshock-RCM-p-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-p-Rp6.jpg used on input line 523.
+
+(pdftex.def)             Requested size: 141.74173pt x 105.53572pt.
  [19pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
 ) has been already used, duplicate ignored
 
@@ -1103,196 +679,72 @@ l.528
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.528 
-       <./Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf> <./Figures/GSPH-S
-od/GRod-RCM-v-eps-converted-to.pdf> <./Figures/GSPH-Sod/GRod-RCM-e-eps-converte
-d-to.pdf> <./Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf> <./Figures/doubl
-e_exp/Dexp-RCM-rho-eps-converted-to.pdf> <./Figures/double_exp/Dexp-RCM-v-eps-c
-onverted-to.pdf> <./Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf> <./Figu
-res/double_exp/Dexp-RCM-p-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1.
-eps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 169579 bytes
-(epstopdf)             Output file: <./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:04
-(epstopdf)                    size: 45045 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sjogreen/Sjogree
-n-RCM-rho-Adpt1-eps-converted-to.pdf ./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1.
-eps>
-(epstopdf)             \includegraphics on input line 532.
-Package epstopdf Info: Output file is already uptodate.
+       <./Figures/GRod-RCM-rho.jpg> <./Figures/GRod-RCM-v.jpg> <./Figures/GRod-
+RCM-e.jpg> <./Figures/GRod-RCM-p.jpg> <./Figures/Dexp-RCM-rho.jpg> <./Figures/D
+exp-RCM-v.jpg> <./Figures/Dexp-RCM-e.jpg> <./Figures/Dexp-RCM-p.jpg>]
+<./Figures/Sjogreen-RCM-rho-Adpt1.jpg, id=366, 974.9223pt x 715.473pt>
+File: ./Figures/Sjogreen-RCM-rho-Adpt1.jpg Graphic file (type jpg)
 
-<./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf, id=531, 974.64
-125pt x 715.67375pt>
-File: ./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf Graphic fi
-le (type pdf)
+<use ./Figures/Sjogreen-RCM-rho-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-rho-Adpt1.jpg used on input lin
+e 532.
+(pdftex.def)             Requested size: 141.74173pt x 104.01932pt.
 
-<use ./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converte
-d-to.pdf used on input line 532.
-(pdftex.def)             Requested size: 141.74173pt x 104.08125pt.
-Package epstopdf Info: Source file: <./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1.ep
-s>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 170152 bytes
-(epstopdf)             Output file: <./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:06
-(epstopdf)                    size: 45281 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sjogreen/Sjogree
-n-RCM-v-Adpt1-eps-converted-to.pdf ./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1.eps>
+<./Figures/Sjogreen-RCM-v-Adpt1.jpg, id=367, 970.5861pt x 718.3638pt>
+File: ./Figures/Sjogreen-RCM-v-Adpt1.jpg Graphic file (type jpg)
 
-(epstopdf)             \includegraphics on input line 536.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/Sjogreen-RCM-v-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-v-Adpt1.jpg used on input line 
+536.
+(pdftex.def)             Requested size: 141.74173pt x 104.89996pt.
 
-<./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf, id=532, 970.6262
-5pt x 718.685pt>
-File: ./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf Graphic file
- (type pdf)
+<./Figures/Sjogreen-RCM-e-Adpt1.jpg, id=368, 970.5861pt x 718.3638pt>
+File: ./Figures/Sjogreen-RCM-e-Adpt1.jpg Graphic file (type jpg)
 
-<use ./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-
-to.pdf used on input line 536.
-(pdftex.def)             Requested size: 141.74173pt x 104.94687pt.
-Package epstopdf Info: Source file: <./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1.ep
-s>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 173348 bytes
-(epstopdf)             Output file: <./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:08
-(epstopdf)                    size: 45877 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sjogreen/Sjogree
-n-RCM-e-Adpt1-eps-converted-to.pdf ./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1.eps>
+<use ./Figures/Sjogreen-RCM-e-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-e-Adpt1.jpg used on input line 
+541.
+(pdftex.def)             Requested size: 141.74173pt x 104.89996pt.
 
-(epstopdf)             \includegraphics on input line 541.
-Package epstopdf Info: Output file is already uptodate.
+<./Figures/Sjogreen-RCM-p-Adpt1.jpg, id=369, 971.3088pt x 718.3638pt>
+File: ./Figures/Sjogreen-RCM-p-Adpt1.jpg Graphic file (type jpg)
 
-<./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf, id=533, 970.6262
-5pt x 718.685pt>
-File: ./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf Graphic file
- (type pdf)
+<use ./Figures/Sjogreen-RCM-p-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-p-Adpt1.jpg used on input line 
+545.
+(pdftex.def)             Requested size: 141.74173pt x 104.82324pt.
 
-<use ./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-
-to.pdf used on input line 541.
-(pdftex.def)             Requested size: 141.74173pt x 104.94687pt.
-Package epstopdf Info: Source file: <./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1.ep
-s>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 169798 bytes
-(epstopdf)             Output file: <./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:09
-(epstopdf)                    size: 47091 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/Sjogreen/Sjogree
-n-RCM-p-Adpt1-eps-converted-to.pdf ./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1.eps>
+<./Figures/StrBlst-RCM-rho-Rp3.jpg, id=376, 1071.7641pt x 716.9184pt>
+File: ./Figures/StrBlst-RCM-rho-Rp3.jpg Graphic file (type jpg)
 
-(epstopdf)             \includegraphics on input line 545.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/StrBlst-RCM-rho-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-rho-Rp3.jpg used on input line 5
+55.
+(pdftex.def)             Requested size: 141.74173pt x 94.81073pt.
 
-<./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf, id=534, 971.63pt
- x 718.685pt>
-File: ./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf Graphic file
- (type pdf)
+<./Figures/StrBlst-RCM-v-Rp3.jpg, id=377, 1071.0414pt x 716.9184pt>
+File: ./Figures/StrBlst-RCM-v-Rp3.jpg Graphic file (type jpg)
 
-<use ./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-
-to.pdf used on input line 545.
-(pdftex.def)             Requested size: 141.74173pt x 104.8372pt.
-Package epstopdf Info: Source file: <./Figures/strong-blast/StrBlst-RCM-rho-Rp3
-.eps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 197293 bytes
-(epstopdf)             Output file: <./Figures/strong-blast/StrBlst-RCM-rho-Rp3
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:11
-(epstopdf)                    size: 36376 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/strong-blast/Str
-Blst-RCM-rho-Rp3-eps-converted-to.pdf ./Figures/strong-blast/StrBlst-RCM-rho-Rp
-3.eps>
-(epstopdf)             \includegraphics on input line 555.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/StrBlst-RCM-v-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-v-Rp3.jpg used on input line 559
+.
+(pdftex.def)             Requested size: 141.74173pt x 94.87637pt.
 
-<./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf, id=541, 1072.
-005pt x 716.6775pt>
-File: ./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf Graphic f
-ile (type pdf)
+<./Figures/StrBlst-RCM-e-Rp3.jpg, id=378, 1068.8733pt x 718.3638pt>
+File: ./Figures/StrBlst-RCM-e-Rp3.jpg Graphic file (type jpg)
 
-<use ./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-convert
-ed-to.pdf used on input line 555.
-(pdftex.def)             Requested size: 141.74173pt x 94.757pt.
-Package epstopdf Info: Source file: <./Figures/strong-blast/StrBlst-RCM-v-Rp3.e
-ps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 193191 bytes
-(epstopdf)             Output file: <./Figures/strong-blast/StrBlst-RCM-v-Rp3-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:13
-(epstopdf)                    size: 35910 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/strong-blast/Str
-Blst-RCM-v-Rp3-eps-converted-to.pdf ./Figures/strong-blast/StrBlst-RCM-v-Rp3.ep
-s>
-(epstopdf)             \includegraphics on input line 559.
-Package epstopdf Info: Output file is already uptodate.
+<use ./Figures/StrBlst-RCM-e-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-e-Rp3.jpg used on input line 564
+.
+(pdftex.def)             Requested size: 141.74173pt x 95.254pt.
 
-<./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf, id=542, 1071.00
-125pt x 716.6775pt>
-File: ./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf Graphic fil
-e (type pdf)
+<./Figures/StrBlst-RCM-p-Rp3.jpg, id=379, 1071.7641pt x 716.9184pt>
+File: ./Figures/StrBlst-RCM-p-Rp3.jpg Graphic file (type jpg)
 
-<use ./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted
--to.pdf used on input line 559.
-(pdftex.def)             Requested size: 141.74173pt x 94.84448pt.
-Package epstopdf Info: Source file: <./Figures/strong-blast/StrBlst-RCM-e-Rp3.e
-ps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 186419 bytes
-(epstopdf)             Output file: <./Figures/strong-blast/StrBlst-RCM-e-Rp3-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:15
-(epstopdf)                    size: 35408 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/strong-blast/Str
-Blst-RCM-e-Rp3-eps-converted-to.pdf ./Figures/strong-blast/StrBlst-RCM-e-Rp3.ep
-s>
-(epstopdf)             \includegraphics on input line 564.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf, id=543, 1068.99
-374pt x 718.685pt>
-File: ./Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use ./Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted
--to.pdf used on input line 564.
-(pdftex.def)             Requested size: 141.74173pt x 95.28561pt.
-Package epstopdf Info: Source file: <./Figures/strong-blast/StrBlst-RCM-p-Rp3.e
-ps>
-(epstopdf)                    date: 2018-06-13 09:42:41
-(epstopdf)                    size: 190368 bytes
-(epstopdf)             Output file: <./Figures/strong-blast/StrBlst-RCM-p-Rp3-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-13 10:02:16
-(epstopdf)                    size: 35797 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Figures/strong-blast/Str
-Blst-RCM-p-Rp3-eps-converted-to.pdf ./Figures/strong-blast/StrBlst-RCM-p-Rp3.ep
-s>
-(epstopdf)             \includegraphics on input line 568.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf, id=544, 1072.00
-5pt x 716.6775pt>
-File: ./Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use ./Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf>
-Package pdftex.def Info: ./Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted
--to.pdf used on input line 568.
-(pdftex.def)             Requested size: 141.74173pt x 94.757pt.
+<use ./Figures/StrBlst-RCM-p-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-p-Rp3.jpg used on input line 568
+.
+(pdftex.def)             Requested size: 141.74173pt x 94.81073pt.
  [20pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
 ) has been already used, duplicate ignored
 
@@ -1305,24 +757,19 @@ l.573
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.573 
-       <./Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf> <./Figu
-res/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf> <./Figures/double_shock
-/Dshock-RCM-e-Rp6-eps-converted-to.pdf> <./Figures/double_shock/Dshock-RCM-p-Rp
-6-eps-converted-to.pdf> <./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converte
-d-to.pdf> <./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf> <./Fig
-ures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf> <./Figures/Sjogreen/Sj
-ogreen-RCM-p-Adpt1-eps-converted-to.pdf>] [21pdfTeX warning (ext4): destination
- with the same identifier (name{figure.10}) has been already used, duplicate ig
-nored
+       <./Figures/Dshock-RCM-rho-Rp6.jpg> <./Figures/Dshock-RCM-v-Rp6.jpg> <./F
+igures/Dshock-RCM-e-Rp6.jpg> <./Figures/Dshock-RCM-p-Rp6.jpg> <./Figures/Sjogre
+en-RCM-rho-Adpt1.jpg> <./Figures/Sjogreen-RCM-v-Adpt1.jpg> <./Figures/Sjogreen-
+RCM-e-Adpt1.jpg> <./Figures/Sjogreen-RCM-p-Adpt1.jpg>] [21pdfTeX warning (ext4)
+: destination with the same identifier (name{figure.10}) has been already used,
+ duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.582 \begin{equation}
-                       <./Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converte
-d-to.pdf> <./Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf> <./Fi
-gures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf> <./Figures/strong-bl
-ast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf>]
-<./Figures/SPH-alf2-t3-cutView.jpg, id=616, 612.2875pt x 796.9775pt>
+                       <./Figures/StrBlst-RCM-rho-Rp3.jpg> <./Figures/StrBlst-R
+CM-v-Rp3.jpg> <./Figures/StrBlst-RCM-e-Rp3.jpg> <./Figures/StrBlst-RCM-p-Rp3.jp
+g>] <./Figures/SPH-alf2-t3-cutView.jpg, id=390, 612.2875pt x 796.9775pt>
 File: ./Figures/SPH-alf2-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/SPH-alf2-t3-cutView.jpg>
@@ -1330,7 +777,7 @@ Package pdftex.def Info: ./Figures/SPH-alf2-t3-cutView.jpg used on input line 5
 91.
 (pdftex.def)             Requested size: 111.00331pt x 144.48343pt.
 
-<./Figures/SPH-alf1-t3-cutView.jpg, id=617, 562.1pt x 786.94pt>
+<./Figures/SPH-alf1-t3-cutView.jpg, id=391, 562.1pt x 786.94pt>
 File: ./Figures/SPH-alf1-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/SPH-alf1-t3-cutView.jpg>
@@ -1338,7 +785,7 @@ Package pdftex.def Info: ./Figures/SPH-alf1-t3-cutView.jpg used on input line 5
 95.
 (pdftex.def)             Requested size: 111.00331pt x 155.40393pt.
 
-<./Figures/SPH-alfp3-t3-cutView.jpg, id=618, 501.875pt x 803.0pt>
+<./Figures/SPH-alfp3-t3-cutView.jpg, id=392, 501.875pt x 803.0pt>
 File: ./Figures/SPH-alfp3-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/SPH-alfp3-t3-cutView.jpg>
@@ -1346,42 +793,42 @@ Package pdftex.def Info: ./Figures/SPH-alfp3-t3-cutView.jpg used on input line
 599.
 (pdftex.def)             Requested size: 111.00331pt x 177.604pt.
 
-<./Figures/GSPH-HLLC-t1p5-cutView.jpg, id=619, 593.21625pt x 702.625pt>
+<./Figures/GSPH-HLLC-t1p5-cutView.jpg, id=393, 593.21625pt x 702.625pt>
 File: ./Figures/GSPH-HLLC-t1p5-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/GSPH-HLLC-t1p5-cutView.jpg>
 Package pdftex.def Info: ./Figures/GSPH-HLLC-t1p5-cutView.jpg used on input lin
-e 613.
+e 609.
 (pdftex.def)             Requested size: 111.00331pt x 131.47383pt.
 
-<./Figures/RSPH-t1p5-cutView.jpg, id=620, 557.08125pt x 608.2725pt>
+<./Figures/RSPH-t1p5-cutView.jpg, id=394, 557.08125pt x 608.2725pt>
 File: ./Figures/RSPH-t1p5-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/RSPH-t1p5-cutView.jpg>
-Package pdftex.def Info: ./Figures/RSPH-t1p5-cutView.jpg used on input line 617
+Package pdftex.def Info: ./Figures/RSPH-t1p5-cutView.jpg used on input line 613
 .
 (pdftex.def)             Requested size: 111.00331pt x 121.19756pt.
 
-<./Figures/GSPH-HLLC-t3-cutView.jpg, id=621, 593.21625pt x 796.9775pt>
+<./Figures/GSPH-HLLC-t3-cutView.jpg, id=395, 593.21625pt x 796.9775pt>
 File: ./Figures/GSPH-HLLC-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/GSPH-HLLC-t3-cutView.jpg>
 Package pdftex.def Info: ./Figures/GSPH-HLLC-t3-cutView.jpg used on input line 
-627.
+619.
 (pdftex.def)             Requested size: 111.00331pt x 149.12889pt.
 
-<./Figures/RSPH-t3-cutView.jpg, id=622, 557.08125pt x 788.9475pt>
+<./Figures/RSPH-t3-cutView.jpg, id=396, 557.08125pt x 788.9475pt>
 File: ./Figures/RSPH-t3-cutView.jpg Graphic file (type jpg)
 
 <use ./Figures/RSPH-t3-cutView.jpg>
-Package pdftex.def Info: ./Figures/RSPH-t3-cutView.jpg used on input line 631.
+Package pdftex.def Info: ./Figures/RSPH-t3-cutView.jpg used on input line 623.
 (pdftex.def)             Requested size: 111.00331pt x 157.19682pt.
  [22pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.638 
+l.630 
        <./Figures/SPH-alf2-t3-cutView.jpg> <./Figures/SPH-alf1-t3-cutView.jpg> 
 <./Figures/SPH-alfp3-t3-cutView.jpg>] [23pdfTeX warning (ext4): destination wit
 h the same identifier (name{figure.12}) has been already used, duplicate ignore
@@ -1389,23 +836,23 @@ d
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.638 
+l.630 
        <./Figures/GSPH-HLLC-t1p5-cutView.jpg> <./Figures/RSPH-t1p5-cutView.jpg>
  <./Figures/GSPH-HLLC-t3-cutView.jpg> <./Figures/RSPH-t3-cutView.jpg>] [24]
 (./ebp-JCPManuscript.bbl [25] [26] [27] [28])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 656.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 648.
  [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 656.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 648.
  (./ebp-JCPManuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 656.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 656.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 648.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 648.
 Package rerunfilecheck Info: File `ebp-JCPManuscript.out' has not changed.
 (rerunfilecheck)             Checksum: C923F9D9179A818B1D7A8DA2A64AE925;899.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 656.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 648.
  ) 
 Here is how much of TeX's memory you used:
- 7075 strings out of 493117
- 110925 string characters out of 6135433
+ 7058 strings out of 493117
+ 106968 string characters out of 6135433
  197307 words of memory out of 5000000
  10269 multiletter control sequences out of 15000+600000
  9901 words of font info for 35 fonts, out of 8000000 for 9000
@@ -1430,10 +877,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ebp-JCPManuscript.pdf (29 pages, 6037232 bytes).
+Output written on ebp-JCPManuscript.pdf (29 pages, 14418076 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 604 compressed objects within 7 object streams
+ 533 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
  130 named destinations out of 1000 (max. 500000)
  348 words of extra memory for PDF output out of 10000 (max. 10000000)
 

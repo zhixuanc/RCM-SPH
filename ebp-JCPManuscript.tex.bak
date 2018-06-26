@@ -55,7 +55,7 @@ The classical smoothed particle hydrodynamics (SPH) method employs explicit arti
 Several studies have proposed highly tuned versions of artificial viscosity, turning on and off near shocks or other troublesome wave features.
 A different kind of solver adapts Godunov\rq{}s idea of solving local Riemann problems as building blocks for a numerical SPH solver without explicit numerical dissipation term. Unfortunately, a first order Godunov solver still introduces an effective numerical diffusion that can infect the entire numerical solution.
 We propose a novel SPH scheme that combines an approximate version of Glimm\rq{}s Random Choice method (RCM) with SPH. RCM properly resolves and then samples all hydrodynamic waves. Our version approximately resolves hydrodynamic waves, and samples the approximate solution. No explicit artificial viscosity will be needed.
-We test this method on standard one dimensional shock tube problems and observe several attractive features. First of all, this method introduces adaptive artificial viscosity -- larger around discontinuities and smaller elsewhere. Secondly, it is less dissipative than classical SPH and GSPH resulting in less smearing of shock. Thirdly, as the new method can be viewed as generalized GSPH method in terms of sampling solutions of local Riemann problems, good features of GSPH are inherited, for example, ameliorating pressure ``wiggle" around contact discontinuity.
+We test this method on standard one dimensional shock tube problems and observe several attractive features. First of all, this method introduces adaptive artificial viscosity, assigning larger dissipation around discontinuities and smaller elsewhere. Secondly, it is less dissipative than classical SPH and GSPH resulting in less smearing of shock. Thirdly, as the new method can be viewed as generalized GSPH method in terms of sampling solutions of local Riemann problems, good features of GSPH are inherited, for example, ameliorating pressure ``wiggle" around contact discontinuity.
 When applied to three dimensional jet flow, this method is demonstrated to introduce less overall dissipation than GSPH.
 %Our ultimate goal is to apply this method to jet flow. Because of the high shear rate in this application, we introduce a highly tuned eddy viscosity that is applied only near the shear surface. The combination of the SPH and RCM together with a shear viscosity produces nicely resolved jet profiles.
 
@@ -330,20 +330,20 @@ Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_para
     \centering
     \begin{minipage}{.495\textwidth}
         \centering a)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-rho}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-rho}
     \end{minipage}%
     \begin{minipage}{.495 \textwidth}
         \centering b)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-v}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-v}
     \end{minipage}%
     \\
     \begin{minipage}{.495\textwidth}
         \centering c)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-rho-zoom}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-rho-zoom}
     \end{minipage}%
     \begin{minipage}{.495 \textwidth}
         \centering d)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-v-zoom}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-v-zoom}
     \end{minipage}%   
     \caption{a),b) are simulation results of density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) are zoomed views, showing that $\alpha=0.2$ provided insufficient viscosity to suppress oscillations around shock. The dissipation introduced by RSPH. on the other hand, is adaptive, introducing more damping at the shock (comparable to $\alpha=1.0$) and less damping in the area away from the shock (less than $\alpha=0.2$, as indicated by the magnitude of oscillation).}
     \label{fig:RCM-Sod-SPH-alf}
@@ -353,20 +353,20 @@ Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_para
     \centering
     \begin{minipage}{.495\textwidth}
         \centering a)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-e}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-e}
     \end{minipage}%
     \begin{minipage}{.495 \textwidth}
         \centering b)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-p}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-p}
     \end{minipage}% 
     \\
     \begin{minipage}{.495 \textwidth}
         \centering c)
-        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-e-zoom}
+        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-e-zoom}
     \end{minipage}% 
     \begin{minipage}{.495\textwidth}
         \centering d)
-        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/Sod/RCM-Sod-SPH-alf-p-zoom}
+        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-p-zoom}
     \end{minipage}%    
     \caption{
     a),b) are simulation results of internal energy and pressure in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) are zoomed views.  For $\alpha=1$ and $\alpha=2$, as shown in c), numerical oscillations are completely suppressed though the shock is now smeared. $\alpha=0.2$ provided insufficient viscosity to suppress oscillations. Comparing RSPH and SPH shows that RSPH is adaptive, more dissipative at the shock (comparable or better than $\alpha=1.0$) and less dissipative away from the shock (less than $\alpha=0.2$). d) shows pressure around the contact discontinuity. It is evident that RSPH gets rid of the pressure ``wiggle" around the contact discontinuity.}
@@ -384,38 +384,38 @@ The last but not the least, the pressure ``wiggle" around contact discontinuity 
     \centering
     \begin{minipage}{.495\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-rho}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-rho}
     \end{minipage}%
     \begin{minipage}{.495 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-v}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-v}
     \end{minipage}%
     \\
     \begin{minipage}{.495\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-e}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-e}
     \end{minipage}%
     \begin{minipage}{.495 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-p}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-p}
     \end{minipage}% 
     \\
     \begin{minipage}{.495\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-rho-zoom}
     \end{minipage}%
     \begin{minipage}{.495 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-v-zoom}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-v-zoom}
     \end{minipage}% 
        \\
     \begin{minipage}{.495 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-e-zoom}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-e-zoom}
     \end{minipage}% 
     \begin{minipage}{.495\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Sod/RCM-Sod-GSPH-compare-p-zoom}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-p-zoom}
     \end{minipage}%    
     \caption{Comparison of RSPH with GSPH using Roe Riemann solver and HLLC Riemann solver. The last four plots are zoomed views. Zoomed view of density and specific internal energy show that GSPH smears the discontinuity at shock much more than RSPH. Zoomed view of velocity shows that fluctuation in GSPH is completely suppressed, which implies that numerical dissipation introduced in GSPH is at least around the same amount as SPH with $\alpha=1.0$. This is consistent with information implied by zoomed view of density and specific internal energy. The last zoomed view shows that both RSPH and GSPH can get rid of pressure ``wiggle" around the contact discontinuity.}
     \label{fig:RCM-Sod-GSPH}
@@ -461,20 +461,20 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
     \centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-rho}
+        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-rho}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-v}
+        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-v}
     \end{minipage}% 
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-e}
+        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-e}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-Sod/GRod-RCM-p}
+        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-p}
     \end{minipage}% 
     \caption{Results for test 2, a variation of Sod test. All physical properties are well re-produced except for some acceptable oscillations}
     \label{fig:RCM-GSPH-Sod}
@@ -484,20 +484,20 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
     \centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-rho}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-rho}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-v}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-v}
     \end{minipage}%
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-e}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-e}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_exp/Dexp-RCM-p}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-p}
     \end{minipage}% 
     \caption{Results for test 3, the double expansion case. All physical properties are well re-produced except for some oscillations}
     \label{fig:RCM-double-expansion}
@@ -507,20 +507,20 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
     %\centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-rho-Rp6}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-rho-Rp6}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-v-Rp6}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-v-Rp6}
     \end{minipage}%
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-e-Rp6}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-e-Rp6}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/double_shock/Dshock-RCM-p-Rp6}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-p-Rp6}
     \end{minipage}% 
     \caption{Results for test 4, the double shock case. To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. However, the oscillations are more serious than oscillations in other tests.}
     \label{fig:RCM-double-shock}
@@ -529,20 +529,20 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
 \begin{figure}[H]
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-rho-Adpt1}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-v-Adpt1}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-v-Adpt1}
     \end{minipage}%
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-e-Adpt1}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-e-Adpt1}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen/Sjogreen-RCM-p-Adpt1}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-p-Adpt1}
     \end{minipage}% 
     \caption{Results for test 5, a variation of the Sj$\ddot{o}$green test. The density, velocity and pressure are well re-produced while the thermal energy at the origin is poorly predicted. A jump of internal energy at the origin is a common issue in many SPH schemes (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})}
     \label{fig:RCM-Sjogreen}
@@ -552,20 +552,20 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
     \centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-rho-Rp3}
+        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-rho-Rp3}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-v-Rp3}
+        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-v-Rp3}
     \end{minipage}%
     \\
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-e-Rp3}
+        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-e-Rp3}
     \end{minipage}%
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/strong-blast/StrBlst-RCM-p-Rp3}
+        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-p-Rp3}
     \end{minipage}% 
     \caption{Results for test 6, the strong blast test. y axis for density plot is in log base 10.  To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. The oscillations between shock and contact discontinuity is relatively larger than other area. A noticeable spike is observed near contact discontinuity.}
     \label{fig:RCM-strong-blast}
@@ -604,10 +604,6 @@ Except for the pressure, boundary values for density, velocity, and energy on th
 
 \begin{figure}[!ht]
     \centering
-%    \begin{minipage}[t]{.325\textwidth}
-%        \centering
-%        \includegraphics[width=0.99 \textwidth]{./Figures/SPH-alf1-t1p5-cutView}
-%    \end{minipage}%
     \begin{minipage}[t]{.325 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-HLLC-t1p5-cutView}
@@ -618,10 +614,6 @@ Except for the pressure, boundary values for density, velocity, and energy on th
     \end{minipage}%
     \\
     \centering
-%    \begin{minipage}[t]{.325\textwidth}
-%        \centering
-%        \includegraphics[width=0.99 \textwidth]{./Figures/SPH-alf1-t3-cutView}
-%    \end{minipage}%
     \begin{minipage}[t]{.325 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-HLLC-t3-cutView}
