@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{45}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -222,6 +222,12 @@
 \newblock \bibinfo{journal}{Journal of Computational Physics}
   \bibinfo{volume}{231} (\bibinfo{year}{2012}) \bibinfo{pages}{759--794}.
 %Type = Article
+\bibitem[{Evrard(1988)}]{evrard1988beyond}
+\bibinfo{author}{A.~E. Evrard},
+\newblock \bibinfo{title}{Beyond n-body: 3d cosmological gas dynamics},
+\newblock \bibinfo{journal}{Monthly Notices of the Royal Astronomical Society}
+  \bibinfo{volume}{235} (\bibinfo{year}{1988}) \bibinfo{pages}{911--934}.
+%Type = Article
 \bibitem[{Harten et~al.(1983)Harten, Lax, and van Leer}]{hll}
 \bibinfo{author}{A.~Harten}, \bibinfo{author}{P.~Lax}, \bibinfo{author}{B.~van
   Leer},
@@ -290,5 +296,38 @@
   volcanic plume model based on smoothed particle hydrodynamics},
 \newblock \bibinfo{journal}{Geoscientific Model Development Discussions}
   \bibinfo{volume}{2017} (\bibinfo{year}{2017}) \bibinfo{pages}{1--37}.
+%Type = Article
+\bibitem[{Colella(1978)}]{colella1978analysis}
+\bibinfo{author}{P.~Colella},
+\newblock \bibinfo{title}{An analysis of the effect of operator splitting and
+  of the sampling procedure on the accuracy of glimm's method}
+  (\bibinfo{year}{1978}).
+%Type = Article
+\bibitem[{Warming and Hyett(1974)}]{warming1974modified}
+\bibinfo{author}{R.~Warming}, \bibinfo{author}{B.~Hyett},
+\newblock \bibinfo{title}{The modified equation approach to the stability and
+  accuracy analysis of finite-difference methods},
+\newblock \bibinfo{journal}{Journal of computational physics}
+  \bibinfo{volume}{14} (\bibinfo{year}{1974}) \bibinfo{pages}{159--179}.
+%Type = Article
+\bibitem[{Harten and Lax(1981)}]{harten1981random}
+\bibinfo{author}{A.~Harten}, \bibinfo{author}{P.~D. Lax},
+\newblock \bibinfo{title}{A random choice finite difference scheme for
+  hyperbolic conservation laws},
+\newblock \bibinfo{journal}{SIAM Journal on Numerical Analysis}
+  \bibinfo{volume}{18} (\bibinfo{year}{1981}) \bibinfo{pages}{289--315}.
+%Type = Article
+\bibitem[{Liu(1977)}]{liu1977deterministic}
+\bibinfo{author}{T.-P. Liu},
+\newblock \bibinfo{title}{The deterministic version of the glimm scheme},
+\newblock \bibinfo{journal}{Communications in Mathematical Physics}
+  \bibinfo{volume}{57} (\bibinfo{year}{1977}) \bibinfo{pages}{135--148}.
+%Type = Article
+\bibitem[{Hernquist and Katz(1989)}]{hernquist1989treesph}
+\bibinfo{author}{L.~Hernquist}, \bibinfo{author}{N.~Katz},
+\newblock \bibinfo{title}{Treesph-a unification of sph with the hierarchical
+  tree method},
+\newblock \bibinfo{journal}{The Astrophysical Journal Supplement Series}
+  \bibinfo{volume}{70} (\bibinfo{year}{1989}) \bibinfo{pages}{419--446}.
 
 \end{thebibliography}

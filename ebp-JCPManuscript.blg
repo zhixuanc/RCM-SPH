@@ -3,66 +3,71 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ebp-JCPManuscript.aux
 The style file: model1-num-names.bst
 Database file #1: Reference.bib
-Repeated entry---line 2129 of file Reference.bib
+Repeated entry---line 1018 of file Reference.bib
+ : @article{hernquist1989treesph
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1082 of file Reference.bib
  : @article{sigalotti2006shock
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2863 of file Reference.bib
+Repeated entry---line 1449 of file Reference.bib
  : @inproceedings{borgani2012hydrodynamic
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4141 of file Reference.bib
+Repeated entry---line 2088 of file Reference.bib
  : @article{glimm1965solutions
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4281 of file Reference.bib
+Repeated entry---line 2180 of file Reference.bib
  : @book{hammersley2013monte
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4293 of file Reference.bib
+Repeated entry---line 2186 of file Reference.bib
  : @article{colella1982glimm
  :                          ,
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 39 entries,
+Warning--empty journal in colella1978analysis
+You've used 45 entries,
             2910 wiz_defined-function locations,
-            861 strings with 10895 characters,
-and the built_in function-call counts, 22731 in all, are:
-= -- 1814
-> -- 749
-< -- 32
-+ -- 300
-- -- 243
-* -- 2673
-:= -- 3357
-add.period$ -- 39
-call.type$ -- 39
-change.case$ -- 274
-chr.to.int$ -- 39
-cite$ -- 39
-duplicate$ -- 1548
-empty$ -- 1603
-format.name$ -- 354
-if$ -- 4143
+            893 strings with 11724 characters,
+and the built_in function-call counts, 25913 in all, are:
+= -- 2080
+> -- 836
+< -- 38
++ -- 341
+- -- 270
+* -- 3034
+:= -- 3835
+add.period$ -- 45
+call.type$ -- 45
+change.case$ -- 313
+chr.to.int$ -- 45
+cite$ -- 46
+duplicate$ -- 1764
+empty$ -- 1828
+format.name$ -- 399
+if$ -- 4721
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 354
-newline$ -- 206
-num.names$ -- 156
-pop$ -- 341
+missing$ -- 403
+newline$ -- 235
+num.names$ -- 180
+pop$ -- 385
 preamble$ -- 1
-purify$ -- 276
+purify$ -- 315
 quote$ -- 0
-skip$ -- 449
+skip$ -- 515
 stack$ -- 0
-substring$ -- 1353
-swap$ -- 1289
+substring$ -- 1558
+swap$ -- 1462
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 345
-warning$ -- 0
-while$ -- 189
+type$ -- 399
+warning$ -- 1
+while$ -- 217
 width$ -- 0
-write$ -- 521
-(There were 5 error messages)
+write$ -- 597
+(There were 6 error messages)

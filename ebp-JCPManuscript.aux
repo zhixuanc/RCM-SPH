@@ -42,6 +42,7 @@
 \newlabel{eq:gov-nc-rho}{{5}{4}{SPH Formulations}{equation.2.5}{}}
 \newlabel{eq:gov-nc-v}{{6}{4}{SPH Formulations}{equation.2.6}{}}
 \newlabel{eq:gov-nc-e}{{7}{4}{SPH Formulations}{equation.2.7}{}}
+\citation{evrard1988beyond}
 \citation{monaghan1983shock}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Standard SPH}{5}{subsection.2.1}}
 \newlabel{standard-sph}{{2.1}{5}{Standard SPH}{subsection.2.1}{}}
@@ -65,6 +66,7 @@
 \newlabel{eq:gov-gsph-e-simple-form}{{24}{7}{GSPH}{equation.2.24}{}}
 \citation{hll}
 \citation{hartenlax}
+\citation{roe1981approximate}
 \citation{toro1994restoration}
 \@writefile{toc}{\contentsline {section}{\numberline {3}The Random Choice SPH method(RSPH)}{8}{section.3}}
 \newlabel{sec:RSPH-method}{{3}{8}{The Random Choice SPH method(RSPH)}{section.3}{}}
@@ -72,6 +74,8 @@
 \newlabel{sec:RP-construction}{{3.1}{8}{The local 1D Riemann problem}{subsection.3.1}{}}
 \newlabel{eq:RP-project-2-local}{{27}{8}{The local 1D Riemann problem}{equation.3.27}{}}
 \citation{cha2003implementations}
+\citation{puri2014approximate}
+\citation{puri2014approximate}
 \newlabel{eq:Riemann-Prob-define-L-rho}{{28}{9}{The local 1D Riemann problem}{equation.3.28}{}}
 \newlabel{eq:Riemann-Prob-define-L-v}{{29}{9}{The local 1D Riemann problem}{equation.3.28}{}}
 \newlabel{eq:Riemann-Prob-define-L-p}{{30}{9}{The local 1D Riemann problem}{equation.3.28}{}}
@@ -85,8 +89,8 @@
 \citation{rider1994review,luo2004computation,puri2014approximate}
 \citation{toro1994restoration}
 \citation{luo2004computation}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Evaluating of the starred state for RSPH and GSPH implementations. Particles are located at $\textbf  {x}_{a} $ and $ \textbf  {x}_{ b}$, and the local Riemann problem is defined by the constant states $(u, p)_a$ and $(u,p)_b$. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The white ellipse indicates the stationary state, which is the starred state in GSPH.}}{10}{figure.1}}
-\newlabel{fig:pick-up-state-GSPH-RSPH}{{1}{10}{Evaluating of the starred state for RSPH and GSPH implementations. Particles are located at $\textbf {x}_{a} $ and $ \textbf {x}_{ b}$, and the local Riemann problem is defined by the constant states $(u, p)_a$ and $(u,p)_b$. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The white ellipse indicates the stationary state, which is the starred state in GSPH}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Evaluating of the starred state for RSPH and GSPH implementations. $x$ is the local coordinate system for paired two particles, whose origin is the middle of the paired two particles. The paired particles are located at $\textbf  {x}_{a} $ and $ \textbf  {x}_{b}$, and the local Riemann problem is defined by the constant states $(\rho , u, p)_a$ and $(\rho , u,p)_b$, namely $\textbf  {W}_L = \textbf  {W}_b$, $\textbf  {W}_R = \textbf  {W}_a$ with $\textbf  {W} = (\rho , u,p)^T $, a vector representation of these variables. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The red ellipse indicates the stationary state, which is the starred state in GSPH. $S_L$, $S_M$, and $S_R$ are speeds of waves, which are linerized locally in HLLC Riemann solvers \citep  {puri2014approximate}. Starred region is divided into two sub-regions by the middle contact wave. Only $\rho $ changes across the contact wave. }}{10}{figure.1}}
+\newlabel{fig:pick-up-state-GSPH-RSPH}{{1}{10}{Evaluating of the starred state for RSPH and GSPH implementations. $x$ is the local coordinate system for paired two particles, whose origin is the middle of the paired two particles. The paired particles are located at $\textbf {x}_{a} $ and $ \textbf {x}_{b}$, and the local Riemann problem is defined by the constant states $(\rho , u, p)_a$ and $(\rho , u,p)_b$, namely $\textbf {W}_L = \textbf {W}_b$, $\textbf {W}_R = \textbf {W}_a$ with $\textbf {W} = (\rho , u,p)^T $, a vector representation of these variables. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The red ellipse indicates the stationary state, which is the starred state in GSPH. $S_L$, $S_M$, and $S_R$ are speeds of waves, which are linerized locally in HLLC Riemann solvers \citep {puri2014approximate}. Starred region is divided into two sub-regions by the middle contact wave. Only $\rho $ changes across the contact wave}{figure.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Non-iterative Riemann solvers}{10}{subsection.3.3}}
 \newlabel{sec:RP-solver}{{3.3}{10}{Non-iterative Riemann solvers}{subsection.3.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Numerical tests}{11}{section.4}}
@@ -128,15 +132,38 @@
 \newlabel{fig:RCM-strong-blast}{{10}{21}{Results for test 6, the strong blast test. y axis for density plot is in log base 10. To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. The oscillations between shock and contact discontinuity is relatively larger than other area. A noticeable spike is observed near contact discontinuity}{figure.10}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}3D free jet}{21}{subsection.4.4}}
 \newlabel{jet}{{4.4}{21}{3D free jet}{subsection.4.4}{}}
-\citation{gmd-2017-119}
 \newlabel{eq:pressure_bc_p}{{35}{22}{3D free jet}{equation.4.35}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Free jet flow simulation results at $t=3.0 s$ by SPH using different artificial viscosity coefficients. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. From left to right, the picture is corresponding to $\alpha =0.3$, $\alpha =1.0$ and $\alpha =2.0$ respectively. Another artificial viscosity coefficient $\beta $ is set to be double of $\alpha $ for all tests. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles.}}{22}{figure.11}}
 \newlabel{fig:free-jet-SPH-comparison}{{11}{22}{Free jet flow simulation results at $t=3.0 s$ by SPH using different artificial viscosity coefficients. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. From left to right, the picture is corresponding to $\alpha =0.3$, $\alpha =1.0$ and $\alpha =2.0$ respectively. Another artificial viscosity coefficient $\beta $ is set to be double of $\alpha $ for all tests. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles}{figure.11}{}}
+\citation{gmd-2017-119}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Simulation results of free jet flow by SPH with $\alpha =1.0, \beta =2.0$, GSPH and RSPH. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. From left to right, the picture is corresponding to SPH, GSPH and RSPH respectively. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. Pictures on the first row are corresponding to $t=1.5s$ while pictures on the second row are for $t=3.0 s$}}{23}{figure.12}}
 \newlabel{fig:free-jet-comparison}{{12}{23}{Simulation results of free jet flow by SPH with $\alpha =1.0, \beta =2.0$, GSPH and RSPH. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. From left to right, the picture is corresponding to SPH, GSPH and RSPH respectively. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. Pictures on the first row are corresponding to $t=1.5s$ while pictures on the second row are for $t=3.0 s$}{figure.12}{}}
 \citation{colella1982glimm}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{24}{section.5}}
 \newlabel{discussion}{{5}{24}{Conclusion}{section.5}{}}
+\citation{glimm1965solutions}
+\citation{liu1977deterministic}
+\citation{chorin1976random}
+\citation{concus1979numerical}
+\citation{colella1978analysis}
+\citation{colella1982glimm}
+\@writefile{toc}{\contentsline {section}{\numberline {Appendix A}Glimm'{}s Scheme}{25}{appendix.A}}
+\newlabel{linear}{{A.1}{25}{Glimm\rq {}s Scheme}{equation.A.1}{}}
+\citation{warming1974modified}
+\citation{harten1981random}
+\citation{hartenlax}
+\citation{glimm1965solutions}
+\citation{colella1982glimm}
+\citation{chorin1976random}
+\citation{concus1979numerical}
+\citation{warming1974modified}
+\citation{liu1977deterministic}
+\citation{evrard1988beyond,hernquist1989treesph}
+\@writefile{toc}{\contentsline {section}{\numberline {Appendix B}Numerical oscillation due to non-uniform smoothing length in space}{27}{appendix.B}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.13}{\ignorespaces In this example, we consider two pairs of particles $(a, b_1)$ and $(a b_2)$. For simplicity, we assume uniform distance between particles. When take $h=\frac  {h_a + h_b}{2}$, the actual shape of gradient of kernel function is the combination of two dash curves. It is not anti-symmetric. We also assume pressure, density and particle mass of all particles are equal. However, the pressure gradient term at particle $a$ in discretized formulation do not cancel out ( $-\genfrac  {}{}{}0{p_{b_1}}{\rho _{b_1}^2} \nabla _a w_{a b_1}\left (\frac  {h_a+h_{b_1}}{2}\right ) < -\genfrac  {}{}{}0{p_{b_2}}{\rho _{b_2}^2} \nabla _a w_{a b2}\left (\frac  {h_a+h_{b_1}}{2}\right )$) when smoothing lengths are not equal ($h_{b1} \not =h_{b2}$). This leads to unphysical non-zero pressure gradient, which is the source of numerical oscillation. When smoothing length is uniform in space or take $h = h_a$, the actual shape of gradient of kernel function is the solid curve, which is anti-symmetric. As a consequence, $-\genfrac  {}{}{}0{p_{b_1}}{\rho _{b_1}^2} \nabla _a w_{a b_1}\left (h\right ) = \genfrac  {}{}{}0{p_{b_2}}{\rho _{b_2}^2} \nabla _a w_{a b2}\left (h\right )$, the unphysical non-zero pressure gradient vanishes.}}{28}{figure.13}}
+\newlabel{fig:dw-ha}{{B.13}{28}{In this example, we consider two pairs of particles $(a, b_1)$ and $(a b_2)$. For simplicity, we assume uniform distance between particles. When take $h=\frac {h_a + h_b}{2}$, the actual shape of gradient of kernel function is the combination of two dash curves. It is not anti-symmetric. We also assume pressure, density and particle mass of all particles are equal. However, the pressure gradient term at particle $a$ in discretized formulation do not cancel out ( $-\dfrac {p_{b_1}}{\rho _{b_1}^2} \nabla _a w_{a b_1}\left (\frac {h_a+h_{b_1}}{2}\right ) < -\dfrac {p_{b_2}}{\rho _{b_2}^2} \nabla _a w_{a b2}\left (\frac {h_a+h_{b_1}}{2}\right )$) when smoothing lengths are not equal ($h_{b1} \neq h_{b2}$). This leads to unphysical non-zero pressure gradient, which is the source of numerical oscillation. When smoothing length is uniform in space or take $h = h_a$, the actual shape of gradient of kernel function is the solid curve, which is anti-symmetric. As a consequence, $-\dfrac {p_{b_1}}{\rho _{b_1}^2} \nabla _a w_{a b_1}\left (h\right ) = \dfrac {p_{b_2}}{\rho _{b_2}^2} \nabla _a w_{a b2}\left (h\right )$, the unphysical non-zero pressure gradient vanishes}{figure.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.14}{\ignorespaces Plots of density for 1D shock tube test 2 at different time. In these plots, $x$ axis is location along shock tube, $y$ axis is density. Smoothing length $h = \frac  {h_a + h_b}{2}$. The first plot is corresponding to $t=0.001s$, color map is for smoothing length. As shown in first plot, the smoothing length is discontinuous at the left boundary. Such discontinuity induces a numerical perturbation. The second plot to last one are corresponding to $t=0.05s$, $t=0.1s$, $t=0.2s$, $t=0.3s$ respectively. We observe that a numerical perturbation incepts near the left boundary and propogates into the domain. Actually, the smoothing length is also discontinuous at the middle. It should also induce another numerical perturbation. That perturbation has smaller magnitude but stll observable from the figure. It has the same propagating speed as the front of rarefaction. Both perturbations decays in time due to dissipation.}}{30}{figure.14}}
+\newlabel{fig:Perturbation-ME2}{{B.14}{30}{Plots of density for 1D shock tube test 2 at different time. In these plots, $x$ axis is location along shock tube, $y$ axis is density. Smoothing length $h = \frac {h_a + h_b}{2}$. The first plot is corresponding to $t=0.001s$, color map is for smoothing length. As shown in first plot, the smoothing length is discontinuous at the left boundary. Such discontinuity induces a numerical perturbation. The second plot to last one are corresponding to $t=0.05s$, $t=0.1s$, $t=0.2s$, $t=0.3s$ respectively. We observe that a numerical perturbation incepts near the left boundary and propogates into the domain. Actually, the smoothing length is also discontinuous at the middle. It should also induce another numerical perturbation. That perturbation has smaller magnitude but stll observable from the figure. It has the same propagating speed as the front of rarefaction. Both perturbations decays in time due to dissipation}{figure.14}{}}
 \bibdata{Reference}
 \bibcite{gingold1977smoothed}{{1}{1977}{{Gingold and Monaghan}}{{}}}
 \bibcite{lucy1977numerical}{{2}{1977}{{Lucy}}{{}}}
@@ -144,6 +171,8 @@
 \bibcite{monaghan1997sph}{{4}{1997}{{Monaghan}}{{}}}
 \bibcite{klapp2012strong}{{5}{2012}{{Klapp et~al.}}{{Klapp, Sigalotti, Pe{\~n}a-Polo, and Trujillo}}}
 \bibcite{borgani2012hydrodynamic}{{6}{2012}{{Borgani et~al.}}{{Borgani, Murante, Brunino, and Cha}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.15}{\ignorespaces Plots of density for 1D shock tube test 2 at $t=0.1s$. In this test, we still intentionally create non-uniform smoothing length distribution in space by assigning larger smoothing length to wall ghost particles at the left side. But we take $h=h_a$. No numerical perturbation generated near the left boundary.}}{31}{figure.15}}
+\newlabel{fig:Perturbation-ME0-tp1}{{B.15}{31}{Plots of density for 1D shock tube test 2 at $t=0.1s$. In this test, we still intentionally create non-uniform smoothing length distribution in space by assigning larger smoothing length to wall ghost particles at the left side. But we take $h=h_a$. No numerical perturbation generated near the left boundary}{figure.15}{}}
 \bibcite{flebbe1994smoothed}{{7}{1994}{{Flebbe et~al.}}{{Flebbe, Muenzel, Herold, Riffert, and Ruder}}}
 \bibcite{morris1997switch}{{8}{1997}{{Morris and Monaghan}}{{}}}
 \bibcite{dolag2005turbulent}{{9}{2005}{{Dolag et~al.}}{{Dolag, Vazza, Brunetti, and Tormen}}}
@@ -168,12 +197,18 @@
 \bibcite{monaghan2005smoothed}{{28}{2005}{{Monaghan}}{{}}}
 \bibcite{liu2010smoothed}{{29}{2010}{{Liu and Liu}}{{}}}
 \bibcite{price2012smoothed}{{30}{2012}{{Price}}{{}}}
-\bibcite{hll}{{31}{1983}{{Harten et~al.}}{{Harten, Lax, and van Leer}}}
-\bibcite{toro1994restoration}{{32}{1994}{{Toro et~al.}}{{Toro, Spruce, and Speares}}}
-\bibcite{hammersley2013monte}{{33}{2013}{{Hammersley}}{{}}}
-\bibcite{rider1994review}{{34}{1994}{{Rider}}{{}}}
-\bibcite{luo2004computation}{{35}{2004}{{Luo et~al.}}{{Luo, Baum, and L{\"o}hner}}}
-\bibcite{sigalotti2006shock}{{36}{2006}{{Sigalotti et~al.}}{{Sigalotti, L{\'o}pez, Donoso, Sira, and Klapp}}}
-\bibcite{price2008modelling}{{37}{2008}{{Price}}{{}}}
-\bibcite{noh1987errors}{{38}{1987}{{Noh}}{{}}}
-\bibcite{gmd-2017-119}{{39}{2017}{{Cao et~al.}}{{Cao, Patra, Bursik, Pitman, and Jones}}}
+\bibcite{evrard1988beyond}{{31}{1988}{{Evrard}}{{}}}
+\bibcite{hll}{{32}{1983}{{Harten et~al.}}{{Harten, Lax, and van Leer}}}
+\bibcite{toro1994restoration}{{33}{1994}{{Toro et~al.}}{{Toro, Spruce, and Speares}}}
+\bibcite{hammersley2013monte}{{34}{2013}{{Hammersley}}{{}}}
+\bibcite{rider1994review}{{35}{1994}{{Rider}}{{}}}
+\bibcite{luo2004computation}{{36}{2004}{{Luo et~al.}}{{Luo, Baum, and L{\"o}hner}}}
+\bibcite{sigalotti2006shock}{{37}{2006}{{Sigalotti et~al.}}{{Sigalotti, L{\'o}pez, Donoso, Sira, and Klapp}}}
+\bibcite{price2008modelling}{{38}{2008}{{Price}}{{}}}
+\bibcite{noh1987errors}{{39}{1987}{{Noh}}{{}}}
+\bibcite{gmd-2017-119}{{40}{2017}{{Cao et~al.}}{{Cao, Patra, Bursik, Pitman, and Jones}}}
+\bibcite{colella1978analysis}{{41}{1978}{{Colella}}{{}}}
+\bibcite{warming1974modified}{{42}{1974}{{Warming and Hyett}}{{}}}
+\bibcite{harten1981random}{{43}{1981}{{Harten and Lax}}{{}}}
+\bibcite{liu1977deterministic}{{44}{1977}{{Liu}}{{}}}
+\bibcite{hernquist1989treesph}{{45}{1989}{{Hernquist and Katz}}{{}}}

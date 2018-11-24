@@ -51,12 +51,12 @@
 %\address[mysecondaryaddress]{360 Park Avenue South, New York}
 
 \begin{abstract}
-The classical smoothed particle hydrodynamics (SPH) method employs explicit artificial viscosity to properly capture shock waves in hydrodynamics. This artificial viscosity typically produces more dissipation than is needed to smooth shocks, incorrectly smears contact discontinuities, and can overwhelm fluid turbulence. 
+The classical smoothed particle hydrodynamics (SPH) method employs explicit artificial viscosity to properly capture shock waves in high speed compressible flow. This artificial viscosity typically produces more dissipation than is needed to smooth shocks, smears discontinuities, and can overwhelm fluid turbulence. 
 Several studies have proposed highly tuned versions of artificial viscosity, turning on and off near shocks or other troublesome wave features.
 A different kind of solver adapts Godunov\rq{}s idea of solving local Riemann problems as building blocks for a numerical SPH solver without explicit numerical dissipation term. Unfortunately, a first order Godunov solver still introduces an effective numerical diffusion that can infect the entire numerical solution.
 We propose a novel SPH scheme that combines an approximate version of Glimm\rq{}s Random Choice method (RCM) with SPH. RCM properly resolves and then samples all hydrodynamic waves. Our version approximately resolves hydrodynamic waves, and samples the approximate solution. No explicit artificial viscosity will be needed.
 We test this method on standard one dimensional shock tube problems and observe several attractive features. First of all, this method introduces adaptive artificial viscosity, assigning larger dissipation around discontinuities and smaller elsewhere. Secondly, it is less dissipative than classical SPH and GSPH resulting in less smearing of shock. Thirdly, as the new method can be viewed as generalized GSPH method in terms of sampling solutions of local Riemann problems, good features of GSPH are inherited, for example, ameliorating pressure ``wiggle" around contact discontinuity.
-When applied to three dimensional jet flow, this method is demonstrated to introduce less overall dissipation than GSPH.
+When applied to three dimensional jet flow, this method is demonstrated to introduce less overall-dissipation than GSPH.
 %Our ultimate goal is to apply this method to jet flow. Because of the high shear rate in this application, we introduce a highly tuned eddy viscosity that is applied only near the shear surface. The combination of the SPH and RCM together with a shear viscosity produces nicely resolved jet profiles.
 
 \end{abstract}
@@ -67,7 +67,7 @@ Smoothed Particle Hydrodynamics (SPH), Random Choice Method (RCM), Riemann Solve
 
 \linenumbers
 \section{Introduction}
-Smoothed particle hydrodynamics (SPH) \citep{gingold1977smoothed,lucy1977numerical} is a mesh-free particle method based on a Lagrangian formulation of the governing equations of  motion.
+Smoothed particle hydrodynamics (SPH) \citep{gingold1977smoothed,lucy1977numerical} is a mesh-free particle method based on a Lagrangian formulation of the governing equations of motion.
 SPH has been widely applied to different areas in engineering and science. As should be expected, SPH possesses certain advantages and certain disadvantages relative to finite difference and finite element solvers. Principally, as a Lagrangian solver, SPH conserves mass exactly. 
 In addition, because of its formulation SPH automatically concentrates numerical effort in regions of high density and adapts to arbitrary geometries. On the other hand, 
 SPH has difficulty capturing shock waves and contact discontinuities. To overcome numerical oscillations at discontinuities, classical SPH introduces an artificial viscosity term. As it is most often used, when two SPH particles are approaching, a von Neumann type viscosity is introduced
@@ -130,7 +130,7 @@ Using this framework, derivative terms in (\ref{eq:gov-nc-rho})--(\ref{eq:gov-nc
 \left\langle\dfrac{d e_a}{d t}\right\rangle=
  0.5\sum_b m_b \textbf{v}_{a b}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \cdot \nabla_a w_{a b}\left(h\right) \label{eq:ns-sph-e}
 \end{align}
-Here $\textbf{v}_{a b} = \textbf{v}_a - \textbf{v}_b$, the smoothing length $h$ is taken as $h=\frac{h_a + h_b}{2}$, and $\Pi$ is an artificial viscosity term.
+Here $\textbf{v}_{a b} = \textbf{v}_a - \textbf{v}_b$, the smoothing length $h$ is taken as $h=\frac{h_a + h_b}{2}$ \citep{evrard1988beyond}, and $\Pi$ is an artificial viscosity term.
 One of commonly used models of artificial viscosity \citep{monaghan1983shock} is:
 \begin{equation}
 \Pi_{ab}=- \frac{\nu_{ab}}{\bar{\rho}_{ab}} \dfrac{ \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2}
@@ -191,12 +191,12 @@ introduced here.
 
 The density continues to be updated based on particle location from Eq. (\ref{eq:ns-sph-d}). However the update for the momentum and energy equations differs fundamentally from the classical SPH approach. We begin by making two observations, the first regarding the density
 \begin{equation}
-1=\sum_{b} \frac{m_{b}}{\rho(\textbf{x})}w(\textbf{x} - \textbf{x}_{b}, h)
+1=\sum_{b} \frac{m_{b}}{<\rho(\textbf{x})>}w(\textbf{x} - \textbf{x}_{b}, h)
 \label{eq:GSPH-basic1}
 \end{equation}
 and the second regarding the derivative 
 \begin{equation}
-0=\sum_{b} m_{b} \nabla \frac{w(\textbf{x} - \textbf{x}_{b}, h)}{\rho(\textbf{x})}
+0=\sum_{b} m_{b} \nabla \frac{w(\textbf{x} - \textbf{x}_{b}, h)}{<\rho(\textbf{x})>}
 \label{eq:GSPH-basic2}
 \end{equation}
 We re-formulate the equations of motion to exploit certain symmetry. A lengthy algebraic manipulation \citep{inutsuka2002reformulation,iwasaki2011smoothed} leads to:
@@ -221,8 +221,8 @@ Of course solving the local Riemann problem for every pair of interacting partic
 
 \section{The Random Choice SPH method(RSPH)} \label{sec:RSPH-method}
 In GSPH, the starred state is the solution to a local Riemann problem at a location determined by a weighted average of the specific volumes associated with the two participating particles. 
-Instead of calculating a full solution to the Riemann problem, approximate solvers such as the Roe method or HLLC, might be used. 
-We propose sampling the (approximate) Riemann solution as in the Random choice method, where the approximate solution is given by the HLLC construction (see \cite{toro1994restoration}).
+Instead of calculating a full solution to the Riemann problem, approximate solvers such as the Roe method \citep{roe1981approximate} or HLLC (Harten-Lax-van Leer-Contact) \citep{toro1994restoration}, might be used. 
+We propose sampling the (approximate) Riemann solution as in the Random choice method, where the approximate solution is given by the HLLC construction.
 
 \subsection{The local 1D Riemann problem} \label{sec:RP-construction}
 The starred state is the solution to a local 1-dimensional Riemann problem. Given particles $a$ and $b$, rotate coordinates to establish a single spatial dimension along the line connecting the two particles, with direction 
@@ -271,8 +271,8 @@ Figure \ref{fig:pick-up-state-GSPH-RSPH} shows the starred state for GSPH and RS
 \begin{figure}[H]
     \center
 	\includegraphics[width=0.5 \textwidth]{./Figures/RSPH-GSPH}
-    \caption{Evaluating of the starred state for  RSPH and GSPH implementations.
-Particles are located at $\textbf{x}_{a} $ and $ \textbf{x}_{ b}$, and the local Riemann problem is defined by the constant states $(u, p)_a$ and $(u,p)_b$. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The white ellipse indicates the stationary state, which is the starred state in GSPH.}
+    \caption{Evaluating of the starred state for  RSPH and GSPH implementations. $x$ is the local coordinate system for paired two particles, $a$ and $b$. The origin is at the middle of the paired two particles.
+The the local Riemann problem is defined by the constant states $(\rho, u, p)_a$ and $(\rho, u,p)_b$, namely $\textbf{W}_L = \textbf{W}_b$, $\textbf{W}_R = \textbf{W}_a$ with $\textbf{W} = (\rho, u,p)^T $, a vector representation of these three variables. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The red ellipse indicates the stationary state, which is the starred state in GSPH. $S_L$, $S_M$ and $S_R$ are singal speeds which are linerized locally in HLLC Riemann solvers \citep{puri2014approximate}. Starred region is divided into two sub-regions by the middle contact wave. Only $\rho$ changes across the contact wave. }
     \label{fig:pick-up-state-GSPH-RSPH}
 \end{figure}
 
@@ -296,14 +296,14 @@ and project the primitive variables onto this local coordinate system to define 
 
 \section{Numerical tests} \label{numericaltests}
 We describe results from several numerical tests using SPH, RSPH and GSPH in this section.
-A 1D shock tube tests is used to compare standard SPH, GSPH and RSPH. More shock tube simulations are also conducted to check the capacity of RSPH for different situations. In addition, order of accuracy is investigated for the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation with SPH, GSPH and RSPH to check equivalent overall dissipation introduced by each method.
+A 1D shock tube test is used to compare standard SPH, GSPH and RSPH. More shock tube simulations are also conducted to check the capacity of RSPH for different situations. In addition, order of accuracy is investigated for the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation with SPH, GSPH and RSPH to check equivalent overall dissipation introduced by each method.
 
 Six 1D simulations described here are carried out:
 \begin{itemize}% [1D Tests]
 \item Test 1 consists of a left rarefaction, a right traveling contact and a right shock. Density increases at down wind of contact wave. 
 \item Test 2 also consists of a left rarefaction, a right traveling contact and a right shock. Density decreases at down wind of contact wave. 
 \item Test 3 includes double expansion waves. The initial density is different at right and left hand side. 
-\item Test 4 is a double shock tests with different initial density on the right side and left side.
+\item Test 4 is a double shock test with different initial densities on the right side and left side.
 \item Test 5 and Test 6 are two extreme cases. Test 5 is a cavity flow while test 6 is a strong blast flow.
 \end{itemize}
 
@@ -316,10 +316,10 @@ Six 1D simulations described here are carried out:
 	    \hline
 	    Test 1 & $1.0$ & $1.0$ &$0$ & $0.25$ & $0.1795$ &$0$ & $0.003$  & $[-0.4, 0.4]$ & $0.17$\\
 	    	Test 2 & $1.0$ & $1.0$ &$0$ & $0.5$ & $0.2$ &$0$ & $0.003$  & $[-0.4, 0.4]$ & $0.2$\\
-	    	Test 3 & $2.0$ & $1.95$ &$1.0$ & $1.0$ & $1.95$ &$-1.0$  & $0.006$  & $[-0.4, 0.4]$ & $0.13$\\
+	    	Test 3 & $2.0$ & $1.95$ &$-1.0$ & $1.0$ & $1.95$ &$1.0$  & $0.006$  & $[-0.4, 0.4]$ & $0.13$\\
 	    Test 4 & $1.0$ & $2.4$ &$8.0$ & $0.5$ & $0.4$ &$-0.25$ & $0.003$  & $[-0.4, 0.4]$ & $0.05$\\
-	    	Test 5 & $1.0$ & $-2.0$ &$0.4$ & $1.0$ & $0.4$ &$2.0$ & $0.003$  & $[-0.4, 0.4]$ & $0.18$\\
-	    	Test 6 & $1.0$ & $0$ &$1000$ & $1.0$ & $0$ &$0.01$ & $0.003$  & $[-0.5, 0.5]$  & $0.01$\\
+	    	Test 5 & $1.0$ & $0.4$ &$-2.0$ & $1.0$ & $0.4$ &$2.0$ & $0.003$  & $[-0.4, 0.4]$ & $0.18$\\
+	    	Test 6 & $1.0$ & $1000$ &$0$ & $1.0$ & $0.01$ &$0$ & $0.003$  & $[-0.5, 0.5]$  & $0.01$\\
 	    \hline
 	  \end{tabular}
 	  \label{tab:1D-shock-input_parameters}
@@ -602,7 +602,7 @@ Except for the pressure, boundary values for density, velocity, and energy on th
     \label{fig:free-jet-SPH-comparison}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \begin{minipage}[t]{.325 \textwidth}
         \centering
@@ -641,6 +641,122 @@ On the other hand, RSPH does not address other methodological questions that mus
 \section*{Acknowledgements}
 3D simulations reported here were performed at the Center for Computational Research (CCR) at the University at Buffalo. This project is supported by Grants No. NSF ACI/1131074 from the National Science Foundation.
 
+\appendix
+\section{Glimm\rq{}s Scheme}
+In \citep{glimm1965solutions}, Glimm proved the existence  of solutions to a  $2\times2$ 
+system of hyperbolic conservation laws within the space of total variation bounded functions. 
+This proof constructed solutions in one space dimension (plus time) by solving local Riemann problems at `grid points\rq{}, sampling these local solutions randomly, and stitching them together to create the full solution.  Later \citet{liu1977deterministic} proved that a deterministic, uniform sampling 
+method was sufficient to establish existence. \citet{chorin1976random} used
+the random Glimm scheme as the basis of a numerical method to solve conservation laws, and
+\citet{concus1979numerical} extended these ideas.
+In his thesis, \citet{colella1978analysis} examined the van der Corput sequence as a sampling procedure (see also \cite{colella1982glimm}).
+
+A signature feature of using Glimm\rq{}s method (or the random choice method) as a computational methodology is that
+it introduces no artificial viscosity into the solution -- shocks and contact discontinuities are
+resolved as sharp interfaces.  Let us explain by example. Consider a centered difference
+method to solve the linear scalar equation 
+\begin{equation}
+\label{linear}
+\frac{\partial u}{\partial t }+ a \frac{\partial )}{\partial x} = 0
+\end{equation}
+at cell index $j$ and time $n+1$:
+\begin{equation}
+u_j^{n+1} = u_j^n - a \frac{\Delta t}{\Delta x} \frac{(u_{j+1}^n - u_{j-1}^n)}{2}
+\end{equation}
+Of course this scheme is unconditionally unstable. Classical approaches to stabilizing the scheme add a small dose of artificial viscosity
+\begin{equation}
+u_j^{n+1} = u_j^n - a \frac{\Delta t}{\Delta x} \frac{(u_{j+1}^n - u_{j-1}^n)}{2} + a \frac{\Delta t}{2 \Delta x} (u_{j+1}^n -2 u_j^n + u_{j-1}^n)
+\end{equation}
+A stable first-order scheme such as upwind differencing (assuming $a>0$)
+\begin{equation}
+u_j^{n+1} = u_j^n - a \frac{\Delta t}{\Delta x} {(u_{j+1}^n - u_{j}^n)}
+\end{equation}
+can be seen as being second order accurate in space with a viscosity term added
+\begin{equation}
+u_j^{n+1} = u_j^n - a \frac{\Delta t}{\Delta x} \frac{(u_{j+1}^n - u_{j-1}^n)}{2} + a \frac{\Delta t}{2 \Delta x} (u_{j+1}^n -2 u_j^n + u_{j-1}^n))
+\end{equation}
+Examining dissipation effects for wide classes of finite difference/finite volume methods 
+shows a similar phenomena (see, for example, \cite{warming1974modified}).
+
+In contrast, Glimm\rq{}s approach solves a local Riemann problem exactly within each cell,
+and samples (randomly or uniformly) the solution states. Consider again the linear advection equation \ref{linear}, with a discontinuity in cell $j$:
+\begin{equation}
+u^n = \left\{ \begin{array}{11}
+			u_L ~~~ x< (j+\xi)\Delta x \\
+ 			u_R ~~~ x> (j+\xi)\Delta x
+ 			\end{array}
+	  \right. 			
+\end{equation}
+where $0<\xi<1$ locates the discontinuity within cell $j$.
+
+At time $n+1$, the discontinuity is either propagated or not, depending on the sampling
+point:
+\begin{equation}
+u^{n+1} = \left\{\begin{array}{11}
+		  u_L ~~~ x< (j+\tilde \xi)\Delta x + a \Delta t \\
+		  u_R ~~~ x> (j+\tilde \xi)\Delta x + a \Delta t
+		  \end{array}
+		  \right.
+\end{equation}
+where $\tilde \xi$ denotes the sample point.
+In either case, the solution remains discontinuous at time $n+1$ and the 
+discontinuity propagates at speed $a$ on average.
+
+The random choice method requires an exact solution of every local Riemann problem, at every time step.
+However this local solution is sampled, and much of the information present in the solution discarded.
+Harten and Lax \citet{harten1981random} suggested solving the local Riemann problem approximately 
+and sampling this approximate solution. The approximate solver reduces the computational
+effort required in a numerical scheme, and the sampling recovers the zero viscosity
+feature of the random choice method. \citet{hartenlax} suggest a finite difference
+method as the approximate solver.
+In our implementation, we propose the HLLC approximate solution as the foundation for
+uniform sampling via the van der Corput sequence.
+\citep{glimm1965solutions}
+\citep{colella1982glimm}
+\citep{chorin1976random}
+\citep{concus1979numerical}
+\citep{warming1974modified}
+\citep{liu1977deterministic}
+
+\section{Numerical oscillation due to non-uniform smoothing length in space}
+There are several options \citep[][e.g.]{evrard1988beyond, hernquist1989treesph} for smoothing length $h$ in Eq. (\ref{eq:ns-sph-d} - \ref{eq:ns-sph-v}). Taking $h=\frac{h_a + h_b}{2}$ is a common practice in now days. This formulation can guarantee momentum and energy conservation given any paired particles are within compact support of each other's weighting function. It can lead to numerical oscillation when applying such formulation under scenario with nonuniformly distributed smoothing length in space. Such numerical oscillation are usually either too small to observe or decays quickly due to numerical dissipation.
+The effect of decaying such numerical oscillation are used in this article as an indicator for numerical dissipation. Such numerical oscillation is not fully aware of yet by the community. In this section we explain how such numerical oscillations are formed.
+
+Recall that the kernel function of particle $a$ has to be symmetric with repect to particle $a$. As a result, the gradient of kernel function at particle $a$ is anti-symmetric. Such anti-symmetric properties can guarantee the pressure gradient term, $\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_a w_{a b}\left(h\right)$,  in momentum and energy equation (see Eq. (\ref{eq:ns-sph-v}) and (\ref{eq:ns-sph-e})) vanshes when pressure is uniform in space. However, the kernel function is not symmetric any more if smoothing length is not uniform in space. The gradient of kernel function is also not anti-symmetric any more. That is to say, the residual becomes non-zero. This is illustrated in Fig. \ref{fig:dw-ha} by a special case in 1D. 
+This non-zero residual can not be avoided in SPH formulation using averaged smoothing length ($h = \frac{h_a + h_b}{2}$) and can induce oscillation in the solution. Sharp changes in smoothing length can induce significant oscillation which usually propagates into the computational domain and corrupts numerical solution.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90 \textwidth ]{App-Figure/dw-ha}
+\caption{In this example, we consider two pairs of particles $(a, b_1)$ and $(a b_2)$. For simplicity, we assume uniform distance between particles. When take $h=\frac{h_a + h_b}{2}$, the actual shape of gradient of kernel function is the combination of two dash curves. It is not anti-symmetric.
+We also assume pressure, density and particle mass of all particles are equal. However, the pressure gradient term at particle $a$ in discretized formulation do not cancel out ( $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(\frac{h_a+h_{b_1}}{2}\right) < -\dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(\frac{h_a+h_{b_1}}{2}\right)$) when smoothing lengths are not equal ($h_{b1} \neq h_{b2}$). This leads to unphysical non-zero pressure gradient, which is the source of numerical oscillation. When smoothing length is uniform in space or take $h = h_a$, the actual shape of gradient of kernel function is the solid curve, which is anti-symmetric. As a consequence, $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(h\right) = \dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(h\right)$, the unphysical non-zero pressure gradient vanishes.}    
+\label{fig:dw-ha}
+\end{figure}  
+
+To illustrate the formation and influence of such numerical oscillation, we intentionally create a situation of non-uniform smoothing length by assigning larger smoothing length to boundary ghost particles on left side in 1D shock tube test. Just like discontinuity of physical quantities (for example, the discontinuity at the middle of shock tube test), discontinuity in numerical resolution, in terms of smoothing length, also induces a wave. A perturbation can be observed clearly in the simulation result, starting near the left boundary and propagating into simulation domain. 
+
+In Fig. \ref{fig:Perturbation-ME0-tp1}, no such perturbation when $h = h_a$, which confirms our analysis in Fig. \ref{fig:dw-ha}. 
+It needs to emphasize that such perturbation would be created unintentionally in real implementation. The oscillation can actually be observed in 1D shock tube tests of many other papers, even though they are not as obvious as the one in Fig. \ref{fig:Perturbation-ME2}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME2}
+\caption{Plots of density for 1D shock tube test 2 at different time. In these plots, $x$ axis is location along shock tube, $y$ axis is density. Smoothing length $h = \frac{h_a + h_b}{2}$. The first plot is corresponding to $t=0.001s$, color map is for smoothing length. As shown in first plot, the smoothing length is discontinuous at the left boundary. Such discontinuity induces a numerical perturbation. The second plot to last one are corresponding to $t=0.05s$, $t=0.1s$, $t=0.2s$, $t=0.3s$ respectively. We observe that a numerical perturbation incepts near the left boundary and propogates into the domain. Actually, the smoothing length is also discontinuous at the middle. It should also induce another numerical perturbation. That perturbation has smaller magnitude but stll observable from the figure. It has the same propagating speed as the front of rarefaction. Both perturbations decays in time due to dissipation.}
+\label{fig:Perturbation-ME2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME0-tp1}
+\caption{Plots of density for 1D shock tube test 2 at $t=0.1s$. In this test, we still intentionally create non-uniform smoothing length distribution in space by assigning larger smoothing length to wall ghost particles at the left side. But we take $h=h_a$. No numerical perturbation generated near the left boundary.}    
+\label{fig:Perturbation-ME0-tp1}
+\end{figure}
+
+To summarize, the conditions for generating such numerical oscillation are:
+\begin{itemize}
+\item Calculate smoothing length by averaging, for example, $h = \frac{h_a + h_b}{2}$.
+\textbf{And} 
+\item Smoothing length is nonuniform in space.
+\end{itemize}
 \section*{References}
 
 \bibliography{Reference}
