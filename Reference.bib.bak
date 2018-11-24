@@ -55,6 +55,23 @@
 	Title = {Numerical approximation of hyperbolic systems of conservation laws},
 	Volume = {118},
 	Year = {2013}}
+	
+@article{colella1978analysis,
+  title={An analysis of the effect of operator splitting and of the sampling procedure on the accuracy of Glimm's method},
+  author={Colella, Phillip},
+  year={1978}
+}
+
+@article{harten1981random,
+  title={A random choice finite difference scheme for hyperbolic conservation laws},
+  author={Harten, Amiram and Lax, Peter D},
+  journal={SIAM Journal on Numerical Analysis},
+  volume={18},
+  number={2},
+  pages={289--315},
+  year={1981},
+  publisher={SIAM}
+}	
 
 @article{kreiss1970initial,
 	Author = {Kreiss, Heinz-Otto},
@@ -2107,6 +2124,28 @@
 	Title = {A numerical study of a converging cylindrical shock},
 	Volume = {83},
 	Year = {1977}}
+	
+@article{warming1974modified,
+  title={The modified equation approach to the stability and accuracy analysis of finite-difference methods},
+  author={Warming, RF and Hyett, BJ},
+  journal={Journal of computational physics},
+  volume={14},
+  number={2},
+  pages={159--179},
+  year={1974},
+  publisher={Elsevier}
+}
+
+@article{liu1977deterministic,
+  title={The deterministic version of the Glimm scheme},
+  author={Liu, Tai-Ping},
+  journal={Communications in Mathematical Physics},
+  volume={57},
+  number={2},
+  pages={135--148},
+  year={1977},
+  publisher={Springer}
+}	
 
 @article{concus1979numerical,
 	Author = {Concus, Paul and Proskurowski, Wlodzimierz},
@@ -2173,3 +2212,11 @@
 	Title = {A high order ENO conservative Lagrangian type scheme for the compressible Euler equations},
 	Volume = {227},
 	Year = {2007}}
+	
+@book{leveque2002finite,
+  title={Finite volume methods for hyperbolic problems},
+  author={LeVeque, Randall J},
+  volume={31},
+  year={2002},
+  publisher={Cambridge university press}
+}	
