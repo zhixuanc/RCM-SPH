@@ -87,7 +87,7 @@ Later, Harten and Lax \cite{hartenlax} proposed approximately solving a Riemann 
 We then implement RSPH for a three-dimensional free jet flow simulation, a prototype for our ultimate goal of simulating a Plinian volcanic eruption.
 
 Section \ref{standard-sph} provides a brief review of standard SPH. Section \ref{sec:GSPH-method} shows how the GSPH method is defined. The RSPH method is defined in Section \ref{sec:RSPH-method}.
-One dimensional tests are shown in Section \ref{numericaltests}, followed by the jet flow example in Section \ref{jet}. Other applications and limitations of RSPH are discussed in Section \ref{discussion}
+One dimensional tests are shown in Section \ref{sec:numericaltests}, followed by the jet flow example in Section \ref{jet}. Other applications and limitations of RSPH are discussed in Section \ref{discussion}
 
 \section{SPH Formulations} \label{sph}
 Throughout this paper we will be concerned with solving the Euler equations, written as
@@ -278,12 +278,12 @@ The the local Riemann problem is defined by the constant states $(\rho, u, p)_a$
 
 The starred state $(u^{\ast},  p^{\ast})$ must now be projected back into the global coordinate system, to define  $(\textbf{v}^{\ast},  p^{\ast})$.
 
-We mention that, instead of selecting a uniformly distributed random number $\epsilon$, we follow \citet{colella1982glimm} and adopt the Van Der Corput pseudo-random number sequence \citep{hammersley2013monte}.
+We mentioned that, instead of selecting an uniformly distributed random number $\epsilon$, we follow \citet{colella1982glimm} and adopt the Van Der Corput pseudo-random number sequence \citep{hammersley2013monte}.
 
 \subsection{Non-iterative Riemann solvers} \label{sec:RP-solver}
 Solving local Riemann problems exactly usually involves separating several cases of wave patterns and iteratively solving a small system of ordinary differential equations (for rarefaction waves) and a small set of nonlinear equations (the Rankine-Hugoniot equations). Instead of running this lengthy process one can employ approximate Riemann solvers, which provide an approximate solution quickly. There are many approximate Riemann solvers available \citep{rider1994review, luo2004computation, puri2014approximate}. For purposes here we adopt the HLLC solver, which decomposes the Riemann solution into 3 waves, including a (possible) contact discontinuity \cite{toro1994restoration}. More specifically, we adopt the HLLC formulation proposed by \citet{luo2004computation}.
  
-We mention that, in the numerical tests in Section \ref{numericaltests}, Both the HLLC solver and Roe solver are used for GSPH calculations.
+We mention that, in the numerical tests in Section \ref{sec:numericaltests}, Both the HLLC solver and Roe solver are used for GSPH calculations.
 To summarize, our RSPH algorithm proceeds as follows:
 \begin{itemize}
 \item For each pair of particles, establish a local coordinate system whose axis joins the particles,
@@ -294,16 +294,16 @@ and project the primitive variables onto this local coordinate system to define 
 \item Update the particle positions and physical quantities.
 \end{itemize}
 
-\section{Numerical tests} \label{numericaltests}
+\section{Numerical tests} \label{sec:numericaltests}
 We describe results from several numerical tests using SPH, RSPH and GSPH in this section.
-A 1D shock tube test is used to compare standard SPH, GSPH and RSPH. More shock tube simulations are also conducted to check the capacity of RSPH for different situations. In addition, order of accuracy is investigated for the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation with SPH, GSPH and RSPH to check equivalent overall dissipation introduced by each method.
+A 1D shock tube test is investigated in different aspects to compare standard SPH, first order GSPH and RSPH revealling several features of RSPH. More shock tube simulations are also conducted to check the capacity of RSPH for different wave patterns. In addition, order of accuracy is investigated using the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation. The effect of equivalent overall dissipation is first demonstrated by SPH simulation with different artificial viscosity coefficients. Then the equivalent overall dissipations introduced by first order GSPH and RSPH are compared demonstrating that RSPH introduces less dissipation than first order GSPH.
 
 Six 1D simulations described here are carried out:
 \begin{itemize}% [1D Tests]
 \item Test 1 consists of a left rarefaction, a right traveling contact and a right shock. Density increases at down wind of contact wave. 
 \item Test 2 also consists of a left rarefaction, a right traveling contact and a right shock. Density decreases at down wind of contact wave. 
 \item Test 3 includes double expansion waves. The initial density is different at right and left hand side. 
-\item Test 4 is a double shock test with different initial densities on the right side and left side.
+\item Test 4 is a double shocks test with different initial densities on the right side and left side.
 \item Test 5 and Test 6 are two extreme cases. Test 5 is a cavity flow while test 6 is a strong blast flow.
 \end{itemize}
 
@@ -324,104 +324,125 @@ Six 1D simulations described here are carried out:
 	  \end{tabular}
 	  \label{tab:1D-shock-input_parameters}
 \end{table}
-Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_parameters}, where, subscript $L$ refers left side and $R$ for right side. $m$ is particle mass, initial interval between adjacent particles are adjusted to guarantee equal particle mass. $t_f$ is the time to terminate simulation and plotting the results. Equal particle mass is assigned to all particles. The $x$ axis in all plots is normalized by time, that is $x/t_f$, in plots for shock tube tests results.
+Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_parameters}, where, subscript $L$ refers left side and $R$ for right side. $m$ is particle mass, initial interval between adjacent particles are adjusted to guarantee equal particle mass. $t_f$ is the time to terminate simulation and plotting the results. The $x$ axis in all plots is normalized by time, that is $x/t_f$, in plots for shock tube tests results.
+
+In first four tests, density on right and left sides are different. Considering that all particles have the same particle mass, assigning smoothing length according to $h \propto \frac{m}{\rho}$ leads to discontinuity of smoothing length at the middle. Such discontinuity of smoothing length is the source of numerical oscillations, which usually decay fast and are not observed when there is sufficient dissipation. 
+Such  numerical oscillation becomes obvious when dissipation is less. For example, when SPH taking $\alpha=0.2$ (see Fig. \ref{fig:RCM-Sod-SPH-alf} and Fig. \ref{fig:RCM-Sod-SPH-alf-zoom}). That is to say, how much the numerical oscillation is suppressed can indicate the amount of numerical dissipation introduced in each SPH scheme providing we are solving invisid fluids (no physical dissipation). Refer Appendix B for more information regarding the numerical oscillation due to nonuniform smoothing length.
+Another indicator of numerical dissipation is how much the shock is smeared. Both indicators reflect consistent information regarding numerical dissipation throughout our tests, see, for example, plot c) in Fig. \ref{fig:RCM-Sod-SPH-alf-zoom} or plot g) in Fig. \ref{fig:RCM-GSPH-Sod}. 
+We take these two as indicators of numerical dissipation in many discussions regarding 1D tests.
+As for 3D jet flow, we take the distance between jet head and inject vent at the same physical time as the indicator of overall equivalent numerical dissipation. As shown in Fig. \ref{fig:free-jet-SPH-comparison}, the distance between jet head and inject vent decrease when artificial viscosity coefficients increase. This confirms that such distance do reflect overall equivalent dissipation.
+
 \subsection{Comparison of RSPH with standard SPH and GSPH}
+
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.45\textwidth}
         \centering a)
         \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-rho}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.545 \textwidth}
         \centering b)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-v}
-    \end{minipage}%
+        \includegraphics[width=0.99 \textwidth,height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-v}
+    \end{minipage}% 
     \\
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.45 \textwidth}
         \centering c)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-rho-zoom}
-    \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
-        \centering d)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-v-zoom}
-    \end{minipage}%   
-    \caption{a),b) are simulation results of density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) are zoomed views, showing that $\alpha=0.2$ provided insufficient viscosity to suppress oscillations around shock. The dissipation introduced by RSPH. on the other hand, is adaptive, introducing more damping at the shock (comparable to $\alpha=1.0$) and less damping in the area away from the shock (less than $\alpha=0.2$, as indicated by the magnitude of oscillation).}
+        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-rho-zoom}
+    \end{minipage}% 
+    \begin{minipage}{.545\textwidth}
+    \centering d)
+        \begin{flushleft}
+        \includegraphics[width= 0.8174 \textwidth, height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-v-zoom}    
+        \end{flushleft}
+    \end{minipage}%          
+    \caption{a),b) are plots for density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients. $\alpha,\beta$ satisfies: $\beta=2\alpha$.  c), d) are corresponding zoomed views, showing that numerical oscillation is obvious, especially around shock, due to insufficient dissipation when $\alpha=0.2$. The dissipation introduced by RSPH. on the other hand, is adaptive, introducing more damping at the shock (comparable to $\alpha=1.0$) and less damping in the area away from the shock (less than $\alpha=0.2$, as indicated by the magnitude of numerical oscillation).}
     \label{fig:RCM-Sod-SPH-alf}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.495\textwidth}
+    \begin{minipage}{.45\textwidth}
         \centering a)
         \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-e}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.545 \textwidth}
         \centering b)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-p}
+        \includegraphics[width=0.99 \textwidth,height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-p}
     \end{minipage}% 
     \\
-    \begin{minipage}{.495 \textwidth}
+    \begin{minipage}{.45 \textwidth}
         \centering c)
         \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-e-zoom}
     \end{minipage}% 
-    \begin{minipage}{.495\textwidth}
-        \centering d)
-        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-p-zoom}
+    \begin{minipage}{.545\textwidth}
+    \centering d)
+        \begin{flushleft}
+        \includegraphics[width= 0.8174 \textwidth, height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-p-zoom}    
+        \end{flushleft}
     \end{minipage}%    
     \caption{
-    a),b) are simulation results of internal energy and pressure in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) are zoomed views.  For $\alpha=1$ and $\alpha=2$, as shown in c), numerical oscillations are completely suppressed though the shock is now smeared. $\alpha=0.2$ provided insufficient viscosity to suppress oscillations. Comparing RSPH and SPH shows that RSPH is adaptive, more dissipative at the shock (comparable or better than $\alpha=1.0$) and less dissipative away from the shock (less than $\alpha=0.2$). d) shows pressure around the contact discontinuity. It is evident that RSPH gets rid of the pressure ``wiggle" around the contact discontinuity.}
+    a),b) are plots of internal energy and pressure in Test 1 by RSPH and SPH with different artificial viscosity coefficients.  c), d) are corresponding zoomed views. For $\alpha=1$ and $\alpha=2$, as shown in c), numerical oscillations are completely suppressed. However there is also more smearing around the shock. $\alpha=0.2$ provides insufficient viscosity to suppress oscillations while the smearing around the shock is also less. Impressively, RSPH is showing to introduce adaptive dissipation, more dissipative at the shock (comparable or better than $\alpha=1.0$) and less dissipative away from the shock (less than $\alpha=0.2$). d) shows pressure around the contact discontinuity. It is evident that RSPH gets rid of the pressure ``wiggle" around the contact discontinuity.}
     \label{fig:RCM-Sod-SPH-alf-zoom}
 \end{figure}
 
-Test 1 is simulated using standard SPH with different artificial viscosity coefficients, GSPH and RSPH. The comparison between RSPH and SPH using different artificial viscosity coefficients is shown in Fig. \ref{fig:RCM-Sod-SPH-alf} and \ref{fig:RCM-Sod-SPH-alf-zoom}. In all simulations, the artificial viscosity coefficient $\beta$ is set to be twice of $\alpha$. For example, for the test ``$SPH-\alpha=2$", $\beta=4$. Several interesting observation are made based on the comparison between SPH and RSPH. The effect of artificial viscosity is illustrated through comparison.
-First of all, dissipation (introduced by artificial viscosity in these tests) decays the numerical fluctuations. Numerical fluctuations are suppressed completely when large enough dissipation is introduced, for example, by using sufficiently large artificial viscosity coefficients ($\alpha=1,2$).
-Secondly, the equivalent artificial viscosity introduced by RSPH varies adaptively.
-As shown in Fig. \ref{fig:RCM-Sod-SPH-alf} and \ref{fig:RCM-Sod-SPH-alf-zoom}, RSPH assigns smaller artificial viscosity  (equivalent $\alpha$ much less then 0.2) at the area far away from shock and sufficiently large artificial viscosity coefficients (equivalent $\alpha$ is about 1.0) around the shock. So RSPH is actually more adaptive than SPH. This feature is very desirable not only because it could eliminate parameterization and hence user intervention associated with artificial viscosity coefficients but also because it avoids introducing excess artificial viscosity.
+Test 1 is simulated using standard SPH with different artificial viscosity coefficients, GSPH and RSPH. Results are checked from different aspects.  
+The comparison between RSPH and SPH with different artificial viscosity coefficients is shown in Fig. \ref{fig:RCM-Sod-SPH-alf} and \ref{fig:RCM-Sod-SPH-alf-zoom}. In all SPH simulations, the artificial viscosity coefficient $\beta$ is set to be twice of $\alpha$. For example, for the test ``$SPH-\alpha=2$", $\beta=4$.
+
+Several interesting observations are made based on the comparison between SPH and RSPH.
+First of all, dissipation (introduced by artificial viscosity in these tests) decays the numerical fluctuations. Numerical fluctuations are suppressed completely when large dissipation is introduced, for example, by using sufficiently large artificial viscosity coefficients ($\alpha=1,2$).
+Secondly, the equivalent artificial viscosity introduced by RSPH varies more adaptively.
+As shown in Fig. \ref{fig:RCM-Sod-SPH-alf} and \ref{fig:RCM-Sod-SPH-alf-zoom}, RSPH assigns smaller artificial viscosity (equivalent $\alpha$ much less then 0.2) at the area far away from shock and sufficiently large artificial viscosity coefficients (equivalent $\alpha$ is about 1.0) around the shock. Namely, RSPH adaptively assigns larger equivalent artificial viscosity coefficient around the shock and take smaller equivalent artificial viscosity far away from shock. This feature is very desirable not only because it could eliminate parameterization and hence user intervention associated with artificial viscosity coefficients but also because it avoids introducing excess artificial viscosity.
 Thirdly, RSPH introduces less smearing of the shock discontinuity compared with SPH using most commonly adopted artificial viscosity coefficients ($\alpha=1.0$, $\beta=2.0$). Recall that RCM is able to resolve discontinuities as true discontinuity. RSPH, even though it still smears the discontinuity in some degree, introduces much less smearing (see Fig. \ref{fig:RCM-Sod-SPH-alf-zoom}).
-The last but not the least, the pressure ``wiggle" around contact discontinuity is completely eliminated by RSPH as seen in Fig. \ref{fig:RCM-Sod-SPH-alf-zoom}. It has been shown that thermal conduction is essential to mitigate the spurious pressure ``wiggle" at contact discontinuity in SPH \citep{monaghan1997sph, sigalotti2006shock, price2008modelling, price2012smoothed}. As for GSPH, it is reported that an implicit thermal conduction is introduced by Godunov's scheme and helps suppress the anomaly \citep{puri2014approximate}. Even though, the ``wiggle" still visible in pressure distribution and velocity distribution of GSPH simulation results (for example, see figures in \citep{puri2014comparison}) and RSPH simulation results of other tests (see section \ref{sec:comprehensive-1d-tests}). ``Wiggle" in test 1, however, is completely eliminated by both GSPH and RSPH.
+The last but not the least, the pressure ``wiggle" around contact discontinuity is completely eliminated by RSPH as seen in Fig. \ref{fig:RCM-Sod-SPH-alf-zoom}. \citet{inutsuka2002reformulation} show that GSPH can almost get rid of pressure wiggle around contact discontinuity while standard SPH has much more obvious pressure wiggle. They believe that the pressure wiggle is due to the inconsistency of equation of momentum in the standard SPH discretization. However, there are different opinions with respect to the sources of pressure wiggle. It has been shown that thermal conduction is essential to mitigate the spurious pressure ``wiggle" at contact discontinuity in SPH \citep{monaghan1997sph, sigalotti2006shock, price2008modelling, price2012smoothed}. As for GSPH, it is reported that an implicit thermal conduction is introduced by Godunov's scheme and helps suppress the anomaly \citep{puri2014approximate}. Even though, the ``wiggle" still visible in pressure distribution and velocity distribution of GSPH simulation results (for example, see figures in \citep{puri2014comparison}) and RSPH simulation results of other tests (see section \ref{sec:comprehensive-1d-tests}). Wiggle in test 1, however, is completely eliminated by both GSPH and RSPH.
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.495\textwidth}
-        \centering
+    \begin{minipage}{.45\textwidth}
+        \centering a)
         \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-rho}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-v}
-    \end{minipage}%
+    \begin{minipage}{.545\textwidth}
+    \centering b)
+        \begin{flushleft}
+        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/RCM-Sod-GSPH-compare-v}    
+        \end{flushleft}
+    \end{minipage}% 
     \\
-    \begin{minipage}{.495\textwidth}
-        \centering
+    \begin{minipage}{.45\textwidth}
+        \centering c)
         \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-e}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-p}
+    \begin{minipage}{.545 \textwidth}
+        \centering d)
+        \includegraphics[width=0.99 \textwidth,height=0.4954\textwidth]{./Figures/RCM-Sod-GSPH-compare-p}
     \end{minipage}% 
     \\
-    \begin{minipage}{.495\textwidth}
-        \centering
+    \begin{minipage}{.45\textwidth}
+        \centering e)
         \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-rho-zoom}
     \end{minipage}%
-    \begin{minipage}{.495 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-v-zoom}
-    \end{minipage}% 
+    \begin{minipage}{.545\textwidth}
+    \centering f)
+        \begin{flushleft}
+        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/RCM-Sod-GSPH-compare-v-zoom}    
+        \end{flushleft}
+    \end{minipage}%  
        \\
-    \begin{minipage}{.495 \textwidth}
-        \centering
+    \begin{minipage}{.45 \textwidth}
+        \centering g)
         \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-e-zoom}
     \end{minipage}% 
-    \begin{minipage}{.495\textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-p-zoom}
-    \end{minipage}%    
-    \caption{Comparison of RSPH with GSPH using Roe Riemann solver and HLLC Riemann solver. The last four plots are zoomed views. Zoomed view of density and specific internal energy show that GSPH smears the discontinuity at shock much more than RSPH. Zoomed view of velocity shows that fluctuation in GSPH is completely suppressed, which implies that numerical dissipation introduced in GSPH is at least around the same amount as SPH with $\alpha=1.0$. This is consistent with information implied by zoomed view of density and specific internal energy. The last zoomed view shows that both RSPH and GSPH can get rid of pressure ``wiggle" around the contact discontinuity.}
+    \begin{minipage}{.545\textwidth}
+    \centering h)
+        \begin{flushleft}
+        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/RCM-Sod-GSPH-compare-p-zoom}    
+        \end{flushleft}
+    \end{minipage}%     
+    \caption{Comparison of RSPH with first order GSPH using Roe Riemann solver and HLLC Riemann solver. The last four plots are zoomed views. Zoomed view of density and specific internal energy show that GSPH smears the discontinuity at shock much more than RSPH. Zoomed view of velocity shows that fluctuation in GSPH is completely suppressed, which implies that numerical dissipation introduced in GSPH is at least around the same amount as SPH with $\alpha=1.0$. This is consistent with information implied by zoomed view of density and specific internal energy. The last zoomed view shows that both RSPH and GSPH can get rid of pressure ``wiggle" around the contact discontinuity.}
     \label{fig:RCM-Sod-GSPH}
 \end{figure}
 
-Zoomed views in Fig. \ref{fig:RCM-Sod-GSPH} compare GSPH and RSPH and demonstrate that RSPH introduces less but sufficient dissipation compared with GSPH. The attractive feature of RCM method in preserving true discontinuity is inherited by RSPH in this 1D shock tube test. With more numerical dissipation, GSPH can completely suppress numerical oscillations. However, the discontinuity at the shock is then more seriously smeared. The excessive amount of dissipation might have other, more undesirable, effects in real implementation. For example, over damping of shearing flow. Compared with SPH, both GSPH and RSPH avoid pressure ``wiggle" around contact discontinuity. Since RSPH shares many commonalities   with Godunov's method, it is not a surprise that RSPH can also suppress the pressure ``wiggle" at contact discontinuity.
+Zoomed views in Fig. \ref{fig:RCM-Sod-GSPH} compare GSPH and RSPH and demonstrate that RSPH introduces less but sufficient dissipation compared with GSPH. The attractive feature of RCM method in preserving true discontinuity is inherited by RSPH in this 1D shock tube test. With more numerical dissipation, GSPH can completely suppress numerical oscillations. However, the discontinuity at the shock is then more seriously smeared. The excessive amount of dissipation might have other, more undesirable, effects in real implementation. For example, over damping of shearing flow. Compared with SPH, both GSPH and RSPH avoid pressure ``wiggle" around contact discontinuity. Since RCM shares many commonalities with Godunov's method, it is not a surprise that RSPH can also suppress the pressure ``wiggle" at contact discontinuity.
 
 \subsection{Accuracy tests}
 We use shock tube test to gauge the accuracy of the RSPH scheme.
@@ -430,32 +451,36 @@ We examine the errors between simulation results and the analytical solution (th
 L_1= \frac{1}{N_p} \sum_a^{N_p} \vert f_a^{SPH} - f^{REF} (x_a) \vert 
 \end{equation}
 where the superscript $REF$ represent the reference solution, $SPH$ represents simulation results calculated by different SPH schemes. Fig. \ref{fig:Accuracy-test1} displays the $L_1$ norm errors for the density, velocity and pressure profiles for different SPH schemes.
-We observe a rate of convergence of approximately 1 for GSPH and 1.5 for standard SPH and RSPH.
-GSPH with an exact Riemann solver has been shown to be approximately second order of accuracy \citep{puri2014comparison} and comparable in accuracy to the standard SPH schemes when using piece wise linear construction. As for GSPH using approximate Riemann solver, \citet{puri2014approximate} reported second order accuracy for HLLC and Roe Riemann solvers adopting piece wise linear Riemann problem construction. In addition, they adopted a test problem without discontinuity in the solution. Presence of discontinuities, such as shock, in the test problem might lower the rate of convergence. Since both RSPH and GSPH tests in this paper adopt piece wise constant construction of Riemann problem. We conclude that RSPH shows higher order of accuracy than GSPH when using the same Riemann problem construction. Compared with SPH, RSPH shows almost the same order of accuracy and level of error.  
+We observe a rate of convergence of approximately 1 for GSPH and 1.5 for standard SPH and RSPH.  Considering Riemann problem is constructed in piece wise constant manner, it is not surprise that GSPH shows first order of accuracy. With piece wise linear construction of Riemann problem, GSPH would be higher order of accuracy. For example,
+GSPH combined with HLLC and Roe approximate Riemann solvers has been shown to be approximately second order of accuracy \citep{puri2014comparison} and comparable in accuracy to the standard SPH schemes when using piece wise linear construction. Presence of discontinuities, such as shock, in the test problem might lower the rate of convergence. 
+
+Since both RSPH and GSPH tests in this paper adopt the same manner for Riemann problem construction, the piece wise constant construction. We conclude that RSPH shows higher order of accuracy than GSPH providing both use the same Riemann problem construction. Compared with SPH, RSPH shows almost the same order of accuracy and level of error.
+ 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.332\textwidth}
+    \begin{minipage}{.30\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-des}
     \end{minipage}%
-    \begin{minipage}{.332 \textwidth}
+    \begin{minipage}{.30 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-vel}
     \end{minipage}%
-    \begin{minipage}{.332\textwidth}
+    \begin{minipage}{.39\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-pre}
     \end{minipage}%  
-    \caption{ $L_1$ norm errors for 1D shock tube test (test1) for RSPH, standard SPH, GSPH using Roe Riemann solver and GSPH using HLLC Riemann Solver.  GSPH with the HLLC approximate Riemann solver exhibits the same convergence rate (around 1) but quantitatively larger errors than that with Roe Riemann solver. RSPH and standard SPH shows same rate of convergence and almost same amount of error.}
+    \caption{ $L_1$ norm of errors for 1D shock tube test (test1) for RSPH, standard SPH, GSPH using Roe Riemann solver and GSPH using HLLC Riemann Solver. GSPH with the HLLC approximate Riemann solver exhibits the same convergence rate (around 1) but quantitatively larger errors than that with Roe Riemann solver. RSPH and standard SPH shows same rate of convergence and almost same level of error.}
     \label{fig:Accuracy-test1}
 \end{figure}
  
 \subsection{Comprehensive 1D tests} \label{sec:comprehensive-1d-tests}
-Comprehensive tests are presented in this section to check how well does RSPH work for different situations. Input parameters for each tests is given in Table \ref{tab:1D-shock-input_parameters}.
-The results are shown in Fig. \ref{fig:RCM-GSPH-Sod} $\sim$ Fig. \ref{fig:RCM-strong-blast}. $x$ axis in these plots are normalized by the terminal time $t_f$. We observe that RSPH is able to correctly predict the position and magnitude of all waves for all tests. A jump of specific internal energy at the origin is observed in Sj$\ddot{o}$green test. However, such jump is a common issue of SPH schemes and has been reported in many other tests (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})
-In addition, a noticeable spike can be observed near the contact discontinuity. Similar spike is observed in GSPH simulation \citep{puri2014comparison}. %Such spike is evident in the FVM solution as well and is perhaps an artifice of the Lagrangian nature of the two schemes. 
+Comprehensive tests are presented in this section to check how well does RSPH work for different wave patterns. Input parameters for each tests is given in Table \ref{tab:1D-shock-input_parameters}.
+The results are shown in Fig. \ref{fig:RCM-GSPH-Sod} $\sim$ Fig. \ref{fig:RCM-strong-blast}. $x$ axis in these plots are normalized by the terminal time $t_f$. 
+We observe that RSPH is able to correctly predict the position and magnitude of all waves for all tests. A jump of specific internal energy at the origin is observed in Sj$\ddot{o}$green test. However, such jump is a common issue of SPH schemes and has been reported in many other tests (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})
+In addition, a noticeable spike can be observed near the contact discontinuity. Similar spike is observed in GSPH simulation \citep{puri2014comparison}.
 \citet{noh1987errors} proposed to adding a small amount of thermal conduction to ameliorate the spike and has been applied in blast-wave test using GSPH \citep{puri2014comparison}. We did not adopt such strategy in our simulation.
-Due to less amount of dissipation, numerical fluctuations persist in all simulation results. For the strong blast test and double shock test, such fluctuations become more obvious than other tests, even though, the magnitude of fluctuations is within an acceptable range.
+Due to less amount of dissipation, the numerical oscillations, which is due to nonuniform smoothing length as discussed in Appendix B, persist in all simulation results. For the strong blast test and double shock test, such oscillation become more obvious than other tests, even though, the magnitude of fluctuations is within an acceptable range.
 
 \begin{figure}[H]
     \centering
@@ -463,16 +488,17 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-rho}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-v}
-    \end{minipage}% 
+    \begin{minipage}{.512 \textwidth}
+        \begin{flushleft}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/GRod-RCM-rho}
+        \end{flushleft}
+    \end{minipage}%    
     \\
     \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-e}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
+    \begin{minipage}{.512 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-p}
     \end{minipage}% 
@@ -486,16 +512,17 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-rho}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-v}
-    \end{minipage}%
+    \begin{minipage}{.512 \textwidth}
+        \begin{flushleft}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Dexp-RCM-v}
+        \end{flushleft}
+    \end{minipage}%     
     \\
     \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-e}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
+    \begin{minipage}{.512 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-p}
     \end{minipage}% 
@@ -509,16 +536,17 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-rho-Rp6}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-v-Rp6}
-    \end{minipage}%
+    \begin{minipage}{.512 \textwidth}
+        \begin{flushleft}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Dshock-RCM-v-Rp6}
+        \end{flushleft}
+    \end{minipage}%     
     \\
     \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-e-Rp6}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
+    \begin{minipage}{.512 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-p-Rp6}
     \end{minipage}% 
@@ -531,16 +559,17 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-rho-Adpt1}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-v-Adpt1}
-    \end{minipage}%
+    \begin{minipage}{.512 \textwidth}
+        \begin{flushleft}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Sjogreen-RCM-v-Adpt1}
+        \end{flushleft}
+    \end{minipage}%       
     \\
     \begin{minipage}{.415\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-e-Adpt1}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
+    \begin{minipage}{.512 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-p-Adpt1}
     \end{minipage}% 
@@ -554,16 +583,17 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-rho-Rp3}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-v-Rp3}
+    \begin{minipage}{.512 \textwidth}
+        \begin{flushleft}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/StrBlst-RCM-v-Rp3}
+        \end{flushleft}
     \end{minipage}%
     \\
     \begin{minipage}{.415 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-e-Rp3}
     \end{minipage}%
-    \begin{minipage}{.415 \textwidth}
+    \begin{minipage}{.512 \textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-p-Rp3}
     \end{minipage}% 
@@ -573,11 +603,10 @@ Due to less amount of dissipation, numerical fluctuations persist in all simulat
 
 \subsection{3D free jet} \label{jet}
 Free jet flow have been studied analytically, experimentally and numerically for many decades, not only because of its wide application but also because of its fundamental significance as a basic flow to the scientific research community. To test the capacity of RSPH for multiple dimensional applications, a free jet flow is simulated in this section by solving 3D compressible Euler Equations using standard SPH, GSPH and RSPH. 
-All simulations are using the same set-up and compared at the same physical time. In this test, RSPH simulation is carried out based on piece wise constant construction of Riemann problem and a HLLC approximate Riemann solver. To do a well-controlled comparison, GSPH adopts the same way for Riemann problem construction and the same Riemann solver as RSPH. 
+All simulations are using the same set-up and compared at the same physical time. Considering the fact that RSPH is based on piece wise constant construction of Riemann problem and a HLLC approximate Riemann solver, to do well-controlled comparisons, GSPH also adopts piece wise constant construction of Riemann problem and a HLLC Riemann solver. 
 
-The computational domain in this test is a box. The boundaries can be categorized into the velocity inlet (a circular area at the center of the bottom of the box), non-slip wall boundary (box bottom) and pressure outlet (other faces of the box). The boundaries are set away from vent to avoid boundary effects on simulation.
-At the vent, exit velocity $\textbf{v}$ is set to $500 m / s$ and radius of the nozzle $r$ is set to $8m $. The pressure of ejected fluid is assumed to be the same as ambient ($101 kpa$). The temperature of both ejected fluids and ambient fluids are set to $273 K$. 
-Velocity is zero for non-slip wall boundary. The heat flux across wall boundary is zero assuming an adiabatic wall. The flux of mass should also be zero on the wall. As a result, internal energy flux, which consists of heat flux and energy flux carried by mass flux, vanishes on the wall boundary. 
+Setup of the 3D test is summaried briefly below. The computational domain is a box and boundaries are categorized into three types: the velocity inlet (a circular area at the center of the bottom of the box), the non-slip wall boundary (box bottom) and the pressure outlet (other faces of the box) boundary. At the vent, exit velocity $\textbf{v}$ is set to $500 m / s$ and radius of the nozzle $r$ is set to $8m $. The pressure of ejected fluid is assumed to be the same as ambient ($101 kpa$). The temperature of both ejected fluids and ambient fluids are set to $273 K$. 
+Velocity is set to zero on the non-slip wall. The heat flux across wall boundary is also zero assuming an adiabatic wall. The flux of mass should be zero on the wall as well. As a result, internal energy flux, which consists of heat flux and energy flux carried by mass flux, vanishes on the non-slip wall boundary. 
 The pressure of the surrounding ambient is given. As we ignore the physical viscosity, the shear stress is ignored and normal stress (whose magnitude equals to pressure) balances the ambient pressure.
 \begin{equation}
 p = p_a\left(z\right)  \label{eq:pressure_bc_p} 
@@ -622,13 +651,15 @@ Except for the pressure, boundary values for density, velocity, and energy on th
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/RSPH-t3-cutView}
     \end{minipage}%
-    \caption{Simulation results of free jet flow by SPH with $\alpha=1.0, \beta=2.0$, GSPH and RSPH. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. From left to right, the picture is corresponding to SPH, GSPH and RSPH respectively. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. Pictures on the first row are corresponding to $t=1.5s$ while pictures on the second row are for $t=3.0 s$}
+    \caption{Simulation results of free jet flow by GSPH and RSPH. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. Pictures to the left is for GSPH while those on the right side are for RSPH. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. Pictures on the first row are corresponding to $t=1.5s$ while pictures on the second row are for $t=3.0 s$}
     \label{fig:free-jet-comparison}
 \end{figure}
 
-Figure \ref{fig:free-jet-SPH-comparison} shows simulation results of the free jet flow by SPH with different artificial viscosity coefficients. The overall damping effect due to artificial dissipation is clearly shown in this figure. We observe that the lengths to which these jets reach at $t=3.0 s$ are different when using different artificial viscosity coefficient. It is obvious that the larger artificial viscosity, the shorter length the jet can reach. The length that free jet reaches can be used as an indicator of overall dissipation. While introducing undesirable damping effects, artificial viscosity is necessary for numerical stability and simulating of shocks. So, in real applications, the artificial viscosity coefficients are usually tuned (see, for example, \citep{gmd-2017-119}) to minimize artificial damping effects.
+Figure \ref{fig:free-jet-SPH-comparison} shows simulation results of the free jet flow by SPH with different artificial viscosity coefficients. The positive correlation between overall damping effect (due to artificial dissipation) and the distance from nozzle to the front of jet flow is clearly shown in this figure. At $t=3.0 s$ after jet flow starting, we observe that the distance between front of jet flow and nozzle are different when using different artificial viscosity coefficients. Standard SPH adds artificial dissipation explicitly through the artificial viscosity term. The amount of artificial dissipation is positively related to artificial viscosity coefficients. The artificial dissipation is the total dissipation as there is no physical dissipation in the governing equations. It is obvious that the larger the artificial viscosity coefficients, the smaller the distance between the nozzel and the front of free jet flow. So the distance between nozzel and front of free jet flow can be used as an indicator of equivalent overall dissipation.
+While introducing undesirable damping effects, artificial viscosity is necessary for numerical stability and simulating of shocks. So, in real applications, the artificial viscosity coefficients are usually tuned (see, for example, \citep{cao2018plume}) to minimize artificial damping effects.
+Our comparison between GSPH and RSPH in next paragraph is based on the positive correlation between equivalent overall dissipation and the distance from nozzle to the front of jet flow.
 
-We compare RSPH with GSPH in terms of equivalent overall artificial damping effects in Fig. \ref{fig:free-jet-comparison}. Different from SPH, both GSPH and RSPH introduce artificial viscosity in an implicit way by solving local Riemann problems. As has been shown in 1D tests, RSPH can introduce less artificial viscosity than GSPH. Fig. \ref{fig:free-jet-comparison} implies that RSPH introduces less overall damping effect than GSPH in 3D application as well, which is consistent with 1D tests. That is to say, RSPH's desirable property of introducing less artificial dissipation in 1D unsteady flow is inherited in 3D applications of RSPH. Recall that RCM shows ability of resolving discontinuities as true discontinuities in 1D unsteady flows but such very desirable property does not persist in genuine two (or higher) space dimensions \citep{colella1982glimm}. Integrating of RCM within the framework of SPH avoids solving higher dimensional Riemann problems overcoming the fundamental shortcoming of RCM.
+We compare RSPH with GSPH in terms of equivalent overall artificial damping effects in Fig. \ref{fig:free-jet-comparison}. Different from SPH, both GSPH and RSPH introduce artificial viscosity in an implicit way by solving local Riemann problems. Based on the positive correlation between overall damping effect and the distance between the nozzle and the front of jet flow, we can still infer the amount equivalent overall dissipation introduced by RSPH and GSPH. It has been shown in 1D tests that RSPH can introduce less artificial viscosity than GSPH. Fig. \ref{fig:free-jet-comparison} implies that RSPH introduces less overall damping effect than GSPH in 3D application as well, which is consistent with 1D tests. That is to say, RSPH's desirable property of introducing less artificial dissipation in 1D unsteady flow is inherited in 3D applications of RSPH. Recall that RCM shows ability of resolving discontinuities as true discontinuities in 1D unsteady flows but such very desirable property does not persist in genuine two (or higher) space dimensions \citep{colella1982glimm}. Integrating of RCM within the framework of SPH avoids solving higher dimensional Riemann problems overcoming the fundamental shortcoming of RCM.
 
 \section{Conclusion} \label{discussion}
 In this paper we have proposed RSPH, a novel SPH scheme for solving hyperbolic non-linear PDEs that combines the Random Choice Method with an approximate Riemann solver. No explicit artificial viscosity is needed. Instead, any viscosity that is used in a hydrodynamics simulation is just what the user implicitly adds. 
@@ -719,43 +750,56 @@ uniform sampling via the van der Corput sequence.
 \citep{liu1977deterministic}
 
 \section{Numerical oscillation due to non-uniform smoothing length in space}
-There are several options \citep[][e.g.]{evrard1988beyond, hernquist1989treesph} for smoothing length $h$ in Eq. (\ref{eq:ns-sph-d} - \ref{eq:ns-sph-v}). Taking $h=\frac{h_a + h_b}{2}$ is a common practice in now days. This formulation can guarantee momentum and energy conservation given any paired particles are within compact support of each other's weighting function. It can lead to numerical oscillation when applying such formulation under scenario with nonuniformly distributed smoothing length in space. Such numerical oscillation are usually either too small to observe or decays quickly due to numerical dissipation.
-The effect of decaying such numerical oscillation are used in this article as an indicator for numerical dissipation. Such numerical oscillation is not fully aware of yet by the community. In this section we explain how such numerical oscillations are formed.
+Our discussion in this appendix is divided into two parts. The first part explains the mechanism how the numerical oscillations are induced by non-uniform smoothing length in space. The second parts  shows a ``manmade" numerical oscillation, which backs up our analysis in first part.
 
-Recall that the kernel function of particle $a$ has to be symmetric with repect to particle $a$. As a result, the gradient of kernel function at particle $a$ is anti-symmetric. Such anti-symmetric properties can guarantee the pressure gradient term, $\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_a w_{a b}\left(h\right)$,  in momentum and energy equation (see Eq. (\ref{eq:ns-sph-v}) and (\ref{eq:ns-sph-e})) vanshes when pressure is uniform in space. However, the kernel function is not symmetric any more if smoothing length is not uniform in space. The gradient of kernel function is also not anti-symmetric any more. That is to say, the residual becomes non-zero. This is illustrated in Fig. \ref{fig:dw-ha} by a special case in 1D. 
-This non-zero residual can not be avoided in SPH formulation using averaged smoothing length ($h = \frac{h_a + h_b}{2}$) and can induce oscillation in the solution. Sharp changes in smoothing length can induce significant oscillation which usually propagates into the computational domain and corrupts numerical solution.
+There are several options \citep[][e.g.]{evrard1988beyond, hernquist1989treesph} for smoothing length $h$ in Eq. (\ref{eq:ns-sph-d} - \ref{eq:ns-sph-v}). Major discussions regarding the smoothing length are during 1980s to first several years of 1990s. In now days, taking $h=\frac{h_a + h_b}{2}$ is a commonly accepted practice. It is also adopted in this article. One big advantage is that such treatment can guarantee momentum and energy conservation given any paired particles are within compact support of each other's weighting function. However, it could also lead to numerical oscillation when applying the averaged smoothing length formulation in these scenarios with nonuniformly distributed smoothing length in space. Such numerical oscillation are usually either too small to observe or decays quickly due to sufficient numerical dissipation. Such numerical oscillation is not fully aware of yet by the community. In this section we explain how the numerical oscillations are formed.
+
+Recall that the kernel function of particle $a$ is required to be symmetric with repect to particle $a$. As a result, the gradient of kernel function at particle $a$ is anti-symmetric. All the commonly used kernel functions can satisfy the symmetry requirement as well as the anti-symmetry requirement of its gradient. The anti-symmetric properties of gradient of kernel function can guarantee the pressure gradient term, $\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_a w_{a b}\left(h\right)$,  in momentum and energy equation (see Eq. (\ref{eq:ns-sph-v}) and (\ref{eq:ns-sph-e})) vanshes when pressure is uniform in space. For example, if pressure is uniform in space, pressure at particle $a$ and particle $b$ would be equal, the pressure gradient term then equals zero. That is, numerical approximation is consistent with real physics. However the actual kernel function is not symmetric any more if smoothing length is not uniform in space providing we adopt the averaged smoothing length formulation. The gradient of kernel function is also not anti-symmetric any more. That is to say, the pressure gradient term becomes non-zero even when pressure is uniform in space. This unphysical representation of pressure gradient term by numerical approximation is illustrated in Fig. \ref{fig:dw-ha}. 
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.90 \textwidth ]{App-Figure/dw-ha}
 \caption{In this example, we consider two pairs of particles $(a, b_1)$ and $(a b_2)$. For simplicity, we assume uniform distance between particles. When take $h=\frac{h_a + h_b}{2}$, the actual shape of gradient of kernel function is the combination of two dash curves. It is not anti-symmetric.
 We also assume pressure, density and particle mass of all particles are equal. However, the pressure gradient term at particle $a$ in discretized formulation do not cancel out ( $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(\frac{h_a+h_{b_1}}{2}\right) < -\dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(\frac{h_a+h_{b_1}}{2}\right)$) when smoothing lengths are not equal ($h_{b1} \neq h_{b2}$). This leads to unphysical non-zero pressure gradient, which is the source of numerical oscillation. When smoothing length is uniform in space or take $h = h_a$, the actual shape of gradient of kernel function is the solid curve, which is anti-symmetric. As a consequence, $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(h\right) = \dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(h\right)$, the unphysical non-zero pressure gradient vanishes.}    
 \label{fig:dw-ha}
-\end{figure}  
+\end{figure}
 
-To illustrate the formation and influence of such numerical oscillation, we intentionally create a situation of non-uniform smoothing length by assigning larger smoothing length to boundary ghost particles on left side in 1D shock tube test. Just like discontinuity of physical quantities (for example, the discontinuity at the middle of shock tube test), discontinuity in numerical resolution, in terms of smoothing length, also induces a wave. A perturbation can be observed clearly in the simulation result, starting near the left boundary and propagating into simulation domain. 
+To summarize, two necessary conditions for generating unphysical numerical representation of pressure gradient terms are:
+\begin{itemize}
+\item Calculate smoothing length by averaging, for example, $h = \frac{h_a + h_b}{2}$.
+\item Smoothing length is nonuniform in space.
+\end{itemize} 
+This unphysical numerical representation of pressure gradient term could lead to numerical oscillation in numerical solution. Sharp changes in smoothing length can induce significant oscillation which usually propagates into the computational domain and corrupts numerical solution.
 
-In Fig. \ref{fig:Perturbation-ME0-tp1}, no such perturbation when $h = h_a$, which confirms our analysis in Fig. \ref{fig:dw-ha}. 
-It needs to emphasize that such perturbation would be created unintentionally in real implementation. The oscillation can actually be observed in 1D shock tube tests of many other papers, even though they are not as obvious as the one in Fig. \ref{fig:Perturbation-ME2}.
+To illustrate the formation and influence of such numerical oscillation, we intentionally create a situation of non-uniform smoothing length merely by assigning larger smoothing length to boundary ghost particles on left side in the 1D shock tube test (test2). As shown in the first plot of Fig. \ref{fig:Perturbation-ME2}, the smoothing length is discontinuous at the left boundary. \textbf{Just like discontinuity of physical quantities (for example, the discontinuity at the middle of shock tube test), discontinuity in numerical resolution, in terms of smoothing length, also induces a wave.} A oscillation is observed clearly in the simulation result, starting near the left boundary and propagating into simulation domain. Recall that larger smoothing length for left boundary ghost particles is the only difference between normal test (as shown in Fig. \ref{fig:RCM-GSPH-Sod}) and the new test (see Fig. \ref{fig:Perturbation-ME2}), we can conclude that nonuniform smoothing length in space do induce numerical oscillations.  Another important observation is that the magnitudes of oscillation decays as the time goes. We would suppose that it is due to numerical dissipation. In section \ref{sec:numericaltests}, we use magnitude of oscillation as an indirect indicator of numerical dissipation.
+
+In another test, based on the previous test with larger smoothing length for ghost particle on left boundary, we adopt $h = h_a$, instead of $h = \frac{h_a + h_b}{2}$. The result is shown by Fig. \ref{fig:Perturbation-ME0-tp1}. The oscillation is get rid of, which confirms that the averaged smoothing length is one of necessary conditions for the unphysical numerical representation of pressure gradient term.
+%Such perturbation would be created unintentionally in real implementation. The oscillation can actually be observed in 1D shock tube tests in many other papers, even though they are not as obvious as the one in Fig. \ref{fig:Perturbation-ME2}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME2}
-\caption{Plots of density for 1D shock tube test 2 at different time. In these plots, $x$ axis is location along shock tube, $y$ axis is density. Smoothing length $h = \frac{h_a + h_b}{2}$. The first plot is corresponding to $t=0.001s$, color map is for smoothing length. As shown in first plot, the smoothing length is discontinuous at the left boundary. Such discontinuity induces a numerical perturbation. The second plot to last one are corresponding to $t=0.05s$, $t=0.1s$, $t=0.2s$, $t=0.3s$ respectively. We observe that a numerical perturbation incepts near the left boundary and propogates into the domain. Actually, the smoothing length is also discontinuous at the middle. It should also induce another numerical perturbation. That perturbation has smaller magnitude but stll observable from the figure. It has the same propagating speed as the front of rarefaction. Both perturbations decays in time due to dissipation.}
+\caption{Plots of density for 1D shock tube test 2 at different time. The test is simulated using classical SPH with $\alpha = 1$. In these plots, $x$ axis is location along shock tube, $y$ axis is density. Smoothing length $h = \frac{h_a + h_b}{2}$. The first plot is corresponding to $t=0.001s$, color map is for smoothing length. The second plot to last plot are corresponding to $t=0.05s$, $t=0.1s$, $t=0.2s$, $t=0.3s$ respectively. We observe that a numerical perturbation incepts near the left boundary and propogates into the domain. Actually, the smoothing length is also discontinuous at the middle. It also induces another numerical perturbation which has smaller magnitude but still observable. It has the same propagating speed as the front of rarefaction. Both oscillations decays in time due to dissipation.}
 \label{fig:Perturbation-ME2}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME0-tp1}
-\caption{Plots of density for 1D shock tube test 2 at $t=0.1s$. In this test, we still intentionally create non-uniform smoothing length distribution in space by assigning larger smoothing length to wall ghost particles at the left side. But we take $h=h_a$. No numerical perturbation generated near the left boundary.}    
+\caption{Plots of density for 1D shock tube test 2 at $t=0.1s$. The test is simulated using classical SPH with $\alpha = 1$. In this test, we still intentionally create non-uniform smoothing length distribution in space by assigning larger smoothing length to boundary ghost particles at the left side. But we take $h=h_a$. No numerical perturbation generated near the left boundary.}    
 \label{fig:Perturbation-ME0-tp1}
 \end{figure}
 
-To summarize, the conditions for generating such numerical oscillation are:
+Adaptive smoothing length is now an essential component of SPH method. It naturely results to nonuniform smoothing length in space. Variation range of smoothing length would be especially larger for compressible flow. Fortunately, there are several factors counteracting against the numerical oscillation:
 \begin{itemize}
-\item Calculate smoothing length by averaging, for example, $h = \frac{h_a + h_b}{2}$.
-\textbf{And} 
-\item Smoothing length is nonuniform in space.
+\item Numerical dissipation decays such numerical oscillation preventing accumulation of oscilation magnitude.
+\item For incompressible flow or weakly compressible flow, smoothing length only varies in a small range.
+\item Well developed adaptive smoothing length algorithm usually guarantees more ``smoothing" change of smoothing length in space avoiding sharp change of smoothing length in space.
+\end{itemize}
+So we do not think that the numerical oscillation is a challenging issue for SPH. The major motivation of the appendix is to show that 
+\begin{itemize}
+\item The numerical oscillation does exist
+\item Dissipation decays the oscillation, so the the numerical oscillation can serve as an indicator of dissipation.
 \end{itemize}
 \section*{References}
 

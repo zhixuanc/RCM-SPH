@@ -1783,17 +1783,16 @@
 	Title = {Efficient mesh partitioning for adaptive hp finite element meshes},
 	Year = {1999}}
 
-@article{gmd-2017-119,
-	Author = {Cao, Z. and Patra, A. and Bursik, M. and Pitman, E. B. and Jones, M.},
-	Doi = {10.5194/gmd-2017-119},
-	Journal = {Geoscientific Model Development Discussions},
-	Pages = {1--37},
-	Title = {Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume model based on smoothed particle hydrodynamics},
-	Url = {https://www.geosci-model-dev-discuss.net/gmd-2017-119/},
-	Volume = {2017},
-	Year = {2017},
-	Bdsk-Url-1 = {https://www.geosci-model-dev-discuss.net/gmd-2017-119/},
-	Bdsk-Url-2 = {http://dx.doi.org/10.5194/gmd-2017-119}}
+@article{cao2018plume,
+  title={Plume-SPH 1.0: a three-dimensional, dusty-gas volcanic plume model based on smoothed particle hydrodynamics},
+  author={Cao, Zhixuan and Patra, Abani and Bursik, Marcus and Pitman, E Bruce and Jones, Matthew},
+  journal={Geoscientific Model Development},
+  volume={11},
+  number={7},
+  pages={2691--2715},
+  year={2018},
+  publisher={Copernicus GmbH}
+}
 
 @article{cao2017data,
 	Author = {Cao, Zhixuan and Patra, Abani and Jones, Matthew},

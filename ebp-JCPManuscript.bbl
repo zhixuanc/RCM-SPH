@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{46}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -236,6 +236,13 @@
 \newblock \bibinfo{journal}{SIAM Review} \bibinfo{volume}{25}
   (\bibinfo{year}{1983}) \bibinfo{pages}{35--61}.
 %Type = Article
+\bibitem[{Roe(1981)}]{roe1981approximate}
+\bibinfo{author}{P.~L. Roe},
+\newblock \bibinfo{title}{Approximate riemann solvers, parameter vectors, and
+  difference schemes},
+\newblock \bibinfo{journal}{Journal of computational physics}
+  \bibinfo{volume}{43} (\bibinfo{year}{1981}) \bibinfo{pages}{357--372}.
+%Type = Article
 \bibitem[{Toro et~al.(1994)Toro, Spruce, and Speares}]{toro1994restoration}
 \bibinfo{author}{E.~F. Toro}, \bibinfo{author}{M.~Spruce},
   \bibinfo{author}{W.~Speares},
@@ -288,14 +295,20 @@
 \newblock \bibinfo{journal}{Journal of Computational Physics}
   \bibinfo{volume}{72} (\bibinfo{year}{1987}) \bibinfo{pages}{78--120}.
 %Type = Article
-\bibitem[{Cao et~al.(2017)Cao, Patra, Bursik, Pitman, and Jones}]{gmd-2017-119}
+\bibitem[{Cao et~al.(2018)Cao, Patra, Bursik, Pitman, and Jones}]{cao2018plume}
 \bibinfo{author}{Z.~Cao}, \bibinfo{author}{A.~Patra},
   \bibinfo{author}{M.~Bursik}, \bibinfo{author}{E.~B. Pitman},
   \bibinfo{author}{M.~Jones},
-\newblock \bibinfo{title}{Plume-sph 1.0: A three-dimensional, dusty-gas
+\newblock \bibinfo{title}{Plume-sph 1.0: a three-dimensional, dusty-gas
   volcanic plume model based on smoothed particle hydrodynamics},
-\newblock \bibinfo{journal}{Geoscientific Model Development Discussions}
-  \bibinfo{volume}{2017} (\bibinfo{year}{2017}) \bibinfo{pages}{1--37}.
+\newblock \bibinfo{journal}{Geoscientific Model Development}
+  \bibinfo{volume}{11} (\bibinfo{year}{2018}) \bibinfo{pages}{2691--2715}.
+%Type = Article
+\bibitem[{Liu(1977)}]{liu1977deterministic}
+\bibinfo{author}{T.-P. Liu},
+\newblock \bibinfo{title}{The deterministic version of the glimm scheme},
+\newblock \bibinfo{journal}{Communications in Mathematical Physics}
+  \bibinfo{volume}{57} (\bibinfo{year}{1977}) \bibinfo{pages}{135--148}.
 %Type = Article
 \bibitem[{Colella(1978)}]{colella1978analysis}
 \bibinfo{author}{P.~Colella},
@@ -316,12 +329,6 @@
   hyperbolic conservation laws},
 \newblock \bibinfo{journal}{SIAM Journal on Numerical Analysis}
   \bibinfo{volume}{18} (\bibinfo{year}{1981}) \bibinfo{pages}{289--315}.
-%Type = Article
-\bibitem[{Liu(1977)}]{liu1977deterministic}
-\bibinfo{author}{T.-P. Liu},
-\newblock \bibinfo{title}{The deterministic version of the glimm scheme},
-\newblock \bibinfo{journal}{Communications in Mathematical Physics}
-  \bibinfo{volume}{57} (\bibinfo{year}{1977}) \bibinfo{pages}{135--148}.
 %Type = Article
 \bibitem[{Hernquist and Katz(1989)}]{hernquist1989treesph}
 \bibinfo{author}{L.~Hernquist}, \bibinfo{author}{N.~Katz},

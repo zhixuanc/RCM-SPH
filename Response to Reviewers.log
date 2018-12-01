@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  20 NOV 2018 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  1 DEC 2018 07:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,127 +1300,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--158
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--174
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 178--183
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
+Underfull \hbox (badness 10000) in paragraph at lines 180--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 211--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
 Package natbib Warning: Citation `roe1981approximate' on page 6 undefined on in
-put line 221.
+put line 228.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--241
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 264--267
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--282
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
+Underfull \hbox (badness 10000) in paragraph at lines 271--275
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 318--320
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
 
  []
 
@@ -1429,20 +1419,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
-Missing character: There is no Â in font jkpmit7t!
-Missing character: There is no § in font jkpmit7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--335
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--343
+Underfull \hbox (badness 10000) in paragraph at lines 346--348
+
+ []
+
+Missing character: There is no Â in font jkpmit7t!
+Missing character: There is no § in font jkpmit7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 359--363
 
  []
 
 (./Response to Reviewers.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 347--1
+Underfull \hbox (badness 10000) in paragraph at lines 367--1
 
  []
 
@@ -1450,14 +1450,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--1
 
 Package natbib Warning: There were undefined citations.
 
-Package atenddvi Info: Last page = 8.
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 351.
+Package atenddvi Info: Last page = 9.
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 371.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 371.
  (./Response to Reviewers.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 351.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 371.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 371.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 371.
  ) 
 Here is how much of TeX's memory you used:
  21765 strings out of 493117
@@ -1475,11 +1475,12 @@ ve/2014/texmf-dist/fonts/type1/public/kpfonts/jkpbne.pfb></usr/local/texlive/20
 mf-dist/fonts/type1/public/kpfonts/jkpmit8a.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/kpfonts/jkpmite.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/kpfonts/jkpmne.pfb>
-Output written on "Response to Reviewers.pdf" (8 pages, 91890 bytes).
+ts/type1/public/kpfonts/jkpmne.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/kpfonts/jkpsy.pfb>
+Output written on "Response to Reviewers.pdf" (9 pages, 102478 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

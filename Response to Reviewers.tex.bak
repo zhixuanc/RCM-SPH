@@ -23,7 +23,7 @@
 \date{\vspace{-5ex}}
 
 \maketitle
-The comments by the reviewers are recited in italics, followed by our reply in upright font. Revisions are highlighted with blue. Equation, section, figure and reference numbers in our response are corresponding to these in the original 
+The comments by the reviewers are recited in italics, followed by our reply in upright font. Detailed revisions are described separately in "a summary-of-revisions.pdf". Equation, section, figure and reference numbers in our response are corresponding to these in the original 
 version of JCP manuscript if not specified. \\[12pt]
 
 \textbf{\Large Reviewer \# 1}\\[3pt]
@@ -47,8 +47,8 @@ possibility of the present method for further development.}
 
 To response reviewer's recommendation for comparing 1D tests in present article with these 1D tests by \citet{puri2014approximate}:
 
-The present method adopts HLLC and Roe approximate Riemann solvers presented in \citep{puri2014approximate}. We did not make any improvement in term of approximate Riemann solvers. In that sense, these GSPH results in our paper are similar to these tests in \citep{puri2014approximate}, which combines GSPH with Riemann solvers proposed in that paper. Or in other words, we have already done such comparison in current paper.
-But we need to mention two sources of differences. First of all, we adopted first order GSPH while tests in \citep{puri2014approximate} using second order GSPH. The reason why we use first order GSPH instead of second order GSPH is that we want to do ``well controlled" comparison. So that we can show the pure effect of ``random choice". Secondly, the shock tube tests adopted in our manuscript are very similar to these presented in \citep{puri2014approximate}, however, they are not exactly the same. We intentionally assign different densities to particles at left side and right side. This can lead to nonuniform smoothing length distribution in space and induce numerical oscillation. More details are explained in appendix B of the revised manuscript.
+The present method merely adopts HLLC and Roe approximate Riemann solvers presented in \citep{puri2014approximate}. We did not make any improvement in term of approximate Riemann solvers. In that sense, these GSPH results in our paper are similar to these tests in \citep{puri2014approximate}, which combines GSPH with Riemann solvers proposed in that paper. Or in other words, we have already done (at least similar) comparison in current paper.
+But we need to mention two sources of differences. First of all, we adopted first order GSPH while most tests in \citep{puri2014approximate} using second order GSPH. The reason why we use first order GSPH instead of second order GSPH is that Riemann problem construction (RPC) in RSPH is the same as RPC in first order GSPH. We want to do ``well controlled" comparison to show the pure effect of ``random choice". Secondly, the shock tube tests adopted in our manuscript are very similar to these presented in \citep{puri2014approximate}, however, they are not exactly the same. We intentionally assign different densities to particles at left side and right side in some of our 1D tests. This can lead to nonuniform smoothing length in space and induce more obvious numerical oscillation. More details are explained in appendix B of the revised manuscript.
 
 In response to reviewer's comments regarding the usefulness of the method:
 
@@ -60,12 +60,12 @@ Thanks for helping us find another merit of RSPH. Compared with second order GSP
 
 \textit{Since the random choice method (RCM) was introduced by Glimm in 1965 and seems to be discussed mainly around 1980, it is better to explain this method in more detail, especially why this method is expected to give a good result. Without such explanation the readers cannot understand why the present method may give better result than the other methods.}
 
-We agree with reviewer. We added an appendix to introduce RCM with a little bit more details. More references are also provided there.\\[3pt]
+We agree with reviewer. We added an appendix to introduce RCM with more details. More references are also provided there.\\[3pt]
 
 \textit{Regrettably, Figure 4, 7, and 8 show relatively large oscillation in the
 numerical results. Can you explain why this occurs? Is there any prescription to remove this?}
 
-The large oscillations in these 1D shock tube tests actually are very critical in demonstrating the merit of present method. Such oscillations are caused by nonuniform smoothing length distribution in space. For 1D shock tube tests, smoothing lengths are usually not uniform in space. However, due to existence of sufficient numerical dissipation, such osciallations decay fast so are not obviously observed in previous tests. In Fig 3, for example, we can not observe oscillation when $\alpha =1$ and $\alpha = 2$. When numerical dissipation is small ($\alpha = 0.2$), such oscillations are not completely suppressed and can be seen. Based on such observation, we use ``how much the oscillation get suppressed" as an indirect indicator for numerical dissipation. Our following discussions are based on such correlation between observable oscillation and numerical dissipation. Shock tube tests in this article are intentionally designed to have more obvious numerical oscillation. Test $1 \sim 4$ adopt different particle densities on right side and left side, which will lead to discontinuity of smoothing length at the middle. Such discontinuity in term of resolution is the source of numerical oscillation. In revised manuscript, we addressed these points. We also added an appendix explaining the mechanism for generating numerical oscillations.
+The large oscillations in these 1D shock tube tests actually are very critical in demonstrating the merit of present method. Such oscillations are caused by nonuniform smoothing length distribution in space (As explained in Appendix B in the revised manuscript). For 1D shock tube tests, smoothing lengths are usually not uniform in space. However, due to existence of sufficient numerical dissipation, such osciallations decay fast so are not obviously observed in most tests. In Fig 3, for example, we can not observe oscillation when $\alpha =1$ and $\alpha = 2$. When numerical dissipation is small ($\alpha = 0.2$), such oscillations are not completely suppressed and can be seen. Based on such observation, we use ``how much the oscillation get suppressed" as an indirect indicator for numerical dissipation. Our following discussions are based on such correlation between observable oscillation and numerical dissipation. Shock tube tests in this article are intentionally designed to have more obvious numerical oscillation. Test $1 \sim 4$ adopt different particle densities on right side and left side, which will lead to discontinuity of smoothing length at the middle. Such discontinuity in term of resolution is the source of numerical oscillation. In revised manuscript, we addressed these points. We also added an appendix explaining the mechanism for generating numerical oscillations.
 \\[3pt]
 %need to show that equal density can help reduce oscillation.
 %For compressible flow, smoothing lengths. Unfortunately the original manuscript did not delivery this point clearly. The shock tube tests were intentionally designed to make such oscillation more obvious by assigning different particles masses. In all shock tube tests presented in previous work, uniform particle mass is adopted while in our manuscript, different particle mass are assigned for particles on right side and left side. Different particle mass will amplify the oscillation and help to demonstrate the merit of present method in a more obvious manner.
@@ -76,7 +76,7 @@ In section 4.4, we first simulate the free jet flow using classical SPH based on
 Then we compared the length of jet simulated by GSPH and RSPH. As the length of GSPH is shorter, we inferred that RSPH introduces less equivalent overall-dissipation.
 We modified the manuscript to delivery these points more clearly.
  
-Figure for SPH results were removed while we forgot to update the caption, which makes Figure 12 to be confusing. We revised the caption in our revised manuscript. 
+Figure for SPH results were moved to a separate figure while we forgot to update the caption, which makes Figure 12 to be confusing. We revised the caption in our revised manuscript. 
 
 We want to mention here that in both GSPH and the present method, the way to handle velocity that perpendicular to local coordinate system need to be improved. There are (at least) two different ways to handle the perpendicular velocity component. See [13] and [15]. We are adopting [13]'s method in section 4.4. 
 \\[3pt]
@@ -84,8 +84,9 @@ We want to mention here that in both GSPH and the present method, the way to han
 
 \textit{Note that the original GSPH paper [13] describes not only the first order method but also the second order method (and it effectively recommends the use of second order method). The authors seem to be missing these points. It is evident from the description in the following phrase: "Cha[14] proposed a second order accurate GSPH method by using a piecewise linear interpolation of the states." in Page 9 and "We observe a rate of convergence of approximately 1 for GSPH" in Page 17. These descriptions mislead the readers.}
 
-The reviewer actually asked two questions here. 
-With respect to the first question, yes, in our manuscript, we only compared RSPH with first order GSPH while GSPH could be second order as mentioned by the reviewer. The reason why we only compare our method with first order GSPH is that our method can only be first order. To make the comparison to be ``well controlled", we compared first order RSPH against first order GSPH. As reviewer has notified, RSPH and GSPH have many things in common: both need projecting quantities from global coordinate system to a local coordinate system, both need constructing local Riemann problem and solve the local Riemann problem, both need to project solution of the local Riemann solution back to global. In our ``well controlled" comparison, the only difference between RSPH and GSPH tests is the way to sample solution of local Riemann problems. This difference is actually also the essential difference between Godunov's method and random choice method in the context of mesh based method. With such ``well controlled" comparison, we can clearly show the effects purely due to the essential differences between RSPH and GSPH. We have to mention that such ``first order" limitation is inherited from RCM. Namely, RCM (which were proposed in mesh based methods) adopts a ``piece wise constant" way when constructing Riemann problems. This should be a disadvantage of RSPH compared with second order GSPH.
+The reviewer actually asked two questions here.
+ 
+With respect to the first question, yes, in our manuscript, we only compared RSPH with first order GSPH while GSPH could be second order as mentioned by the reviewer. The reason why we only compare our method with first order GSPH is that our method can only be first order. To make the comparison to be ``well controlled", we compared first order RSPH against first order GSPH. As reviewer has notified, RSPH and GSPH have many things in common: both need projecting quantities from global coordinate system to a local coordinate system, both need constructing local Riemann problem and solve the local Riemann problem, both need to project solution of the local Riemann solution back to global. In our ``well controlled" comparison, the only difference between RSPH and GSPH tests is the way to sample solution of local Riemann problems. This difference is actually also the essential difference between Godunov's method and random choice method in the context of mesh based method. With such ``well controlled" comparison, we can clearly show the effects purely due to the essential differences between RSPH and GSPH. We have to mention that such ``first order" limitation is inherited from RCM. Namely, RCM (which were proposed in mesh based methods) adopts a ``piece wise constant" way when constructing Riemann problems. This should be a disadvantage of RSPH compared with (second order) GSPH.
 It is not surprise to us that we observe first order of accuracy in our tests as we were testing first order GSPH.
 
 With respect to the second question, yes, that statement would indeed cause confusions to readers. We added more explicit explanation in revised manuscript.
@@ -94,7 +95,7 @@ With respect to the second question, yes, that statement would indeed cause conf
 \textit {It is well known that the wiggle in the pressure at the contact discontinuity is due to the inconsistency of the standard SPH in evaluating pressure gradient force with a non-smooth distribution of particles. This problem is (at least partially) solved in GSPH [13, 17]. Note that the article [15] did not care this problem. Since the present article used the method shown in [15], the reviewer does not expect a good result at contact discontinuity. If the authors have some reason why the method that includes RCM can accurately describe the contact discontinuity, they should explain it within this article. The reviewer
 presumes that it can be a desirable feature in the present method if it is true.}
 
-[13] indeed shown that GSPH can almost get rid of pressure wiggle around contact discontinuity while standard SPH shows much more obvious pressure wiggle. They believe that the pressure wiggle is due to the inconsistency of EoM (equation of momentum) of the standard SPH. Or in other words, just as what the reviewer mentioned: "The wiggle in the pressure at the contact discontinuity is due to the inconsistency of the standard SPH in evaluating pressure gradient force with a non-smooth distribution of particles." However, there are different opinions with respect to the sources of pressure wiggle. For example, other researchers believe that the pressure wiggle has something to do with thermal conduction at the contact discontinuity. It has been shown that thermal conduction is essential to mitigate the spurious pressure wiggle at contact discontinuity in SPH [e.g. 4, 36, 37, 30]. As for GSPH, it is reported that an implicit thermal conduction is introduced by Godunov's scheme and helps suppress the anomaly [16]. Explanation in [16] seems to be more reasonable. Our observation in our 1D shock tube tests shows that even though both RSPH and GSPH adopt EoM proposed in [15], the pressure wiggle still get suppressed. So obviously, EoM might not be the real cause of pressure wiggle. 
+[13] indeed show that GSPH can almost get rid of pressure wiggle around contact discontinuity while standard SPH shows much more obvious pressure wiggle. They believe that the pressure wiggle is due to the inconsistency of EoM (equation of momentum) of the standard SPH. Or in other words, just as what the reviewer mentioned: "The wiggle in the pressure at the contact discontinuity is due to the inconsistency of the standard SPH in evaluating pressure gradient force with a non-smooth distribution of particles." However, there are different opinions with respect to the sources of pressure wiggle. For example, some other researchers believe that the pressure wiggle has something to do with thermal conduction at the contact discontinuity. It has been shown that thermal conduction is essential to mitigate the spurious pressure wiggle at contact discontinuity in SPH [e.g. 4, 36, 37, 30]. As for GSPH, it is reported that an implicit thermal conduction is introduced by Godunov's scheme and helps suppress the anomaly [16]. Explanation in [16] seems to be more reasonable. Our observation in our 1D shock tube tests shows that even though both RSPH and GSPH adopt EoM proposed in [15], the pressure wiggle still get suppressed. So obviously, EoM might not be the real cause of pressure wiggle. 
 
 The present method has many common things with GSPH. Particularly, both are based on solving local Riemann problems. Based on our observation that both GSPH and RSPH could suppress pressure wiggle in contact discontinuity. We tend to believe that the mechanism for present method to suppress pressure wiggle lies on the basis of present method: solving local Riemann problems. 
 The capability of suppression pressure wiggle in contact discontinuity is indeed one attractive feature of present method.
@@ -112,18 +113,18 @@ substantially improved before seriously considered for publication in JCP.}
 \textit{General Critique:
 It remains unclear why RSPH performs better than GSPH, i.e. why the random choice of <epsilon> makes such a difference. It also remains unclear how well RSPH performs in critical multi-dimensional flows. In other words: the manuscript provides some suggestion that RSPH may a be a valuable scheme, but fails to explain why and to demonstrate that this is indeed the case for most flows.}
 
-We appreciate the reviewer for reviewing our manuscript and giving constructive remarks. 
-%We understand that the reviewer has solid background in SPH but relatively less background in mesh based CFD (computational fluid dynamics) methods. Some questions/confusion are general question for mesh based CFD. We will try to give detailed response. But we might not include these details in our revised manuscript to avoid being too disruptive.
+We appreciate the reviewer for carefully reviewing our manuscript and giving constructive remarks. Some questions/confusion are general question for grid-based CFD. We will try to give detailed response. But we will not include these details in our revised manuscript to avoid being too disruptive to readers. We hope that we have dealt with all concerns/suggestions in an adequate manner. The revised manuscript is also attached.
+%We understand that the reviewer has solid background in SPH but relatively less background in mesh based CFD (computational fluid dynamics) methods.
 
 Our response to reviewer's general critique is following. 
 
 Both random choice method (RCM) and Godunov's method have been proposed long time ago in the context of mesh based method. Both have been well studied in both theoretical side and application side. One advantage of RCM compared against Godunov's method is that RCM is able to introduce much less smearing at discontinuities. Such advantage is well known in the context of \textbf{mesh based method}.
-The essential idea of GSPH, whose full name is Godunov SPH, is to implement Godunov's idea in the context of mesh free methods. The essential idea of RSPH, is to implement the idea of ``random choice" in the context of mesh free methods. Why random choice method would introduce much less smear has been well studied and demonstrated by many applications. It is not possible to cover such topics in detail this article.
+The essential idea of GSPH, whose full name is Godunov SPH, is to migrate Godunov's idea to the context of mesh free methods. The essential idea of RSPH, is to implement the idea of ``random choice" in the context of mesh free methods. Why random choice method would introduce much less smear has been well studied and demonstrated by many applications in mesh based CFD. It is not possible to cover such topics in detail this article.
 Considering the fact that some readers might not be familiar with random choice method. We added an appendix introduce RCM method with more references.
 
-The attractive features of RSPH actually have been demonstrated in 1D tests. However, some points are not clearly delivered. We will address these points in the revised manuscript.
+The attractive features of RSPH actually have been well demonstrated in 1D tests. However, some points are not clearly delivered. We address these points in the revised manuscript.
 
-As for 3D test case, the effective overall-dissipation is measured indirectly by the length that the 3D jet flow reaches in given time. We can still conclude that the effective overall-dissipation introduced by RSPH is smaller than that of GSPH. More work would be necessary to explore its implementation in 3D. Adopting different test cases might reveal more features of RSPH in different scenarios. But implementing RSPH in different scenarios are not major consideration of this article.
+As for 3D test case, the effective overall-dissipation is measured indirectly by the length that the 3D jet flow reaches in given time. We can still come to the conclusion that the effective overall-dissipation introduced by RSPH is smaller than that of GSPH. More work would be necessary to explore its implementation in 3D. But they are not the first priority of very first paper on RSPH. Adopting different test cases might reveal more features and some shortcomings of RSPH in different scenarios. But implementing RSPH in different scenarios are not major consideration of this article.
 \\[12pt]
 %We also want to mention that, for higher dimensional implementation of RSPH and GSPH, how to approximate the velocity component that perpendicular to the local coordinate system is still not well understood. For example, there are two different approaches adopted by GSPH (see [13], [16], [17]). However, neither of them seems to be sufficient. This is a common topic for both GSPH and RSPH, not only for RSPH. In our implementation, we adopt the method used by [13] and [16].
 
@@ -133,7 +134,7 @@ As for 3D test case, the effective overall-dissipation is measured indirectly by
 discontinuities". SPH relies on representing all fields as SMOOTH and the purpose of AV is to ensure that this also holds for the flow velocity.
 More generally, artificial dissipation is required to smooth any advected field (temperature, magnetic fields etc).}
 
-Thanks for pointing this out. Our research focus more on high speed compressible flow and we were not able aware of the purpose of AV in a more general sense. For implementations of SPH in high speed compressible flow, the oscillation around discontinuities, especially aroud shocks can be too large or even corrupt whole simulation. In that sense, AV helps to reduce oscillation at discontinuities. So our statement is not as general as it should be, but still make sense in certain application area.
+Thanks for pointing this out. Our research focus more on high speed compressible flow and we were not able aware of the purpose of AV in a more general sense. For implementations of SPH in high speed compressible flow, the oscillation around discontinuities, especially aroud shocks can be too large or even corrupt whole simulation. For an extreme example, using SPH to do shock tube test with very small artificial viscosity (e.g. $\alpha = 0.01$), it will ends up huge osciallation or even crash. In that sense, AV helps to reduce oscillation at discontinuities. So our statement is not as general as it should be, but still make sense in certain application area.
 \\[3pt]
 
 \textit{p.2 The adverse effects of AV in original SPH are misrepresented: artificial viscosity is not related to the failure to resolve contact discontinuities (which is caused by inconsistent smoothing, i.e. the pressure 'wiggle' in Fig 3, see also the review by Price 2012).}
@@ -144,15 +145,16 @@ Do you mean:
 
 OR
  
-2) AV is related to failure to resolve discontinuities (note, include but not limited to contact discontinuities)? 
+2) AV is related to failure to resolve discontinuities (include but not limited to contact discontinuities)? 
 
-If what you mean is 1). our response is: 
+If opinion is 1). our response is: 
 
+We also believe AV is not the source of pressure wiggle around contact discontinuity.
 We never say ``pressure wiggle" is due to AV. Instead, we prefer to agreeing with Price's view with respect to the source of ``pressure wiggle". As we mentioned in our response to another reviewer, thermal conduction can help mitigate ``pressure wiggle". The mechanism why RSPH can help mitigate ``pressure wiggle" is that RSPH, by solving local Riemann problems, introduces implicit thermal conduction. GSPH has been reported to mitigate ``pressure wiggle" in a similar mechanism [16]. We also want to mention that some other researchers have different view with respect to the source of ``pressure wiggle", see e.g. [13].
 
 If what you mean is 2), our response is:
 
-We do believe AV causes some issues when resolve discontinuities (not only contact discontinuities). That is, AV usually smears (or smooth out) discontinuities. Mathematically, discontinuity should be zero width, however, numerically, discontinuity would have width. Too large AV usually leads to larger width of discontinuities in numerical simulation. For example, in subplot c) of Fig. 3. larger AV (with $\alpha = 2$, the red dash line) lead to a wider approximation of the shock (which is discontinuity in theory) than smaller AV (with $\alpha = 1$, the purple line). 
+We do believe AV causes some issues when resolve discontinuities (not only contact discontinuities). That is, AV usually smears (or smooth out) discontinuities. Mathematically, discontinuity should be zero width, however, numerically, discontinuity would have width. Too large AV usually leads to larger width of discontinuities in numerical simulation. For example, in subplot c) of Fig. 3 in this article, larger AV (with $\alpha = 2$, the red dash line) lead to a wider approximation of the shock (which is discontinuity in theory) than smaller AV (with $\alpha = 1$, the purple line). 
 Such wider approximation of discontinuity should not be considered as \textbf{failure} to resolve discontinuities. Instead, we prefer to calling wider approximation of discontinuity as \textbf{"not accurate enough or less accurate"}. One core merit of RSPH is to keep numerical approximation of discontinuities to be narrower by introducing numerical dissipation adaptively.
 \\[3pt]
  
@@ -162,30 +164,31 @@ The authors fail to provide evidence for their bold claim that (the most advance
 Response to reviewer's comments regarding AV.
 
 We agree that AV might not be the biggest barrier that prevents SPH to be a real CFD tool as there are some other more serious challenges. However, AV is definitely an important aspect of CFD, especially for high speed compressible flow. It is more than necessary to borrow well developed ideas from mesh based method to SPH.
-More importantly, both RCM and Godnuov's idea take the hyperbolicity of the system into account. The advantages of such treatment are not only introduce implicit (and adaptive) AV. Both GSPH and RSPH could also better suppress ``pressure wiggle" around contact discontinuity. The under underneath mechanism also relies on properly considering of system's hyperbolicity.
+More importantly, both RCM and Godnuov's idea take the hyperbolicity of the system into account. The advantages of such treatment are not only introduce implicit (and adaptive) AV. Both GSPH and RSPH could also better suppress ``pressure wiggle" around contact discontinuity. The underneath mechanism for supressing the wiggles should also relies on properly considering of system's hyperbolicity.
 
-Response to reviewer's requests that we need to provide evidence for their bold claim that (the most advanced of) these methods "cannot properly accommodate every kind of wave that might arise, and spurious effects and unphysical damping persist"
+Response to reviewer's requests that we need to provide evidence for our claim that (the most advanced of) these highly tuned SPH methods "cannot properly accommodate every kind of wave that might arise, and spurious effects and unphysical damping persist"
 
 These "highly tuned versions of artificial viscosity", as far as our understanding, none of them take the hyperbolicity of the system into account. How could these methods properly accommodate every kind waves without considering the property of system? Our claim is not bold at all.
 
 The reviewer mentioned ``These methods are by now widely used in SPH models of compressive flows". With respect to these implementations, we are wondering what is the fluid speed? How accurate are they? Which physical quantities are of interest in these implementations (smearing of discontinuities might be acceptable for some implementations as there is not demands for resolving discontinuities as true discontinuities)?
-We did not check all of these "highly tuned versions of artificial viscosity" in depth. But we did check the ADKE method carefully. It turned out that we have to tune its parameters manually even for different 1D tests. Some other researchers also reported the same thing, for example [12]. 
+We did not check all of these "highly tuned versions of artificial viscosity" in depth. But we did check the ADKE method carefully. It turned out that we have to tune its parameters manually even for different 1D tests. Some other researchers also reported the same thing, for example [12]. You can image that how could we manually adjust parameters for real implementations in higher dimension?
 \\[3pt]
  
 \textit{p1/2 The motivation of the new scheme via partially unjustified critique of artificial viscosity) is unnecessary and divisive. A much
 better/correct motivation of RSPH would be as an improvement over standard GSPH.}
 
 One of our original motivation indeed is to develop a method that can apply AV in a more ``smart" way. Even though the method turned out to have other attractive features.
-The current way to add artificial viscosity does have some limitation and can be improved even though they work well in some implementations.
+The current way to add artificial viscosity in standard SPH does have some limitation and can be improved even though they work well in some implementations.
 Compared with GSPH, RSPH do have some advantages while it also has some disadvantages. The major disadvantage is that RSPH can only be 1st order of accuracy.
 We do not view RSPH as an improved version of GSPH, instead they should be two parallel methods. Because historically, RCM and Godunov's methods were developed (within the area of mesh based methods) parallely even though they share many common places.
 \\[3pt]
 
 \textit{p.3 The authors propose a variant of Godunov SPH. Owing to the irregular distribution of particles, such methods can only every be first-order accurate in h (Riemann-solver-based grid methods achieve second-order accuracy only because of the regular grid structure). This should be discussed.}
 
-We prefer to viewing RSPH as counterpart of RCM in SPH while viewing GSPH as counterpart of Godunov's method in SPH. 
-RSPH can only be first order even with regular particle distribution because the local Riemann problem is defined in a piece-wise constant manner. Not because the irregular distribution of particles. GSPH, would also be first order accuracy if its local Riemann problems are also defined in a piece-wise constant manner. However, GSPH could be second order of accuracy with regular particle distribution \textbf{and} ``piece-wise linear" construction of its local Riemann problem. However, GSPH would be between first order of accuracy its local Riemann problem is defined in a piece-wise linear manner \textbf{but} the particle distribution is irregular.
-We added these discussions in revised paper.
+Yes, the irregular distribution of particles is one  major thing that prevents SPH schemes (standard SPH, GSPH and RSPH) to be second order. Besides that, for both GSPH and RSPH, how to construct the local Riemann problem would also affect order of accuracy. 
+Standard SPH, can be maximum second order of accuracy. As for grid methods, things are different. Order of accuracy could be as high as needed. For example, for finite difference, we can easily achieve that by inlcuding more nodes in approximation. This is one disadvantage of SPH compared with standard SPH. As for Riemann-solver-based grid methods, the bottle neck is the order of accuracy when constructing local Riemann problems. Local Riemann problems can be constructed in piece-wise constant manner (zeroth order), piece-wise linear manner (first order) and so on ...
+
+We added discussions regarding irregular particle distributions in revised manuscript.
 \\[3pt]
 
 \textit{p.3 Of course, in 1D, hydrodynamics is trivial, SPH has few problems, and
@@ -193,17 +196,21 @@ GSPH is 2nd order accurate. Really challenging problems only appear for multi-di
 problems are not useful, but these must be embedded in a multi-dimensional context, e.g. with periodic boundaries in the extra dimensions and with glass-like initial particle distributions, to really
 demonstrate the validity of a method and compare with others..}
 
-Surely higher dimensional problem are more challenging and make more sense in real applications. 
-But 1D tests do have several great merits. 1) As relatively simpler tests, 1D tests are more easily to be well controlled. 2) 1D tests provide a solid basis for exploring basic property of a new method. 
+Surely higher dimensional problems are more challenging and make important sense in real applications. 
+But 1D tests do have several great merits. 1) As relatively simpler tests, 1D tests are more easily to be well controlled. 2) 1D tests provide a solid basis for exploring basic property of a new method. 3)Computationally fast and easy to implement, so are handy tools for learning/initial investigating/comparing numerical methods. 
 
-What's more, even though trivial, there is still space for improvement for 1D tests. Many variants of SPH scheme can capture the position of different waves while most of them suffer from some common issues such as smearing of discontinuities, pressure wiggles around contact discontinuity, over shoot near other discontinuities. There is no variants of SPH method can perfectly handle all these issue. 
+What's more, even though trivial, there is still space for improvement for 1D tests. Many variants of SPH scheme can capture the position of different waves while most of them suffer from some common issues such as smearing of discontinuities, pressure wiggles around contact discontinuity and over shoot near other discontinuities. There is no variants of SPH method can perfectly handle all these issue. 
 
 We want to mention that, these aspects might not be that important in some implementations. For example, smearing of discontinuity might not be an issue in case that the smoothed flow field is of more interested. But this does not mean that smearing of discontinuity is not important at all in any implementation.
 \\[3pt]
 
 \textit{p.6 The choice of the smoothing kernel is critical in SPH and the truncated Gaussian (eq 19) cannot be recommended. The authors should instead use the commonly used Wendland kernel (note, however that that has a different functional form for 1D and 2,3D). The problem with the truncated Gaussian (as presented in eq 19) is that it's neither continuous (at the outer boundary) nor normalized to unit integral. (Another problem is that it's computationally inefficient.)}
 
-Thanks for pointing this out. We tried these two, For 1D tests case, it does not make visible difference. But for 3D, it did make some visible difference but did not change our conclusion. 
+Thanks for pointing this out. We tried these two, For 1D tests case, it does not make visible difference. But for 3D, it did make some visible difference but did not change our conclusion.
+
+By the way, the truncated Gaussian, if truncated at 3 times of smoothing length, which is adopted in our implementation, would add up to 0.9974. The difference is less than 0.3 percent. 
+In terms of deficiency near bounday, we did adopt a "re-normalization" strategy in the 3D tests. We did not mention such details as we feel such techniqical detail is not related to the major point we are try to delivery in this article and would be disruptive for readers. 
+When implementing RSPH, one can choose to use whichever kernel he need.
 \\[3pt]
 
 \textit{p.7 The choice of time integrator is also critical in SPH. Classical SPH is fully conservative and mass, momentum (linear and angular), energy, entropy are all conserved *exactly* modulo AV and time integration errors. It is therefore expedient to use a time integration scheme which does not introduce its own artificial dissipation, in particular NOT the forward Euler scheme.}
@@ -262,20 +269,33 @@ The boundary is given in table by $[x_L, x_R]$.
 There is a typo for test4 and test5 in that table, we incorrectly put value for velocity under pressure column, that's why you see negative pressure. We have changed it in revised manuscript.
 
 The tests case adopted here are actually very representive to test \textbf{different wave patterns}. These 1D tests are all well known 1D tests used by both mesh based method \citep[][e.g.]{toro2013riemann, leveque2002finite} and SPH tests \citep[][e.g.]{monaghan1983shock, cha2003implementations, puri2014approximate}. 
-Mach number can be easily calculated according to physical quantities. We added Mach number in Table 1 in revised manuscript. 
+Mach number can be easily calculated according to physical quantities and is a function of time and space. We are confused about which Mach number the reviewer is asking for, at which time, at which location?
+We claim that our 1D tests are comprehensive because they can covers all possible wave patterns that could araise in 1D and two extreme cases.
 \\[3pt]
 
 \textit{Figs 2,3 Are these really "oscillations around shock" for <alpha>=0.2 SPH? I suspect that instead we have inter-particle penetration, i.e.
 particles swapping positions in 1D SPH. Also, in this figure, isn't the interpretation of oscillation==less viscosity rather simplistic? In a conservative scheme, the amount of dissipative heating can in principle be directly measured and used as a measure of viscosity (better than merely pointing at the oscillations).
 I think it'd be better to combine Figs 2\& 3 into one, similar to Fig 4. Only one legend is required, not 8. Moreover, the details may be shown as inlet plots.}
 
-They are really oscillations. Such oscillations are caused by non-uniform smoothing length (due to uniform particle mass and nonuniform density in space). We added an appendix to explain the source of such oscillation in the revised manuscript.
+Reviewer's questions are answered separately in following: 
+
+\textit{Figs 2,3 Are these really "oscillations around shock" for <alpha>=0.2 SPH? I suspect that instead we have inter-particle penetration, i.e.
+particles swapping positions in 1D SPH. Also, in this figure, isn't the interpretation of oscillation==less viscosity rather simplistic? }
+
+They are really oscillations. Such oscillations are caused by nonuniform smoothing length in space (due to uniform particle mass and nonuniform density in space). We added an appendix to explain the source of such oscillation in the revised manuscript.
+Besides oscillation, we also use another indirect indicator for viscosity for 1D tests, that is, how much the shock is smeared. Both indicators of numerical dissipation (viscosity) reveal consistent information. 
+
+More importantly, in SPH tests, where we can control the amount of viscosity explicitly by using different artificial viscosity coefficients, these two indicators reflect consistent information. For example, in plot c) of Fig. 3, smaller artificial viscosity coefficients lead to less smearing of shock (narrower width) and larger oscillation. This just proves that, the oscillation and the degree the shock is smeared are effective and valid indicator of viscosity.
 
 \textit{the amount of dissipative heating can in principle be directly measured and used as a measure of viscosity (better than merely pointing at the oscillations).}  
 
-Using internal energy? We are a bit confused on how to measure the dissipative heating. The correlation between oscillation can be demonstrated by these tests with different artificial viscosity coefficients.
+We are a bit confused on how to measure the dissipative heating. Using increases of internal energy? Internal energy is plotted for all of the 1D tests. We can barely see any increase in terms of internal energy. But the correlation between oscillation and viscosity is demonstrated by these SPH tests with different artificial viscosity coefficients. So pratically, oscillation is an effective way to measure viscosity.
+
+\textit{I think it'd be better to combine Figs 2\& 3 into one, similar to Fig 4.}
 
 We tried to combine 2\&3 and 4\&5. But it would be too large to fit into one page. Inlet plots make it harder to see these details we want to show.
+
+\textit{Only one legend is required, not 8. Moreover, the details may be shown as inlet plots.} 
 
 We made modification as suggested by reviewer regarding legend.
 \\[3pt]
@@ -284,7 +304,7 @@ We made modification as suggested by reviewer regarding legend.
 A comparison to <alpha>=1 SPH makes sense as does a comparison (lacking)
 against an AV-switch version of SPH.}
 
-Both <alpha>=2 and 0.2 are necessary. Comparison of three different values confirms the effect AV, which is the basis of for our further discussion. If we only have two different artificial viscosity coefficients sets, some other readers might argue that our comparison is not generic enough.
+Both <alpha>=2 and 0.2 are necessary. Comparison of three different artificial viscosity coefficients in SPH confirms how could VA affect oscillation, how could VA smear the shock and how could AV affect the distance between nozzle and the front of jet flow. Those are the basis of for our further discussion. If we only have two different artificial viscosity coefficients sets, some other readers might argue that our comparison is not generic enough.
 
 The AV-switch versions of SPH, which introduce AV in an explicit way, usually have parameters that can be manually tuned while RSPH and GSPH introduce AV in an implicit way and have no manually-tunable parameters. 
 We actually tried to compare against one AV-switch version of SPH. But it turned out that we have to manually tune its parameters for each test case. This can easily lead to ``unfair" comparison. In addition, the major difference between RSPH and AV-switch version of SPH is so obvious -- RSPH does not require explicit AV.
@@ -296,7 +316,7 @@ is new here.}
 
 Yes, these features of RSPH are due to Riemann solver. 
 But Godunov's method is different from RCM.
-They do share some common places but surely are different. If they are the same (or nothing new), how could RSPH introduce AV in a more adaptive manner as shown by these tests.
+They do share some common places but surely are different. If they are the same (or nothing new), how could RSPH introduce AV in a more adaptive manner as shown by many tests.
 
 RSPH samples solution of local Riemann problem in a very different way from GSPH. This is NOT a small difference.
 \\[3pt]
@@ -315,7 +335,7 @@ Yes, choice of <epsilon> is the only difference between \textbf{first order} GSP
 But this is NOT a small difference.
 By the way, since choice of <epsilon> is the only difference, our tests are ``well controlled" comparison, that is to say, the difference in tests results do reflect the essential effect of different choice of <epsilon>. We hope reviewer can appreciate such manner of comparisons.
 
-Why choice of <epsilon> can make such big difference? This is the heart of RCM.
+Why choice of <epsilon> can make such big difference? This is the heart of RCM. We explained it a little bit in Appendix A in the revised paper. 
 \\[3pt]
 
 \textit{pp. What causes the waves (in RSPH) and what is their wavelength? Perhaps
@@ -323,7 +343,7 @@ these waves are related to the correlations introduced by using the same
 <epsilon> for all particle pairs (when their wavelength may be comparable
 to / scale with h).}
 
-Good question. We added an appendix to explain the source of these waves.
+Good question. We added an appendix to explain the source of these waves (oscillations).
 \\[3pt]
 
 \textit{p.17 While simple 1D shock-tube problems are good tests for proof-of-concept implementations, they are not representative of
