@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  20 DEC 2018 00:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  21 DEC 2018 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -963,10 +963,10 @@ If that doesn't work, type  X <return>  to quit.
 
 [32]
 Package epstopdf Info: Source file: <App-Figure/dw-ha.eps>
-(epstopdf)                    date: 2018-11-23 23:40:56
+(epstopdf)                    date: 2018-12-20 21:03:50
 (epstopdf)                    size: 86883 bytes
 (epstopdf)             Output file: <App-Figure/dw-ha-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-23 23:40:56
+(epstopdf)                    date: 2018-12-20 21:03:50
 (epstopdf)                    size: 90597 bytes
 (epstopdf)             Command: <repstopdf --outfile=App-Figure/dw-ha-eps-conve
 rted-to.pdf App-Figure/dw-ha.eps>
@@ -987,11 +987,11 @@ re.14}) has been already used, duplicate ignored
 l.816 
        <./App-Figure/dw-ha-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <App-Figure/Perturbation-ME2.eps>
-(epstopdf)                    date: 2018-11-23 23:40:56
+(epstopdf)                    date: 2018-12-20 21:03:49
 (epstopdf)                    size: 444686 bytes
 (epstopdf)             Output file: <App-Figure/Perturbation-ME2-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2018-11-23 23:40:56
+(epstopdf)                    date: 2018-12-20 21:03:49
 (epstopdf)                    size: 100769 bytes
 (epstopdf)             Command: <repstopdf --outfile=App-Figure/Perturbation-ME
 2-eps-converted-to.pdf App-Figure/Perturbation-ME2.eps>
@@ -1017,11 +1017,11 @@ Overfull \vbox (31.4231pt too high) has occurred while \output is active []
 l.826 
        <./App-Figure/Perturbation-ME2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <App-Figure/Perturbation-ME0-tp1.eps>
-(epstopdf)                    date: 2018-11-23 23:40:56
+(epstopdf)                    date: 2018-12-20 21:03:49
 (epstopdf)                    size: 96394 bytes
 (epstopdf)             Output file: <App-Figure/Perturbation-ME0-tp1-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2018-11-23 23:40:56
+(epstopdf)                    date: 2018-12-20 21:03:49
 (epstopdf)                    size: 24341 bytes
 (epstopdf)             Command: <repstopdf --outfile=App-Figure/Perturbation-ME
 0-tp1-eps-converted-to.pdf App-Figure/Perturbation-ME0-tp1.eps>
@@ -1055,13 +1055,13 @@ Package rerunfilecheck Info: File `ebp-JCPManuscript.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 849.
  ) 
 Here is how much of TeX's memory you used:
- 7171 strings out of 493117
- 109892 string characters out of 6135433
- 203323 words of memory out of 5000000
- 10329 multiletter control sequences out of 15000+600000
+ 7167 strings out of 493117
+ 109815 string characters out of 6135433
+ 203256 words of memory out of 5000000
+ 10326 multiletter control sequences out of 15000+600000
  9901 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,13n,34p,1364b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,13n,34p,1358b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -1083,10 +1083,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on ebp-JCPManuscript.pdf (42 pages, 4584413 bytes).
+Output written on ebp-JCPManuscript.pdf (42 pages, 4584212 bytes).
 PDF statistics:
- 720 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 163 named destinations out of 1000 (max. 500000)
+ 718 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
+ 162 named destinations out of 1000 (max. 500000)
  404 words of extra memory for PDF output out of 10000 (max. 10000000)
 

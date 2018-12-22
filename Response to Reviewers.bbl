@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -34,6 +34,13 @@ Kunal Puri and Prabhu Ramachandran.
 \newblock Approximate riemann solvers for the godunov sph (gsph).
 \newblock \emph{Journal of Computational Physics}, 270:\penalty0 432--458,
   2014.
+
+\bibitem[Roe(1981)]{roe1981approximate}
+Philip~L Roe.
+\newblock Approximate riemann solvers, parameter vectors, and difference
+  schemes.
+\newblock \emph{Journal of computational physics}, 43\penalty0 (2):\penalty0
+  357--372, 1981.
 
 \bibitem[Toro(2013)]{toro2013riemann}
 Eleuterio~F Toro.

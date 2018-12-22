@@ -29,45 +29,45 @@ Repeated entry---line 2185 of file Reference.bib
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty journal in colella1978analysis
-You've used 46 entries,
+You've used 45 entries,
             2910 wiz_defined-function locations,
-            899 strings with 11791 characters,
-and the built_in function-call counts, 26463 in all, are:
-= -- 2128
-> -- 846
+            890 strings with 11522 characters,
+and the built_in function-call counts, 25687 in all, are:
+= -- 2071
+> -- 803
 < -- 39
-+ -- 345
-- -- 273
-* -- 3094
-:= -- 3917
-add.period$ -- 46
-call.type$ -- 46
-change.case$ -- 319
-chr.to.int$ -- 46
-cite$ -- 47
-duplicate$ -- 1799
-empty$ -- 1872
-format.name$ -- 403
-if$ -- 4824
++ -- 329
+- -- 258
+* -- 2990
+:= -- 3802
+add.period$ -- 45
+call.type$ -- 45
+change.case$ -- 309
+chr.to.int$ -- 45
+cite$ -- 46
+duplicate$ -- 1754
+empty$ -- 1827
+format.name$ -- 385
+if$ -- 4687
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 411
-newline$ -- 240
-num.names$ -- 184
-pop$ -- 390
+missing$ -- 399
+newline$ -- 235
+num.names$ -- 180
+pop$ -- 379
 preamble$ -- 1
-purify$ -- 321
+purify$ -- 311
 quote$ -- 0
-skip$ -- 526
+skip$ -- 516
 stack$ -- 0
-substring$ -- 1610
-swap$ -- 1490
+substring$ -- 1567
+swap$ -- 1445
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 408
+type$ -- 399
 warning$ -- 1
-while$ -- 222
+while$ -- 217
 width$ -- 0
-write$ -- 610
+write$ -- 597
 (There were 6 error messages)
