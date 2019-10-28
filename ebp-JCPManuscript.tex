@@ -1,50 +1,74 @@
-\documentclass[review]{elsarticle}
-\usepackage{lineno,hyperref}
-% package added by zhixuan, not sure whether allowed by JCP or not!
+%% 
+%% Copyright 2007-2019 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for Elsevier's document class `elsarticle'
+%% with harvard style bibliographic references
+
+\documentclass[preprint,12pt,authoryear]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times,authoryear]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,3p,times,authoryear]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+\usepackage{amsthm}
+% package added by zhixuan
 \usepackage{amsmath}
 \usepackage{float}
 
-\modulolinenumbers[5]
-\journal{Journal of Computational Physics}
-%%%%%%%%%%%%%%%%%%%%%%%
-%% Elsevier bibliography styles
-%%%%%%%%%%%%%%%%%%%%%%%
-%% To change the style, put a % in front of the second line of the current style and
-%% remove the % from the second line of the style you would like to use.
-%%%%%%%%%%%%%%%%%%%%%%%
-%% Numbered
-\bibliographystyle{model1-num-names}
-%% Numbered without titles
-%\bibliographystyle{model1a-num-names}
-%% Harvard
-%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
-%% Vancouver numbered
-%\usepackage{numcompress}\bibliographystyle{model3-num-names}
-%% Vancouver name/year
-%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
-%% APA style
-%\bibliographystyle{model5-names}\biboptions{authoryear}
-%% AMA style
-%\usepackage{numcompress}\bibliographystyle{model6-num-names}
-%% `Elsevier LaTeX' style
-%\bibliographystyle{elsarticle-num}
-%%%%%%%%%%%%%%%%%%%%%%%
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+\journal{Computer Methods in Applied Mechanics and Engineering}
 \begin{document}
 \begin{frontmatter}
 \title{A Random Choice SPH Scheme with Adaptive Viscosity}
 %\tnotetext[mytitlenote]{Can add  title note here}
 %% Group authors per affiliation:
 \author{Zhixuan Cao}
+\ead{zhixuan.cao@ansys.com}
+\address{Fluids Business Unit, Ansys Inc., Lebanon, NH, 03766, USA}
 \author{Abani Patra \fnref{mycorrespondingauthor}}
-\address{Department of Mechanical and Aerospace Engineering, The State University of New York at Buffalo, Amherst, NY, 14260-4200, USA}
+\ead{abani.patra@tufts.edu}
+\address{Department of Computer Science and Department of Mathematics, Tufts University, Medford, MA, 02153, USA}
 \author{E. Bruce Pitman}
-\address{Department of Materials Design and Innovation, The State University of New York at Buffalo, Amherst, NY, 14260-4200, USA}
+\ead{pitman@buffalo.edu}
+\address{Department of Materials Design and Innovation, The State University of New York at Buffalo, Amherst, NY, 14260, USA}
 %\fntext[myfootnote]{Since 1880.}
 %% or include affiliations in footnotes:
 %\author[mymainaddress,mysecondaryaddress]%{Elsevier Inc}
 %\ead[url]{www.elsevier.com}
 %\author[mysecondaryaddress]{Global Customer Service\corref{mycorrespondingauthor}}
-\fntext[mycorrespondingauthor]{abani@buffalo.edu}
+\cortext[mycorrespondingauthor]{Corresponding author}
 %\cortext[mycorrespondingauthor]{abani@buffalo.edu}
 %\ead{abani@buffalo.edu}
 %\address[mymainaddress]{1600 John F Kennedy Boulevard, Philadelphia}
@@ -65,7 +89,6 @@ Smoothed Particle Hydrodynamics (SPH), Random Choice Method (RCM), Riemann Solve
 \end{keyword}
 \end{frontmatter}
 
-\linenumbers
 \section{Introduction}
 Smoothed particle hydrodynamics (SPH) \citep{gingold1977smoothed,lucy1977numerical} is a mesh-free particle method based on a Lagrangian formulation of the governing equations of motion.
 SPH has been widely applied to different areas in engineering and science. As should be expected, SPH possesses certain advantages and certain disadvantages relative to finite difference and finite element solvers. Principally, as a Lagrangian solver, SPH conserves mass exactly. 
@@ -753,22 +776,20 @@ shows a similar phenomena (see, for example, \cite{warming1974modified}).
 In contrast, Glimm\rq{}s approach solves a local Riemann problem exactly within each cell,
 and samples (randomly or uniformly) the solution states. Consider again the linear advection equation \ref{linear}, with a discontinuity in cell $j$:
 \begin{equation}
-u^n = \left\{ \begin{array}{11}
-			u_L ~~~ x< (j+\xi)\Delta x \\
- 			u_R ~~~ x> (j+\xi)\Delta x
- 			\end{array}
-	  \right. 			
+u^n = \begin{cases}
+	u_L ~~~ x< (j+\xi)\Delta x \\
+ 	u_R ~~~ x> (j+\xi)\Delta x
+	\end{cases}			
 \end{equation}
 where $0<\xi<1$ locates the discontinuity within cell $j$.
 
 At time $n+1$, the discontinuity is either propagated or not, depending on the sampling
 point:
 \begin{equation}
-u^{n+1} = \left\{\begin{array}{11}
+u^{n+1} = \begin{cases}
 		  u_L ~~~ x< (j+\tilde \xi)\Delta x + a \Delta t \\
 		  u_R ~~~ x> (j+\tilde \xi)\Delta x + a \Delta t
-		  \end{array}
-		  \right.
+	        \end{cases}
 \end{equation}
 where $\tilde \xi$ denotes the sample point.
 In either case, the solution remains discontinuous at time $n+1$ and the 
@@ -843,7 +864,7 @@ So we do not think that the numerical oscillation is a challenging issue for SPH
 \item Dissipation decays the oscillation, so numerical oscillation can serve as an indicator of dissipation.
 \end{itemize}
 \section*{References}
-
+ \bibliographystyle{elsarticle-num} 
 \bibliography{Reference}
 
 \end{document}
