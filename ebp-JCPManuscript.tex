@@ -77,7 +77,7 @@
 \begin{abstract}
 Implementation of the classical smoothed particle hydrodynamics (SPH) method in high-speed compressible flow employs explicit artificial viscosity to properly capture shock waves. The amount of artificial viscosity introduced in this explicit way depends on coefficients of the artificial viscosity term.
 We propose a novel SPH scheme that combines an approximate version of Glimm\rq{}s Random Choice method (RCM) with SPH. RCM properly resolves and then samples all hydrodynamic waves. Our version approximately resolves hydrodynamic waves, and samples the approximate solution. The new scheme does not require explicit artificial viscosity term.
-We test this method on standard one dimensional shock tube problems and observe several attractive features. This method introduces adaptive artificial viscosity, assigning larger dissipation around discontinuities and smaller elsewhere.  Less smearing of discontinuity is introduced by this method in one dimensional shock tube tests. In addition, it also helps ameliorate pressure ``wiggle" around contact discontinuity. When applied to three dimensional jet flow, this method is demonstrated to introduce less overall-dissipation.
+We test this method on standard one dimensional shock tube problems. Beyond good capability of capturing shocks and other discontinuities, this method also introduces adaptive artificial viscosity, assigning larger dissipation around discontinuities and smaller elsewhere. In addition, it also helps ameliorate pressure ``wiggle" around contact discontinuity. When applied to three dimensional free jet flow, this method is demonstrated to introduce less overall-dissipation.
 %Our ultimate goal is to apply this method to jet flow. Because of the high shear rate in this application, we introduce a highly tuned eddy viscosity that is applied only near the shear surface. The combination of the SPH and RCM together with a shear viscosity produces nicely resolved jet profiles.
 
 \end{abstract}
@@ -226,7 +226,7 @@ We re-formulate the equations of motion to exploit certain symmetry. A lengthy a
 <\dfrac{d e_{a}}{dt}>= - \sum_{b} m_{b} p_{a b}^{\ast} [\textbf{v}_{a b}^{\ast} - \dot{\textbf{x}}_{a}^{\ast}] \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-e-simple-form}
 \end{equation}
-where, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$ are intermediate states derived from the interaction of particles $a$ and $b$. Inutsuka proposed this intermediate $\ast$ state be defined as the stationary state of the solution to a local 1-dimensional Riemann for particles $a$ and $b$.  That is, one rotates coordinates, reducing the particle interaction to one space dimension along the line connecting particle $a$ and particle $b$. Using the momentum and energy of the two particles as left and right states, one solves the Riemann problem for the starred quantities.
+where, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$ are intermediate states derived from the interaction of particles $a$ and $b$. Inutsuka proposed this intermediate $\ast$ state be defined as the stationary state of the solution to a local one dimensional Riemann Problem for particles $a$ and $b$.  That is, one rotates coordinates, reducing the particle interaction to one space dimension along the line connecting particle $a$ and particle $b$. Using the momentum and energy of the two particles as left and right states, one solves the Riemann problem for the starred quantities.
 
 Having solved the local Riemann problem, 
 $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
@@ -243,7 +243,7 @@ Instead of calculating a full solution to the Riemann problem, approximate solve
 We propose sampling the (approximate) Riemann solution as in the Random choice method, where the approximate solution is given by the HLLC construction.
 
 \subsection{The local 1D Riemann problem} \label{sec:RP-construction}
-The starred state is the solution to a local 1-dimensional Riemann problem. Given particles $a$ and $b$, rotate coordinates to establish a single spatial dimension along the line connecting the two particles, with direction 
+The starred state is the solution to a local one dimensional Riemann Problem. Given particles $a$ and $b$, rotate coordinates to establish a single spatial dimension along the line connecting the two particles, with direction 
 \begin{equation}
 \hat{r}_{a b}= \frac{\textbf{x}_{a} - \textbf{x}_{ b}}{|\textbf{x}_{a} - \textbf{x}_{ b}|}
 \end{equation}. 
@@ -271,7 +271,7 @@ u_R = u_a
 p_R = p_a 
 \label{eq:Riemann-Prob-define-R-p}
 \end{eqnarray}
-[Aside: Cha \cite{cha2003implementations} proposed a second order accurate GSPH method by using
+[Aside:  \citet{inutsuka2002reformulation} proposed a second order accurate GSPH method by using
 a piecewise linear interpolation of the states. We do not pursue higher accuracy here, although the idea is straightforward to consider.]
 
 \subsection{Selecting the star state} \label{sec:Picking-up-single-state}
@@ -314,7 +314,7 @@ and project the primitive variables onto this local coordinate system to define 
 
 \section{Numerical tests} \label{sec:numericaltests}
 We describe results from several numerical tests using SPH, RSPH and GSPH in this section.
-A 1D shock tube test is investigated in different aspects to compare standard SPH, GSPH and RSPH revealing several features of RSPH. More shock tube simulations are also conducted to check the capacity of RSPH for different wave patterns. In addition, order of accuracy is investigated using the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation. The effect of equivalent numerical dissipation is first demonstrated by SPH simulation with different artificial viscosity coefficients. Then the equivalent numerical dissipations introduced by GSPH and RSPH are compared demonstrating that RSPH introduces less dissipation than GSPH. In 3D fee jet flow simulation, local Riemann problems are constructed in a piece wise constant manner for both GSPH and RSPH.
+A 1D shock tube test is investigated in different aspects to compare standard SPH, GSPH and RSPH revealing several features of RSPH. More shock tube simulations are also conducted to check the capacity of RSPH for different wave patterns. In addition, order of accuracy is investigated using the 1D shock tube problem. In the last subsection we describe a 3D free jet flow simulation. The effect of equivalent numerical dissipation is first demonstrated by SPH simulation with different artificial viscosity coefficients. Then the equivalent numerical dissipations introduced by GSPH and RSPH are compared demonstrating that RSPH introduces less dissipation than GSPH in 3D free jet flow simulation.
 
 Six 1D simulations described here are carried out:
 \begin{itemize}% [1D Tests]
@@ -822,9 +822,10 @@ uniform sampling via the van der Corput sequence.
 \citep{liu1977deterministic}
 
 \section{Numerical oscillation due to non-uniform smoothing length in space}
-Our discussion in this appendix is divided into two parts. The first part explains the mechanism how the numerical oscillations are induced by non-uniform smoothing length in space. The second parts  shows a ``manmade" numerical oscillation, which backs up our analysis in the first part.
+Our discussion in this appendix is divided into two parts. The first part explains the mechanism how the numerical oscillations are induced by non-uniform smoothing length in space. The second parts  shows a ``manmade" numerical oscillation, which backs up our analysis in the first part. The discussion below is valid for the SPH discretization adopted in this paper. Considering there are many variants of SPH method, the same conclusion does not apply to all variants of SPH method. The main purpose here is to explain where does the numerical oscillations come from in our tests. 
 
-There are several options \citep[][e.g.]{evrard1988beyond, hernquist1989treesph} for smoothing length $h$ in Eq. (\ref{eq:ns-sph-d} - \ref{eq:ns-sph-v}). Major discussions regarding the smoothing length are during 1980s to first several years of 1990s. In now days, taking $h=\frac{h_a + h_b}{2}$ is a commonly accepted practice. It is also adopted in this article. One big advantage is that such treatment can guarantee momentum and energy conservation given any paired particles are within compact support of each other's weighting function. However, it could also lead to numerical oscillation when applying the averaged smoothing length formulation in these scenarios with nonuniformly distributed smoothing length in space. Such numerical oscillation are usually either too small to observe or decays quickly due to sufficient (or too large) numerical dissipation. Such numerical oscillation is not fully aware of yet by the community. In this section we explain how the numerical oscillations are formed.
+\subsection{Oscillation formation mechanism}
+There are several options \citep[][e.g.]{evrard1988beyond, hernquist1989treesph} for smoothing length $h$ in Eq. (\ref{eq:ns-sph-d} - \ref{eq:ns-sph-v}). Major discussions regarding the smoothing length are during 1980s to first several years of 1990s. Taking $h=\frac{h_a + h_b}{2}$ has the advantage of guaranteeing momentum and energy conservation given any paired particles are within compact support of each other's weighting function. The averaged smoothing length is also adopted in this article. However, it could lead to numerical oscillation when applying the averaged smoothing length formulation in these scenarios with nonuniformly distributed smoothing length in space. Such numerical oscillation are usually either too small to observe or decays quickly due to sufficiently large numerical dissipation. In this section we explain how the numerical oscillations are formed.
 
 Recall that the kernel function of particle $a$ is required to be symmetric with respect to particle $a$. As a result, the gradient of kernel function at particle $a$ is anti-symmetric. All the commonly used kernel functions can satisfy the symmetry requirement as well as the anti-symmetry requirement of its gradient. The anti-symmetric properties of gradient of kernel function can guarantee the pressure gradient term, $\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_a w_{a b}\left(h\right)$,  in momentum and energy equation (see Eq. (\ref{eq:ns-sph-v}) and (\ref{eq:ns-sph-e})), vanishes when pressure is uniform in space. For example, if pressure is uniform in space, pressure at particle $a$ and particle $b$ would be equal, the pressure gradient term then equals zero. That is, numerical approximation is consistent with real physics. However the actual kernel function is not symmetric any more if smoothing length is not uniform in space if we adopt the averaged smoothing length formulation. The gradient of kernel function is also not anti-symmetric any more. That is to say, the pressure gradient term becomes non-zero even when pressure is uniform in space. This unphysical representation of pressure gradient term by numerical approximation is illustrated in Fig. \ref{fig:dw-ha}. 
 
@@ -841,8 +842,10 @@ To summarize, two necessary conditions for generating unphysical numerical repre
 \item Calculate smoothing length by averaging, for example, $h = \frac{h_a + h_b}{2}$.
 \item Smoothing length is nonuniform in space.
 \end{itemize} 
-This unphysical numerical representation of pressure gradient term could lead to numerical oscillation in numerical solution. Sharp changes in smoothing length can induce significant oscillation, which usually propagates into the computational domain and corrupts numerical solution.
+%This unphysical numerical representation of pressure gradient term could lead to numerical oscillation.
+% Sharp changes in smoothing length can induce significant oscillation, which usually propagates into the computational domain and corrupts numerical solution.
 
+\subsection{``Manmade"  Oscillation}
 To illustrate the formation and influence of such numerical oscillation, we intentionally create a situation of non-uniform smoothing length merely by assigning larger smoothing length to boundary ghost particles on left side in the 1D shock tube test (test2). As shown in the first plot of Fig. \ref{fig:Perturbation-ME2}, the smoothing length is discontinuous at the left boundary. \textbf{Just like discontinuity of physical quantities (for example, the discontinuity at the middle of shock tube test), discontinuity in numerical resolution, in terms of smoothing length, also induces a wave.} An oscillation is observed clearly in the simulation result, starting near the left boundary and propagating into simulation domain. Recall that larger smoothing length for left boundary ghost particles is the only difference between normal test (as shown in Fig. \ref{fig:RCM-GSPH-Sod}) and the new test (see Fig. \ref{fig:Perturbation-ME2}), we can conclude that nonuniform smoothing length in space do induce numerical oscillations.  Another important observation is that the magnitudes of oscillation decays as the time goes. We would suppose that it is due to numerical dissipation. In section \ref{sec:numericaltests}, we use magnitude of oscillation as an indirect indicator of numerical dissipation.
 
 In another test, based on the previous test with larger smoothing length for ghost particle on left boundary, we adopt $h = h_a$, instead of $h = \frac{h_a + h_b}{2}$. The result is shown by Fig. \ref{fig:Perturbation-ME0-tp1}. The oscillation is gotten rid of, which confirms that the averaged smoothing length is one of necessary conditions for the unphysical numerical representation of pressure gradient term.
@@ -862,18 +865,23 @@ In another test, based on the previous test with larger smoothing length for gho
 \label{fig:Perturbation-ME0-tp1}
 \end{figure}
 
-Adaptive smoothing length is now an essential component of SPH method. It naturely results to nonuniform smoothing length in space. Variation range of smoothing length would be especially larger for compressible flow. Fortunately, there are several factors counteracting against the numerical oscillation:
+%May worthwhile to do one more test to demonstrate that if the smoothing length is constant cross the boundary, there will be no oscillation
+
+%May worthwhile to do more tests together with other variants of SPH method. 
+
+Nonuniform smoothing length in space is not rare in SPH simulation, several things can contribute to nonuniform smoothing length, such as nonuniform density distribution, adaptive smoothing length and adaptive particle mass size. Fortunately, there are several factors counteracting against the numerical oscillation:
 \begin{itemize}
 \item Numerical dissipation decays such numerical oscillation preventing accumulation of oscillation magnitude.
 \item For incompressible flow or weakly compressible flow, smoothing length only varies in a small range.
 \item Well developed adaptive smoothing length algorithm usually guarantees more ``smoothing" change of smoothing length in space avoiding sharp change of smoothing length in space.
+\item Other variants of SPH formulation might not suffer from it at all.
 \end{itemize}
-So we do not think that the numerical oscillation is a challenging issue for SPH. The major motivation of the appendix is to show that 
+So we do not think that the numerical oscillation is a real challenging issue for SPH. The major motivation of the appendix is to show that 
 \begin{itemize}
 \item The numerical oscillation does exist commonly in SPH schemes. It is not something only for RSPH.
-\item Dissipation decays the oscillation, so numerical oscillation can serve as an indicator of dissipation.
+\item The SPH formulation adopted in this paper do introduce numerical oscillation and we can make use of the oscillation as an indicator for numerical dissipation.
 \end{itemize}
-\section*{References}
+\section*{}
  \bibliographystyle{elsarticle-num} 
 \bibliography{Reference}
 
