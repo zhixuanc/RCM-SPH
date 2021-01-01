@@ -532,30 +532,31 @@ We examine the errors between simulation results and the analytical solution (th
 \begin{equation}
 L_1= \frac{1}{N_p} \sum_a^{N_p} \vert f_a^{SPH} - f^{REF} (x_a) \vert 
 \end{equation}
-where the superscript $REF$ represent the reference solution, $SPH$ represents simulation results calculated by different SPH schemes. Fig. \ref{fig:Accuracy-test1} displays the $L_1$ norm errors for the density, velocity and pressure profiles for different SPH schemes.
+where the superscript $REF$ represent the reference solution, $SPH$ represents simulation results calculated by different SPH schemes. Fig. \ref{fig:Accuracy-test1} displays the $L_1$ norm errors for the density profiles for different SPH schemes.
 
-Due to symmetry of kernel function, estimation of density (Eq. (\ref{eq:ns-sph-d})) in SPH can reach second order of accuracy if all particles distribute in space with uniform interval. However, such ideal situation is very rare. Due to irregular particle distribution, we usually observe order of accuracy between 1 and 2. Besides the particle distribution in space, which has major affect on order of accuracy of SPH, some other aspects would also influence order of accuracy. For SPH schemes that depend on solving Riemann problems, how the local Riemann problem is constructed also influence order of accuracy. 
-For GSPH, the Riemann problem can be constructed in piece wise constant manner, piece wise linear manner or even higher order \citep{inutsuka2002reformulation}. For RSPH, we can only consider to construct local Riemann problems in the piece wise constant manner. When using other higher order construction of local Riemann problem, how to determine the range for ``random choice" is not clear. This is a limitation of current RSPH compared with GSPH. With simper Riemann problem construction, RSPH is expected to be faster than GSPH adopting higher order Riemann problem construction. To compare RSPH and GSPH in a well-controlled manner, all GSPH tests presented in this paper are based on piece wise constant construction of local Riemann problems.
+%Due to symmetry of kernel function, estimation of density (Eq. (\ref{eq:ns-sph-d})) in SPH can reach second order of accuracy if all particles distribute in space with uniform interval. However, such ideal situation is very rare. Due to irregular particle distribution, we usually observe order of accuracy between 1 and 2. Besides the particle distribution in space, which has major affect on order of accuracy of SPH, some other aspects would also influence order of accuracy. For SPH schemes that depend on solving Riemann problems, how the local Riemann problem is constructed also influence order of accuracy. 
+%For GSPH, the Riemann problem can be constructed in piece wise constant manner, piece wise linear manner or even higher order \citep{inutsuka2002reformulation}. For RSPH, we can only consider to construct local Riemann problems in the piece wise constant manner. When using other higher order construction of local Riemann problem, how to determine the range for ``random choice" is not clear. This is a limitation of current RSPH compared with GSPH. With simpler Riemann problem construction, RSPH is expected to be faster than GSPH adopting higher order Riemann problem construction. To compare RSPH and GSPH in a well-controlled manner, all GSPH tests presented in this paper are based on piece wise constant construction of local Riemann problems.
 
 We observe a rate of convergence of approximately 1 for GSPH and 1.5 for standard SPH and RSPH.  Considering Riemann problem is constructed in piece wise constant manner, it is not surprise that GSPH shows first order of accuracy. With piece wise linear construction of Riemann problem, GSPH would be higher order of accuracy. For example,
 GSPH combined with HLLC and Roe approximate Riemann solvers has been shown to be approximately second order of accuracy \citep{puri2014comparison} and comparable in accuracy to the standard SPH schemes when construct local Riemann problem in a piece wise linear manners. Presence of discontinuities, such as shock, in the test problem might lead to more irregular distribution of particles and lower the rate of convergence. 
 
-Since both RSPH and GSPH tests in this paper adopt the same manner for Riemann problem construction. We conclude that RSPH shows higher order of accuracy than GSPH providing both use the same Riemann problem construction. Compared with SPH, RSPH shows almost the same order of accuracy and level of error.
+%Since both RSPH and GSPH tests in this paper adopt the same manner for Riemann problem construction. We conclude that RSPH shows higher order of accuracy than GSPH providing both use the same Riemann problem construction. Compared with SPH, RSPH shows almost the same order of accuracy and level of error.
+ Compared with SPH and GSPH, RSPH shows almost the same order of accuracy and level of error as SPH and slightly higher order of accuracy than GSPH which adopts the same Riemann problem construction.
  
 \begin{figure}[H]
     \centering
-    \begin{minipage}{.30\textwidth}
+    \begin{minipage}{.5\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-des}
     \end{minipage}%
-    \begin{minipage}{.30 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-vel}
-    \end{minipage}%
-    \begin{minipage}{.39\textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-pre}
-    \end{minipage}%  
+%    \begin{minipage}{.30 \textwidth}
+%        \centering
+%        \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-vel}
+%    \end{minipage}%
+%    \begin{minipage}{.39\textwidth}
+%        \centering
+%        \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-pre}
+%    \end{minipage}%  
     \caption{ $L_1$ norm of errors for 1D shock tube test (test1) for RSPH, standard SPH, GSPH using Roe Riemann solver and GSPH using HLLC Riemann Solver. GSPH with the HLLC approximate Riemann solver exhibits the same convergence rate (around 1) but quantitatively larger errors than that with Roe Riemann solver. RSPH and standard SPH shows same rate of convergence and almost same level of error.}
     \label{fig:Accuracy-test1}
 \end{figure}
