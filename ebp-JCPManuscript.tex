@@ -344,8 +344,9 @@ Six 1D simulations described here are carried out:
 \end{table}
 Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_parameters}, where, subscript $L$ refers left side and $R$ for right side. $m$ is particle mass, initial interval between adjacent particles are adjusted to guarantee equal particle mass. $t_f$ is the time to terminate simulation and plotting the results. The $x$ axis in all plots is normalized by time, that is $x/t_f$, in plots for shock tube tests results.
 
-In first four tests, density on right and left sides are different. Considering that all particles have the same particle mass, assigning smoothing length according to $h \propto \frac{m}{\rho}$ leads to discontinuity of smoothing length at the middle. Such discontinuity of smoothing length is the source of numerical oscillations, which usually decay fast and are not observed when there is sufficient dissipation. 
-Such numerical oscillation becomes obvious when dissipation is less. For example, when SPH taking $\alpha=0.2$ (see Fig. \ref{fig:RCM-Sod-SPH-alf} and Fig. \ref{fig:RCM-Sod-SPH-alf-zoom}). That is to say, how much the numerical oscillation is suppressed can indicate the amount of numerical dissipation introduced in each SPH scheme providing we are solving inviscid fluids (no physical dissipation). Refer Appendix B for more information regarding the numerical oscillation due to nonuniform smoothing length.
+In first four tests, density on right and left sides are different. Considering that all particles have the same particle mass, assigning smoothing length according to $h \propto \frac{m}{\rho}$ leads to discontinuity of smoothing length at the middle. Such discontinuity of smoothing length can cause numerical oscillations, which usually decay fast and are not observed when there is sufficient dissipation. 
+Such numerical oscillation becomes obvious when dissipation is less. For example, when SPH taking $\alpha=0.2$ (see Fig. \ref{fig:RCM-Sod-SPH-alf} and Fig. \ref{fig:RCM-Sod-SPH-alf-zoom}). That is to say, how much the numerical oscillation is suppressed can indicate the amount of numerical dissipation introduced in each SPH scheme providing we are solving inviscid fluids (no physical dissipation).
+% Refer Appendix B for more information regarding the numerical oscillation due to nonuniform smoothing length.
 Another indicator of numerical dissipation is how much the shock is smeared. Both indicators reflect consistent information regarding numerical dissipation throughout our tests, see, for example, plot c) in Fig. \ref{fig:RCM-Sod-SPH-alf-zoom} or plot g) in Fig. \ref{fig:RCM-GSPH-Sod}. 
 We take these two as indicators of numerical dissipation in many discussions regarding 1D tests.
 As for 3D jet flow, we take the distance between jet head and inject vent at given physical time as the indicator of overall equivalent numerical dissipation. As shown in Fig. \ref{fig:free-jet-SPH-comparison}, the distance between jet head and inject vent decrease when artificial viscosity coefficients increase. This confirms that such distance do reflect overall equivalent dissipation.
@@ -567,7 +568,9 @@ The results are shown in Fig. \ref{fig:RCM-GSPH-Sod} $\sim$ Fig. \ref{fig:RCM-st
 We observe that RSPH is able to correctly predict the position and magnitude of all waves for all tests. A jump of specific internal energy at the origin is observed in Sj$\ddot{o}$green test. However, such jump is a common issue of SPH schemes and has been reported in many other tests (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})
 In addition, a noticeable spike can be observed near the contact discontinuity. Similar spike is observed in GSPH simulation \citep{puri2014comparison}.
 \citet{noh1987errors} proposed to adding a small amount of thermal conduction to ameliorate the spike and has been applied in blast-wave test using GSPH \citep{puri2014comparison}. We did not adopt such strategy in our simulation.
-Due to less amount of dissipation, the numerical oscillations, which is due to nonuniform smoothing length as discussed in Appendix B, persist in all simulation results. For the strong blast test and double shock test, such oscillation becomes more obvious than other tests, even though, the magnitude of fluctuations is within an acceptable range.
+Due to less amount of dissipation, the numerical oscillations
+%, which is due to nonuniform smoothing length as discussed in Appendix B,
+ persist in all simulation results. For the strong blast test and double shock test, such oscillation becomes more obvious than other tests, even though, the magnitude of fluctuations is within an acceptable range.
 
 \begin{figure}[H]
     \centering
@@ -822,66 +825,67 @@ uniform sampling via the van der Corput sequence.
 \citep{warming1974modified}
 \citep{liu1977deterministic}
 
-\section{Numerical oscillation due to non-uniform smoothing length in space}
-Our discussion in this appendix is divided into two parts. The first part explains the mechanism how the numerical oscillations are induced by non-uniform smoothing length in space. The second parts  shows a ``manmade" numerical oscillation, which backs up our analysis in the first part. The discussion below is valid for the SPH discretization adopted in this paper. Considering there are many variants of SPH method, the same conclusion does not apply to all variants of SPH method. The main purpose here is to explain where does the numerical oscillations come from in our tests. 
+%\section{Numerical oscillation due to non-uniform smoothing length in space}
+%Our discussion in this appendix is divided into two parts. The first part explains the mechanism how the numerical oscillations are induced by non-uniform smoothing length in space. The second parts  shows a ``manmade" numerical oscillation, which backs up our analysis in the first part. The discussion below is valid for the SPH discretization adopted in this paper. Considering there are many variants of SPH method, the same conclusion does not apply to all variants of SPH method. The main purpose here is to explain where does the numerical oscillations come from in our tests. 
 
-\subsection{Oscillation formation mechanism}
-There are several options \citep[][e.g.]{evrard1988beyond, hernquist1989treesph} for smoothing length $h$ in Eq. (\ref{eq:ns-sph-d} - \ref{eq:ns-sph-v}). Major discussions regarding the smoothing length are during 1980s to first several years of 1990s. Taking $h=\frac{h_a + h_b}{2}$ has the advantage of guaranteeing momentum and energy conservation given any paired particles are within compact support of each other's weighting function. The averaged smoothing length is also adopted in this article. However, it could lead to numerical oscillation when applying the averaged smoothing length formulation in these scenarios with nonuniformly distributed smoothing length in space. Such numerical oscillation are usually either too small to observe or decays quickly due to sufficiently large numerical dissipation. In this section we explain how the numerical oscillations are formed.
-
-Recall that the kernel function of particle $a$ is required to be symmetric with respect to particle $a$. As a result, the gradient of kernel function at particle $a$ is anti-symmetric. All the commonly used kernel functions can satisfy the symmetry requirement as well as the anti-symmetry requirement of its gradient. The anti-symmetric properties of gradient of kernel function can guarantee the pressure gradient term, $\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_a w_{a b}\left(h\right)$,  in momentum and energy equation (see Eq. (\ref{eq:ns-sph-v}) and (\ref{eq:ns-sph-e})), vanishes when pressure is uniform in space. For example, if pressure is uniform in space, pressure at particle $a$ and particle $b$ would be equal, the pressure gradient term then equals zero. That is, numerical approximation is consistent with real physics. However the actual kernel function is not symmetric any more if smoothing length is not uniform in space if we adopt the averaged smoothing length formulation. The gradient of kernel function is also not anti-symmetric any more. That is to say, the pressure gradient term becomes non-zero even when pressure is uniform in space. This unphysical representation of pressure gradient term by numerical approximation is illustrated in Fig. \ref{fig:dw-ha}. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.90 \textwidth ]{App-Figure/dw-ha}
-\caption{In this example, we consider two pairs of particles $(a, b_1)$ and $(a, b_2)$. For simplicity, we assume uniform distance between particles. When take $h=\frac{h_a + h_b}{2}$, the actual shape of gradient of kernel function is the combination of two dash curves. It is not anti-symmetric.
-We also assume pressure, density and particle mass of all particles are equal. However, the pressure gradient term at particle $a$ in discretized formulation do not cancel out ( $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(\frac{h_a+h_{b_1}}{2}\right) < -\dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(\frac{h_a+h_{b_1}}{2}\right)$) when smoothing lengths are not equal ($h_{b1} \neq h_{b2}$). This leads to unphysical non-zero pressure gradient, which is the source of numerical oscillation. When smoothing length is uniform in space or take $h = h_a$, the actual shape of gradient of kernel function is the solid curve, which is anti-symmetric. As a consequence, $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(h\right) = \dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(h\right)$, the unphysical non-zero pressure gradient vanishes.}    
-\label{fig:dw-ha}
-\end{figure}
-
-To summarize, two necessary conditions for generating unphysical numerical representation of pressure gradient terms are:
-\begin{itemize}
-\item Calculate smoothing length by averaging, for example, $h = \frac{h_a + h_b}{2}$.
-\item Smoothing length is nonuniform in space.
-\end{itemize} 
-%This unphysical numerical representation of pressure gradient term could lead to numerical oscillation.
-% Sharp changes in smoothing length can induce significant oscillation, which usually propagates into the computational domain and corrupts numerical solution.
-
-\subsection{``Manmade"  Oscillation}
-To illustrate the formation and influence of such numerical oscillation, we intentionally create a situation of non-uniform smoothing length merely by assigning larger smoothing length to boundary ghost particles on left side in the 1D shock tube test (test2). As shown in the first plot of Fig. \ref{fig:Perturbation-ME2}, the smoothing length is discontinuous at the left boundary. \textbf{Just like discontinuity of physical quantities (for example, the discontinuity at the middle of shock tube test), discontinuity in numerical resolution, in terms of smoothing length, also induces a wave.} An oscillation is observed clearly in the simulation result, starting near the left boundary and propagating into simulation domain. Recall that larger smoothing length for left boundary ghost particles is the only difference between normal test (as shown in Fig. \ref{fig:RCM-GSPH-Sod}) and the new test (see Fig. \ref{fig:Perturbation-ME2}), we can conclude that nonuniform smoothing length in space do induce numerical oscillations.  Another important observation is that the magnitudes of oscillation decays as the time goes. We would suppose that it is due to numerical dissipation. In section \ref{sec:numericaltests}, we use magnitude of oscillation as an indirect indicator of numerical dissipation.
-
-In another test, based on the previous test with larger smoothing length for ghost particle on left boundary, we adopt $h = h_a$, instead of $h = \frac{h_a + h_b}{2}$. The result is shown by Fig. \ref{fig:Perturbation-ME0-tp1}. The oscillation is gotten rid of, which confirms that the averaged smoothing length is one of necessary conditions for the unphysical numerical representation of pressure gradient term.
-%Such perturbation would be created unintentionally in real implementation. The oscillation can actually be observed in 1D shock tube tests in many other papers, even though they are not as obvious as the one in Fig. \ref{fig:Perturbation-ME2}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME2}
-\caption{Plots of density for 1D shock tube test 2 at different time. The test is simulated using classical SPH with $\alpha = 1$. In these plots, $x$ axis is location along shock tube, $y$ axis is density. Smoothing length $h = \frac{h_a + h_b}{2}$. The first plot is corresponding to $t=0.001s$, color map is for smoothing length. The second plot to last plot are corresponding to $t=0.05s$, $t=0.1s$, $t=0.2s$, $t=0.3s$ respectively. We observe that a numerical perturbation incepts near the left boundary and propagates into the domain. Actually, the smoothing length is also discontinuous at the middle. It also induces another numerical perturbation which has smaller magnitude but still observable. It has the same propagating speed as the front of rarefaction. Both oscillations decays in time due to dissipation.}
-\label{fig:Perturbation-ME2}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME0-tp1}
-\caption{Plots of density for 1D shock tube test 2 at $t=0.1s$. The test is simulated using classical SPH with $\alpha = 1$. In this test, we still intentionally create non-uniform smoothing length distribution in space by assigning larger smoothing length to boundary ghost particles at the left side. But we take $h=h_a$. No numerical perturbation generated near the left boundary.}    
-\label{fig:Perturbation-ME0-tp1}
-\end{figure}
-
-%May worthwhile to do one more test to demonstrate that if the smoothing length is constant cross the boundary, there will be no oscillation
-
-%May worthwhile to do more tests together with other variants of SPH method. 
-
-Nonuniform smoothing length in space is not rare in SPH simulation, several things can contribute to nonuniform smoothing length, such as nonuniform density distribution, adaptive smoothing length and adaptive particle mass size. Fortunately, there are several factors counteracting against the numerical oscillation:
-\begin{itemize}
-\item Numerical dissipation decays such numerical oscillation preventing accumulation of oscillation magnitude.
-\item For incompressible flow or weakly compressible flow, smoothing length only varies in a small range.
-\item Well developed adaptive smoothing length algorithm usually guarantees more ``smoothing" change of smoothing length in space avoiding sharp change of smoothing length in space.
-\item Other variants of SPH formulation might not suffer from it at all.
-\end{itemize}
-So we do not think that the numerical oscillation is a real challenging issue for SPH. The major motivation of the appendix is to show that 
-\begin{itemize}
-\item The numerical oscillation does exist commonly in SPH schemes. It is not something only for RSPH.
-\item The SPH formulation adopted in this paper do introduce numerical oscillation and we can make use of the oscillation as an indicator for numerical dissipation.
-\end{itemize}
+%\subsection{Oscillation formation mechanism}
+%There are several options \citep[][e.g.]{evrard1988beyond, hernquist1989treesph} for smoothing length $h$ in Eq. (\ref{eq:ns-sph-d} - \ref{eq:ns-sph-v}). Major discussions regarding the smoothing length are during 1980s to first several years of 1990s. Taking $h=\frac{h_a + h_b}{2}$ has the advantage of guaranteeing momentum and energy conservation given any paired particles are within compact support of each other's weighting function. The averaged smoothing length is also adopted in this article. However, it could lead to numerical oscillation when applying the averaged smoothing length formulation in these scenarios with nonuniformly distributed smoothing length in space. Such numerical oscillation are usually either too small to observe or decays quickly due to sufficiently large numerical dissipation. In this section we explain how the numerical oscillations are formed.
+%
+%Recall that the kernel function of particle $a$ is required to be symmetric with respect to particle $a$. As a result, the gradient of kernel function at particle $a$ is anti-symmetric. All the commonly used kernel functions can satisfy the symmetry requirement as well as the anti-symmetry requirement of its gradient. The anti-symmetric properties of gradient of kernel function can guarantee the pressure gradient term, $\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_a w_{a b}\left(h\right)$,  in momentum and energy equation (see Eq. (\ref{eq:ns-sph-v}) and (\ref{eq:ns-sph-e})), vanishes when pressure is uniform in space. For example, if pressure is uniform in space, pressure at particle $a$ and particle $b$ would be equal, the pressure gradient term then equals zero. That is, numerical approximation is consistent with real physics. However the actual kernel function is not symmetric any more if smoothing length is not uniform in space if we adopt the averaged smoothing length formulation. The gradient of kernel function is also not anti-symmetric any more. That is to say, the pressure gradient term becomes non-zero even when pressure is uniform in space. This unphysical representation of pressure gradient term by numerical approximation is illustrated in Fig. \ref{fig:dw-ha}. 
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.90 \textwidth ]{App-Figure/dw-ha}
+%\caption{In this example, we consider two pairs of particles $(a, b_1)$ and $(a, b_2)$. For simplicity, we assume uniform distance between particles. When take $h=\frac{h_a + h_b}{2}$, the actual shape of gradient of kernel function is the combination of two dash curves. It is not anti-symmetric.
+%We also assume pressure, density and particle mass of all particles are equal. However, the pressure gradient term at particle $a$ in discretized formulation do not cancel out ( $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(\frac{h_a+h_{b_1}}{2}\right) < -\dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(\frac{h_a+h_{b_1}}{2}\right)$) when smoothing lengths are not equal ($h_{b1} \neq h_{b2}$). This leads to unphysical non-zero pressure gradient, which is the source of numerical oscillation. When smoothing length is uniform in space or take $h = h_a$, the actual shape of gradient of kernel function is the solid curve, which is anti-symmetric. As a consequence, $-\dfrac{p_{b_1}}{\rho_{b_1}^2} \nabla_a w_{a b_1}\left(h\right) = \dfrac{p_{b_2}}{\rho_{b_2}^2} \nabla_a w_{a b2}\left(h\right)$, the unphysical non-zero pressure gradient vanishes.}    
+%\label{fig:dw-ha}
+%\end{figure}
+%
+%To summarize, two necessary conditions for generating unphysical numerical representation of pressure gradient terms are:
+%\begin{itemize}
+%\item Calculate smoothing length by averaging, for example, $h = \frac{h_a + h_b}{2}$.
+%\item Smoothing length is nonuniform in space.
+%\end{itemize} 
+%%This unphysical numerical representation of pressure gradient term could lead to numerical oscillation.
+%% Sharp changes in smoothing length can induce significant oscillation, which usually propagates into the computational domain and corrupts numerical solution.
+%
+%\subsection{``Manmade"  Oscillation}
+%To illustrate the formation and influence of such numerical oscillation, we intentionally create a situation of non-uniform smoothing length merely by assigning larger smoothing length to boundary ghost particles on left side in the 1D shock tube test (test2). As shown in the first plot of Fig. \ref{fig:Perturbation-ME2}, the smoothing length is discontinuous at the left boundary. \textbf{Just like discontinuity of physical quantities (for example, the discontinuity at the middle of shock tube test), discontinuity in numerical resolution, in terms of smoothing length, also induces a wave.} An oscillation is observed clearly in the simulation result, starting near the left boundary and propagating into simulation domain. Recall that larger smoothing length for left boundary ghost particles is the only difference between normal test (as shown in Fig. \ref{fig:RCM-GSPH-Sod}) and the new test (see Fig. \ref{fig:Perturbation-ME2}), we can conclude that nonuniform smoothing length in space do induce numerical oscillations.  Another important observation is that the magnitudes of oscillation decays as the time goes. We would suppose that it is due to numerical dissipation. In section \ref{sec:numericaltests}, we use magnitude of oscillation as an indirect indicator of numerical dissipation.
+%
+%In another test, based on the previous test with larger smoothing length for ghost particle on left boundary, we adopt $h = h_a$, instead of $h = \frac{h_a + h_b}{2}$. The result is shown by Fig. \ref{fig:Perturbation-ME0-tp1}. The oscillation is gotten rid of, which confirms that the averaged smoothing length is one of necessary conditions for the unphysical numerical representation of pressure gradient term.
+%%Such perturbation would be created unintentionally in real implementation. The oscillation can actually be observed in 1D shock tube tests in many other papers, even though they are not as obvious as the one in Fig. \ref{fig:Perturbation-ME2}.
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME2}
+%\caption{Plots of density for 1D shock tube test 2 at different time. The test is simulated using classical SPH with $\alpha = 1$. In these plots, $x$ axis is location along shock tube, $y$ axis is density. Smoothing length $h = \frac{h_a + h_b}{2}$. The first plot is corresponding to $t=0.001s$, color map is for smoothing length. The second plot to last plot are corresponding to $t=0.05s$, $t=0.1s$, $t=0.2s$, $t=0.3s$ respectively. We observe that a numerical perturbation incepts near the left boundary and propagates into the domain. Actually, the smoothing length is also discontinuous at the middle. It also induces another numerical perturbation which has smaller magnitude but still observable. It has the same propagating speed as the front of rarefaction. Both oscillations decays in time due to dissipation.}
+%\label{fig:Perturbation-ME2}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.90 \textwidth]{App-Figure/Perturbation-ME0-tp1}
+%\caption{Plots of density for 1D shock tube test 2 at $t=0.1s$. The test is simulated using classical SPH with $\alpha = 1$. In this test, we still intentionally create non-uniform smoothing length distribution in space by assigning larger smoothing length to boundary ghost particles at the left side. But we take $h=h_a$. No numerical perturbation generated near the left boundary.}    
+%\label{fig:Perturbation-ME0-tp1}
+%\end{figure}
+%
+%%May worthwhile to do one more test to demonstrate that if the smoothing length is constant cross the boundary, there will be no oscillation --> Easy to prove
+%%And another test using constant smoothing length all across the domain, but that means I would need to use different particle mass to make sure approximation of density equals to the physical density.
+%
+%%May worthwhile to do more tests together with other variants of SPH method. 
+%
+%Nonuniform smoothing length in space is not rare in SPH simulation, several things can contribute to nonuniform smoothing length, such as nonuniform density distribution, adaptive smoothing length and adaptive particle mass size. Fortunately, there are several factors counteracting against the numerical oscillation:
+%\begin{itemize}
+%\item Numerical dissipation decays such numerical oscillation preventing accumulation of oscillation magnitude.
+%\item For incompressible flow or weakly compressible flow, smoothing length only varies in a small range.
+%\item Well developed adaptive smoothing length algorithm usually guarantees more ``smoothing" change of smoothing length in space avoiding sharp change of smoothing length in space.
+%\item Other variants of SPH formulation might not suffer from it at all.
+%\end{itemize}
+%So we do not think that the numerical oscillation is a real challenging issue for SPH. The major motivation of the appendix is to show that 
+%\begin{itemize}
+%\item The numerical oscillation does exist commonly in SPH schemes. It is not something only for RSPH.
+%\item The SPH formulation adopted in this paper do introduce numerical oscillation and we can make use of the oscillation as an indicator for numerical dissipation.
+%\end{itemize}
 \section*{}
  \bibliographystyle{elsarticle-num} 
 \bibliography{Reference}
