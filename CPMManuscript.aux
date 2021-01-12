@@ -1,0 +1,186 @@
+\relax 
+\citation{gingold1977smoothed,lucy1977numerical}
+\citation{monaghan1983shock,monaghan1997sph,klapp2012strong}
+\citation{borgani2012hydrodynamic,flebbe1994smoothed,morris1997switch,dolag2005turbulent,cullen2010inviscid,sigalotti2008adaptive,puri2014comparison}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}\protected@file@percent }
+\newlabel{intro}{{1}{1}}
+\citation{inutsuka2002reformulation}
+\citation{cha2003implementations}
+\citation{inutsuka2002reformulation,cha2003implementations,iwasaki2011smoothed,puri2014approximate,borgani2012hydrodynamic}
+\citation{cha2010kelvin,borgani2012hydrodynamic}
+\citation{borgani2012hydrodynamic}
+\citation{glimm1965solutions}
+\citation{chorin1976random}
+\citation{chorinporousmedium}
+\citation{sod1977numerical,concus1979numerical,colella1982glimm,freistuhler1992numerical,toro2013riemann}
+\citation{hartenlax}
+\citation{monaghan1992smoothed,monaghan2005smoothed,liu2010smoothed,price2012smoothed}
+\@writefile{toc}{\contentsline {section}{\numberline {2}SPH Formulations}{3}\protected@file@percent }
+\newlabel{sph}{{2}{3}}
+\newlabel{eq:gov-cs-rho}{{1}{3}}
+\newlabel{eq:gov-cs-v}{{2}{3}}
+\newlabel{eq:gov-cs-e}{{3}{3}}
+\newlabel{eq:EOS}{{4}{3}}
+\newlabel{eq:gov-nc-rho}{{5}{3}}
+\newlabel{eq:gov-nc-v}{{6}{3}}
+\newlabel{eq:gov-nc-e}{{7}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Standard SPH}{3}\protected@file@percent }
+\newlabel{standard-sph}{{2.1}{3}}
+\newlabel{eq:ns-sph-d}{{8}{3}}
+\newlabel{eq:SPH-update-pos}{{9}{3}}
+\citation{evrard1988beyond}
+\citation{monaghan1983shock}
+\citation{monaghan1992smoothed}
+\citation{monaghan2005smoothed}
+\newlabel{eq:ns-sph-v}{{10}{4}}
+\newlabel{eq:ns-sph-e}{{11}{4}}
+\newlabel{eq:art-vis-original}{{12}{4}}
+\newlabel{eq:art-vis-shock}{{17}{4}}
+\newlabel{eq:SPH-kernel}{{19}{4}}
+\newlabel{eq:SPH-kernel-gradient}{{20}{4}}
+\citation{inutsuka2002reformulation}
+\citation{inutsuka2002reformulation,iwasaki2011smoothed}
+\citation{hll}
+\citation{hartenlax}
+\citation{roe1981approximate}
+\citation{toro1994restoration}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}GSPH}{5}\protected@file@percent }
+\newlabel{sec:GSPH-method}{{2.2}{5}}
+\newlabel{eq:GSPH-basic1}{{21}{5}}
+\newlabel{eq:GSPH-basic2}{{22}{5}}
+\newlabel{eq:gov-gsph-v-simple-form}{{23}{5}}
+\newlabel{eq:gov-gsph-e-simple-form}{{24}{5}}
+\citation{inutsuka2002reformulation}
+\citation{puri2014approximate}
+\citation{puri2014approximate}
+\@writefile{toc}{\contentsline {section}{\numberline {3}The Random Choice SPH method(RSPH)}{6}\protected@file@percent }
+\newlabel{sec:RSPH-method}{{3}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}The local 1D Riemann problem}{6}\protected@file@percent }
+\newlabel{sec:RP-construction}{{3.1}{6}}
+\newlabel{eq:RP-project-2-local}{{27}{6}}
+\newlabel{eq:Riemann-Prob-define-L-rho}{{28}{6}}
+\newlabel{eq:Riemann-Prob-define-L-v}{{29}{6}}
+\newlabel{eq:Riemann-Prob-define-L-p}{{30}{6}}
+\newlabel{eq:Riemann-Prob-define-R-rho}{{31}{6}}
+\newlabel{eq:Riemann-Prob-define-R-v}{{32}{6}}
+\newlabel{eq:Riemann-Prob-define-R-p}{{33}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Selecting the star state}{6}\protected@file@percent }
+\newlabel{sec:Picking-up-single-state}{{3.2}{6}}
+\citation{colella1982glimm}
+\citation{hammersley2013monte}
+\citation{rider1994review,luo2004computation,puri2014approximate}
+\citation{toro1994restoration}
+\citation{luo2004computation}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Evaluating of the starred state for RSPH and GSPH implementations. $x$ is the local coordinate system for paired two particles, $a$ and $b$. The origin is at the middle of the paired two particles. The local Riemann problem is defined by the constant states $(\rho , u, p)_a$ and $(\rho , u,p)_b$, namely $\textbf  {W}_L = \textbf  {W}_b$, $\textbf  {W}_R = \textbf  {W}_a$ with $\textbf  {W} = (\rho , u,p)^T $, a vector representation of these three variables. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The red ellipse indicates the stationary state, which is the starred state in GSPH. $S_L$, $S_M$ and $S_R$ are signal speeds which are linearized locally in HLLC Riemann solvers \citep  {puri2014approximate}. Starred region is divided into two sub-regions by the middle contact wave. Only $\rho $ changes across the contact wave.}}{7}\protected@file@percent }
+\newlabel{fig:pick-up-state-GSPH-RSPH}{{1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Non-iterative Riemann solvers}{7}\protected@file@percent }
+\newlabel{sec:RP-solver}{{3.3}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Numerical tests}{8}\protected@file@percent }
+\newlabel{sec:numericaltests}{{4}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Overview of 1D shock tube tests}}{8}\protected@file@percent }
+\newlabel{tab:1D-shock-input_parameters}{{1}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Comparison of RSPH with standard SPH and GSPH}{9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces a) and b) are plots for density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients. $\alpha ,\beta $ satisfies: $\beta =2\alpha $. c), d) are corresponding zoomed views. SPH simulations with different artificial viscosity coefficients show that numerical oscillation is obvious, especially around shock, if there is insufficient dissipation ($\alpha =0.2$). The dissipation introduced by RSPH, is shown to be more adaptive, introducing more damping at the shock (comparable to $\alpha =1.0$) and less damping in the area away from the shock (less than $\alpha =0.2$, as indicated by the magnitude of numerical oscillation).}}{9}\protected@file@percent }
+\newlabel{fig:RCM-Sod-SPH-alf}{{2}{9}}
+\citation{inutsuka2002reformulation}
+\citation{puri2014comparison}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  a), b) are plots of internal energy and pressure in Test 1 by RSPH and SPH with different artificial viscosity coefficients. c), d) are corresponding zoomed views. For $\alpha =1$ and $\alpha =2$, as shown in c), numerical oscillations are completely suppressed. However there is also more smearing around the shock. $\alpha =0.2$ provides insufficient viscosity to suppress oscillations while the smearing around the shock is also less. Impressively, RSPH is showing to introduce adaptive dissipation, more dissipative at the shock (comparable or better than $\alpha =1.0$) and less dissipative away from the shock (less than $\alpha =0.2$). d) shows pressure around the contact discontinuity. It is evident that RSPH gets rid of the pressure ``wiggle" around the contact discontinuity.}}{10}\protected@file@percent }
+\newlabel{fig:RCM-Sod-SPH-alf-zoom}{{3}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparison of RSPH with first order GSPH using Roe Riemann solver and HLLC Riemann solver. The last two plots are zoomed views of pressure and velocity. Zoomed view of velocity shows that fluctuation in GSPH is completely suppressed, which implies that numerical dissipation introduced in GSPH is at least around the same amount as SPH with $\alpha =1.0$. This is consistent with information implied by zoomed view of density and specific internal energy. Zoomed view of pressure shows that both RSPH and GSPH can get rid of pressure ``wiggle" around the contact discontinuity.}}{11}\protected@file@percent }
+\newlabel{fig:RCM-Sod-GSPH}{{4}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of RSPH against GSPH with different local Riemann problem construction. Riemann problem for RSPH is constructed in a piece wise constant manner while those for GSPH are constructed in either piece wise constant manner (``1st-GSPH") or piece wise linear manner (``2nd-GSPH"). All methods adopt HLLC Riemann solver. The last two plots are zoomed views of a) and b). ``2nd-GSPH" shows better solution than ``1st-GSPH", which is just as expected. Compared with RSPH, ``2nd-GSPH" obtains almost as good results as RSPH. But there is still visible that more smearing at the shock is introduce by ``2nd-GSPH" than RSPH.}}{13}\protected@file@percent }
+\newlabel{fig:RCM-Sod-GSPH2}{{5}{13}}
+\citation{puri2014comparison}
+\citation{monaghan1997sph,cha2003implementations,puri2014approximate}
+\citation{puri2014comparison}
+\citation{noh1987errors}
+\citation{puri2014comparison}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Accuracy tests}{14}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  $L_1$ norm of errors for 1D shock tube test (test1) for RSPH, standard SPH, GSPH using Roe Riemann solver and GSPH using HLLC Riemann Solver. GSPH with the HLLC approximate Riemann solver exhibits the same convergence rate (around 1) but quantitatively larger errors than that with Roe Riemann solver. RSPH and standard SPH shows same rate of convergence and almost same level of error.}}{14}\protected@file@percent }
+\newlabel{fig:Accuracy-test1}{{6}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Comprehensive 1D tests}{14}\protected@file@percent }
+\newlabel{sec:comprehensive-1d-tests}{{4.3}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Results for test 2, a variation of Sod test. All physical properties are well re-produced except for some acceptable oscillations}}{15}\protected@file@percent }
+\newlabel{fig:RCM-GSPH-Sod}{{7}{15}}
+\citation{monaghan1997sph,cha2003implementations,puri2014approximate}
+\citation{monaghan1997sph,cha2003implementations,puri2014approximate}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Results for test 3, the double expansion case. All physical properties are well re-produced except for some oscillations}}{16}\protected@file@percent }
+\newlabel{fig:RCM-double-expansion}{{8}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Results for test 4, the double shock case. To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. However, the oscillations are more serious than oscillations in other tests.}}{16}\protected@file@percent }
+\newlabel{fig:RCM-double-shock}{{9}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Results for test 5, a variation of the Sj$\mathaccentV {ddot}07F{o}$green test. The density, velocity and pressure are well re-produced while the thermal energy at the origin is poorly predicted. A jump of internal energy at the origin is a common issue in many SPH schemes (see, for example, \citep  {monaghan1997sph,cha2003implementations,puri2014approximate})}}{17}\protected@file@percent }
+\newlabel{fig:RCM-Sjogreen}{{10}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Results for test 6, the strong blast test. y axis for density plot is in log base 10. To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. The oscillations between shock and contact discontinuity is relatively larger than other area. A noticeable spike is observed near contact discontinuity.}}{17}\protected@file@percent }
+\newlabel{fig:RCM-strong-blast}{{11}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}3D free jet}{18}\protected@file@percent }
+\newlabel{jet}{{4.4}{18}}
+\newlabel{eq:pressure_bc_p}{{35}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Free jet flow simulation results at $t=3.0 s$ by SPH using different artificial viscosity coefficients. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. From left to right, the picture is corresponding to $\alpha =0.3$, $\alpha =1.0$ and $\alpha =2.0$ respectively. Another artificial viscosity coefficient $\beta $ is set to be double of $\alpha $ for all tests. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. A positive correlation between overall damping effect and the distance from nozzle to the front of jet flow is shown.}}{19}\protected@file@percent }
+\newlabel{fig:free-jet-SPH-comparison}{{12}{19}}
+\citation{colella1982glimm}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Simulation results of free jet flow by GSPH and RSPH. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. Pictures on the left side are for GSPH while those on the right side are for RSPH. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. Pictures on the first row are corresponding to $t=1.5s$ while pictures on the second row are for $t=3.0 s$}}{20}\protected@file@percent }
+\newlabel{fig:free-jet-comparison}{{13}{20}}
+\citation{glimm1965solutions}
+\citation{liu1977deterministic}
+\citation{chorin1976random}
+\citation{concus1979numerical}
+\citation{colella1978analysis}
+\citation{colella1982glimm}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{21}\protected@file@percent }
+\newlabel{discussion}{{5}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Acknowledgements}{21}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Glimm'{}s Scheme}{21}\protected@file@percent }
+\citation{warming1974modified}
+\citation{harten1981random}
+\citation{hartenlax}
+\citation{glimm1965solutions}
+\citation{colella1982glimm}
+\citation{chorin1976random}
+\citation{concus1979numerical}
+\citation{warming1974modified}
+\citation{liu1977deterministic}
+\bibstyle{spbasic}
+\bibdata{Reference}
+\bibcite{borgani2012hydrodynamic}{{1}{2012}{{Borgani et~al.}}{{Borgani, Murante, Brunino, and Cha}}}
+\bibcite{cha2003implementations}{{2}{2003}{{Cha and Whitworth}}{{}}}
+\bibcite{cha2010kelvin}{{3}{2010}{{Cha et~al.}}{{Cha, Inutsuka, and Nayakshin}}}
+\bibcite{chorinporousmedium}{{4}{1983}{{Chorin}}{{}}}
+\bibcite{chorin1976random}{{5}{1976}{{Chorin}}{{}}}
+\newlabel{linear}{{36}{22}}
+\bibcite{colella1978analysis}{{6}{1978}{{Colella}}{{}}}
+\bibcite{colella1982glimm}{{7}{1982}{{Colella}}{{}}}
+\bibcite{concus1979numerical}{{8}{1979}{{Concus and Proskurowski}}{{}}}
+\bibcite{cullen2010inviscid}{{9}{2010}{{Cullen and Dehnen}}{{}}}
+\bibcite{dolag2005turbulent}{{10}{2005}{{Dolag et~al.}}{{Dolag, Vazza, Brunetti, and Tormen}}}
+\bibcite{evrard1988beyond}{{11}{1988}{{Evrard}}{{}}}
+\bibcite{flebbe1994smoothed}{{12}{1994}{{Flebbe et~al.}}{{Flebbe, Muenzel, Herold, Riffert, and Ruder}}}
+\bibcite{freistuhler1992numerical}{{13}{1992}{{Freist{\"u}hler and Pitman}}{{}}}
+\bibcite{gingold1977smoothed}{{14}{1977}{{Gingold and Monaghan}}{{}}}
+\bibcite{glimm1965solutions}{{15}{1965}{{Glimm}}{{}}}
+\bibcite{hammersley2013monte}{{16}{2013}{{Hammersley}}{{}}}
+\bibcite{hartenlax}{{17}{1981{a}}{{Harten and Lax}}{{}}}
+\bibcite{harten1981random}{{18}{1981{b}}{{Harten and Lax}}{{}}}
+\bibcite{hll}{{19}{1983}{{Harten et~al.}}{{Harten, Lax, and van Leer}}}
+\bibcite{inutsuka2002reformulation}{{20}{2002}{{Inutsuka}}{{}}}
+\bibcite{iwasaki2011smoothed}{{21}{2011}{{Iwasaki and Inutsuka}}{{}}}
+\bibcite{klapp2012strong}{{22}{2012}{{Klapp et~al.}}{{Klapp, Sigalotti, Pe{\~n}a-Polo, and Trujillo}}}
+\bibcite{liu2010smoothed}{{23}{2010}{{Liu and Liu}}{{}}}
+\bibcite{liu1977deterministic}{{24}{1977}{{Liu}}{{}}}
+\bibcite{lucy1977numerical}{{25}{1977}{{Lucy}}{{}}}
+\bibcite{luo2004computation}{{26}{2004}{{Luo et~al.}}{{Luo, Baum, and L{\"o}hner}}}
+\bibcite{monaghan1997sph}{{27}{1997}{{Monaghan}}{{}}}
+\bibcite{monaghan2005smoothed}{{28}{2005}{{Monaghan}}{{}}}
+\bibcite{monaghan1983shock}{{29}{1983}{{Monaghan and Gingold}}{{}}}
+\bibcite{monaghan1992smoothed}{{30}{1992}{{Monaghan}}{{}}}
+\bibcite{morris1997switch}{{31}{1997}{{Morris and Monaghan}}{{}}}
+\bibcite{noh1987errors}{{32}{1987}{{Noh}}{{}}}
+\bibcite{price2012smoothed}{{33}{2012}{{Price}}{{}}}
+\bibcite{puri2014approximate}{{34}{2014{a}}{{Puri and Ramachandran}}{{}}}
+\bibcite{puri2014comparison}{{35}{2014{b}}{{Puri and Ramachandran}}{{}}}
+\bibcite{rider1994review}{{36}{1994}{{Rider}}{{}}}
+\bibcite{roe1981approximate}{{37}{1981}{{Roe}}{{}}}
+\bibcite{sigalotti2008adaptive}{{38}{2008}{{Sigalotti and L{\'o}pez}}{{}}}
+\bibcite{sod1977numerical}{{39}{1977}{{Sod}}{{}}}
+\bibcite{toro2013riemann}{{40}{2013}{{Toro}}{{}}}
+\bibcite{toro1994restoration}{{41}{1994}{{Toro et~al.}}{{Toro, Spruce, and Speares}}}
+\bibcite{warming1974modified}{{42}{1974}{{Warming and Hyett}}{{}}}
