@@ -1,0 +1,1304 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2020.12.22)  13 JAN 2021 07:23
+entering extended mode
+**./CPMManuscript.tex
+(CPMManuscript.tex
+LaTeX2e <2019-10-01> patch level 1
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\fix-cm.sty"
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FEFF (decimal 65279)
+))) (svjour3.cls
+Document Class: svjour3 2007/05/08 v3.2 
+LaTeX document class for Springer journals
+Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
+(Springer-SVJour3)           not found in option list of \documentclass
+(Springer-SVJour3)           - autoactivating "global" style.
+(svglov3.clo
+File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
+
+SVJour Class option: svglov3.clo for standardised journals
+)
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
+\logodepth=\dimen102
+\headerboxheight=\dimen103
+\betweenumberspace=\dimen104
+\aftertext=\dimen105
+\headlineindent=\dimen106
+\c@inst=\count80
+\c@auth=\count81
+\instindent=\dimen107
+\authrun=\box27
+\authorrunning=\toks14
+\titrun=\box28
+\titlerunning=\toks15
+\combirun=\box29
+\c@lastpage=\count82
+\rubricwidth=\dimen108
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\spthmsep=\dimen109
+\c@theorem=\count88
+\c@case=\count89
+\c@conjecture=\count90
+\c@corollary=\count91
+\c@definition=\count92
+\c@example=\count93
+\c@exercise=\count94
+\c@lemma=\count95
+\c@note=\count96
+\c@problem=\count97
+\c@property=\count98
+\c@proposition=\count99
+\c@question=\count100
+\c@solution=\count101
+\c@remark=\count102
+\c@figure=\count103
+\c@table=\count104
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\figcapgap=\dimen110
+\tabcapgap=\dimen111
+\figgap=\dimen112
+\bibindent=\dimen113
+\@tempcntc=\count105
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\mathptmx.sty"
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen116
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen117
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count106
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count107
+\leftroot@=\count108
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count109
+\DOTSCASE@=\count110
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen118
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
+\dotsspace@=\muskip10
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
+\tag@help=\toks18
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
+\andhelp@=\toks19
+\eqnshift@=\dimen119
+\alignsep@=\dimen120
+\tagshift@=\dimen121
+\tagwidth@=\dimen122
+\totwidth@=\dimen123
+\lineht@=\dimen124
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count118
+\float@exts=\toks22
+\float@box=\box32
+\@float@everytoks=\toks23
+\@floatcapt=\box33
+)
+(C:\Users\hitca\AppData\Roaming\MiKTeX\2.9\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count119
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+No file CPMManuscript.aux.
+\openout1 = `CPMManuscript.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
+6.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(C:\Users\hitca\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen125
+\scratchbox=\box34
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen126
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks25
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+
+
+Package mathptmx Warning: There are no bold math fonts on input line 97.
+
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 97.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 97.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ztmcm.fd"
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 97.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlztmcm.fd"
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 97.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omsztmcm.fd"
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 97.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omxztmcm.fd"
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.03004> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.70006> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
+
+
+Package natbib Warning: Citation `gingold1977smoothed' on page 1 undefined on i
+nput line 111.
+
+
+Package natbib Warning: Citation `lucy1977numerical' on page 1 undefined on inp
+ut line 111.
+
+
+Package natbib Warning: Citation `monaghan1983shock' on page 1 undefined on inp
+ut line 115.
+
+
+Package natbib Warning: Citation `monaghan1997sph' on page 1 undefined on input
+ line 115.
+
+
+Package natbib Warning: Citation `klapp2012strong' on page 1 undefined on input
+ line 115.
+
+
+Package natbib Warning: Citation `borgani2012hydrodynamic' on page 1 undefined 
+on input line 116.
+
+
+Package natbib Warning: Citation `flebbe1994smoothed' on page 1 undefined on in
+put line 116.
+
+
+Package natbib Warning: Citation `morris1997switch' on page 1 undefined on inpu
+t line 116.
+
+
+Package natbib Warning: Citation `dolag2005turbulent' on page 1 undefined on in
+put line 116.
+
+
+Package natbib Warning: Citation `cullen2010inviscid' on page 1 undefined on in
+put line 116.
+
+
+Package natbib Warning: Citation `sigalotti2008adaptive' on page 1 undefined on
+ input line 116.
+
+
+Package natbib Warning: Citation `puri2014comparison' on page 1 undefined on in
+put line 116.
+
+[1{C:/Users/hitca/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+Package natbib Warning: Citation `inutsuka2002reformulation' on page 2 undefine
+d on input line 118.
+
+
+Package natbib Warning: Citation `cha2003implementations' on page 2 undefined o
+n input line 118.
+
+
+Package natbib Warning: Citation `inutsuka2002reformulation' on page 2 undefine
+d on input line 118.
+
+
+Package natbib Warning: Citation `cha2003implementations' on page 2 undefined o
+n input line 118.
+
+
+Package natbib Warning: Citation `iwasaki2011smoothed' on page 2 undefined on i
+nput line 118.
+
+
+Package natbib Warning: Citation `puri2014approximate' on page 2 undefined on i
+nput line 118.
+
+
+Package natbib Warning: Citation `borgani2012hydrodynamic' on page 2 undefined 
+on input line 118.
+
+
+Package natbib Warning: Citation `cha2010kelvin' on page 2 undefined on input l
+ine 118.
+
+
+Package natbib Warning: Citation `borgani2012hydrodynamic' on page 2 undefined 
+on input line 118.
+
+
+Package natbib Warning: Citation `borgani2012hydrodynamic' on page 2 undefined 
+on input line 120.
+
+
+Package natbib Warning: Citation `glimm1965solutions' on page 2 undefined on in
+put line 122.
+
+
+Package natbib Warning: Citation `chorin1976random' on page 2 undefined on inpu
+t line 124.
+
+
+Package natbib Warning: Citation `chorinporousmedium' on page 2 undefined on in
+put line 124.
+
+
+Package natbib Warning: Citation `sod1977numerical' on page 2 undefined on inpu
+t line 124.
+
+
+Package natbib Warning: Citation `concus1979numerical' on page 2 undefined on i
+nput line 124.
+
+
+Package natbib Warning: Citation `colella1982glimm' on page 2 undefined on inpu
+t line 124.
+
+
+Package natbib Warning: Citation `freistuhler1992numerical' on page 2 undefined
+ on input line 124.
+
+
+Package natbib Warning: Citation `toro2013riemann' on page 2 undefined on input
+ line 124.
+
+
+Package natbib Warning: Citation `hartenlax' on page 2 undefined on input line 
+126.
+
+
+LaTeX Warning: Reference `standard-sph' on page 2 undefined on input line 129.
+
+
+LaTeX Warning: Reference `sec:GSPH-method' on page 2 undefined on input line 12
+9.
+
+
+LaTeX Warning: Reference `sec:RSPH-method' on page 2 undefined on input line 12
+9.
+
+
+LaTeX Warning: Reference `sec:numericaltests' on page 2 undefined on input line
+ 130.
+
+
+LaTeX Warning: Reference `jet' on page 2 undefined on input line 130.
+
+
+LaTeX Warning: Reference `discussion' on page 2 undefined on input line 130.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+
+Package natbib Warning: Citation `monaghan1992smoothed' on page 3 undefined on 
+input line 158.
+
+
+Package natbib Warning: Citation `monaghan2005smoothed' on page 3 undefined on 
+input line 158.
+
+
+Package natbib Warning: Citation `liu2010smoothed' on page 3 undefined on input
+ line 158.
+
+
+Package natbib Warning: Citation `price2012smoothed' on page 3 undefined on inp
+ut line 158.
+
+
+LaTeX Warning: Reference `eq:gov-nc-rho' on page 3 undefined on input line 167.
+
+
+
+LaTeX Warning: Reference `eq:gov-nc-e' on page 3 undefined on input line 167.
+
+[3]
+
+Package natbib Warning: Citation `evrard1988beyond' on page 4 undefined on inpu
+t line 173.
+
+
+Package natbib Warning: Citation `monaghan1983shock' on page 4 undefined on inp
+ut line 174.
+
+
+Package natbib Warning: Citation `monaghan1992smoothed' on page 4 undefined on 
+input line 190.
+
+
+Package natbib Warning: Citation `monaghan2005smoothed' on page 4 undefined on 
+input line 203.
+
+
+LaTeX Warning: Reference `eq:ns-sph-v' on page 4 undefined on input line 205.
+
+
+LaTeX Warning: Reference `eq:ns-sph-e' on page 4 undefined on input line 205.
+
+[4]
+
+Package natbib Warning: Citation `inutsuka2002reformulation' on page 5 undefine
+d on input line 229.
+
+
+LaTeX Warning: Reference `sec:RSPH-method' on page 5 undefined on input line 22
+9.
+
+
+LaTeX Warning: Reference `sec:Picking-up-single-state' on page 5 undefined on i
+nput line 229.
+
+
+LaTeX Warning: Reference `eq:ns-sph-d' on page 5 undefined on input line 231.
+
+
+Package natbib Warning: Citation `inutsuka2002reformulation' on page 5 undefine
+d on input line 241.
+
+
+Package natbib Warning: Citation `iwasaki2011smoothed' on page 5 undefined on i
+nput line 241.
+
+
+Package natbib Warning: Citation `hll' on page 5 undefined on input line 259.
+
+
+Package natbib Warning: Citation `hartenlax' on page 5 undefined on input line 
+259.
+
+
+Package natbib Warning: Citation `roe1981approximate' on page 5 undefined on in
+put line 263.
+
+
+Package natbib Warning: Citation `toro1994restoration' on page 5 undefined on i
+nput line 263.
+
+[5]
+
+Package natbib Warning: Citation `inutsuka2002reformulation' on page 6 undefine
+d on input line 295.
+
+
+LaTeX Warning: Reference `eq:Riemann-Prob-define-L-rho' on page 6 undefined on 
+input line 300.
+
+
+LaTeX Warning: Reference `eq:Riemann-Prob-define-R-p' on page 6 undefined on in
+put line 300.
+
+
+LaTeX Warning: Reference `fig:pick-up-state-GSPH-RSPH' on page 6 undefined on i
+nput line 309.
+
+<./Figures/RSPH-GSPH.jpg, id=26, 963.6pt x 722.7pt>
+File: ./Figures/RSPH-GSPH.jpg Graphic file (type jpg)
+<use ./Figures/RSPH-GSPH.jpg>
+Package pdftex.def Info: ./Figures/RSPH-GSPH.jpg  used on input line 312.
+(pdftex.def)             Requested size: 173.5pt x 130.1245pt.
+
+Package natbib Warning: Citation `puri2014approximate' on page 6 undefined on i
+nput line 314.
+
+
+Package natbib Warning: Citation `puri2014approximate' on page 6 undefined on i
+nput line 314.
+
+[6]
+
+Package natbib Warning: Citation `colella1982glimm' on page 7 undefined on inpu
+t line 320.
+
+
+Package natbib Warning: Citation `hammersley2013monte' on page 7 undefined on i
+nput line 320.
+
+
+Package natbib Warning: Citation `rider1994review' on page 7 undefined on input
+ line 323.
+
+
+Package natbib Warning: Citation `luo2004computation' on page 7 undefined on in
+put line 323.
+
+
+Package natbib Warning: Citation `puri2014approximate' on page 7 undefined on i
+nput line 323.
+
+
+Package natbib Warning: Citation `toro1994restoration' on page 7 undefined on i
+nput line 323.
+
+
+Package natbib Warning: Citation `luo2004computation' on page 7 undefined on in
+put line 323.
+
+
+LaTeX Warning: Reference `sec:numericaltests' on page 7 undefined on input line
+ 325.
+
+[7 <./Figures/RSPH-GSPH.jpg>]
+
+LaTeX Warning: Reference `tab:1D-shock-input_parameters' on page 8 undefined on
+ input line 366.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf' on page 8 undefined on input lin
+e 369.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf-zoom' on page 8 undefined on inpu
+t line 369.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf-zoom' on page 8 undefined on inpu
+t line 371.
+
+
+LaTeX Warning: Reference `fig:RCM-GSPH-Sod' on page 8 undefined on input line 3
+71.
+
+
+LaTeX Warning: Reference `fig:free-jet-SPH-comparison' on page 8 undefined on i
+nput line 373.
+
+[8]
+<./Figures/RCM-Sod-SPH-alf-rho.jpg, id=37, 990.70125pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-rho.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-rho.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-rho.jpg  used on input line 
+381.
+(pdftex.def)             Requested size: 154.58505pt x 109.30243pt.
+<./Figures/RCM-Sod-SPH-alf-v.jpg, id=38, 1280.785pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-v.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-v.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-v.jpg  used on input line 38
+5.
+(pdftex.def)             Requested size: 187.22366pt x 109.30243pt.
+<./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg, id=39, 990.70125pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-rho-zoom.jpg  used on input 
+line 390.
+(pdftex.def)             Requested size: 154.58505pt x 109.30243pt.
+<./Figures/RCM-Sod-SPH-alf-v-zoom.jpg, id=40, 987.69pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-v-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-v-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-v-zoom.jpg  used on input li
+ne 395.
+(pdftex.def)             Requested size: 154.5673pt x 109.30243pt.
+<./Figures/RCM-Sod-SPH-alf-e.jpg, id=41, 1005.7575pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-e.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-e.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-e.jpg  used on input line 40
+6.
+(pdftex.def)             Requested size: 154.58633pt x 109.30243pt.
+<./Figures/RCM-Sod-SPH-alf-p.jpg, id=42, 1278.7775pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-p.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-p.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-p.jpg  used on input line 41
+0.
+(pdftex.def)             Requested size: 187.2229pt x 109.30243pt.
+<./Figures/RCM-Sod-SPH-alf-e-zoom.jpg, id=43, 1005.7575pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-e-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-e-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-e-zoom.jpg  used on input li
+ne 415.
+(pdftex.def)             Requested size: 154.58633pt x 109.30243pt.
+<./Figures/RCM-Sod-SPH-alf-p-zoom.jpg, id=44, 996.72375pt x 702.625pt>
+File: ./Figures/RCM-Sod-SPH-alf-p-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-SPH-alf-p-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-SPH-alf-p-zoom.jpg  used on input li
+ne 420.
+(pdftex.def)             Requested size: 154.58183pt x 109.30243pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./Figures/RCM-Sod-SPH-alf-rho.jpg> <./Figures/RCM-Sod-SPH-alf-v.jpg> <./Fi
+gures/RCM-Sod-SPH-alf-rho-zoom.jpg> <./Figures/RCM-Sod-SPH-alf-v-zoom.jpg>]
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf' on page 10 undefined on input li
+ne 429.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf-zoom' on page 10 undefined on inp
+ut line 429.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf' on page 10 undefined on input li
+ne 434.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf-zoom' on page 10 undefined on inp
+ut line 434.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf-zoom' on page 10 undefined on inp
+ut line 435.
+
+
+LaTeX Warning: Reference `fig:RCM-Sod-SPH-alf-zoom' on page 10 undefined on inp
+ut line 436.
+
+
+Package natbib Warning: Citation `inutsuka2002reformulation' on page 10 undefin
+ed on input line 436.
+
+
+Package natbib Warning: Citation `puri2014comparison' on page 10 undefined on i
+nput line 439.
+
+
+LaTeX Warning: Reference `sec:comprehensive-1d-tests' on page 10 undefined on i
+nput line 439.
+
+[10 <./Figures/RCM-Sod-SPH-alf-e.jpg> <./Figures/RCM-Sod-SPH-alf-p.jpg> <./Figu
+res/RCM-Sod-SPH-alf-e-zoom.jpg> <./Figures/RCM-Sod-SPH-alf-p-zoom.jpg>]
+<./Figures/RCM-Sod-GSPH-compare-rho.jpg, id=51, 990.70125pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH-compare-rho.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH-compare-rho.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-rho.jpg  used on input 
+line 445.
+(pdftex.def)             Requested size: 154.58505pt x 93.68167pt.
+<./Figures/RCM-Sod-GSPH-compare-v.jpg, id=52, 983.675pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH-compare-v.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH-compare-v.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-v.jpg  used on input li
+ne 450.
+(pdftex.def)             Requested size: 154.5694pt x 93.68167pt.
+<./Figures/RCM-Sod-GSPH-compare-e.jpg, id=53, 993.7125pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH-compare-e.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH-compare-e.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-e.jpg  used on input li
+ne 456.
+(pdftex.def)             Requested size: 154.58487pt x 93.68167pt.
+<./Figures/RCM-Sod-GSPH-compare-p.jpg, id=54, 1282.7925pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH-compare-p.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH-compare-p.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-p.jpg  used on input li
+ne 460.
+(pdftex.def)             Requested size: 187.22351pt x 93.68167pt.
+<./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg, id=55, 1000.73875pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg  used on inp
+ut line 465.
+(pdftex.def)             Requested size: 154.57845pt x 97.58418pt.
+<./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg, id=56, 983.675pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH-compare-v-zoom.jpg  used on inp
+ut line 470.
+(pdftex.def)             Requested size: 154.5694pt x 93.68167pt.
+
+[11 <./Figures/RCM-Sod-GSPH-compare-rho.jpg> <./Figures/RCM-Sod-GSPH-compare-v.
+jpg> <./Figures/RCM-Sod-GSPH-compare-e.jpg> <./Figures/RCM-Sod-GSPH-compare-p.j
+pg> <./Figures/RCM-Sod-GSPH-compare-p-zoom.jpg> <./Figures/RCM-Sod-GSPH-compare
+-v-zoom.jpg>]
+
+LaTeX Warning: Reference `fig:RCM-Sod-GSPH' on page 12 undefined on input line 
+500.
+
+<./Figures/RCM-Sod-GSPH2-compare-rho.jpg, id=60, 992.70876pt x 699.61375pt>
+File: ./Figures/RCM-Sod-GSPH2-compare-rho.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH2-compare-rho.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH2-compare-rho.jpg  used on input
+ line 506.
+(pdftex.def)             Requested size: 154.5802pt x 93.68584pt.
+<./Figures/RCM-Sod-GSPH2-compare-v.jpg, id=61, 992.70876pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH2-compare-v.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH2-compare-v.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH2-compare-v.jpg  used on input l
+ine 511.
+(pdftex.def)             Requested size: 154.5802pt x 93.68167pt.
+<./Figures/RCM-Sod-GSPH2-compare-e.jpg, id=62, 995.72pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH2-compare-e.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH2-compare-e.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH2-compare-e.jpg  used on input l
+ine 517.
+(pdftex.def)             Requested size: 154.5781pt x 93.68167pt.
+<./Figures/RCM-Sod-GSPH2-compare-p.jpg, id=63, 1284.8pt x 696.6025pt>
+File: ./Figures/RCM-Sod-GSPH2-compare-p.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH2-compare-p.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH2-compare-p.jpg  used on input l
+ine 521.
+(pdftex.def)             Requested size: 187.22244pt x 93.68651pt.
+<./Figures/RCM-Sod-GSPH2-compare-rho-zoom.jpg, id=64, 992.70876pt x 699.61375pt
+>
+File: ./Figures/RCM-Sod-GSPH2-compare-rho-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH2-compare-rho-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH2-compare-rho-zoom.jpg  used on 
+input line 526.
+(pdftex.def)             Requested size: 154.5802pt x 93.68584pt.
+<./Figures/RCM-Sod-GSPH2-compare-v-zoom.jpg, id=65, 992.70876pt x 702.625pt>
+File: ./Figures/RCM-Sod-GSPH2-compare-v-zoom.jpg Graphic file (type jpg)
+<use ./Figures/RCM-Sod-GSPH2-compare-v-zoom.jpg>
+Package pdftex.def Info: ./Figures/RCM-Sod-GSPH2-compare-v-zoom.jpg  used on in
+put line 531.
+(pdftex.def)             Requested size: 154.5802pt x 93.68167pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+
+LaTeX Warning: Reference `fig:RCM-Sod-GSPH2' on page 13 undefined on input line
+ 549.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./Figures/RCM-Sod-GSPH2-compare-rho.jpg> <./Figures/RCM-Sod-GSPH2-compare
+-v.jpg> <./Figures/RCM-Sod-GSPH2-compare-e.jpg> <./Figures/RCM-Sod-GSPH2-compar
+e-p.jpg> <./Figures/RCM-Sod-GSPH2-compare-rho-zoom.jpg> <./Figures/RCM-Sod-GSPH
+2-compare-v-zoom.jpg>]
+
+LaTeX Warning: Reference `fig:Accuracy-test1' on page 14 undefined on input lin
+e 557.
+
+
+Package natbib Warning: Citation `puri2014comparison' on page 14 undefined on i
+nput line 563.
+
+<./Figures/Accuracy-pre.jpg, id=73, 1166.3575pt x 702.625pt>
+File: ./Figures/Accuracy-pre.jpg Graphic file (type jpg)
+<use ./Figures/Accuracy-pre.jpg>
+Package pdftex.def Info: ./Figures/Accuracy-pre.jpg  used on input line 580.
+(pdftex.def)             Requested size: 240.47128pt x 144.85387pt.
+
+LaTeX Warning: Reference `tab:1D-shock-input_parameters' on page 14 undefined o
+n input line 587.
+
+
+LaTeX Warning: Reference `fig:RCM-GSPH-Sod' on page 14 undefined on input line 
+588.
+
+
+LaTeX Warning: Reference `fig:RCM-strong-blast' on page 14 undefined on input l
+ine 588.
+
+
+Package natbib Warning: Citation `monaghan1997sph' on page 14 undefined on inpu
+t line 589.
+
+
+Package natbib Warning: Citation `cha2003implementations' on page 14 undefined 
+on input line 589.
+
+
+Package natbib Warning: Citation `puri2014approximate' on page 14 undefined on 
+input line 589.
+
+
+Package natbib Warning: Citation `puri2014comparison' on page 14 undefined on i
+nput line 590.
+
+
+Package natbib Warning: Citation `noh1987errors' on page 14 undefined on input 
+line 591.
+
+
+Package natbib Warning: Citation `puri2014comparison' on page 14 undefined on i
+nput line 591.
+
+[14 <./Figures/Accuracy-pre.jpg>]
+<./Figures/GRod-RCM-rho.jpg, id=77, 1059.96pt x 702.625pt>
+File: ./Figures/GRod-RCM-rho.jpg Graphic file (type jpg)
+<use ./Figures/GRod-RCM-rho.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-rho.jpg  used on input line 600.
+(pdftex.def)             Requested size: 142.56343pt x 94.49648pt.
+File: ./Figures/GRod-RCM-rho.jpg Graphic file (type jpg)
+<use ./Figures/GRod-RCM-rho.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-rho.jpg  used on input line 604.
+(pdftex.def)             Requested size: 142.55551pt x 94.49648pt.
+<./Figures/GRod-RCM-e.jpg, id=78, 1057.9525pt x 702.625pt>
+File: ./Figures/GRod-RCM-e.jpg Graphic file (type jpg)
+<use ./Figures/GRod-RCM-e.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-e.jpg  used on input line 610.
+(pdftex.def)             Requested size: 142.56343pt x 94.67874pt.
+<./Figures/GRod-RCM-p.jpg, id=79, 1278.7775pt x 702.625pt>
+File: ./Figures/GRod-RCM-p.jpg Graphic file (type jpg)
+<use ./Figures/GRod-RCM-p.jpg>
+Package pdftex.def Info: ./Figures/GRod-RCM-p.jpg  used on input line 614.
+(pdftex.def)             Requested size: 175.88606pt x 96.64072pt.
+<./Figures/Dexp-RCM-rho.jpg, id=80, 1047.915pt x 702.625pt>
+File: ./Figures/Dexp-RCM-rho.jpg Graphic file (type jpg)
+<use ./Figures/Dexp-RCM-rho.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-rho.jpg  used on input line 624.
+(pdftex.def)             Requested size: 142.56343pt x 95.57932pt.
+<./Figures/Dexp-RCM-v.jpg, id=81, 1050.92625pt x 702.625pt>
+File: ./Figures/Dexp-RCM-v.jpg Graphic file (type jpg)
+<use ./Figures/Dexp-RCM-v.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-v.jpg  used on input line 628.
+(pdftex.def)             Requested size: 142.55551pt x 95.30057pt.
+<./Figures/Dexp-RCM-e.jpg, id=82, 1049.9225pt x 702.625pt>
+File: ./Figures/Dexp-RCM-e.jpg Graphic file (type jpg)
+<use ./Figures/Dexp-RCM-e.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-e.jpg  used on input line 634.
+(pdftex.def)             Requested size: 142.56343pt x 95.39705pt.
+<./Figures/Dexp-RCM-p.jpg, id=83, 1278.7775pt x 702.625pt>
+File: ./Figures/Dexp-RCM-p.jpg Graphic file (type jpg)
+<use ./Figures/Dexp-RCM-p.jpg>
+Package pdftex.def Info: ./Figures/Dexp-RCM-p.jpg  used on input line 638.
+(pdftex.def)             Requested size: 175.88606pt x 96.64072pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./Figures/GRod-RCM-rho.jpg> <./Figures/GRod-RCM-e.jpg> <./Figures/GRod-RC
+M-p.jpg>]
+<./Figures/Dshock-RCM-rho-Rp6.jpg, id=87, 1043.9pt x 702.625pt>
+File: ./Figures/Dshock-RCM-rho-Rp6.jpg Graphic file (type jpg)
+<use ./Figures/Dshock-RCM-rho-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-rho-Rp6.jpg  used on input line 6
+48.
+(pdftex.def)             Requested size: 142.56343pt x 95.95456pt.
+<./Figures/Dshock-RCM-v-Rp6.jpg, id=88, 1047.915pt x 702.625pt>
+File: ./Figures/Dshock-RCM-v-Rp6.jpg Graphic file (type jpg)
+<use ./Figures/Dshock-RCM-v-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-v-Rp6.jpg  used on input line 652
+.
+(pdftex.def)             Requested size: 142.55551pt x 95.57932pt.
+<./Figures/Dshock-RCM-e-Rp6.jpg, id=89, 1041.8925pt x 702.625pt>
+File: ./Figures/Dshock-RCM-e-Rp6.jpg Graphic file (type jpg)
+<use ./Figures/Dshock-RCM-e-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-e-Rp6.jpg  used on input line 658
+.
+(pdftex.def)             Requested size: 142.56343pt x 96.13681pt.
+<./Figures/Dshock-RCM-p-Rp6.jpg, id=90, 1278.7775pt x 702.625pt>
+File: ./Figures/Dshock-RCM-p-Rp6.jpg Graphic file (type jpg)
+<use ./Figures/Dshock-RCM-p-Rp6.jpg>
+Package pdftex.def Info: ./Figures/Dshock-RCM-p-Rp6.jpg  used on input line 662
+.
+(pdftex.def)             Requested size: 175.88606pt x 96.64072pt.
+<./Figures/Sjogreen-RCM-rho-Adpt1.jpg, id=91, 1051.93pt x 702.625pt>
+File: ./Figures/Sjogreen-RCM-rho-Adpt1.jpg Graphic file (type jpg)
+<use ./Figures/Sjogreen-RCM-rho-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-rho-Adpt1.jpg  used on input li
+ne 671.
+(pdftex.def)             Requested size: 142.56343pt x 95.2148pt.
+<./Figures/Sjogreen-RCM-v-Adpt1.jpg, id=92, 1057.9525pt x 702.625pt>
+File: ./Figures/Sjogreen-RCM-v-Adpt1.jpg Graphic file (type jpg)
+<use ./Figures/Sjogreen-RCM-v-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-v-Adpt1.jpg  used on input line
+ 675.
+(pdftex.def)             Requested size: 142.55551pt x 94.66801pt.
+<./Figures/Sjogreen-RCM-e-Adpt1.jpg, id=93, 1059.96pt x 702.625pt>
+File: ./Figures/Sjogreen-RCM-e-Adpt1.jpg Graphic file (type jpg)
+<use ./Figures/Sjogreen-RCM-e-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-e-Adpt1.jpg  used on input line
+ 681.
+(pdftex.def)             Requested size: 142.56343pt x 94.49648pt.
+<./Figures/Sjogreen-RCM-p-Adpt1.jpg, id=94, 1278.7775pt x 702.625pt>
+File: ./Figures/Sjogreen-RCM-p-Adpt1.jpg Graphic file (type jpg)
+<use ./Figures/Sjogreen-RCM-p-Adpt1.jpg>
+Package pdftex.def Info: ./Figures/Sjogreen-RCM-p-Adpt1.jpg  used on input line
+ 685.
+(pdftex.def)             Requested size: 175.88606pt x 96.64072pt.
+
+
+Package natbib Warning: Citation `monaghan1997sph' on page 16 undefined on inpu
+t line 687.
+
+
+Package natbib Warning: Citation `cha2003implementations' on page 16 undefined 
+on input line 687.
+
+
+Package natbib Warning: Citation `puri2014approximate' on page 16 undefined on 
+input line 687.
+
+
+Package natbib Warning: Citation `monaghan1997sph' on page 16 undefined on inpu
+t line 687.
+
+
+Package natbib Warning: Citation `cha2003implementations' on page 16 undefined 
+on input line 687.
+
+
+Package natbib Warning: Citation `puri2014approximate' on page 16 undefined on 
+input line 687.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./Figures/Dexp-RCM-rho.jpg> <./Figures/Dexp-RCM-v.jpg> <./Figures/Dexp-RC
+M-e.jpg> <./Figures/Dexp-RCM-p.jpg> <./Figures/Dshock-RCM-rho-Rp6.jpg> <./Figur
+es/Dshock-RCM-v-Rp6.jpg> <./Figures/Dshock-RCM-e-Rp6.jpg> <./Figures/Dshock-RCM
+-p-Rp6.jpg>]
+<./Figures/StrBlst-RCM-rho-Rp3.jpg, id=98, 1059.96pt x 702.625pt>
+File: ./Figures/StrBlst-RCM-rho-Rp3.jpg Graphic file (type jpg)
+<use ./Figures/StrBlst-RCM-rho-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-rho-Rp3.jpg  used on input line 
+695.
+(pdftex.def)             Requested size: 142.56343pt x 94.49648pt.
+<./Figures/StrBlst-RCM-v-Rp3.jpg, id=99, 1056.94875pt x 702.625pt>
+File: ./Figures/StrBlst-RCM-v-Rp3.jpg Graphic file (type jpg)
+<use ./Figures/StrBlst-RCM-v-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-v-Rp3.jpg  used on input line 69
+9.
+(pdftex.def)             Requested size: 142.55551pt x 94.76451pt.
+<./Figures/StrBlst-RCM-e-Rp3.jpg, id=100, 1059.96pt x 702.625pt>
+File: ./Figures/StrBlst-RCM-e-Rp3.jpg Graphic file (type jpg)
+<use ./Figures/StrBlst-RCM-e-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-e-Rp3.jpg  used on input line 70
+5.
+(pdftex.def)             Requested size: 142.56343pt x 94.49648pt.
+<./Figures/StrBlst-RCM-p-Rp3.jpg, id=101, 1284.8pt x 702.625pt>
+File: ./Figures/StrBlst-RCM-p-Rp3.jpg Graphic file (type jpg)
+<use ./Figures/StrBlst-RCM-p-Rp3.jpg>
+Package pdftex.def Info: ./Figures/StrBlst-RCM-p-Rp3.jpg  used on input line 70
+9.
+(pdftex.def)             Requested size: 175.88606pt x 96.1797pt.
+
+Overfull \hbox (7.1947pt too wide) in paragraph at lines 716--718
+\OT1/ptm/m/n/9.5 Free jet flow have been stud-ied an-a-lyt-i-cally, ex-per-i-me
+n-tally and nu-mer-i-cally for many decades,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./Figures/Sjogreen-RCM-rho-Adpt1.jpg> <./Figures/Sjogreen-RCM-v-Adpt1.jpg
+> <./Figures/Sjogreen-RCM-e-Adpt1.jpg> <./Figures/Sjogreen-RCM-p-Adpt1.jpg> <./
+Figures/StrBlst-RCM-rho-Rp3.jpg> <./Figures/StrBlst-RCM-v-Rp3.jpg> <./Figures/S
+trBlst-RCM-e-Rp3.jpg> <./Figures/StrBlst-RCM-p-Rp3.jpg>]
+<./Figures/SPH-3D-jet.pdf, id=105, 722.7pt x 542.025pt>
+File: ./Figures/SPH-3D-jet.pdf Graphic file (type pdf)
+<use ./Figures/SPH-3D-jet.pdf>
+Package pdftex.def Info: ./Figures/SPH-3D-jet.pdf  used on input line 729.
+(pdftex.def)             Requested size: 329.64894pt x 247.23378pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+<./Figures/GSPH-HLLC-t1p5-cutView.jpg, id=109, 593.21625pt x 702.625pt>
+File: ./Figures/GSPH-HLLC-t1p5-cutView.jpg Graphic file (type jpg)
+<use ./Figures/GSPH-HLLC-t1p5-cutView.jpg>
+Package pdftex.def Info: ./Figures/GSPH-HLLC-t1p5-cutView.jpg  used on input li
+ne 738.
+(pdftex.def)             Requested size: 111.64682pt x 132.23503pt.
+<./Figures/RSPH-t1p5-cutView.jpg, id=110, 557.08125pt x 608.2725pt>
+File: ./Figures/RSPH-t1p5-cutView.jpg Graphic file (type jpg)
+<use ./Figures/RSPH-t1p5-cutView.jpg>
+Package pdftex.def Info: ./Figures/RSPH-t1p5-cutView.jpg  used on input line 74
+2.
+(pdftex.def)             Requested size: 111.64682pt x 121.90294pt.
+<./Figures/GSPH-HLLC-t3-cutView.jpg, id=111, 593.21625pt x 796.9775pt>
+File: ./Figures/GSPH-HLLC-t3-cutView.jpg Graphic file (type jpg)
+<use ./Figures/GSPH-HLLC-t3-cutView.jpg>
+Package pdftex.def Info: ./Figures/GSPH-HLLC-t3-cutView.jpg  used on input line
+ 748.
+(pdftex.def)             Requested size: 111.64682pt x 149.99231pt.
+<./Figures/RSPH-t3-cutView.jpg, id=112, 557.08125pt x 788.9475pt>
+File: ./Figures/RSPH-t3-cutView.jpg Graphic file (type jpg)
+<use ./Figures/RSPH-t3-cutView.jpg>
+Package pdftex.def Info: ./Figures/RSPH-t3-cutView.jpg  used on input line 752.
+
+(pdftex.def)             Requested size: 111.64682pt x 158.11172pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./Figures/SPH-3D-jet.pdf>]
+
+LaTeX Warning: Reference `fig:free-jet-SPH-comparison' on page 20 undefined on 
+input line 758.
+
+
+LaTeX Warning: Reference `fig:free-jet-SPH-comparison' on page 20 undefined on 
+input line 758.
+
+
+LaTeX Warning: Reference `fig:free-jet-comparison' on page 20 undefined on inpu
+t line 761.
+
+
+LaTeX Warning: Reference `fig:free-jet-comparison' on page 20 undefined on inpu
+t line 761.
+
+
+Package natbib Warning: Citation `colella1982glimm' on page 20 undefined on inp
+ut line 761.
+
+[20 <./Figures/GSPH-HLLC-t1p5-cutView.jpg> <./Figures/RSPH-t1p5-cutView.jpg> <.
+/Figures/GSPH-HLLC-t3-cutView.jpg> <./Figures/RSPH-t3-cutView.jpg>]
+Overfull \hbox (4.90436pt too wide) in paragraph at lines 772--773
+\OT1/ptm/m/n/9.5 (CCR) at the Uni-ver-sity at Buf-falo. This project is sup-por
+ted by Grants No. NSF ACI/1131074
+ []
+
+
+Package natbib Warning: Citation `glimm1965solutions' on page 21 undefined on i
+nput line 776.
+
+
+Package natbib Warning: Citation `liu1977deterministic' on page 21 undefined on
+ input line 778.
+
+
+Package natbib Warning: Citation `chorin1976random' on page 21 undefined on inp
+ut line 779.
+
+
+Package natbib Warning: Citation `concus1979numerical' on page 21 undefined on 
+input line 781.
+
+
+Package natbib Warning: Citation `colella1978analysis' on page 21 undefined on 
+input line 782.
+
+
+Package natbib Warning: Citation `colella1982glimm' on page 21 undefined on inp
+ut line 782.
+
+[21]
+
+Package natbib Warning: Citation `warming1974modified' on page 22 undefined on 
+input line 809.
+
+
+LaTeX Warning: Reference `linear' on page 22 undefined on input line 812.
+
+
+Package natbib Warning: Citation `harten1981random' on page 22 undefined on inp
+ut line 835.
+
+
+Package natbib Warning: Citation `hartenlax' on page 22 undefined on input line
+ 838.
+
+
+Package natbib Warning: Citation `glimm1965solutions' on page 22 undefined on i
+nput line 842.
+
+
+Package natbib Warning: Citation `colella1982glimm' on page 22 undefined on inp
+ut line 843.
+
+
+Package natbib Warning: Citation `chorin1976random' on page 22 undefined on inp
+ut line 844.
+
+
+Package natbib Warning: Citation `concus1979numerical' on page 22 undefined on 
+input line 845.
+
+
+Package natbib Warning: Citation `warming1974modified' on page 22 undefined on 
+input line 846.
+
+
+Package natbib Warning: Citation `liu1977deterministic' on page 22 undefined on
+ input line 847.
+
+No file CPMManuscript.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[22] (CPMManuscript.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3891 strings out of 492453
+ 62431 string characters out of 3129819
+ 120430 words of memory out of 3000000
+ 8113 multiletter control sequences out of 15000+200000
+ 47620 words of font info for 109 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 46i,13n,30p,1340b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Users/hitca/AppData/Roaming/MiKTeX/2.9/fonts/type
+1/urw/symbol/usyr.pfb><C:/Users/hitca/AppData/Roaming/MiKTeX/2.9/fonts/type1/ur
+w/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CPMManuscript.pdf (22 pages, 3883062 bytes).
+PDF statistics:
+ 180 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+
