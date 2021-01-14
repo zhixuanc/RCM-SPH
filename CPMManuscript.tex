@@ -309,7 +309,7 @@ It is common to use the same $\epsilon$ for all particle interactions at a speci
 Figure \ref{fig:pick-up-state-GSPH-RSPH} shows the starred state for GSPH and RSPH.
 \begin{figure}[H]
     \center
-	\includegraphics[width=0.5 \textwidth]{./Figures/RSPH-GSPH}
+	\includegraphics[width=0.5 \textwidth]{./Figures/Fig1}
     \caption{Evaluating of the starred state for RSPH and GSPH implementations. $x$ is the local coordinate system for paired two particles, $a$ and $b$. The origin is at the middle of the paired two particles.
 The local Riemann problem is defined by the constant states $(\rho, u, p)_a$ and $(\rho, u,p)_b$, namely $\textbf{W}_L = \textbf{W}_b$, $\textbf{W}_R = \textbf{W}_a$ with $\textbf{W} = (\rho, u,p)^T $, a vector representation of these three variables. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The red ellipse indicates the stationary state, which is the starred state in GSPH. $S_L$, $S_M$ and $S_R$ are signal speeds which are linearized locally in HLLC Riemann solvers \citep{puri2014approximate}. Starred region is divided into two sub-regions by the middle contact wave. Only $\rho$ changes across the contact wave.}
     \label{fig:pick-up-state-GSPH-RSPH}
@@ -378,21 +378,21 @@ As for 3D jet flow, we take the distance between jet head and inject vent at giv
     \centering
     \begin{minipage}{.45\textwidth}
         \centering a)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-rho}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Fig2-a}
     \end{minipage}%
     \begin{minipage}{.545 \textwidth}
         \centering b)
-        \includegraphics[width=0.99 \textwidth,height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-v}
+        \includegraphics[width=0.99 \textwidth,height=0.5780 \textwidth]{./Figures/Fig2-b}
     \end{minipage}% 
     \\
     \begin{minipage}{.45 \textwidth}
         \centering c)
-        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-rho-zoom}
+        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/Fig2-c}
     \end{minipage}% 
     \begin{minipage}{.545\textwidth}
     \centering d)
         \begin{flushleft}
-        \includegraphics[width= 0.8174 \textwidth, height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-v-zoom}    
+        \includegraphics[width= 0.8174 \textwidth, height=0.5780 \textwidth]{./Figures/Fig2-d}    
         \end{flushleft}
     \end{minipage}%          
     \caption{a) and b) are plots for density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients. $\alpha,\beta$ satisfies: $\beta=2\alpha$.  c), d) are corresponding zoomed views. SPH simulations with different artificial viscosity coefficients show that numerical oscillation is obvious, especially around shock, if there is insufficient dissipation ($\alpha=0.2$). The dissipation introduced by RSPH, is shown to be more adaptive, introducing more damping at the shock (comparable to $\alpha=1.0$) and less damping in the area away from the shock (less than $\alpha=0.2$, as indicated by the magnitude of numerical oscillation).}
@@ -403,21 +403,21 @@ As for 3D jet flow, we take the distance between jet head and inject vent at giv
     \centering
     \begin{minipage}{.45\textwidth}
         \centering a)
-        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-e}
+        \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Figures/Fig3-a}
     \end{minipage}%
     \begin{minipage}{.545 \textwidth}
         \centering b)
-        \includegraphics[width=0.99 \textwidth,height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-p}
+        \includegraphics[width=0.99 \textwidth,height=0.5780 \textwidth]{./Figures/Fig3-b}
     \end{minipage}% 
     \\
     \begin{minipage}{.45 \textwidth}
         \centering c)
-        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/RCM-Sod-SPH-alf-e-zoom}
+        \includegraphics[width=0.99 \textwidth, height=0.7\textwidth]{./Figures/Fig3-c}
     \end{minipage}% 
     \begin{minipage}{.545\textwidth}
     \centering d)
         \begin{flushleft}
-        \includegraphics[width= 0.8174 \textwidth, height=0.5780 \textwidth]{./Figures/RCM-Sod-SPH-alf-p-zoom}    
+        \includegraphics[width= 0.8174 \textwidth, height=0.5780 \textwidth]{./Figures/Fig3-d}    
         \end{flushleft}
     \end{minipage}%    
     \caption{
@@ -442,32 +442,32 @@ The last but not the least, the pressure ``wiggle" around contact discontinuity 
     \centering
     \begin{minipage}{.45\textwidth}
         \centering a)
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-rho}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Fig4-a}
     \end{minipage}%
     \begin{minipage}{.545\textwidth}
     \centering b)
         \begin{flushleft}
-        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/RCM-Sod-GSPH-compare-v}    
+        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/Fig4-b}    
         \end{flushleft}
     \end{minipage}% 
     \\
     \begin{minipage}{.45\textwidth}
         \centering c)
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH-compare-e}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Fig4-c}
     \end{minipage}%
     \begin{minipage}{.545 \textwidth}
         \centering d)
-        \includegraphics[width=0.99 \textwidth,height=0.4954\textwidth]{./Figures/RCM-Sod-GSPH-compare-p}
+        \includegraphics[width=0.99 \textwidth,height=0.4954\textwidth]{./Figures/Fig4-d}
     \end{minipage}% 
     \\
     \begin{minipage}{.45\textwidth}
         \centering e)
-        \includegraphics[width= 0.99 \textwidth, height=0.625 \textwidth]{./Figures/RCM-Sod-GSPH-compare-p-zoom}    
+        \includegraphics[width= 0.99 \textwidth, height=0.625 \textwidth]{./Figures/Fig4-e}    
     \end{minipage}%
     \begin{minipage}{.545\textwidth}
         \centering f)
         \begin{flushleft}
-        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/RCM-Sod-GSPH-compare-v-zoom}    
+        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/Fig4-f}    
         \end{flushleft}
     \end{minipage}%  
 %    \begin{minipage}{.45\textwidth}
@@ -505,32 +505,32 @@ It is more common for GSPH to construct local Riemann problems in a piece wise l
     \centering
     \begin{minipage}{.45\textwidth}
         \centering a)
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH2-compare-rho}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Fig5-a}
     \end{minipage}%
     \begin{minipage}{.545\textwidth}
     \centering b)
         \begin{flushleft}
-        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/RCM-Sod-GSPH2-compare-v}    
+        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/Fig5-b}    
         \end{flushleft}
     \end{minipage}% 
     \\
     \begin{minipage}{.45\textwidth}
         \centering c)
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH2-compare-e}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Fig5-c}
     \end{minipage}%
     \begin{minipage}{.545 \textwidth}
         \centering d)
-        \includegraphics[width=0.99 \textwidth,height=0.4954\textwidth]{./Figures/RCM-Sod-GSPH2-compare-p}
+        \includegraphics[width=0.99 \textwidth,height=0.4954\textwidth]{./Figures/Fig5-d}
     \end{minipage}% 
     \\
     \begin{minipage}{.45\textwidth}
         \centering e)
-        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/RCM-Sod-GSPH2-compare-rho-zoom}
+        \includegraphics[width=0.99 \textwidth,height=0.6\textwidth]{./Figures/Fig5-e}
     \end{minipage}%
     \begin{minipage}{.545\textwidth}
     \centering f)
         \begin{flushleft}
-        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/RCM-Sod-GSPH2-compare-v-zoom}    
+        \includegraphics[width= 0.8174 \textwidth, height=0.4954 \textwidth]{./Figures/Fig5-f}    
         \end{flushleft}
     \end{minipage}%  
 %       \\
@@ -577,7 +577,7 @@ GSPH combined with HLLC and Roe approximate Riemann solvers has been shown to be
 %    \end{minipage}%
     \begin{minipage}{.70\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Accuracy-pre}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig6}
     \end{minipage}%  
     \caption{ $L_1$ norm of errors for 1D shock tube test (test1) for RSPH, standard SPH, GSPH using Roe Riemann solver and GSPH using HLLC Riemann Solver. GSPH with the HLLC approximate Riemann solver exhibits the same convergence rate (around 1) but quantitatively larger errors than that with Roe Riemann solver. RSPH and standard SPH shows same rate of convergence and almost same level of error.}
     \label{fig:Accuracy-test1}
@@ -597,21 +597,21 @@ Due to less amount of dissipation, the numerical oscillations
     \centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-rho}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig7-a}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \begin{flushleft}
-        \includegraphics[width=0.8024 \textwidth]{./Figures/GRod-RCM-rho}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Fig7-b}
         \end{flushleft}
     \end{minipage}%    
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-e}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig7-c}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GRod-RCM-p}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig7-d}
     \end{minipage}% 
     \caption{Results for test 2, a variation of Sod test. All physical properties are well re-produced except for some acceptable oscillations}
     \label{fig:RCM-GSPH-Sod}
@@ -621,21 +621,21 @@ Due to less amount of dissipation, the numerical oscillations
     \centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-rho}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig8-a}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \begin{flushleft}
-        \includegraphics[width=0.8024 \textwidth]{./Figures/Dexp-RCM-v}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Fig8-b}
         \end{flushleft}
     \end{minipage}%     
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-e}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig8-c}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dexp-RCM-p}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig8-d}
     \end{minipage}% 
     \caption{Results for test 3, the double expansion case. All physical properties are well re-produced except for some oscillations}
     \label{fig:RCM-double-expansion}
@@ -645,21 +645,21 @@ Due to less amount of dissipation, the numerical oscillations
     %\centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-rho-Rp6}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig9-a}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \begin{flushleft}
-        \includegraphics[width=0.8024 \textwidth]{./Figures/Dshock-RCM-v-Rp6}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Fig9-b}
         \end{flushleft}
     \end{minipage}%     
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-e-Rp6}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig9-c}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Dshock-RCM-p-Rp6}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig9-d}
     \end{minipage}% 
     \caption{Results for test 4, the double shock case. To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. However, the oscillations are more serious than oscillations in other tests.}
     \label{fig:RCM-double-shock}
@@ -668,21 +668,21 @@ Due to less amount of dissipation, the numerical oscillations
 \begin{figure}[H]
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-rho-Adpt1}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig10-a}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \begin{flushleft}
-        \includegraphics[width=0.8024 \textwidth]{./Figures/Sjogreen-RCM-v-Adpt1}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Fig10-b}
         \end{flushleft}
     \end{minipage}%       
     \\
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-e-Adpt1}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig10-c}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/Sjogreen-RCM-p-Adpt1}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig10-d}
     \end{minipage}% 
     \caption{Results for test 5, a variation of the Sj$\ddot{o}$green test. The density, velocity and pressure are well re-produced while the thermal energy at the origin is poorly predicted. A jump of internal energy at the origin is a common issue in many SPH schemes (see, for example, \citep{monaghan1997sph,cha2003implementations,puri2014approximate})}
     \label{fig:RCM-Sjogreen}
@@ -692,21 +692,21 @@ Due to less amount of dissipation, the numerical oscillations
     \centering
     \begin{minipage}{.415\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-rho-Rp3}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig11-a}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \begin{flushleft}
-        \includegraphics[width=0.8024 \textwidth]{./Figures/StrBlst-RCM-v-Rp3}
+        \includegraphics[width=0.8024 \textwidth]{./Figures/Fig11-b}
         \end{flushleft}
     \end{minipage}%
     \\
     \begin{minipage}{.415 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-e-Rp3}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig11-c}
     \end{minipage}%
     \begin{minipage}{.512 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/StrBlst-RCM-p-Rp3}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig11-d}
     \end{minipage}% 
     \caption{Results for test 6, the strong blast test. y axis for density plot is in log base 10.  To stabilize the simulation, RSPH sampling is in a narrower range. All physical properties are well re-produced. The oscillations between shock and contact discontinuity is relatively larger than other area. A noticeable spike is observed near contact discontinuity.}
     \label{fig:RCM-strong-blast}
@@ -726,7 +726,7 @@ Except for the pressure, boundary values for density, velocity, and energy on th
 
 \begin{figure}[H]
    \centering
-   \includegraphics[width=0.95 \textwidth]{./Figures/SPH-3D-jet}
+   \includegraphics[width=0.95 \textwidth]{./Figures/Fig12}
    \caption{Free jet flow simulation results at $t=3.0 s$ by SPH using different artificial viscosity coefficients. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. From left to right, the picture is corresponding to $\alpha=0.3$, $\alpha=1.0$ and $\alpha=2.0$ respectively. Another artificial viscosity coefficient $\beta$ is set to be double of $\alpha$ for all tests. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. A positive correlation between overall damping effect and the distance from nozzle to the front of jet flow is shown.}
     \label{fig:free-jet-SPH-comparison}
 \end{figure}
@@ -738,21 +738,21 @@ Our comparison between GSPH and RSPH in the next paragraph is based on the posit
     \centering
     \begin{minipage}[t]{.325 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-HLLC-t1p5-cutView}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig13-a}
     \end{minipage}%
     \begin{minipage}[t]{.325\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/RSPH-t1p5-cutView}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig13-b}
     \end{minipage}%
     \\
     \centering
     \begin{minipage}[t]{.325 \textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/GSPH-HLLC-t3-cutView}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig13-c}
     \end{minipage}%
     \begin{minipage}[t]{.325\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Figures/RSPH-t3-cutView}
+        \includegraphics[width=0.99 \textwidth]{./Figures/Fig13-d}
     \end{minipage}%
     \caption{Simulation results of free jet flow by GSPH and RSPH. These pictures are front view of a slice of the domain cut by two planes parallel to $x-z$ plane at $y=-9$ and $y=9$. Pictures on the left side are for GSPH while those on the right side are for RSPH. Red particles in pictures are particles erupted from the nozzle while blues are ambient fluids particles. Pictures on the first row are corresponding to $t=1.5s$ while pictures on the second row are for $t=3.0 s$}
     \label{fig:free-jet-comparison}
